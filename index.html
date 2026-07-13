@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>לוח בקרה - מלאי חשמלאי</title>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://apis.google.com/js/api.js" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700;800&family=Heebo:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#17181b;
+    --surface:#212327;
+    --surface-2:#2a2d32;
+    --surface-3:#33363c;
+    --border:#3a3d44;
+    --text:#eef0f2;
+    --text-muted:#9aa0a8;
+    --text-dim:#6b7076;
+    --accent:#f5b700;
+    --accent-dim:#8a6a10;
+    --copper:#c97a3d;
+    --danger:#e1503f;
+    --danger-dim:#4a2622;
+    --success:#3fbd77;
+    --success-dim:#1f3d2c;
+    --radius:12px;
+    --radius-sm:8px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Heebo',system-ui,sans-serif;
+    min-height:100vh;
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(245,183,0,0.05), transparent 40%),
+      radial-gradient(circle at 85% 100%, rgba(201,122,61,0.05), transparent 40%);
+  }
+  h1,h2,h3,.display{font-family:'Rubik',system-ui,sans-serif;letter-spacing:-0.01em;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  button{font-family:inherit;cursor:pointer;}
+  input,select,textarea{font-family:inherit;}
+  ::-webkit-scrollbar{width:8px;height:8px;}
+  ::-webkit-scrollbar-thumb{background:var(--surface-3);border-radius:8px;}
+
+  /* ---------- layout shell ---------- */
+  .app{display:flex;min-height:100vh;}
+  .sidebar{
+    width:220px;flex-shrink:0;background:var(--surface);
+    border-left:1px solid var(--border);
+    display:flex;flex-direction:column;padding:20px 14px;gap:4px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;padding:6px 8px 22px;}
+  .brand-mark{
+    width:34px;height:34px;border-radius:8px;background:linear-gradient(155deg,var(--accent),var(--copper));
+    display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;
+    box-shadow:0 0 14px rgba(245,183,0,0.35);
+  }
+  .brand-text .t1{font-family:'Rubik';font-weight:700;font-size:15px;line-height:1.2;}
+  .brand-text .t2{font-size:11px;color:var(--text-dim);}
+  .navbtn{
+    display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:var(--radius-sm);
+    background:transparent;border:none;color:var(--text-muted);font-size:14.5px;font-weight:500;
+    text-align:right;width:100%;transition:.15s;
+  }
+  .navbtn .ic{font-size:17px;width:20px;text-align:center;}
+  .navbtn:hover{background:var(--surface-2);color:var(--text);}
+  .navbtn.active{background:var(--surface-2);color:var(--accent);}
+  .navbtn.active .ic{filter:drop-shadow(0 0 4px rgba(245,183,0,0.5));}
+  .sidebar-foot{margin-top:auto;font-size:10.5px;color:var(--text-dim);padding:10px 8px;line-height:1.6;}
+
+  .main{flex:1;min-width:0;padding:26px 30px 100px;max-width:980px;}
+  .view{display:none;}
+  .view.active{display:block;animation:fadein .25s ease;}
+  @keyframes fadein{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:none;}}
+
+  .page-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px;gap:12px;flex-wrap:wrap;}
+  .page-head h1{font-size:22px;margin:0 0 4px;}
+  .page-head p{margin:0;color:var(--text-dim);font-size:13px;}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:var(--radius-sm);
+    border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:13.5px;font-weight:600;
+    transition:.15s;
+  }
+  .btn:hover{background:var(--surface-3);}
+  .btn-accent{background:var(--accent);border-color:var(--accent);color:#1a1400;}
+  .btn-accent:hover{background:#ffc720;}
+  .btn-ghost{background:transparent;border-color:transparent;color:var(--text-muted);}
+  .btn-ghost:hover{background:var(--surface-2);color:var(--text);}
+  .btn-danger{background:transparent;border-color:var(--danger);color:var(--danger);}
+  .btn-danger:hover{background:var(--danger-dim);}
+  .btn-sm{padding:6px 10px;font-size:12.5px;border-radius:7px;}
+  .btn-icon{padding:8px;width:34px;height:34px;justify-content:center;border-radius:7px;}
+
+  /* ---------- stat cards ---------- */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:26px;}
+  .stat-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px;position:relative;overflow:hidden;
+  }
+  .stat-card .lbl{font-size:12px;color:var(--text-dim);margin-bottom:8px;}
+  .stat-card .val{font-family:'JetBrains Mono';font-size:26px;font-weight:700;}
+  .stat-card.warn .val{color:var(--accent);}
+  .stat-card.bad .val{color:var(--danger);}
+  .stat-card.good .val{color:var(--success);}
+
+  /* ---------- LED dot ---------- */
+  .led{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+  .led.ok{background:var(--success);box-shadow:0 0 6px var(--success);}
+  .led.warn{background:var(--accent);box-shadow:0 0 6px var(--accent);}
+  .led.bad{background:var(--danger);box-shadow:0 0 7px var(--danger);}
+  .led.off{background:var(--text-dim);}
+
+  /* ---------- toolbar ---------- */
+  .toolbar{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;align-items:center;}
+  .search{
+    flex:1;min-width:180px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);
+    padding:9px 12px;color:var(--text);font-size:13.5px;
+  }
+  .search:focus{outline:none;border-color:var(--accent-dim);}
+  .chipset{display:flex;gap:6px;flex-wrap:wrap;}
+  .chip{
+    padding:7px 13px;border-radius:20px;background:var(--surface);border:1px solid var(--border);
+    font-size:12.5px;color:var(--text-muted);font-weight:600;
+  }
+  .chip.active{background:var(--accent);border-color:var(--accent);color:#1a1400;}
+
+  /* ---------- inventory list ---------- */
+  .item-row{
+    display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--border);
+    border-radius:var(--radius);padding:12px 14px;margin-bottom:8px;
+  }
+  .item-row .info{flex:1;min-width:0;}
+  .item-row .name{font-weight:600;font-size:14.5px;display:flex;align-items:center;gap:8px;}
+  .item-row .meta{font-size:11.5px;color:var(--text-dim);margin-top:3px;display:flex;gap:8px;flex-wrap:wrap;}
+  .tag{background:var(--surface-3);padding:2px 7px;border-radius:5px;font-size:10.5px;color:var(--text-muted);}
+  .tag.tool{color:#a9c6ff;}
+  .tag.material{color:#f0b98a;}
+  .qty-box{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+  .qty-adj{width:28px;height:28px;border-radius:7px;background:var(--surface-3);border:1px solid var(--border);color:var(--text);font-size:15px;display:flex;align-items:center;justify-content:center;}
+  .qty-adj:hover{background:var(--surface-2);border-color:var(--accent-dim);}
+  .qty-val{font-family:'JetBrains Mono';font-weight:700;font-size:16px;min-width:52px;text-align:center;}
+  .qty-unit{font-size:10.5px;color:var(--text-dim);}
+  .row-actions{display:flex;gap:4px;flex-shrink:0;}
+
+  /* ---------- sub-location breakdown ---------- */
+  .inv-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;}
+  .inv-card .item-row{background:transparent;border:none;margin-bottom:0;}
+  .inv-card .item-row + .item-row{border-top:1px solid var(--border);border-radius:0;}
+  .loc-breakdown{display:none;padding:0 14px 12px;border-top:1px solid var(--border);}
+  .loc-breakdown.open{display:block;padding-top:9px;}
+  .loc-line{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:12.5px;color:var(--text-muted);}
+  .loc-line .lname{color:var(--text);font-weight:500;}
+  .loc-line .qty-box{gap:6px;}
+  .loc-line .qty-adj{width:24px;height:24px;font-size:13px;}
+  .loc-empty-hint{font-size:11.5px;color:var(--text-dim);padding:6px 2px;}
+  .loc-group-head{display:flex;justify-content:space-between;align-items:center;padding:14px 2px 8px;}
+  .loc-group-head:first-child{padding-top:0;}
+  .loc-group-head h3{font-size:13.5px;margin:0;color:var(--accent);display:flex;align-items:center;gap:6px;font-family:'Rubik';}
+  .loc-group-head .count{font-size:11px;color:var(--text-dim);}
+  .loc-row{display:flex;gap:8px;align-items:center;margin-bottom:7px;}
+  .loc-row select{flex:1;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 10px;color:var(--text);font-size:13px;}
+  .loc-row input{width:64px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 8px;color:var(--text);font-size:13px;text-align:center;}
+  .loc-row .x{color:var(--danger);cursor:pointer;padding:4px 6px;font-size:16px;flex-shrink:0;}
+
+  .empty{
+    text-align:center;padding:50px 20px;color:var(--text-dim);background:var(--surface);
+    border:1px dashed var(--border);border-radius:var(--radius);
+  }
+  .empty .ic{font-size:30px;margin-bottom:10px;opacity:.6;}
+  .empty p{margin:0 0 14px;font-size:13.5px;}
+
+  /* ---------- orders ---------- */
+  .order-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:12px;}
+  .order-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+  .order-supplier{font-weight:700;font-size:15px;font-family:'Rubik';}
+  .order-date{font-size:11.5px;color:var(--text-dim);margin-top:2px;}
+  .order-items{margin-top:12px;border-top:1px solid var(--border);padding-top:10px;display:none;}
+  .order-items.open{display:block;}
+  .order-item-line{display:flex;justify-content:space-between;font-size:13px;padding:5px 0;color:var(--text-muted);}
+  .order-item-line b{color:var(--text);font-weight:500;}
+  .order-item-line .new-badge{font-size:9.5px;background:var(--accent-dim);color:var(--accent);padding:1px 6px;border-radius:5px;margin-inline-start:6px;}
+  .order-foot{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px;flex-wrap:wrap;}
+
+  /* breaker-style status switch */
+  .breaker{display:flex;background:var(--surface-3);border:1px solid var(--border);border-radius:8px;padding:3px;gap:2px;}
+  .breaker button{
+    padding:6px 11px;border:none;background:transparent;border-radius:6px;font-size:11px;font-weight:700;
+    color:var(--text-dim);transition:.15s;
+  }
+  .breaker button.on{background:var(--surface);color:var(--text);}
+  .breaker button.on[data-s="placed"]{color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent-dim);}
+  .breaker button.on[data-s="received"]{color:var(--success);box-shadow:inset 0 0 0 1px var(--success-dim);}
+  .breaker button.on[data-s="draft"]{color:var(--text-muted);}
+
+  /* ---------- modal ---------- */
+  .overlay{
+    position:fixed;inset:0;background:rgba(10,11,12,0.65);backdrop-filter:blur(2px);
+    display:none;align-items:flex-end;justify-content:center;z-index:50;
+  }
+  .overlay.open{display:flex;}
+  .modal{
+    background:var(--surface);border:1px solid var(--border);border-radius:16px 16px 0 0;
+    width:100%;max-width:520px;max-height:88vh;overflow-y:auto;padding:20px 20px 26px;
+    animation:slideup .2s ease;
+  }
+  @keyframes slideup{from{transform:translateY(30px);opacity:0;}to{transform:none;opacity:1;}}
+  .modal h2{font-size:17px;margin:0 0 16px;}
+  .field{margin-bottom:12px;}
+  .field label{display:block;font-size:12px;color:var(--text-muted);margin-bottom:5px;font-weight:600;}
+  .field input,.field select,.field textarea{
+    width:100%;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);
+    padding:10px 11px;color:var(--text);font-size:14px;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--accent-dim);}
+  .field-row{display:flex;gap:10px;}
+  .field-row .field{flex:1;}
+  .modal-actions{display:flex;gap:8px;margin-top:18px;}
+  .modal-actions .btn{flex:1;justify-content:center;}
+
+  .picker-list{max-height:180px;overflow-y:auto;border:1px solid var(--border);border-radius:var(--radius-sm);margin-top:6px;}
+  .picker-row{display:flex;justify-content:space-between;align-items:center;padding:9px 11px;border-bottom:1px solid var(--border);font-size:13px;}
+  .picker-row:last-child{border-bottom:none;}
+  .picker-row:hover{background:var(--surface-2);}
+  .draft-item{display:flex;justify-content:space-between;align-items:center;background:var(--surface-2);border-radius:7px;padding:8px 10px;margin-bottom:6px;font-size:13px;}
+  .draft-item .x{color:var(--danger);font-size:16px;padding:0 4px;}
+
+  /* ---------- catalog / store-style product cards ---------- */
+  .product-card{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--border);}
+  .product-card:last-child{border-bottom:none;}
+  .product-card:hover{background:var(--surface-2);}
+  .product-card .pinfo{min-width:0;flex:1;}
+  .product-card .pname{font-weight:600;font-size:13.5px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+  .product-card .pmeta{font-size:11px;color:var(--text-dim);margin-top:2px;display:flex;gap:7px;flex-wrap:wrap;}
+  .product-card .pprice{font-family:'JetBrains Mono';color:var(--accent);font-weight:700;font-size:12.5px;white-space:nowrap;}
+  .linked-badge{font-size:9px;background:var(--success-dim);color:var(--success);padding:1px 6px;border-radius:5px;}
+  .catalog-empty{padding:16px 12px;text-align:center;color:var(--text-dim);font-size:12.5px;}
+  .catalog-tabs{display:flex;gap:6px;margin-bottom:10px;}
+  .thumb{width:38px;height:38px;border-radius:8px;object-fit:cover;background:var(--surface-3);flex-shrink:0;border:1px solid var(--border);}
+  .thumb-sm{width:32px;height:32px;}
+  .prod-link{color:var(--accent);text-decoration:none;font-size:15px;flex-shrink:0;}
+  .prod-link:hover{opacity:0.75;}
+
+  /* ---------- pdf import review ---------- */
+  .pdfc-row{display:flex;gap:8px;align-items:center;padding:8px 10px;border-bottom:1px solid var(--border);}
+  .pdfc-row:last-child{border-bottom:none;}
+  .pdfc-row input[type="checkbox"]{width:16px;height:16px;flex-shrink:0;accent-color:var(--accent);}
+  .pdfc-row input[type="text"]{background:var(--surface-2);border:1px solid var(--border);border-radius:6px;padding:6px 8px;color:var(--text);font-size:12px;}
+  .pdfc-row .pname{flex:2;min-width:0;}
+  .pdfc-row .psku{flex:1;max-width:100px;font-family:'JetBrains Mono';}
+
+  /* ---------- store-style catalog ---------- */
+  .catalog-grid{display:flex;flex-direction:column;gap:8px;max-height:280px;overflow-y:auto;margin-top:8px;padding-left:2px;}
+  .catalog-card{display:flex;align-items:center;gap:10px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:9px 11px;}
+  .catalog-card .cicon{width:36px;height:36px;border-radius:8px;background:var(--surface-3);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+  .catalog-card .cinfo{flex:1;min-width:0;}
+  .catalog-card .cname{font-weight:600;font-size:13.5px;}
+  .catalog-card .cmeta{font-size:10.5px;color:var(--text-dim);margin-top:2px;display:flex;gap:8px;flex-wrap:wrap;}
+  .catalog-card .cprice{font-family:'JetBrains Mono';font-weight:700;color:var(--accent);}
+  .catalog-add{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+  .catalog-add input{width:42px;background:var(--surface-3);border:1px solid var(--border);border-radius:6px;padding:6px 4px;text-align:center;color:var(--text);font-size:13px;}
+
+  /* ---------- toast ---------- */
+  .toast{
+    position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(20px);
+    background:var(--surface-3);border:1px solid var(--accent-dim);color:var(--text);
+    padding:10px 18px;border-radius:20px;font-size:13px;font-weight:600;z-index:100;
+    opacity:0;transition:.25s;pointer-events:none;
+  }
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+  /* ---------- bottom nav (mobile) ---------- */
+  .bottomnav{display:none;}
+
+  @media (max-width:840px){
+    .sidebar{display:none;}
+    .main{padding:18px 14px 90px;max-width:100%;}
+    .stats{grid-template-columns:repeat(3,1fr);gap:8px;}
+    .stat-card{padding:12px 10px;}
+    .stat-card .val{font-size:20px;}
+    .bottomnav{
+      display:flex;position:fixed;bottom:0;right:0;left:0;background:var(--surface);
+      border-top:1px solid var(--border);padding:8px 6px calc(env(safe-area-inset-bottom,0) + 8px);
+      z-index:40;justify-content:space-around;
+    }
+    .bottomnav button{
+      background:none;border:none;color:var(--text-dim);display:flex;flex-direction:column;align-items:center;
+      gap:3px;font-size:10.5px;font-weight:600;padding:4px 14px;border-radius:8px;
+    }
+    .bottomnav button .ic{font-size:19px;}
+    .bottomnav button.active{color:var(--accent);}
+    .modal{max-width:100%;}
+  }
+  @media (max-width:480px){
+    .field-row{flex-direction:column;gap:0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <!-- desktop sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">⚡</div>
+      <div class="brand-text">
+        <div class="t1">לוח הבית</div>
+        <div class="t2">ניהול מלאי חשמלאי</div>
+      </div>
+    </div>
+    <button class="navbtn active" data-tab="dashboard"><span class="ic">▦</span> דשבורד</button>
+    <button class="navbtn" data-tab="inventory"><span class="ic">🧰</span> מלאי</button>
+    <button class="navbtn" data-tab="orders"><span class="ic">📋</span> הזמנות</button>
+    <div class="sidebar-foot">הנתונים נשמרים אוטומטית<br>במכשיר שלך.<br><span class="app-version-tag" style="opacity:.7"></span></div>
+  </aside>
+
+  <main class="main">
+
+    <!-- ============ DASHBOARD ============ -->
+    <section class="view active" id="view-dashboard">
+      <div class="page-head">
+        <div>
+          <h1>מצב המלאי שלך</h1>
+          <p id="dash-date"></p>
+          <p class="app-version-tag" style="font-size:10.5px;color:var(--text-dim);opacity:.7;margin-top:2px;"></p>
+        </div>
+        <button class="btn btn-accent" onclick="openItemModal()">+ פריט חדש</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card bad"><div class="lbl">מלאי נמוך</div><div class="val mono" id="stat-low">0</div></div>
+        <div class="stat-card warn"><div class="lbl">הזמנות פתוחות</div><div class="val mono" id="stat-orders">0</div></div>
+        <div class="stat-card good"><div class="lbl">שווי מלאי</div><div class="val mono" id="stat-value">₪0</div></div>
+      </div>
+
+      <h2 style="font-size:15px;margin:22px 0 10px;">פריטים במלאי נמוך</h2>
+      <div id="dash-low-list"></div>
+    </section>
+
+    <!-- ============ INVENTORY ============ -->
+    <section class="view" id="view-inventory">
+      <div class="page-head">
+        <div><h1>מלאי</h1><p>כלים וחומרים</p></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn" onclick="openLocationsModal()">📍 מיקומים</button>
+          <button class="btn btn-accent" onclick="openItemModal()">+ פריט חדש</button>
+        </div>
+      </div>
+      <div class="toolbar">
+        <input class="search" id="inv-search" placeholder="חיפוש לפי שם או מק&quot;ט..." oninput="renderInventory()">
+      </div>
+      <div class="toolbar" style="justify-content:space-between;">
+        <div class="chipset">
+          <button class="chip active" data-f="all" onclick="setInvFilter('all')">הכל</button>
+          <button class="chip" data-f="tool" onclick="setInvFilter('tool')">כלים</button>
+          <button class="chip" data-f="material" onclick="setInvFilter('material')">חומרים</button>
+          <button class="chip" data-f="low" onclick="setInvFilter('low')">מלאי נמוך</button>
+        </div>
+        <div class="breaker" id="inv-viewmode">
+          <button class="on" data-v="item" onclick="setInvViewMode('item')">לפי פריט</button>
+          <button data-v="location" onclick="setInvViewMode('location')">לפי מיקום</button>
+        </div>
+      </div>
+      <div id="inv-list" style="margin-top:14px;"></div>
+    </section>
+
+    <!-- ============ ORDERS ============ -->
+    <section class="view" id="view-orders">
+      <div class="page-head">
+        <div><h1>הזמנות</h1><p>הזמנות מספקים</p></div>
+        <div style="display:flex;gap:8px;">
+          <button class="btn" onclick="openSuppliersModal()">🏷 ספקים</button>
+          <button class="btn" onclick="openCatalogModal()">🗂 קטלוג</button>
+          <button class="btn btn-accent" onclick="openOrderModal()">+ הזמנה חדשה</button>
+        </div>
+      </div>
+      <div id="orders-list"></div>
+    </section>
+
+  </main>
+</div>
+
+<!-- mobile bottom nav -->
+<div class="bottomnav">
+  <button class="active" data-tab="dashboard"><span class="ic">▦</span>דשבורד</button>
+  <button data-tab="inventory"><span class="ic">🧰</span>מלאי</button>
+  <button data-tab="orders"><span class="ic">📋</span>הזמנות</button>
+</div>
+
+<!-- ============ ITEM MODAL ============ -->
+<div class="overlay" id="item-overlay">
+  <div class="modal">
+    <h2 id="item-modal-title">פריט חדש</h2>
+    <input type="hidden" id="item-id">
+    <div class="field">
+      <label>שם הפריט *</label>
+      <input id="item-name" placeholder="לדוגמה: מפסק זרם 25A">
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>סוג *</label>
+        <select id="item-category">
+          <option value="tool">כלי</option>
+          <option value="material">חומר</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>מק"ט</label>
+        <input id="item-sku" placeholder="SKU-1234">
+      </div>
+    </div>
+    <div class="field">
+      <label>מלאי לפי מיקום *</label>
+      <div id="item-locations-editor"></div>
+      <button class="btn btn-sm" style="margin-top:2px;" onclick="addLocationRow()">+ הוסף מיקום</button>
+      <div style="margin-top:10px;font-size:12.5px;color:var(--text-muted);">
+        סה"כ במלאי: <span class="mono" id="item-total-qty" style="color:var(--text);font-weight:700;">0</span>
+        <span id="item-total-unit"></span>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>יחידה</label>
+        <input id="item-unit" placeholder='יח&#39;, מ&#39;, ק&quot;ג...' value="יח'" oninput="updateItemTotalDisplay()">
+      </div>
+      <div class="field">
+        <label>סף מלאי מינימלי (סה"כ)</label>
+        <input id="item-min" type="number" min="0" step="1" value="0">
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>מחיר ליחידה (₪)</label>
+        <input id="item-price" type="number" min="0" step="0.1" placeholder="0">
+      </div>
+      <div class="field">
+        <label>ספק</label>
+        <select id="item-supplier"></select>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field"><label>קישור לתמונת המוצר (URL)</label><input id="item-image" placeholder="https://..."></div>
+      <div class="field"><label>קישור לדף המוצר אצל הספק (URL)</label><input id="item-link" placeholder="https://..."></div>
+    </div>
+    <div class="field">
+      <label>הערות</label>
+      <textarea id="item-notes" rows="2"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('item-overlay')">ביטול</button>
+      <button class="btn btn-danger" id="item-delete-btn" style="display:none" onclick="deleteCurrentItem()">מחק</button>
+      <button class="btn btn-accent" onclick="saveItem()">שמור</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SUPPLIERS MODAL ============ -->
+<div class="overlay" id="suppliers-overlay">
+  <div class="modal">
+    <h2>ספקים</h2>
+    <div id="suppliers-list" style="margin-bottom:14px;"></div>
+    <div style="border-top:1px solid var(--border);padding-top:14px;">
+      <div class="field"><label>שם ספק חדש</label><input id="sup-name" placeholder="לדוגמה: ארקה"></div>
+      <div class="field-row">
+        <div class="field"><label>טלפון</label><input id="sup-phone"></div>
+        <div class="field"><label>אימייל</label><input id="sup-email"></div>
+      </div>
+      <button class="btn btn-accent" style="width:100%;justify-content:center;" onclick="addSupplier()">+ הוסף ספק</button>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('suppliers-overlay')">סגור</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LOCATIONS MODAL ============ -->
+<div class="overlay" id="locations-overlay">
+  <div class="modal">
+    <h2>מיקומי אחסון</h2>
+    <p style="margin:-8px 0 14px;font-size:12.5px;color:var(--text-dim);">לדוגמה: מחסן, תיק עבודה, רכב, אצל לקוח...</p>
+    <div id="locations-list" style="margin-bottom:14px;"></div>
+    <div style="border-top:1px solid var(--border);padding-top:14px;">
+      <div class="field"><label>מיקום חדש</label><input id="loc-name" placeholder="לדוגמה: תיק עבודה"></div>
+      <button class="btn btn-accent" style="width:100%;justify-content:center;" onclick="addLocation()">+ הוסף מיקום</button>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('locations-overlay')">סגור</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CATALOG MODAL ============ -->
+<div class="overlay" id="catalog-overlay">
+  <div class="modal">
+    <h2 id="catalog-modal-title">קטלוג ספקים</h2>
+    <div class="field">
+      <label>ספק</label>
+      <select id="catalog-supplier-select" onchange="renderCatalogManageList()"></select>
+    </div>
+
+    <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:6px;">
+      <button class="btn btn-sm" onclick="importErcoSampleCatalog()">🔄 טען/עדכן קטלוג לדוגמה (ERCO)</button>
+      <button class="btn btn-sm" onclick="exportCatalogCsv()">⬇️ ייצוא CSV</button>
+      <button class="btn btn-sm" onclick="document.getElementById('catalog-csv-input').click()">⬆️ ייבוא מ-CSV</button>
+      <input type="file" id="catalog-csv-input" accept=".csv,text/csv" style="display:none;" onchange="handleCsvImport(event)">
+      <button class="btn btn-sm btn-accent" onclick="openDrivePickerForCatalog()">📁 ייבוא מ-Google Drive</button>
+      <button class="btn btn-sm" onclick="document.getElementById('catalog-pdf-input').click()">📄 PDF מהמחשב</button>
+      <input type="file" id="catalog-pdf-input" accept="application/pdf" style="display:none;" onchange="handleLocalPdfUpload(event)">
+      <button class="btn btn-icon btn-ghost" onclick="openGoogleSettingsModal()" title="הגדרות Google Drive">⚙️</button>
+    </div>
+    <p style="font-size:11px;color:var(--text-dim);margin:0 0 14px;">CSV / Google Sheets: עמודות שם, מק"ט, סוג, יחידה, מחיר. PDF: זיהוי אוטומטי לפי מק"טים בטקסט - חלקי, דורש סקירה לפני הוספה.</p>
+
+    <div class="picker-list" id="catalog-manage-list" style="max-height:200px;margin-bottom:14px;"></div>
+
+    <div style="border-top:1px solid var(--border);padding-top:14px;">
+
+      <input type="hidden" id="cat-edit-id">
+      <div class="field"><label>שם מוצר</label><input id="cat-name" placeholder="לדוגמה: מפסק זרם 25A"></div>
+      <div class="field-row">
+        <div class="field">
+          <label>סוג</label>
+          <select id="cat-category">
+            <option value="tool">כלי</option>
+            <option value="material">חומר</option>
+          </select>
+        </div>
+        <div class="field"><label>מק"ט</label><input id="cat-sku" placeholder="SKU-1234"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>יחידה</label><input id="cat-unit" value="יח'"></div>
+        <div class="field"><label>מחיר (₪)</label><input id="cat-price" type="number" min="0" step="0.1" placeholder="0"></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>קישור לתמונת המוצר (URL)</label><input id="cat-image" placeholder="https://..."></div>
+        <div class="field"><label>קישור לדף המוצר אצל הספק (URL)</label><input id="cat-link" placeholder="https://..."></div>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-accent" style="flex:1;justify-content:center;" id="cat-save-btn" onclick="saveCatalogProduct()">+ הוסף מוצר לקטלוג</button>
+        <button class="btn btn-ghost" id="cat-cancel-btn" style="display:none;" onclick="cancelCatalogEdit()">ביטול עריכה</button>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('catalog-overlay')">סגור</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ GOOGLE DRIVE SETTINGS MODAL ============ -->
+<div class="overlay" id="google-settings-overlay">
+  <div class="modal">
+    <h2>חיבור ל-Google Drive</h2>
+    <p style="font-size:12.5px;color:var(--text-dim);margin:-8px 0 14px;">כדי לבחור קבצים מה-Drive צריך מפתח API (Developer Key) מאותו פרויקט ב-Google Cloud שבו הגדרת את ה-Client ID. המפתח נשמר רק במכשיר שלך.</p>
+    <div class="field"><label>Google API Key</label><input id="google-api-key-input" placeholder="AIza..."></div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('google-settings-overlay')">ביטול</button>
+      <button class="btn btn-accent" style="flex:1" onclick="saveGoogleApiKey()">שמור והתחבר</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PDF IMPORT REVIEW MODAL ============ -->
+<div class="overlay" id="pdf-review-overlay">
+  <div class="modal" style="max-width:600px;">
+    <h2>סקירת ייבוא מ-PDF</h2>
+    <p style="font-size:12px;color:var(--text-dim);margin:-8px 0 12px;">זיהוי אוטומטי לפי מק"טים בטקסט - חלקי ולא מושלם. סמן, ערוך או הסר שורות לפני ההוספה לקטלוג.</p>
+    <div class="toolbar" style="margin-bottom:8px;">
+      <input class="search" id="pdf-review-search" placeholder="סינון..." oninput="renderPdfReviewList()">
+      <button class="btn btn-sm" onclick="togglePdfSelectAll()">בחר/בטל הכל</button>
+    </div>
+    <div id="pdf-review-list" style="max-height:340px;overflow-y:auto;border:1px solid var(--border);border-radius:8px;"></div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('pdf-review-overlay')">ביטול</button>
+      <button class="btn btn-accent" style="flex:1" onclick="commitPdfCandidates()">הוסף נבחרים לקטלוג</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NEW ORDER MODAL ============ -->
+<div class="overlay" id="order-overlay">
+  <div class="modal">
+    <h2 id="order-modal-title">הזמנה חדשה</h2>
+    <div class="field">
+      <label>ספק *</label>
+      <select id="order-supplier" onchange="renderOrderCatalog()"></select>
+    </div>
+
+    <div class="field">
+      <label>קטלוג הספק</label>
+      <input id="order-catalog-search" placeholder="חפש מוצר בקטלוג..." oninput="renderOrderCatalog()">
+      <div class="picker-list" id="order-catalog-list" style="max-height:230px;"></div>
+    </div>
+
+    <details style="margin-bottom:12px;">
+      <summary style="cursor:pointer;font-size:12.5px;color:var(--text-muted);font-weight:600;padding:4px 0;">אפשרויות נוספות: מהמלאי הקיים / פריט מותאם אישית</summary>
+      <div class="field" style="margin-top:10px;">
+        <label>הוסף פריט קיים מהמלאי (כללי)</label>
+        <input id="order-item-search" placeholder="חפש פריט..." oninput="renderOrderPicker()">
+        <div class="picker-list" id="order-picker"></div>
+      </div>
+      <div class="field-row" style="align-items:flex-end;">
+        <div class="field"><label>פריט מותאם אישית (לא בקטלוג)</label><input id="order-new-name" placeholder="שם פריט"></div>
+        <div class="field" style="max-width:90px;"><label>כמות</label><input id="order-new-qty" type="number" min="1" value="1"></div>
+        <button class="btn btn-sm" style="margin-bottom:12px;" onclick="addNewOrderItem()">+ הוסף</button>
+      </div>
+    </details>
+
+    <div class="field">
+      <label>פריטים בהזמנה</label>
+      <div id="order-draft-items"></div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('order-overlay')">ביטול</button>
+      <button class="btn btn-accent" id="order-save-btn" onclick="saveOrder()">צור הזמנה</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SHARE ORDER MODAL ============ -->
+<div class="overlay" id="share-order-overlay">
+  <div class="modal">
+    <h2>שיתוף ההזמנה</h2>
+    <p style="font-size:12.5px;color:var(--text-dim);margin:-8px 0 16px;">בחר איך לשלוח את ההזמנה לספק</p>
+    <div style="display:flex;flex-direction:column;gap:9px;">
+      <button class="btn btn-accent" style="justify-content:center;padding:13px;font-size:14px;" onclick="shareOrderWhatsapp()">💬 פתח בוואטסאפ</button>
+      <button class="btn" style="justify-content:center;padding:13px;font-size:14px;" onclick="shareOrderCopyText()">📋 העתק כטקסט</button>
+      <button class="btn" style="justify-content:center;padding:13px;font-size:14px;" onclick="shareOrderPdf()">🖨️ מסמך הזמנה מודפס / PDF</button>
+    </div>
+    <div id="share-fallback-box" style="display:none;margin-top:16px;">
+      <label style="display:block;font-size:12px;color:var(--text-muted);margin-bottom:5px;font-weight:600;">הטקסט נבחר אוטומטית - העתק ידנית (Ctrl+C או החזק ללחוץ ← העתק)</label>
+      <textarea id="share-fallback-text" rows="9" readonly class="mono" style="width:100%;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px;color:var(--text);font-size:12px;"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('share-order-overlay')">סגור</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ================= sample catalog seed (from ERCO catalog, project knowledge) ================= */
+const ERCO_CATALOG_SAMPLE = [
+  {name:"מהדק חיבור מהיר, 3 כניסות 0.2-2.5 ממ\"ר", sku:"991505915", category:"material", unit:"יח'"},
+  {name:"מהדק טורי מס' 2 (תקן ישראלי)", sku:"1517004", category:"material", unit:"יח'"},
+  {name:"מהדק טורי מס' 3 (תקן ישראלי)", sku:"15170051", category:"material", unit:"יח'"},
+  {name:"מהדק חרסינה כפול מס' 2", sku:"99820510", category:"material", unit:"יח'"},
+  {name:"פס צבירה מבודד 125A, 4 פסים / 15 כניסות", sku:"99223005", category:"material", unit:"יח'"},
+  {name:"פס גישור חד פאזי A80", sku:"696444032", category:"material", unit:"יח'"},
+  {name:"פס צבירה מבודד 125A, 2 פסים / 7 כניסות", sku:"99223001", category:"material", unit:"יח'"},
+  {name:"נעל כבל אלומיניום/נחושת 16 ממ\"ר", sku:"63300311", category:"material", unit:"יח'"},
+  {name:"נעל כבל אלומיניום/נחושת 35 ממ\"ר", sku:"63300313", category:"material", unit:"יח'"},
+  {name:"נעל כבל נחושת תקן דין 16 ממ\"ר", sku:"63301950", category:"material", unit:"יח'"},
+  {name:"נעל כבל נחושת תקן דין 35 ממ\"ר", sku:"63301955", category:"material", unit:"יח'"},
+  {name:"מחבר לחץ פין אלומיניום-נחושת 16 מ\"מ", sku:"992200591", category:"material", unit:"אריזה"},
+  {name:"מהדק בדיקה עם פין בדיקה 6 מ\"מ", sku:"1800585", category:"material", unit:"יח'"},
+  {name:"גשר עליון 2 פול", sku:"1800518", category:"material", unit:"יח'"},
+  {name:"גשר עליון 4 פול", sku:"1800519", category:"material", unit:"יח'"},
+  {name:"שקע RJ-45 מסוכך עה\"ט", sku:"839513", category:"material", unit:"יח'"},
+  {name:"תקע מודולרי RJ45 Cat-6 UTP", sku:"9411086", category:"material", unit:"יח'"},
+  {name:"מפסק ביניים A2 לבן", sku:"99323990", category:"material", unit:"יח'"},
+  {name:"חוט עם מפסק, 180 ס\"מ שחור", sku:"993239923", category:"material", unit:"יח'"},
+  {name:"כבל גרלנדה + בתי נורה, 10 מ'", sku:"3830106", category:"material", unit:"יח'"},
+  {name:"כבל כוח N2XY 3x1.5 ממ\"ר", sku:"5951020", category:"material", unit:"מ'"},
+  {name:"כבל כוח N2XY 3x2.5 ממ\"ר", sku:"5951060", category:"material", unit:"מ'"},
+  {name:"כבל כוח N2XY 3x4 ממ\"ר", sku:"5951100", category:"material", unit:"מ'"},
+  {name:"כבל כוח N2XY 4x1.5 ממ\"ר", sku:"5951030", category:"material", unit:"מ'"},
+  {name:"כבל כוח N2XY 4x2.5 ממ\"ר", sku:"5951070", category:"material", unit:"מ'"},
+  {name:"כבל כוח N2XY 3x10 ממ\"ר", sku:"5952020", category:"material", unit:"מ'"},
+  {name:"חוט גמיש HO5V-K 1x1 שחור", sku:"5955100", category:"material", unit:"מ'"},
+  {name:"לוח חשמל מיתוג 2 מודול עה\"ט", sku:"3940022", category:"material", unit:"יח'"},
+  {name:"לוח חשמל מיתוג 6 מודול עה\"ט", sku:"3940024", category:"material", unit:"יח'"},
+  {name:"לוח חשמל ל-12 ח\"א", sku:"2818051", category:"material", unit:"יח'"},
+  {name:"ארון מתכת 400x400x200 מ\"מ IP66", sku:"4620007", category:"material", unit:"יח'"},
+  {name:"טסטר מתח לא מגע UT12E-ROW", sku:"UT12E-ROW", category:"tool", unit:"יח'"},
+  {name:"טסטר מתח רב-תכליתי UT18D", sku:"UT18D", category:"tool", unit:"יח'"},
+  {name:"נורת LED פחם גלוב E27 8W", sku:"4611235349", category:"material", unit:"יח'"},
+  {name:"נורת LED פחם נר E14 4.5W עמעום", sku:"69532251595P", category:"material", unit:"יח'"},
+  {name:"סוללות AA בבליסטר (4 יח')", sku:"167005", category:"material", unit:"אריזה"},
+  {name:"סוללות AAA בבליסטר (10 יח')", sku:"167015", category:"material", unit:"אריזה"},
+  {name:"מנעול חשמלי לשער כניסה + מפסק", sku:"99723502", category:"material", unit:"יח'"},
+  {name:"מקודד מתכתי עה\"ט (קוד/תג זיהוי)", sku:"10505640", category:"material", unit:"יח'"},
+  {name:"מקודד מתכתי עה\"ט - דגם קומפקטי", sku:"10505641", category:"material", unit:"יח'"},
+  {name:"לחצן פתיחת דלת - מתכתי צר", sku:"10505645", category:"material", unit:"יח'"},
+  {name:"לחצן פתיחת דלת - מתכתי רחב", sku:"10505647", category:"material", unit:"יח'"},
+  {name:"מפוח (ונטה) 100 מ\"מ", sku:"1640410", category:"material", unit:"יח'"},
+  {name:"מפוח (ונטה) 210 מ\"מ (8\")", sku:"1640416", category:"material", unit:"יח'"},
+  {name:'מאוורר קיר תעשייתי 26"', sku:"1640020", category:"material", unit:"יח'"},
+  {name:'מאוורר עמוד תעשייתי 26"', sku:"1640010", category:"material", unit:"יח'"},
+  {name:"קטלן חרקים W6X1", sku:"1650003", category:"material", unit:"יח'"},
+  {name:"קטלן חרקים W8X2", sku:"1650006", category:"material", unit:"יח'"},
+  {name:"נורה לקטלן חרקים W6 פלורסנט", sku:"4612002", category:"material", unit:"יח'"},
+  {name:"נורה לקטלן חרקים W8 פלורסנט", sku:"46120020", category:"material", unit:"יח'"},
+  {name:"מחבט חשמלי לקטילת יתושים", sku:"1650015", category:"tool", unit:"יח'"},
+  {name:"מהדק פחית מס' 1", sku:"997238155", category:"material", unit:"יח'"},
+  {name:"וו עוגן 1.6 מטר", sku:"7610152", category:"material", unit:"יח'"},
+  {name:"ביצת עוגן", sku:"7610150", category:"material", unit:"יח'"},
+];
+
+/* ================= storage helpers ================= */
+/* ================= app version (bump this on every delivered update, so you can confirm which build is live) ================= */
+const APP_VERSION = '2026-07-13.9';
+
+async function storeGet(key, fallback){
+  try{
+    const raw = localStorage.getItem('einv:'+key);
+    if(raw === null || raw === undefined) return fallback;
+    return JSON.parse(raw);
+  }catch(e){ console.error('storage get failed',key,e); return fallback; }
+}
+async function storeSet(key, val){
+  try{
+    localStorage.setItem('einv:'+key, JSON.stringify(val));
+    return true;
+  }catch(e){ console.error('storage set failed',key,e); showToast('שגיאה בשמירה - אחסון מלא או חסום'); return false; }
+}
+
+/* ================= state ================= */
+let items = [];
+let suppliers = [];
+let orders = [];
+let locations = [];
+let catalog = [];
+let invFilter = 'all';
+let invViewMode = 'item';
+let editingItemId = null;
+let editingLocations = []; // working copy of {locationId,qty} while item modal is open
+let editingCatalogId = null;
+let openInvIds = new Set();
+let orderDraftItems = []; // {itemId,name,qty,unit,isNew}
+let openOrderIds = new Set();
+
+const uid = () => (crypto.randomUUID ? crypto.randomUUID() : 'id-'+Date.now()+'-'+Math.random().toString(16).slice(2));
+
+async function init(){
+  items = await storeGet('items', []);
+  suppliers = await storeGet('suppliers', null);
+  if(suppliers === null){
+    suppliers = [
+      {id:uid(), name:'ארקה', phone:'', email:''},
+      {id:uid(), name:'ברנד אספקה טכנית', phone:'', email:''}
+    ];
+    await storeSet('suppliers', suppliers);
+  }
+  locations = await storeGet('locations', null);
+  if(locations === null){
+    locations = [
+      {id:uid(), name:'מחסן'},
+      {id:uid(), name:'תיק עבודה'}
+    ];
+    await storeSet('locations', locations);
+  }
+  orders = await storeGet('orders', []);
+  catalog = await storeGet('catalog', null);
+  await initGoogleDrive();
+  if(catalog === null){
+    // first run: seed a sample catalog from the ERCO catalog, under a new "ERCO" supplier
+    let erco = suppliers.find(s=>s.name==='ERCO');
+    if(!erco){
+      erco = {id:uid(), name:'ERCO', phone:'', email:''};
+      suppliers.push(erco);
+      await storeSet('suppliers', suppliers);
+    }
+    catalog = ERCO_CATALOG_SAMPLE.map(p=>({id:uid(), supplierId:erco.id, linkedItemId:null, price:null, ...p}));
+    await storeSet('catalog', catalog);
+  }
+
+  // migrate items from the old single qty/location schema, if present
+  let migrated = false;
+  items.forEach(it=>{
+    if(!it.locations){
+      migrated = true;
+      let locId = null;
+      if(it.location){
+        let existing = locations.find(l=>l.name===it.location);
+        if(!existing){ existing = {id:uid(), name:it.location}; locations.push(existing); }
+        locId = existing.id;
+      }else if(locations.length>0){
+        locId = locations[0].id;
+      }
+      it.locations = locId ? [{locationId:locId, qty:Number(it.qty)||0}] : [];
+      delete it.qty;
+      delete it.location;
+    }
+  });
+  if(migrated){ await storeSet('items', items); await storeSet('locations', locations); }
+
+  document.getElementById('dash-date').textContent = new Date().toLocaleDateString('he-IL',{weekday:'long',day:'numeric',month:'long'});
+  document.querySelectorAll('.app-version-tag').forEach(el=> el.textContent = 'גרסה '+APP_VERSION);
+
+  // quick storage self-test - warns immediately if localStorage isn't actually persisting
+  try{
+    const testKey = 'einv:__storage_test__';
+    localStorage.setItem(testKey, '1');
+    const ok = localStorage.getItem(testKey) === '1';
+    localStorage.removeItem(testKey);
+    if(!ok) showToast('אזהרה: האחסון בדפדפן לא זמין - הנתונים לא יישמרו!');
+  }catch(e){
+    console.error('storage self-test failed', e);
+    showToast('אזהרה: האחסון בדפדפן חסום - הנתונים לא יישמרו!');
+  }
+
+  renderAll();
+}
+
+function renderAll(){
+  renderDashboard();
+  renderInventory();
+  renderOrders();
+  fillSupplierSelects();
+}
+
+/* ================= nav / tabs ================= */
+document.querySelectorAll('.navbtn, .bottomnav button').forEach(btn=>{
+  btn.addEventListener('click', ()=> switchTab(btn.dataset.tab));
+});
+function switchTab(tab){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById('view-'+tab).classList.add('active');
+  document.querySelectorAll('.navbtn, .bottomnav button').forEach(b=>{
+    b.classList.toggle('active', b.dataset.tab===tab);
+  });
+}
+
+/* ================= toast ================= */
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 2000);
+}
+
+/* ================= modal helpers ================= */
+function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+function openModalEl(id){ document.getElementById(id).classList.add('open'); }
+document.querySelectorAll('.overlay').forEach(ov=>{
+  ov.addEventListener('click', e=>{ if(e.target===ov) ov.classList.remove('open'); });
+});
+
+/* ================= dashboard ================= */
+function itemTotalQty(it){ return (it.locations||[]).reduce((s,l)=> s + (Number(l.qty)||0), 0); }
+function locName(id){ const l = locations.find(x=>x.id===id); return l ? l.name : 'לא ידוע'; }
+function isLow(it){ return it.minQty>0 && itemTotalQty(it)<=it.minQty; }
+
+function renderDashboard(){
+  const low = items.filter(isLow);
+  document.getElementById('stat-low').textContent = low.length;
+  const openOrders = orders.filter(o=>o.status!=='received').length;
+  document.getElementById('stat-orders').textContent = openOrders;
+  const value = items.reduce((s,it)=> s + (Number(it.price)||0)*itemTotalQty(it), 0);
+  document.getElementById('stat-value').textContent = '₪' + value.toLocaleString('he-IL',{maximumFractionDigits:0});
+
+  const list = document.getElementById('dash-low-list');
+  if(low.length===0){
+    list.innerHTML = `<div class="empty"><div class="ic">✓</div><p>אין פריטים במלאי נמוך כרגע — הכל תקין.</p></div>`;
+    return;
+  }
+  list.innerHTML = low.map(it=>`
+    <div class="item-row">
+      <div class="led bad"></div>
+      <div class="info">
+        <div class="name">${esc(it.name)}</div>
+        <div class="meta"><span class="mono">${itemTotalQty(it)} ${esc(it.unit||'')}</span> מתוך מינימום <span class="mono">${it.minQty}</span></div>
+      </div>
+      <button class="btn btn-sm btn-accent" onclick="quickAddToOrder('${it.id}')">+ להזמנה</button>
+    </div>
+  `).join('');
+}
+
+function quickAddToOrder(itemId){
+  const it = items.find(i=>i.id===itemId);
+  if(!it) return;
+  openOrderModal();
+  if(it.supplierId) document.getElementById('order-supplier').value = it.supplierId;
+  const total = itemTotalQty(it);
+  const suggestedQty = Math.max(it.minQty*2 - total, it.minQty||1, 1);
+  orderDraftItems.push({itemId:it.id, name:it.name, qty:suggestedQty, unit:it.unit||'', isNew:false});
+  renderOrderDraft();
+}
+
+/* ================= inventory ================= */
+function setInvFilter(f){
+  invFilter = f;
+  document.querySelectorAll('#view-inventory .chip').forEach(c=>c.classList.toggle('active', c.dataset.f===f));
+  renderInventory();
+}
+function setInvViewMode(mode){
+  invViewMode = mode;
+  document.querySelectorAll('#inv-viewmode button').forEach(b=>b.classList.toggle('on', b.dataset.v===mode));
+  renderInventory();
+}
+
+function filteredInvItems(){
+  const q = (document.getElementById('inv-search').value||'').trim().toLowerCase();
+  let list = items.slice();
+  if(invFilter==='tool') list = list.filter(i=>i.category==='tool');
+  if(invFilter==='material') list = list.filter(i=>i.category==='material');
+  if(invFilter==='low') list = list.filter(isLow);
+  if(q) list = list.filter(i=> i.name.toLowerCase().includes(q) || (i.sku||'').toLowerCase().includes(q));
+  list.sort((a,b)=> a.name.localeCompare(b.name,'he'));
+  return list;
+}
+
+function renderInventory(){
+  const list = filteredInvItems();
+  const el = document.getElementById('inv-list');
+  if(list.length===0){
+    el.innerHTML = `<div class="empty"><div class="ic">🧰</div><p>אין עדיין פריטים במלאי. הוסף כלי או חומר ראשון כדי להתחיל לעקוב.</p>
+      <button class="btn btn-accent" onclick="openItemModal()">+ פריט חדש</button></div>`;
+    return;
+  }
+  if(invViewMode==='location'){ renderInventoryByLocation(list, el); }
+  else { renderInventoryByItem(list, el); }
+}
+
+function renderInventoryByItem(list, el){
+  el.innerHTML = list.map(it=>{
+    const total = itemTotalQty(it);
+    const ledClass = it.minQty<=0 ? 'off' : (total<=it.minQty ? 'bad' : (total<=it.minQty*1.5 ? 'warn' : 'ok'));
+    const supName = suppliers.find(s=>s.id===it.supplierId)?.name;
+    const locs = (it.locations||[]).filter(l=>l.locationId);
+    const isOpen = openInvIds.has(it.id);
+    const locSummary = locs.length ? `📍 ${locs.length} מיקומים` : '📍 ללא מיקום';
+    return `
+    <div class="inv-card">
+      <div class="item-row">
+        <div class="led ${ledClass}"></div>
+        ${it.imageUrl?`<img class="thumb thumb-sm" src="${esc(it.imageUrl)}" alt="" onerror="this.style.display='none'">`:''}
+        <div class="info" onclick="toggleInvExpand('${it.id}')" style="cursor:pointer;">
+          <div class="name">${esc(it.name)} <span class="tag ${it.category}">${it.category==='tool'?'כלי':'חומר'}</span></div>
+          <div class="meta">
+            ${it.sku?`<span>מק"ט ${esc(it.sku)}</span>`:''}
+            ${supName?`<span>${esc(supName)}</span>`:''}
+            <span>${locSummary}</span>
+          </div>
+        </div>
+        <div class="qty-box">
+          <div><div class="qty-val">${total}</div><div class="qty-unit">${esc(it.unit||'')}</div></div>
+          ${it.productUrl?`<a class="prod-link" href="${esc(it.productUrl)}" target="_blank" rel="noopener" title="דף המוצר אצל הספק" onclick="event.stopPropagation()">🔗</a>`:''}
+          <button class="btn btn-icon btn-ghost" onclick="openItemModal('${it.id}')" title="עריכה">✎</button>
+        </div>
+      </div>
+      <div class="loc-breakdown ${isOpen?'open':''}">
+        ${locs.length===0
+          ? `<div class="loc-empty-hint">לא הוגדר מיקום לפריט זה — לחץ על ✎ כדי להוסיף.</div>`
+          : locs.map(l=>`
+            <div class="loc-line">
+              <span class="lname">📍 ${esc(locName(l.locationId))}</span>
+              <span class="qty-box">
+                <button class="qty-adj" onclick="adjustLocQty('${it.id}','${l.locationId}',-1)">−</button>
+                <span class="mono">${l.qty} ${esc(it.unit||'')}</span>
+                <button class="qty-adj" onclick="adjustLocQty('${it.id}','${l.locationId}',1)">+</button>
+              </span>
+            </div>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderInventoryByLocation(list, el){
+  if(locations.length===0){
+    el.innerHTML = `<div class="empty"><div class="ic">📍</div><p>לא הוגדרו מיקומי אחסון עדיין.</p>
+      <button class="btn btn-accent" onclick="openLocationsModal()">+ הגדר מיקום</button></div>`;
+    return;
+  }
+  let html = '';
+  locations.forEach(loc=>{
+    const rows = [];
+    list.forEach(it=>{
+      const l = (it.locations||[]).find(x=>x.locationId===loc.id);
+      if(l && Number(l.qty)>0) rows.push({it, qty:l.qty});
+    });
+    html += `<div class="loc-group-head"><h3>📍 ${esc(loc.name)}</h3><span class="count">${rows.length} פריטים</span></div>`;
+    if(rows.length===0){
+      html += `<div class="loc-empty-hint">אין פריטים במיקום זה</div>`;
+    }else{
+      html += `<div class="inv-card">` + rows.map(r=>`
+        <div class="item-row">
+          <div class="info" onclick="openItemModal('${r.it.id}')" style="cursor:pointer;">
+            <div class="name">${esc(r.it.name)} <span class="tag ${r.it.category}">${r.it.category==='tool'?'כלי':'חומר'}</span></div>
+          </div>
+          <div class="qty-box">
+            <button class="qty-adj" onclick="adjustLocQty('${r.it.id}','${loc.id}',-1)">−</button>
+            <div><div class="qty-val">${r.qty}</div><div class="qty-unit">${esc(r.it.unit||'')}</div></div>
+            <button class="qty-adj" onclick="adjustLocQty('${r.it.id}','${loc.id}',1)">+</button>
+          </div>
+        </div>`).join('') + `</div>`;
+    }
+  });
+  el.innerHTML = html;
+}
+
+function toggleInvExpand(id){
+  if(openInvIds.has(id)) openInvIds.delete(id); else openInvIds.add(id);
+  renderInventory();
+}
+
+function adjustLocQty(itemId, locationId, delta){
+  const it = items.find(i=>i.id===itemId);
+  if(!it) return;
+  const l = (it.locations||[]).find(x=>x.locationId===locationId);
+  if(!l) return;
+  l.qty = Math.max(0, (Number(l.qty)||0) + delta);
+  storeSet('items', items);
+  renderInventory(); renderDashboard();
+}
+
+function openItemModal(id){
+  editingItemId = id || null;
+  document.getElementById('item-modal-title').textContent = id ? 'עריכת פריט' : 'פריט חדש';
+  document.getElementById('item-delete-btn').style.display = id ? 'inline-flex' : 'none';
+  fillSupplierSelects();
+  if(id){
+    const it = items.find(i=>i.id===id);
+    document.getElementById('item-name').value = it.name||'';
+    document.getElementById('item-category').value = it.category||'tool';
+    document.getElementById('item-sku').value = it.sku||'';
+    document.getElementById('item-unit').value = it.unit||"יח'";
+    document.getElementById('item-min').value = it.minQty ?? 0;
+    document.getElementById('item-price').value = it.price ?? '';
+    document.getElementById('item-supplier').value = it.supplierId||'';
+    document.getElementById('item-notes').value = it.notes||'';
+    document.getElementById('item-image').value = it.imageUrl||'';
+    document.getElementById('item-link').value = it.productUrl||'';
+    editingLocations = JSON.parse(JSON.stringify(it.locations||[]));
+  }else{
+    document.getElementById('item-name').value = '';
+    document.getElementById('item-category').value = 'tool';
+    document.getElementById('item-sku').value = '';
+    document.getElementById('item-unit').value = "יח'";
+    document.getElementById('item-min').value = 0;
+    document.getElementById('item-price').value = '';
+    document.getElementById('item-supplier').value = '';
+    document.getElementById('item-notes').value = '';
+    document.getElementById('item-image').value = '';
+    document.getElementById('item-link').value = '';
+    editingLocations = locations.length ? [{locationId:locations[0].id, qty:1}] : [];
+  }
+  renderLocationsEditor();
+  openModalEl('item-overlay');
+}
+
+function renderLocationsEditor(){
+  const el = document.getElementById('item-locations-editor');
+  if(editingLocations.length===0){
+    el.innerHTML = `<div class="loc-empty-hint">אין מיקומים בפריט זה — הוסף מיקום למטה.</div>`;
+  }else{
+    el.innerHTML = editingLocations.map((l,idx)=>`
+      <div class="loc-row">
+        <select onchange="editingLocations[${idx}].locationId=this.value">
+          ${locations.map(loc=>`<option value="${loc.id}" ${loc.id===l.locationId?'selected':''}>${esc(loc.name)}</option>`).join('')}
+        </select>
+        <input type="number" min="0" step="1" value="${l.qty}" onchange="editingLocations[${idx}].qty=Number(this.value)||0; updateItemTotalDisplay();">
+        <span class="x" onclick="removeLocationRow(${idx})">✕</span>
+      </div>
+    `).join('');
+  }
+  updateItemTotalDisplay();
+}
+function addLocationRow(){
+  if(locations.length===0){ showToast('אין מיקומים מוגדרים - הוסף מיקום דרך כפתור "מיקומים" קודם'); return; }
+  const used = editingLocations.map(l=>l.locationId);
+  const next = locations.find(l=>!used.includes(l.id)) || locations[0];
+  editingLocations.push({locationId:next.id, qty:0});
+  renderLocationsEditor();
+}
+function removeLocationRow(idx){
+  editingLocations.splice(idx,1);
+  renderLocationsEditor();
+}
+function updateItemTotalDisplay(){
+  const total = editingLocations.reduce((s,l)=> s + (Number(l.qty)||0), 0);
+  document.getElementById('item-total-qty').textContent = total;
+  document.getElementById('item-total-unit').textContent = document.getElementById('item-unit').value||'';
+}
+
+function saveItem(){
+  const name = document.getElementById('item-name').value.trim();
+  if(!name){ showToast('נא להזין שם פריט'); return; }
+  if(editingLocations.length===0){ showToast('נא להוסיף לפחות מיקום אחד'); return; }
+
+  const data = {
+    name,
+    category: document.getElementById('item-category').value,
+    sku: document.getElementById('item-sku').value.trim(),
+    unit: document.getElementById('item-unit').value.trim(),
+    minQty: Number(document.getElementById('item-min').value)||0,
+    price: document.getElementById('item-price').value ? Number(document.getElementById('item-price').value) : null,
+    supplierId: document.getElementById('item-supplier').value || null,
+    notes: document.getElementById('item-notes').value.trim(),
+    imageUrl: document.getElementById('item-image').value.trim(),
+    productUrl: document.getElementById('item-link').value.trim(),
+    locations: editingLocations.map(l=>({locationId:l.locationId, qty:Math.max(0,Number(l.qty)||0)})),
+  };
+
+  if(editingItemId){
+    const idx = items.findIndex(i=>i.id===editingItemId);
+    items[idx] = {...items[idx], ...data};
+  }else{
+    items.push({id:uid(), ...data});
+  }
+  storeSet('items', items);
+  closeModal('item-overlay');
+  renderInventory(); renderDashboard();
+  showToast('נשמר בהצלחה');
+}
+
+function deleteCurrentItem(){
+  if(!editingItemId) return;
+  if(!confirm('למחוק את הפריט הזה מהמלאי?')) return;
+  items = items.filter(i=>i.id!==editingItemId);
+  storeSet('items', items);
+  closeModal('item-overlay');
+  renderInventory(); renderDashboard();
+  showToast('הפריט נמחק');
+}
+
+/* ================= suppliers ================= */
+function fillSupplierSelects(){
+  const opts = '<option value="">— ללא —</option>' + suppliers.map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join('');
+  const itemSel = document.getElementById('item-supplier');
+  const cur1 = itemSel.value;
+  itemSel.innerHTML = opts;
+  itemSel.value = cur1;
+
+  const orderSel = document.getElementById('order-supplier');
+  const cur2 = orderSel.value;
+  orderSel.innerHTML = suppliers.map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join('') || '<option value="">אין ספקים</option>';
+  orderSel.value = cur2;
+
+  const catSel = document.getElementById('catalog-supplier-select');
+  const cur3 = catSel.value;
+  catSel.innerHTML = suppliers.map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join('') || '<option value="">אין ספקים</option>';
+  catSel.value = cur3 || (suppliers[0]?.id || '');
+}
+
+function openSuppliersModal(){
+  renderSuppliersList();
+  openModalEl('suppliers-overlay');
+}
+function renderSuppliersList(){
+  const el = document.getElementById('suppliers-list');
+  if(suppliers.length===0){ el.innerHTML = `<div class="empty" style="padding:20px;"><p>אין ספקים עדיין.</p></div>`; return; }
+  el.innerHTML = suppliers.map(s=>`
+    <div class="picker-row">
+      <div>
+        <div style="font-weight:600;">${esc(s.name)}</div>
+        <div style="font-size:11px;color:var(--text-dim);">${esc(s.phone||'')} ${s.phone&&s.email?'·':''} ${esc(s.email||'')}</div>
+      </div>
+      <button class="btn btn-icon btn-ghost" onclick="deleteSupplier('${s.id}')">✕</button>
+    </div>
+  `).join('');
+}
+function addSupplier(){
+  const name = document.getElementById('sup-name').value.trim();
+  if(!name){ showToast('נא להזין שם ספק'); return; }
+  suppliers.push({id:uid(), name, phone:document.getElementById('sup-phone').value.trim(), email:document.getElementById('sup-email').value.trim()});
+  storeSet('suppliers', suppliers);
+  document.getElementById('sup-name').value='';
+  document.getElementById('sup-phone').value='';
+  document.getElementById('sup-email').value='';
+  renderSuppliersList();
+  fillSupplierSelects();
+  showToast('הספק נוסף');
+}
+function deleteSupplier(id){
+  if(!confirm('למחוק ספק זה?')) return;
+  suppliers = suppliers.filter(s=>s.id!==id);
+  storeSet('suppliers', suppliers);
+  renderSuppliersList();
+  fillSupplierSelects();
+  renderOrders();
+}
+
+/* ================= locations ================= */
+function openLocationsModal(){
+  renderLocationsList();
+  openModalEl('locations-overlay');
+}
+function renderLocationsList(){
+  const el = document.getElementById('locations-list');
+  if(locations.length===0){ el.innerHTML = `<div class="empty" style="padding:20px;"><p>אין מיקומים עדיין.</p></div>`; return; }
+  el.innerHTML = locations.map(l=>`
+    <div class="picker-row">
+      <div style="font-weight:600;">📍 ${esc(l.name)}</div>
+      <button class="btn btn-icon btn-ghost" onclick="deleteLocation('${l.id}')">✕</button>
+    </div>
+  `).join('');
+}
+function addLocation(){
+  const name = document.getElementById('loc-name').value.trim();
+  if(!name){ showToast('נא להזין שם מיקום'); return; }
+  locations.push({id:uid(), name});
+  storeSet('locations', locations);
+  document.getElementById('loc-name').value='';
+  renderLocationsList();
+  showToast('המיקום נוסף');
+}
+function deleteLocation(id){
+  if(!confirm('למחוק מיקום זה? כל הכמויות ששויכו אליו יימחקו מהפריטים.')) return;
+  locations = locations.filter(l=>l.id!==id);
+  items.forEach(it=>{ if(it.locations) it.locations = it.locations.filter(l=>l.locationId!==id); });
+  storeSet('locations', locations);
+  storeSet('items', items);
+  renderLocationsList();
+  renderInventory(); renderDashboard();
+  showToast('המיקום נמחק');
+}
+
+/* ================= supplier catalog ================= */
+function openCatalogModal(preselectSupplierId){
+  fillSupplierSelects();
+  const sel = document.getElementById('catalog-supplier-select');
+  if(preselectSupplierId) sel.value = preselectSupplierId;
+  cancelCatalogEdit();
+  renderCatalogManageList();
+  openModalEl('catalog-overlay');
+}
+
+function renderCatalogManageList(){
+  const supplierId = document.getElementById('catalog-supplier-select').value;
+  const el = document.getElementById('catalog-manage-list');
+  const list = catalog.filter(c=>c.supplierId===supplierId).sort((a,b)=>a.name.localeCompare(b.name,'he'));
+  if(list.length===0){
+    el.innerHTML = `<div class="catalog-empty">אין עדיין מוצרים בקטלוג של הספק הזה. הוסף מוצר ראשון למטה.</div>`;
+    return;
+  }
+  el.innerHTML = list.map(c=>`
+    <div class="product-card">
+      ${c.imageUrl?`<img class="thumb" src="${esc(c.imageUrl)}" alt="" onerror="this.style.display='none'">`:''}
+      <div class="pinfo" style="cursor:pointer;" onclick="editCatalogProduct('${c.id}')">
+        <div class="pname">${esc(c.name)} ${c.linkedItemId?'<span class="linked-badge">במלאי</span>':''}</div>
+        <div class="pmeta">
+          <span class="tag ${c.category}">${c.category==='tool'?'כלי':'חומר'}</span>
+          ${c.sku?`<span>מק"ט ${esc(c.sku)}</span>`:''}
+          ${c.unit?`<span>${esc(c.unit)}</span>`:''}
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;">
+        ${c.price?`<span class="pprice">₪${Number(c.price).toLocaleString('he-IL')}</span>`:''}
+        ${c.productUrl?`<a class="prod-link" href="${esc(c.productUrl)}" target="_blank" rel="noopener" title="דף המוצר אצל הספק" onclick="event.stopPropagation()">🔗</a>`:''}
+        <button class="btn btn-icon btn-ghost" onclick="deleteCatalogProduct('${c.id}')">✕</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function saveCatalogProduct(){
+  const supplierId = document.getElementById('catalog-supplier-select').value;
+  const name = document.getElementById('cat-name').value.trim();
+  if(!supplierId){ showToast('נא לבחור ספק'); return; }
+  if(!name){ showToast('נא להזין שם מוצר'); return; }
+  const data = {
+    supplierId, name,
+    category: document.getElementById('cat-category').value,
+    sku: document.getElementById('cat-sku').value.trim(),
+    unit: document.getElementById('cat-unit').value.trim() || "יח'",
+    price: document.getElementById('cat-price').value ? Number(document.getElementById('cat-price').value) : null,
+    imageUrl: document.getElementById('cat-image').value.trim(),
+    productUrl: document.getElementById('cat-link').value.trim(),
+  };
+  if(editingCatalogId){
+    const idx = catalog.findIndex(c=>c.id===editingCatalogId);
+    catalog[idx] = {...catalog[idx], ...data};
+  }else{
+    catalog.push({id:uid(), linkedItemId:null, ...data});
+  }
+  storeSet('catalog', catalog);
+  cancelCatalogEdit();
+  renderCatalogManageList();
+  showToast('הקטלוג עודכן');
+}
+
+function editCatalogProduct(id){
+  const c = catalog.find(x=>x.id===id);
+  if(!c) return;
+  editingCatalogId = id;
+  document.getElementById('cat-name').value = c.name;
+  document.getElementById('cat-category').value = c.category;
+  document.getElementById('cat-sku').value = c.sku||'';
+  document.getElementById('cat-unit').value = c.unit||"יח'";
+  document.getElementById('cat-price').value = c.price ?? '';
+  document.getElementById('cat-image').value = c.imageUrl||'';
+  document.getElementById('cat-link').value = c.productUrl||'';
+  document.getElementById('cat-save-btn').textContent = '💾 שמור שינויים';
+  document.getElementById('cat-cancel-btn').style.display = 'inline-flex';
+}
+
+function cancelCatalogEdit(){
+  editingCatalogId = null;
+  document.getElementById('cat-name').value = '';
+  document.getElementById('cat-category').value = 'tool';
+  document.getElementById('cat-sku').value = '';
+  document.getElementById('cat-unit').value = "יח'";
+  document.getElementById('cat-price').value = '';
+  document.getElementById('cat-image').value = '';
+  document.getElementById('cat-link').value = '';
+  document.getElementById('cat-save-btn').textContent = '+ הוסף מוצר לקטלוג';
+  document.getElementById('cat-cancel-btn').style.display = 'none';
+}
+
+function deleteCatalogProduct(id){
+  if(!confirm('למחוק מוצר זה מהקטלוג?')) return;
+  catalog = catalog.filter(c=>c.id!==id);
+  storeSet('catalog', catalog);
+  renderCatalogManageList();
+  if(editingCatalogId===id) cancelCatalogEdit();
+}
+
+function importErcoSampleCatalog(){
+  let erco = suppliers.find(s=>s.name==='ERCO');
+  if(!erco){
+    erco = {id:uid(), name:'ERCO', phone:'', email:''};
+    suppliers.push(erco);
+    storeSet('suppliers', suppliers);
+  }
+  let added = 0, updated = 0;
+  ERCO_CATALOG_SAMPLE.forEach(p=>{
+    const existing = catalog.find(c=>c.supplierId===erco.id && c.sku===p.sku);
+    if(existing){
+      existing.name = p.name; existing.category = p.category; existing.unit = p.unit;
+      updated++;
+    }else{
+      catalog.push({id:uid(), supplierId:erco.id, linkedItemId:null, price:null, ...p});
+      added++;
+    }
+  });
+  storeSet('catalog', catalog);
+  fillSupplierSelects();
+  document.getElementById('catalog-supplier-select').value = erco.id;
+  renderCatalogManageList();
+  showToast(`הקטלוג עודכן: ${added} מוצרים חדשים, ${updated} עודכנו`);
+}
+
+function csvEscapeField(v){
+  const s = String(v ?? '');
+  return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s;
+}
+
+function exportCatalogCsv(){
+  const supplierId = document.getElementById('catalog-supplier-select').value;
+  const sup = suppliers.find(s=>s.id===supplierId);
+  const list = catalog.filter(c=>c.supplierId===supplierId);
+  if(list.length===0){ showToast('אין מוצרים לייצוא עבור ספק זה'); return; }
+  const header = ['שם','מק"ט','סוג','יחידה','מחיר','תמונה','קישור'];
+  const rows = list.map(c=>[c.name, c.sku||'', c.category==='tool'?'כלי':'חומר', c.unit||'', c.price ?? '', c.imageUrl||'', c.productUrl||'']);
+  const csv = '\uFEFF' + [header, ...rows].map(r=>r.map(csvEscapeField).join(',')).join('\r\n');
+  const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `קטלוג-${(sup?.name||'ספק').replace(/[^\w\u0590-\u05FF-]+/g,'_')}.csv`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('הקטלוג יוצא כ-CSV');
+}
+
+function parseCsv(text){
+  const rows = [];
+  let i = 0, field = '', row = [], inQuotes = false;
+  while(i < text.length){
+    const c = text[i];
+    if(inQuotes){
+      if(c === '"'){
+        if(text[i+1] === '"'){ field += '"'; i++; } else { inQuotes = false; }
+      }else{ field += c; }
+    }else{
+      if(c === '"'){ inQuotes = true; }
+      else if(c === ','){ row.push(field); field = ''; }
+      else if(c === '\n' || c === '\r'){
+        if(c === '\r' && text[i+1] === '\n') i++;
+        row.push(field); field = ''; rows.push(row); row = [];
+      }else{ field += c; }
+    }
+    i++;
+  }
+  if(field.length > 0 || row.length > 0){ row.push(field); rows.push(row); }
+  return rows.filter(r => r.some(cell => (cell||'').trim() !== ''));
+}
+
+function upsertCatalogProduct(supplierId, data){
+  let existing = null;
+  if(data.sku) existing = catalog.find(c=>c.supplierId===supplierId && c.sku===data.sku);
+  if(!existing && !data.sku) existing = catalog.find(c=>c.supplierId===supplierId && !c.sku && c.name===data.name);
+  if(existing){
+    existing.name = data.name; existing.category = data.category; existing.unit = data.unit;
+    if(data.price!=null) existing.price = data.price;
+    if(data.imageUrl) existing.imageUrl = data.imageUrl;
+    if(data.productUrl) existing.productUrl = data.productUrl;
+    return 'updated';
+  }else{
+    catalog.push({id:uid(), supplierId, linkedItemId:null, name:data.name, sku:data.sku||'', category:data.category, unit:data.unit, price:data.price ?? null, imageUrl:data.imageUrl||'', productUrl:data.productUrl||''});
+    return 'added';
+  }
+}
+
+function mergeCsvRowsIntoCatalog(rows, supplierId){
+  if(rows.length < 1) return {added:0, updated:0, skipped:0, error:'empty'};
+  const header = rows[0].map(h=>h.trim());
+  const findCol = (re)=> header.findIndex(h=>re.test(h));
+  const nameIdx = findCol(/^(שם|name|תיאור)/i);
+  const skuIdx = findCol(/מק.?ט|sku/i);
+  const catIdx = findCol(/סוג|category|type/i);
+  const unitIdx = findCol(/יחיד|unit/i);
+  const priceIdx = findCol(/מחיר|price/i);
+  const imageIdx = findCol(/תמונה|image/i);
+  const linkIdx = findCol(/קישור|link|url/i);
+  if(nameIdx === -1) return {added:0, updated:0, skipped:0, error:'no-name-column'};
+
+  let added = 0, updated = 0, skipped = 0;
+  rows.slice(1).forEach(r=>{
+    const name = (r[nameIdx]||'').trim();
+    if(!name){ skipped++; return; }
+    const sku = skuIdx>-1 ? (r[skuIdx]||'').trim() : '';
+    const catRaw = catIdx>-1 ? (r[catIdx]||'').trim() : '';
+    const category = /כלי|tool/i.test(catRaw) ? 'tool' : 'material';
+    const unit = unitIdx>-1 && r[unitIdx] ? r[unitIdx].trim() : "יח'";
+    const priceRaw = priceIdx>-1 ? (r[priceIdx]||'').trim() : '';
+    const price = priceRaw !== '' && !isNaN(Number(priceRaw)) ? Number(priceRaw) : null;
+    const imageUrl = imageIdx>-1 ? (r[imageIdx]||'').trim() : '';
+    const productUrl = linkIdx>-1 ? (r[linkIdx]||'').trim() : '';
+    const result = upsertCatalogProduct(supplierId, {name, sku, category, unit, price, imageUrl, productUrl});
+    if(result==='added') added++; else updated++;
+  });
+  storeSet('catalog', catalog);
+  return {added, updated, skipped};
+}
+
+function handleCsvImport(event){
+  const file = event.target.files[0];
+  if(!file) return;
+  const supplierId = document.getElementById('catalog-supplier-select').value;
+  if(!supplierId){ showToast('נא לבחור ספק לפני הייבוא'); event.target.value=''; return; }
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const text = String(reader.result||'').replace(/^\uFEFF/, '');
+      const rows = parseCsv(text);
+      const result = mergeCsvRowsIntoCatalog(rows, supplierId);
+      if(result.error==='empty'){ showToast('הקובץ ריק'); return; }
+      if(result.error==='no-name-column'){ showToast('לא נמצאה עמודת "שם" בקובץ'); return; }
+      renderCatalogManageList();
+      showToast(`יובאו: ${result.added} חדשים, ${result.updated} עודכנו${result.skipped?`, ${result.skipped} דולגו`:''}`);
+    }catch(e){
+      console.error(e);
+      showToast('שגיאה בקריאת הקובץ - ודא שזה CSV תקין');
+    }finally{
+      event.target.value = '';
+    }
+  };
+  reader.readAsText(file, 'UTF-8');
+}
+
+/* ================= google drive import ================= */
+const GOOGLE_CLIENT_ID = "848655443338-88fdgs39dsjoi9ks0ac8t04m2end44b3.apps.googleusercontent.com";
+let googleApiKey = null;
+let gapiPickerLoaded = false;
+let driveAccessToken = null;
+let driveTokenClient = null;
+
+async function initGoogleDrive(){
+  googleApiKey = await storeGet('google-api-key', null);
+}
+
+function openGoogleSettingsModal(){
+  document.getElementById('google-api-key-input').value = googleApiKey || '';
+  openModalEl('google-settings-overlay');
+}
+
+async function saveGoogleApiKey(){
+  const key = document.getElementById('google-api-key-input').value.trim();
+  if(!key){ showToast('נא להזין מפתח API'); return; }
+  googleApiKey = key;
+  await storeSet('google-api-key', key);
+  closeModal('google-settings-overlay');
+  showToast('המפתח נשמר - פותח את Drive...');
+  openDrivePickerForCatalog();
+}
+
+function ensureGapiPickerLoaded(){
+  return new Promise((resolve, reject)=>{
+    if(gapiPickerLoaded){ resolve(); return; }
+    if(typeof gapi === 'undefined'){ reject(new Error('gapi not loaded')); return; }
+    gapi.load('picker', { callback: ()=>{ gapiPickerLoaded = true; resolve(); }, onerror: ()=>reject(new Error('picker load failed')) });
+  });
+}
+
+function ensureDriveToken(){
+  return new Promise((resolve, reject)=>{
+    if(typeof google === 'undefined' || !google.accounts || !google.accounts.oauth2){ reject(new Error('google identity not loaded')); return; }
+    if(!driveTokenClient){
+      driveTokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: GOOGLE_CLIENT_ID,
+        scope: 'https://www.googleapis.com/auth/drive.readonly',
+        callback: ()=>{}
+      });
+    }
+    driveTokenClient.callback = (resp)=>{
+      if(resp.error){ reject(resp); return; }
+      driveAccessToken = resp.access_token;
+      resolve(driveAccessToken);
+    };
+    driveTokenClient.requestAccessToken({ prompt: driveAccessToken ? '' : 'consent' });
+  });
+}
+
+async function openDrivePickerForCatalog(){
+  const supplierId = document.getElementById('catalog-supplier-select').value;
+  if(!supplierId){ showToast('נא לבחור ספק לפני הייבוא'); return; }
+  if(!googleApiKey){ openGoogleSettingsModal(); return; }
+  try{
+    await ensureGapiPickerLoaded();
+    const token = await ensureDriveToken();
+    const view = new google.picker.DocsView(google.picker.ViewId.DOCS)
+      .setIncludeFolders(true)
+      .setMimeTypes('text/csv,text/plain,application/vnd.google-apps.spreadsheet,application/pdf');
+    const picker = new google.picker.PickerBuilder()
+      .setOAuthToken(token)
+      .setDeveloperKey(googleApiKey)
+      .addView(view)
+      .setCallback(data=>handleDrivePickerResult(data, supplierId))
+      .build();
+    picker.setVisible(true);
+  }catch(e){
+    console.error(e);
+    showToast('שגיאה בפתיחת Google Drive - בדוק את ה-API Key וההרשאות בקונסולת Google');
+  }
+}
+
+async function handleDrivePickerResult(data, supplierId){
+  if(data.action !== google.picker.Action.PICKED) return;
+  const doc = data.docs[0];
+  showToast('טוען קובץ מ-Drive...');
+  try{
+    if(doc.mimeType === 'application/pdf'){
+      const res = await fetch(`https://www.googleapis.com/drive/v3/files/${doc.id}?alt=media`, {
+        headers:{ Authorization:`Bearer ${driveAccessToken}` }
+      });
+      if(!res.ok) throw new Error('download failed: '+res.status);
+      const buffer = await res.arrayBuffer();
+      await processPdfArrayBuffer(buffer, supplierId);
+      return;
+    }
+    let csvText;
+    if(doc.mimeType === 'application/vnd.google-apps.spreadsheet'){
+      const res = await fetch(`https://www.googleapis.com/drive/v3/files/${doc.id}/export?mimeType=text/csv`, {
+        headers:{ Authorization:`Bearer ${driveAccessToken}` }
+      });
+      if(!res.ok) throw new Error('export failed: '+res.status);
+      csvText = await res.text();
+    }else{
+      const res = await fetch(`https://www.googleapis.com/drive/v3/files/${doc.id}?alt=media`, {
+        headers:{ Authorization:`Bearer ${driveAccessToken}` }
+      });
+      if(!res.ok) throw new Error('download failed: '+res.status);
+      csvText = await res.text();
+    }
+    const rows = parseCsv(csvText.replace(/^\uFEFF/, ''));
+    const result = mergeCsvRowsIntoCatalog(rows, supplierId);
+    if(result.error==='empty'){ showToast('הקובץ ריק'); return; }
+    if(result.error==='no-name-column'){ showToast('לא נמצאה עמודת "שם" בקובץ שנבחר'); return; }
+    renderCatalogManageList();
+    showToast(`יובאו מ-Drive: ${result.added} חדשים, ${result.updated} עודכנו`);
+  }catch(e){
+    console.error(e);
+    showToast('שגיאה בטעינת הקובץ מ-Drive');
+  }
+}
+
+/* ================= pdf catalog import ================= */
+let pdfCandidates = [];
+let pdfImportSupplierId = null;
+
+function handleLocalPdfUpload(event){
+  const file = event.target.files[0];
+  if(!file) return;
+  const supplierId = document.getElementById('catalog-supplier-select').value;
+  if(!supplierId){ showToast('נא לבחור ספק לפני הייבוא'); event.target.value=''; return; }
+  const reader = new FileReader();
+  reader.onload = async ()=>{
+    await processPdfArrayBuffer(reader.result, supplierId);
+    event.target.value = '';
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+async function extractPdfLines(arrayBuffer){
+  if(typeof pdfjsLib !== 'undefined' && pdfjsLib.GlobalWorkerOptions && !pdfjsLib.GlobalWorkerOptions.workerSrc){
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  }
+  const pdf = await pdfjsLib.getDocument({data:new Uint8Array(arrayBuffer)}).promise;
+  const lines = [];
+  for(let p=1; p<=pdf.numPages; p++){
+    const page = await pdf.getPage(p);
+    const content = await page.getTextContent();
+    let cur = '';
+    content.items.forEach(item=>{
+      cur += item.str;
+      if(item.hasEOL){
+        const t = cur.replace(/\s+/g,' ').trim();
+        if(t) lines.push(t);
+        cur = '';
+      }else{
+        cur += ' ';
+      }
+    });
+    if(cur.trim()) lines.push(cur.replace(/\s+/g,' ').trim());
+  }
+  return lines;
+}
+
+const PDF_NOISE_LINE_PATTERNS = [
+  /^עמוד\s*\d+/i, /^page\s*\d+/i, /^\d+\s*\/\s*\d+$/, /^\d+$/,
+  /^www\./i, /^https?:\/\//i, /^טל[\s.:']/i, /^פקס/i, /^tel[\s.:]/i, /^fax/i,
+  /כל הזכויות שמורות/, /^©/, /^\(c\)/i, /^מהדורה/, /^edition/i, /^catalog(ue)?\s*\d*$/i,
+];
+
+function extractCandidatesFromLines(lines){
+  // drop lines that repeat many times across the document (headers/footers/watermarks)
+  const freq = {};
+  lines.forEach(l=>{ const key=l.trim(); if(key) freq[key]=(freq[key]||0)+1; });
+  const REPEAT_LIMIT = 3;
+
+  const skuRegexNumeric = /\b(\d{6,10})\b/g;
+  const skuRegexAlnum = /\b([A-Z]{2,4}\d{1,4}[A-Z]?-?[A-Z0-9]{0,4})\b/g;
+
+  const candidates = [];
+  const seen = new Set();
+
+  function tryAdd(line, idx, sku, matchIndex, matchLen){
+    if(seen.has(sku)) return;
+    let name = (line.slice(0,matchIndex) + ' ' + line.slice(matchIndex+matchLen)).replace(/\s+/g,' ').trim();
+    name = name.replace(/^[-–.,:\s]+|[-–.,:\s]+$/g, '').trim();
+    if(name.length < 4 && idx>0){
+      const prevKey = lines[idx-1].trim();
+      if(!(freq[prevKey]>REPEAT_LIMIT)) name = lines[idx-1].replace(/\s+/g,' ').trim();
+    }
+    if(!name) return;
+    if(name.length>90) name = name.slice(0,90);
+
+    const hebrewCount = (name.match(/[\u0590-\u05FF]/g)||[]).length;
+    const latinCount = (name.match(/[A-Za-z]/g)||[]).length;
+    const letterCount = hebrewCount + latinCount;
+    const digitCount = (name.match(/\d/g)||[]).length;
+    if(letterCount < 3) return;              // not enough real text - likely a stray number/table cell
+    if(digitCount > letterCount) return;     // too numeric - likely a dimension/measurement row, not a product name
+    if(name.length < 4 || name.length > 90) return;
+    if(PDF_NOISE_LINE_PATTERNS.some(re=>re.test(name))) return;
+
+    seen.add(sku);
+    let score = letterCount - digitCount;
+    if(sku.length>=6 && sku.length<=10) score += 5;
+    candidates.push({name, sku, selected: score>0, score});
+  }
+
+  lines.forEach((line, idx)=>{
+    const key = line.trim();
+    if(!key) return;
+    if(freq[key] > REPEAT_LIMIT) return;              // skip repeated headers/footers/watermarks
+    if(PDF_NOISE_LINE_PATTERNS.some(re=>re.test(key))) return;
+
+    let m;
+    skuRegexNumeric.lastIndex = 0;
+    while((m = skuRegexNumeric.exec(line))) tryAdd(line, idx, m[1], m.index, m[0].length);
+    skuRegexAlnum.lastIndex = 0;
+    while((m = skuRegexAlnum.exec(line))) tryAdd(line, idx, m[1], m.index, m[0].length);
+  });
+
+  candidates.sort((a,b)=> b.score - a.score);
+  return candidates.slice(0,300);
+}
+
+async function processPdfArrayBuffer(arrayBuffer, supplierId){
+  showToast('קורא את קובץ ה-PDF...');
+  try{
+    if(typeof pdfjsLib === 'undefined'){ showToast('ספריית קריאת PDF לא נטענה - בדוק חיבור לאינטרנט ורענן'); return; }
+    const lines = await extractPdfLines(arrayBuffer);
+    const candidates = extractCandidatesFromLines(lines);
+    if(candidates.length===0){ showToast('לא זוהו מוצרים - ייתכן שזה PDF סרוק (תמונה) ולא טקסט'); return; }
+    pdfCandidates = candidates;
+    pdfImportSupplierId = supplierId;
+    document.getElementById('pdf-review-search').value = '';
+    renderPdfReviewList();
+    openModalEl('pdf-review-overlay');
+    showToast(`נמצאו ${candidates.length} מועמדים - סקור ובחר`);
+  }catch(e){
+    console.error(e);
+    showToast('שגיאה בקריאת קובץ ה-PDF');
+  }
+}
+
+function renderPdfReviewList(){
+  const q = (document.getElementById('pdf-review-search').value||'').trim().toLowerCase();
+  const el = document.getElementById('pdf-review-list');
+  const filtered = pdfCandidates.map((c,idx)=>({c,idx})).filter(({c})=> !q || c.name.toLowerCase().includes(q) || c.sku.toLowerCase().includes(q));
+  if(filtered.length===0){ el.innerHTML = `<div class="catalog-empty">לא נמצאו מועמדים תואמים לסינון</div>`; return; }
+  el.innerHTML = filtered.map(({c,idx})=>`
+    <div class="pdfc-row">
+      <input type="checkbox" ${c.selected?'checked':''} onchange="pdfCandidates[${idx}].selected=this.checked">
+      <input type="text" class="pname" value="${esc(c.name)}" oninput="pdfCandidates[${idx}].name=this.value">
+      <input type="text" class="psku" value="${esc(c.sku)}" oninput="pdfCandidates[${idx}].sku=this.value">
+    </div>
+  `).join('');
+}
+
+function togglePdfSelectAll(){
+  const allSelected = pdfCandidates.every(c=>c.selected);
+  pdfCandidates.forEach(c=>c.selected = !allSelected);
+  renderPdfReviewList();
+}
+
+function commitPdfCandidates(){
+  const chosen = pdfCandidates.filter(c=>c.selected && c.name.trim());
+  if(chosen.length===0){ showToast('לא נבחרו מוצרים'); return; }
+  let added=0, updated=0;
+  chosen.forEach(c=>{
+    const result = upsertCatalogProduct(pdfImportSupplierId, {name:c.name.trim(), sku:c.sku.trim(), category:'material', unit:"יח'", price:null});
+    if(result==='added') added++; else updated++;
+  });
+  storeSet('catalog', catalog);
+  closeModal('pdf-review-overlay');
+  renderCatalogManageList();
+  showToast(`נוספו ${added} מוצרים, עודכנו ${updated}`);
+}
+
+
+/* ================= orders ================= */
+let editingOrderId = null;
+
+function openOrderModal(editId){
+  editingOrderId = editId || null;
+  fillSupplierSelects();
+  document.getElementById('order-catalog-search').value = '';
+  document.getElementById('order-item-search').value = '';
+  document.getElementById('order-new-name').value = '';
+  document.getElementById('order-new-qty').value = 1;
+
+  if(editingOrderId && !orders.find(x=>x.id===editingOrderId)){
+    editingOrderId = null;
+  }
+
+  if(editingOrderId){
+    const o = orders.find(x=>x.id===editingOrderId);
+    document.getElementById('order-supplier').value = o.supplierId;
+    orderDraftItems = o.items.map(d=>({...d}));
+    document.getElementById('order-modal-title').textContent = 'עריכת הזמנה';
+    document.getElementById('order-save-btn').textContent = '💾 שמור שינויים';
+  }else{
+    orderDraftItems = [];
+    document.getElementById('order-modal-title').textContent = 'הזמנה חדשה';
+    document.getElementById('order-save-btn').textContent = 'צור הזמנה';
+  }
+
+  renderOrderCatalog();
+  renderOrderPicker();
+  renderOrderDraft();
+  openModalEl('order-overlay');
+}
+
+function renderOrderCatalog(){
+  const supplierId = document.getElementById('order-supplier').value;
+  const q = (document.getElementById('order-catalog-search').value||'').trim().toLowerCase();
+  const el = document.getElementById('order-catalog-list');
+  let list = catalog.filter(c=>c.supplierId===supplierId);
+  if(q) list = list.filter(c=> c.name.toLowerCase().includes(q) || (c.sku||'').toLowerCase().includes(q));
+  list.sort((a,b)=>a.name.localeCompare(b.name,'he'));
+
+  if(list.length===0){
+    const supName = suppliers.find(s=>s.id===supplierId)?.name || '';
+    el.innerHTML = `<div class="catalog-empty">
+      ${catalog.some(c=>c.supplierId===supplierId) ? 'לא נמצאו מוצרים תואמים לחיפוש.' : `אין עדיין קטלוג ל${esc(supName)}.`}
+      <div style="margin-top:8px;"><button class="btn btn-sm" onclick="closeModal('order-overlay');openCatalogModal('${supplierId}')">🗂 הוסף מוצרים לקטלוג</button></div>
+    </div>`;
+    return;
+  }
+  el.innerHTML = list.map(c=>{
+    const already = orderDraftItems.some(d=> c.linkedItemId ? d.itemId===c.linkedItemId : d.catalogId===c.id);
+    return `
+    <div class="product-card">
+      ${c.imageUrl?`<img class="thumb" src="${esc(c.imageUrl)}" alt="" onerror="this.style.display='none'">`:''}
+      <div class="pinfo">
+        <div class="pname">${esc(c.name)} ${c.linkedItemId?'<span class="linked-badge">במלאי</span>':''}</div>
+        <div class="pmeta">${c.sku?`<span>מק"ט ${esc(c.sku)}</span>`:''}<span>${esc(c.unit||'')}</span></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        ${c.price?`<span class="pprice">₪${Number(c.price).toLocaleString('he-IL')}</span>`:''}
+        ${c.productUrl?`<a class="prod-link" href="${esc(c.productUrl)}" target="_blank" rel="noopener" title="דף המוצר אצל הספק">🔗</a>`:''}
+        <button class="btn btn-sm ${already?'':'btn-accent'}" ${already?'disabled':''} onclick="addCatalogToOrder('${c.id}')">${already?'נוסף ✓':'+ הוסף'}</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function addCatalogToOrder(catalogId){
+  const c = catalog.find(x=>x.id===catalogId);
+  if(!c) return;
+  if(c.linkedItemId){
+    if(orderDraftItems.some(d=>d.itemId===c.linkedItemId)){ showToast('כבר נוסף להזמנה'); return; }
+    const it = items.find(i=>i.id===c.linkedItemId);
+    const total = it ? itemTotalQty(it) : 0;
+    const minQty = it ? (it.minQty||0) : 0;
+    const suggestedQty = minQty>0 ? Math.max(minQty*2 - total, 1) : 1;
+    orderDraftItems.push({itemId:c.linkedItemId, catalogId:c.id, name:c.name, qty:suggestedQty, unit:c.unit||it?.unit||'', isNew:false, price:c.price});
+  }else{
+    if(orderDraftItems.some(d=>d.catalogId===catalogId)){ showToast('כבר נוסף להזמנה'); return; }
+    orderDraftItems.push({itemId:null, catalogId:c.id, name:c.name, qty:1, unit:c.unit||'', isNew:true, category:c.category, sku:c.sku, price:c.price, imageUrl:c.imageUrl, productUrl:c.productUrl});
+  }
+  renderOrderDraft();
+  renderOrderCatalog();
+}
+
+function renderOrderPicker(){
+  const q = (document.getElementById('order-item-search').value||'').trim().toLowerCase();
+  let list = items;
+  if(q) list = list.filter(i=>i.name.toLowerCase().includes(q));
+  list = list.slice(0,25);
+  const el = document.getElementById('order-picker');
+  if(list.length===0){ el.innerHTML = `<div class="picker-row" style="color:var(--text-dim);">לא נמצאו פריטים</div>`; return; }
+  el.innerHTML = list.map(it=>`
+    <div class="picker-row">
+      <span>${esc(it.name)} <span class="mono" style="color:var(--text-dim);">(${itemTotalQty(it)} ${esc(it.unit||'')})</span></span>
+      <button class="btn btn-sm" onclick="addExistingOrderItem('${it.id}')">+ הוסף</button>
+    </div>
+  `).join('');
+}
+
+function addExistingOrderItem(itemId){
+  const it = items.find(i=>i.id===itemId);
+  if(!it) return;
+  if(orderDraftItems.some(d=>d.itemId===itemId)){ showToast('כבר נוסף להזמנה'); return; }
+  const total = itemTotalQty(it);
+  const suggestedQty = it.minQty>0 ? Math.max(it.minQty*2 - total, 1) : 1;
+  orderDraftItems.push({itemId:it.id, name:it.name, qty:suggestedQty, unit:it.unit||'', isNew:false});
+  renderOrderDraft();
+}
+function addNewOrderItem(){
+  const name = document.getElementById('order-new-name').value.trim();
+  const qty = Number(document.getElementById('order-new-qty').value)||1;
+  if(!name){ showToast('נא להזין שם פריט'); return; }
+  orderDraftItems.push({itemId:null, name, qty, unit:'', isNew:true});
+  document.getElementById('order-new-name').value='';
+  document.getElementById('order-new-qty').value=1;
+  renderOrderDraft();
+}
+function removeOrderDraftItem(idx){
+  orderDraftItems.splice(idx,1);
+  renderOrderDraft();
+}
+function renderOrderDraft(){
+  const el = document.getElementById('order-draft-items');
+  if(orderDraftItems.length===0){ el.innerHTML = `<div style="font-size:12.5px;color:var(--text-dim);padding:8px 0;">עדיין לא נוספו פריטים</div>`; return; }
+  const lines = orderDraftItems.map((d,idx)=>`
+    <div class="draft-item">
+      <span>${esc(d.name)} ${d.isNew?'<span class="new-badge">חדש</span>':''} ${d.price?`<span class="mono" style="color:var(--text-dim);font-size:11px;"> · ₪${Number(d.price).toLocaleString('he-IL')}</span>`:''}</span>
+      <span style="display:flex;align-items:center;gap:8px;">
+        <input type="number" min="1" value="${d.qty}" class="mono" style="width:56px;background:var(--surface-3);border:1px solid var(--border);border-radius:6px;padding:4px 6px;color:var(--text);" onchange="orderDraftItems[${idx}].qty=Number(this.value)||1; renderOrderDraft();">
+        <span class="x" onclick="removeOrderDraftItem(${idx})">✕</span>
+      </span>
+    </div>
+  `).join('');
+  const subtotal = orderDraftItems.reduce((s,d)=> s + (Number(d.price)||0)*(Number(d.qty)||0), 0);
+  const subtotalLine = subtotal>0 ? `<div style="text-align:left;font-size:12.5px;color:var(--text-muted);margin-top:4px;">סה"כ משוער: <b class="mono" style="color:var(--accent);">₪${subtotal.toLocaleString('he-IL')}</b></div>` : '';
+  el.innerHTML = lines + subtotalLine;
+}
+
+function saveOrder(){
+  const supplierId = document.getElementById('order-supplier').value;
+  if(!supplierId){ showToast('נא לבחור ספק'); return; }
+  if(orderDraftItems.length===0){ showToast('נא להוסיף לפחות פריט אחד'); return; }
+
+  if(editingOrderId){
+    const idx = orders.findIndex(o=>o.id===editingOrderId);
+    if(idx>-1){
+      orders[idx] = {
+        ...orders[idx],
+        supplierId,
+        items: orderDraftItems.map(d=>({...d}))
+      };
+    }
+    editingOrderId = null;
+    storeSet('orders', orders);
+    closeModal('order-overlay');
+    renderOrders(); renderDashboard();
+    showToast('ההזמנה עודכנה');
+    return;
+  }
+
+  orders.unshift({
+    id: uid(),
+    supplierId,
+    status: 'draft',
+    createdAt: new Date().toISOString(),
+    items: orderDraftItems.map(d=>({...d}))
+  });
+  storeSet('orders', orders);
+  closeModal('order-overlay');
+  renderOrders(); renderDashboard();
+  showToast('ההזמנה נוצרה');
+}
+
+function renderOrders(){
+  const el = document.getElementById('orders-list');
+  if(orders.length===0){
+    el.innerHTML = `<div class="empty"><div class="ic">📋</div><p>אין הזמנות עדיין. צור הזמנה כדי לעקוב אחרי מה שהזמנת מהספקים.</p>
+      <button class="btn btn-accent" onclick="openOrderModal()">+ הזמנה חדשה</button></div>`;
+    return;
+  }
+  el.innerHTML = orders.map(o=>{
+    const sup = suppliers.find(s=>s.id===o.supplierId);
+    const date = new Date(o.createdAt).toLocaleDateString('he-IL',{day:'numeric',month:'short',year:'numeric'});
+    const isOpen = openOrderIds.has(o.id);
+    return `
+    <div class="order-card">
+      <div class="order-top">
+        <div>
+          <div class="order-supplier">${esc(sup?.name||'ספק לא ידוע')}</div>
+          <div class="order-date">${date} · ${o.items.length} פריטים</div>
+        </div>
+        <div class="breaker">
+          <button class="${o.status==='draft'?'on':''}" data-s="draft" onclick="setOrderStatus('${o.id}','draft')">טיוטה</button>
+          <button class="${o.status==='placed'?'on':''}" data-s="placed" onclick="setOrderStatus('${o.id}','placed')">נשלחה</button>
+          <button class="${o.status==='received'?'on':''}" data-s="received" onclick="setOrderStatus('${o.id}','received')">התקבלה</button>
+        </div>
+      </div>
+      <div class="order-items ${isOpen?'open':''}" id="order-items-${o.id}">
+        ${o.items.map(it=>`<div class="order-item-line"><b>${esc(it.name)} ${it.isNew?'<span class="new-badge">חדש</span>':''}</b><span class="mono">${it.qty} ${esc(it.unit||'')}${it.price?` · ₪${it.price}`:''}</span></div>`).join('')}
+      </div>
+      <div class="order-foot">
+        <button class="btn btn-sm" onclick="toggleOrderOpen('${o.id}')">${isOpen?'הסתר פריטים':'הצג פריטים'}</button>
+        <div style="display:flex;gap:6px;">
+          <button class="btn btn-sm" onclick="openShareOrderModal('${o.id}')">📤 שתף / הזמן</button>
+          ${o.status==='draft'?`<button class="btn btn-sm" onclick="openOrderModal('${o.id}')">✎ ערוך</button>`:''}
+          ${o.status==='draft'?`<button class="btn btn-sm btn-danger" onclick="deleteOrder('${o.id}')">מחק</button>`:''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleOrderOpen(id){
+  if(openOrderIds.has(id)) openOrderIds.delete(id); else openOrderIds.add(id);
+  renderOrders();
+}
+
+function setOrderStatus(id, status){
+  const o = orders.find(x=>x.id===id);
+  if(!o) return;
+  const oldStatus = o.status;
+  if(oldStatus === 'placed' && status === 'draft'){
+    if(!confirm('להחזיר את ההזמנה למצב טיוטה?')) return;
+  }
+  if(oldStatus === 'placed' && status === 'received'){
+    if(!confirm('לסמן את ההזמנה כהתקבלה? פעולה זו תעדכן את המלאי בהתאם.')) return;
+  }
+  const wasReceived = o.status === 'received';
+  o.status = status;
+  if(status==='received' && !wasReceived){
+    // apply to inventory - received stock lands in the first defined location by default;
+    // it can be moved between locations afterwards from the item's edit screen.
+    const defaultLocId = locations[0]?.id || null;
+    let catalogChanged = false;
+    o.items.forEach(oi=>{
+      if(oi.isNew){
+        const newItem = {
+          id:uid(), name:oi.name, category:oi.category||'material', sku:oi.sku||'',
+          unit:oi.unit||"יח'", minQty:0, price:(oi.price!=null?oi.price:null),
+          supplierId:o.supplierId, notes:'הוסף אוטומטית מהזמנה',
+          imageUrl:oi.imageUrl||'', productUrl:oi.productUrl||'',
+          locations: defaultLocId ? [{locationId:defaultLocId, qty:oi.qty}] : []
+        };
+        items.push(newItem);
+        if(oi.catalogId){
+          const c = catalog.find(x=>x.id===oi.catalogId);
+          if(c){ c.linkedItemId = newItem.id; catalogChanged = true; }
+        }
+      }else{
+        const it = items.find(i=>i.id===oi.itemId);
+        if(it){
+          if(!it.locations) it.locations = [];
+          if(it.locations.length>0){
+            it.locations[0].qty = (Number(it.locations[0].qty)||0) + (Number(oi.qty)||0);
+          }else if(defaultLocId){
+            it.locations.push({locationId:defaultLocId, qty:oi.qty});
+          }
+        }
+      }
+    });
+    storeSet('items', items);
+    if(catalogChanged) storeSet('catalog', catalog);
+    showToast('המלאי עודכן מההזמנה');
+  }
+  storeSet('orders', orders);
+  renderOrders(); renderDashboard(); renderInventory();
+}
+
+function deleteOrder(id){
+  if(!confirm('למחוק את ההזמנה?')) return;
+  orders = orders.filter(o=>o.id!==id);
+  storeSet('orders', orders);
+  renderOrders(); renderDashboard();
+}
+
+/* ================= order sharing (whatsapp / copy / pdf) ================= */
+let shareOrderId = null;
+
+function openShareOrderModal(id){
+  shareOrderId = id;
+  document.getElementById('share-fallback-box').style.display = 'none';
+  openModalEl('share-order-overlay');
+}
+
+function shareOrderWhatsapp(){
+  const o = orders.find(x=>x.id===shareOrderId);
+  if(!o) return;
+  const text = buildOrderCopyText(o);
+  window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+}
+
+function buildOrderCopyText(o){
+  const lines = [];
+  o.items.forEach((it,i)=>{
+    let line = `${i+1}. ${it.name} — כמות: ${it.qty}${it.unit?' '+it.unit:''}`;
+    if(it.price) line += ` (₪${it.price} ליח')`;
+    lines.push(line);
+  });
+  return lines.join('\n');
+}
+
+async function shareOrderCopyText(){
+  const o = orders.find(x=>x.id===shareOrderId);
+  if(!o) return;
+  await copyTextRobust(buildOrderCopyText(o));
+}
+
+async function copyTextRobust(text){
+  let ok = false;
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    }
+  }catch(e){ ok = false; }
+  if(!ok){
+    try{
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+    }catch(e){ ok = false; }
+  }
+  const box = document.getElementById('share-fallback-box');
+  if(ok){
+    showToast('הטקסט הועתק');
+    box.style.display = 'none';
+  }else{
+    const ta2 = document.getElementById('share-fallback-text');
+    ta2.value = text;
+    box.style.display = 'block';
+    ta2.focus(); ta2.select();
+    showToast('העתקה אוטומטית לא זמינה - בחר את הטקסט והעתק ידנית');
+  }
+}
+
+function shareOrderPdf(){
+  const o = orders.find(x=>x.id===shareOrderId);
+  if(!o) return;
+  const sup = suppliers.find(s=>s.id===o.supplierId);
+  const date = new Date(o.createdAt).toLocaleDateString('he-IL');
+  const rows = o.items.map((it,i)=>`
+    <tr>
+      <td>${i+1}</td>
+      <td>${esc(it.name)}</td>
+      <td>${esc(it.sku||'—')}</td>
+      <td>${it.qty} ${esc(it.unit||'')}</td>
+    </tr>`).join('');
+  const docHtml = `<!DOCTYPE html><html lang="he" dir="rtl"><head><meta charset="UTF-8"><title>הזמנה - ${esc(sup?.name||'')}</title>
+<style>
+  body{font-family:Arial,Heebo,sans-serif;padding:36px;color:#1a1a1a;max-width:800px;margin:0 auto;}
+  .header-row{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid #222;padding-bottom:14px;margin-bottom:20px;}
+  .brand{font-weight:800;font-size:21px;}
+  .sub{color:#666;font-size:12.5px;margin-top:2px;}
+  .meta{text-align:left;font-size:12.5px;color:#333;line-height:1.7;}
+  table{width:100%;border-collapse:collapse;margin-top:6px;}
+  th,td{border:1px solid #ccc;padding:9px 10px;text-align:right;font-size:13px;}
+  th{background:#eee;}
+  .footnote{margin-top:24px;font-size:11.5px;color:#888;}
+  .print-bar{margin-bottom:22px;}
+  .print-bar button{padding:11px 20px;font-size:14px;cursor:pointer;border-radius:8px;border:1px solid #999;background:#f0f0f0;}
+  @media print{ .print-bar{display:none;} body{padding:0;} }
+</style></head><body>
+  <div class="print-bar"><button onclick="window.print()">🖨️ הדפס / שמור כ-PDF</button></div>
+  <div class="header-row">
+    <div><div class="brand">⚡ הזמנת חומרים</div><div class="sub">מסמך הזמנה לספק</div></div>
+    <div class="meta">ספק: <b>${esc(sup?.name||'')}</b><br>תאריך: ${date}<br>${o.items.length} פריטים</div>
+  </div>
+  <table>
+    <thead><tr><th>#</th><th>שם המוצר</th><th>מק"ט</th><th>כמות</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>
+  <div class="footnote">מסמך זה הופק אוטומטית ממערכת ניהול המלאי.</div>
+</body></html>`;
+  const win = window.open('', '_blank');
+  if(win){
+    win.document.write(docHtml);
+    win.document.close();
+  }else{
+    showToast('נא לאפשר חלונות קופצים כדי להפיק את המסמך');
+  }
+}
+
+/* ================= util ================= */
+function esc(s){
+  return String(s??'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+init();
+</script>
+</body>
+</html>
