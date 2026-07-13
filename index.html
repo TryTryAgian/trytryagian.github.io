@@ -583,7 +583,7 @@
 <!-- ============ NEW ORDER MODAL ============ -->
 <div class="overlay" id="order-overlay">
   <div class="modal">
-    <h2>הזמנה חדשה</h2>
+    <h2 id="order-modal-title">הזמנה חדשה</h2>
     <div class="field">
       <label>ספק *</label>
       <select id="order-supplier" onchange="renderOrderCatalog()"></select>
@@ -616,7 +616,7 @@
 
     <div class="modal-actions">
       <button class="btn btn-ghost" onclick="closeModal('order-overlay')">ביטול</button>
-      <button class="btn btn-accent" onclick="saveOrder()">צור הזמנה</button>
+      <button class="btn btn-accent" id="order-save-btn" onclick="saveOrder()">צור הזמנה</button>
     </div>
   </div>
 </div>
@@ -704,7 +704,7 @@ const ERCO_CATALOG_SAMPLE = [
 
 /* ================= storage helpers ================= */
 /* ================= app version (bump this on every delivered update, so you can confirm which build is live) ================= */
-const APP_VERSION = '2026-07-13.8';
+const APP_VERSION = '2026-07-13.9';
 
 async function storeGet(key, fallback){
   try{
@@ -1618,26 +1618,65 @@ async function extractPdfLines(arrayBuffer){
   return lines;
 }
 
+const PDF_NOISE_LINE_PATTERNS = [
+  /^עמוד\s*\d+/i, /^page\s*\d+/i, /^\d+\s*\/\s*\d+$/, /^\d+$/,
+  /^www\./i, /^https?:\/\//i, /^טל[\s.:']/i, /^פקס/i, /^tel[\s.:]/i, /^fax/i,
+  /כל הזכויות שמורות/, /^©/, /^\(c\)/i, /^מהדורה/, /^edition/i, /^catalog(ue)?\s*\d*$/i,
+];
+
 function extractCandidatesFromLines(lines){
+  // drop lines that repeat many times across the document (headers/footers/watermarks)
+  const freq = {};
+  lines.forEach(l=>{ const key=l.trim(); if(key) freq[key]=(freq[key]||0)+1; });
+  const REPEAT_LIMIT = 3;
+
+  const skuRegexNumeric = /\b(\d{6,10})\b/g;
+  const skuRegexAlnum = /\b([A-Z]{2,4}\d{1,4}[A-Z]?-?[A-Z0-9]{0,4})\b/g;
+
   const candidates = [];
   const seen = new Set();
-  const skuRegex = /\b([A-Za-z]{0,3}\d{5,12}[A-Za-z0-9]{0,3})\b/g;
-  lines.forEach((line, idx)=>{
-    let m;
-    skuRegex.lastIndex = 0;
-    while((m = skuRegex.exec(line))){
-      const sku = m[1];
-      if(seen.has(sku)) continue;
-      let name = (line.slice(0,m.index) + ' ' + line.slice(m.index+m[0].length)).replace(/\s+/g,' ').trim();
-      name = name.replace(/^[-–.,\s]+/, '').trim();
-      if(name.length < 3 && idx>0){ name = lines[idx-1].replace(/\s+/g,' ').trim(); }
-      if(!name || name.length<2) continue;
-      if(name.length>90) name = name.slice(0,90);
-      seen.add(sku);
-      candidates.push({name, sku, selected:true});
+
+  function tryAdd(line, idx, sku, matchIndex, matchLen){
+    if(seen.has(sku)) return;
+    let name = (line.slice(0,matchIndex) + ' ' + line.slice(matchIndex+matchLen)).replace(/\s+/g,' ').trim();
+    name = name.replace(/^[-–.,:\s]+|[-–.,:\s]+$/g, '').trim();
+    if(name.length < 4 && idx>0){
+      const prevKey = lines[idx-1].trim();
+      if(!(freq[prevKey]>REPEAT_LIMIT)) name = lines[idx-1].replace(/\s+/g,' ').trim();
     }
+    if(!name) return;
+    if(name.length>90) name = name.slice(0,90);
+
+    const hebrewCount = (name.match(/[\u0590-\u05FF]/g)||[]).length;
+    const latinCount = (name.match(/[A-Za-z]/g)||[]).length;
+    const letterCount = hebrewCount + latinCount;
+    const digitCount = (name.match(/\d/g)||[]).length;
+    if(letterCount < 3) return;              // not enough real text - likely a stray number/table cell
+    if(digitCount > letterCount) return;     // too numeric - likely a dimension/measurement row, not a product name
+    if(name.length < 4 || name.length > 90) return;
+    if(PDF_NOISE_LINE_PATTERNS.some(re=>re.test(name))) return;
+
+    seen.add(sku);
+    let score = letterCount - digitCount;
+    if(sku.length>=6 && sku.length<=10) score += 5;
+    candidates.push({name, sku, selected: score>0, score});
+  }
+
+  lines.forEach((line, idx)=>{
+    const key = line.trim();
+    if(!key) return;
+    if(freq[key] > REPEAT_LIMIT) return;              // skip repeated headers/footers/watermarks
+    if(PDF_NOISE_LINE_PATTERNS.some(re=>re.test(key))) return;
+
+    let m;
+    skuRegexNumeric.lastIndex = 0;
+    while((m = skuRegexNumeric.exec(line))) tryAdd(line, idx, m[1], m.index, m[0].length);
+    skuRegexAlnum.lastIndex = 0;
+    while((m = skuRegexAlnum.exec(line))) tryAdd(line, idx, m[1], m.index, m[0].length);
   });
-  return candidates.slice(0,400);
+
+  candidates.sort((a,b)=> b.score - a.score);
+  return candidates.slice(0,300);
 }
 
 async function processPdfArrayBuffer(arrayBuffer, supplierId){
@@ -1695,13 +1734,32 @@ function commitPdfCandidates(){
 
 
 /* ================= orders ================= */
-function openOrderModal(){
-  orderDraftItems = [];
+let editingOrderId = null;
+
+function openOrderModal(editId){
+  editingOrderId = editId || null;
   fillSupplierSelects();
   document.getElementById('order-catalog-search').value = '';
   document.getElementById('order-item-search').value = '';
   document.getElementById('order-new-name').value = '';
   document.getElementById('order-new-qty').value = 1;
+
+  if(editingOrderId && !orders.find(x=>x.id===editingOrderId)){
+    editingOrderId = null;
+  }
+
+  if(editingOrderId){
+    const o = orders.find(x=>x.id===editingOrderId);
+    document.getElementById('order-supplier').value = o.supplierId;
+    orderDraftItems = o.items.map(d=>({...d}));
+    document.getElementById('order-modal-title').textContent = 'עריכת הזמנה';
+    document.getElementById('order-save-btn').textContent = '💾 שמור שינויים';
+  }else{
+    orderDraftItems = [];
+    document.getElementById('order-modal-title').textContent = 'הזמנה חדשה';
+    document.getElementById('order-save-btn').textContent = 'צור הזמנה';
+  }
+
   renderOrderCatalog();
   renderOrderPicker();
   renderOrderDraft();
@@ -1818,6 +1876,24 @@ function saveOrder(){
   const supplierId = document.getElementById('order-supplier').value;
   if(!supplierId){ showToast('נא לבחור ספק'); return; }
   if(orderDraftItems.length===0){ showToast('נא להוסיף לפחות פריט אחד'); return; }
+
+  if(editingOrderId){
+    const idx = orders.findIndex(o=>o.id===editingOrderId);
+    if(idx>-1){
+      orders[idx] = {
+        ...orders[idx],
+        supplierId,
+        items: orderDraftItems.map(d=>({...d}))
+      };
+    }
+    editingOrderId = null;
+    storeSet('orders', orders);
+    closeModal('order-overlay');
+    renderOrders(); renderDashboard();
+    showToast('ההזמנה עודכנה');
+    return;
+  }
+
   orders.unshift({
     id: uid(),
     supplierId,
@@ -1862,6 +1938,7 @@ function renderOrders(){
         <button class="btn btn-sm" onclick="toggleOrderOpen('${o.id}')">${isOpen?'הסתר פריטים':'הצג פריטים'}</button>
         <div style="display:flex;gap:6px;">
           <button class="btn btn-sm" onclick="openShareOrderModal('${o.id}')">📤 שתף / הזמן</button>
+          ${o.status==='draft'?`<button class="btn btn-sm" onclick="openOrderModal('${o.id}')">✎ ערוך</button>`:''}
           ${o.status==='draft'?`<button class="btn btn-sm btn-danger" onclick="deleteOrder('${o.id}')">מחק</button>`:''}
         </div>
       </div>
@@ -1877,6 +1954,13 @@ function toggleOrderOpen(id){
 function setOrderStatus(id, status){
   const o = orders.find(x=>x.id===id);
   if(!o) return;
+  const oldStatus = o.status;
+  if(oldStatus === 'placed' && status === 'draft'){
+    if(!confirm('להחזיר את ההזמנה למצב טיוטה?')) return;
+  }
+  if(oldStatus === 'placed' && status === 'received'){
+    if(!confirm('לסמן את ההזמנה כהתקבלה? פעולה זו תעדכן את המלאי בהתאם.')) return;
+  }
   const wasReceived = o.status === 'received';
   o.status = status;
   if(status==='received' && !wasReceived){
