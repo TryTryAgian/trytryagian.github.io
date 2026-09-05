@@ -81,6 +81,12 @@
   .page-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px;gap:12px;flex-wrap:wrap;}
   .page-head h1{font-size:22px;margin:0 0 4px;}
   .page-head p{margin:0;color:var(--text-dim);font-size:13px;}
+  .account-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--border);font-size:12.5px;flex-wrap:wrap;}
+  .account-row .who{display:flex;align-items:center;gap:7px;min-width:0;}
+  .account-row .who img{width:20px;height:20px;border-radius:50%;flex-shrink:0;}
+  .account-row .who span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .account-row .who.signed-in{color:var(--success);}
+  .account-row .who.signed-out{color:var(--text-dim);}
 
   .btn{
     display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:var(--radius-sm);
@@ -349,6 +355,7 @@
 
     <!-- ============ DASHBOARD ============ -->
     <section class="view active" id="view-dashboard">
+      <div id="account-status-row" class="account-row"></div>
       <div class="page-head">
         <div>
           <h1>מצב המלאי שלך</h1>
@@ -619,25 +626,41 @@
   </div>
 </div>
 
-<!-- ============ GOOGLE DRIVE SETTINGS MODAL ============ -->
+<!-- ============ ACCOUNT & SYNC MODAL ============ -->
 <div class="overlay" id="google-settings-overlay">
   <div class="modal">
-    <h2>חיבור ל-Google Drive</h2>
-    <p style="font-size:12.5px;color:var(--text-dim);margin:-8px 0 14px;">כדי לבחור קבצים מה-Drive צריך מפתח API (Developer Key) מאותו פרויקט ב-Google Cloud שבו הגדרת את ה-Client ID. המפתח נשמר רק במכשיר שלך.</p>
-    <div class="field"><label>Google API Key</label><input id="google-api-key-input" placeholder="AIza..."></div>
-    <div class="modal-actions" style="margin-bottom:8px;">
-      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('google-settings-overlay')">ביטול</button>
-      <button class="btn btn-accent" style="flex:1" onclick="saveGoogleApiKey()">שמור והתחבר</button>
+    <h2>חשבון וסנכרון</h2>
+
+    <div id="account-signed-out-section">
+      <p style="font-size:12.5px;color:var(--text-dim);margin:-8px 0 16px;line-height:1.6;">התחבר עם חשבון Google כדי לשמור את המלאי, ההזמנות והספקים בענן - כך כל מכשיר שמתחבר עם אותו חשבון יראה את אותו מידע, אוטומטית.</p>
+      <button class="btn btn-accent" style="width:100%;justify-content:center;padding:13px;font-size:14.5px;" onclick="signInWithGoogle()">🔐 התחבר עם Google</button>
     </div>
 
-    <div style="border-top:1px solid var(--border);padding-top:16px;margin-top:6px;">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
-        <label style="font-size:13px;font-weight:600;">🔄 סנכרון בין מכשירים</label>
-        <input type="checkbox" id="drive-sync-toggle" style="width:20px;height:20px;accent-color:var(--accent);" onchange="toggleDriveSync(this.checked)">
+    <div id="account-signed-in-section" style="display:none;">
+      <div style="display:flex;align-items:center;gap:10px;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 12px;margin-bottom:14px;">
+        <img id="account-avatar" src="" alt="" style="width:36px;height:36px;border-radius:50%;flex-shrink:0;display:none;">
+        <div style="min-width:0;">
+          <div id="account-name" style="font-weight:700;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></div>
+          <div id="account-email" style="font-size:11.5px;color:var(--text-dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></div>
+        </div>
+        <span style="margin-right:auto;color:var(--success);font-size:11px;font-weight:700;flex-shrink:0;">🟢 מחובר</span>
       </div>
-      <p style="font-size:11px;color:var(--text-dim);margin:0 0 8px;">שומר את המלאי, ההזמנות והספקים בקובץ בגוגל דרייב שלך, כדי שכל מכשיר שמחובר עם אותו חשבון יראה את אותו מידע.</p>
-      <p id="drive-sync-status" style="font-size:11.5px;color:var(--text-muted);margin:0 0 10px;">סנכרון כבוי</p>
-      <button class="btn btn-sm" style="width:100%;justify-content:center;" onclick="manualSyncNow()">🔄 סנכרן עכשיו</button>
+      <p id="drive-sync-status" style="font-size:11.5px;color:var(--text-muted);margin:0 0 12px;">סנכרון פעיל</p>
+      <div style="display:flex;gap:8px;margin-bottom:6px;">
+        <button class="btn btn-sm" style="flex:1;justify-content:center;" onclick="manualSyncNow()">🔄 סנכרן עכשיו</button>
+        <button class="btn btn-sm btn-danger" style="flex:1;justify-content:center;" onclick="signOutOfGoogle()">🚪 התנתק</button>
+      </div>
+    </div>
+
+    <details style="margin-top:16px;border-top:1px solid var(--border);padding-top:14px;">
+      <summary style="cursor:pointer;font-size:12px;color:var(--text-muted);font-weight:600;">הגדרות מתקדמות (ל-ייבוא קבצים מ-Drive לקטלוג)</summary>
+      <p style="font-size:11px;color:var(--text-dim);margin:10px 0;line-height:1.6;">כדי לבחור קבצים מה-Drive למסך הקטלוג צריך גם מפתח API (Developer Key) מאותו פרויקט ב-Google Cloud. המפתח נשמר רק במכשיר שלך.</p>
+      <div class="field"><label>Google API Key</label><input id="google-api-key-input" placeholder="AIza..."></div>
+      <button class="btn btn-sm btn-accent" style="width:100%;justify-content:center;" onclick="saveGoogleApiKey()">שמור מפתח</button>
+    </details>
+
+    <div class="modal-actions">
+      <button class="btn btn-ghost" style="flex:1" onclick="closeModal('google-settings-overlay')">סגור</button>
     </div>
   </div>
 </div>
@@ -789,7 +812,7 @@ const ERCO_CATALOG_SAMPLE = [
 
 /* ================= storage helpers ================= */
 /* ================= app version (bump this on every delivered update, so you can confirm which build is live) ================= */
-const APP_VERSION = '2026-07-13.19';
+const APP_VERSION = '2026-07-13.20';
 
 async function storeGet(key, fallback){
   try{
@@ -923,6 +946,7 @@ function renderAll(){
   renderInventory();
   renderOrders();
   fillSupplierSelects();
+  renderAccountStatusRow();
 }
 
 /* ================= nav / tabs ================= */
@@ -1831,15 +1855,18 @@ async function initGoogleDrive(){
   googleApiKey = await storeGet('google-api-key', null);
   driveSyncEnabled = await storeGet('drive-sync-enabled', false);
   driveLastSyncedAt = await storeGet('drive-last-synced', null);
+  googleUserProfile = await storeGet('google-user-profile', null);
   if(driveSyncEnabled){
     try{ await pullFromDriveIfPossible(); }
     catch(e){ console.error('initial drive pull failed', e); }
   }
+  renderAccountStatusRow();
 }
 
 /* ================= cross-device sync (Google Drive) ================= */
 const DRIVE_SYNC_FILENAME = 'electrician-inventory-sync.json';
 let driveSyncEnabled = false;
+let googleUserProfile = null;
 let driveSyncFileId = null;
 let driveSyncPushTimer = null;
 let driveSyncing = false;
@@ -1939,30 +1966,6 @@ async function pushToDriveSafe(){
   }
 }
 
-async function toggleDriveSync(enabled){
-  if(enabled){
-    try{
-      showToast('מתחבר לסנכרון...');
-      const token = await ensureDriveToken();
-      await pullFromDrive(token);
-      driveSyncEnabled = true;
-      await storeSet('drive-sync-enabled', true);
-      await pushToDriveSafe();
-      showToast('סנכרון הופעל');
-    }catch(e){
-      console.error(e);
-      driveSyncEnabled = false;
-      document.getElementById('drive-sync-toggle').checked = false;
-      showToast('שגיאה בהפעלת הסנכרון');
-    }
-  }else{
-    driveSyncEnabled = false;
-    await storeSet('drive-sync-enabled', false);
-    showToast('סנכרון בוטל למכשיר זה');
-  }
-  updateSyncStatusUI();
-}
-
 async function manualSyncNow(){
   showToast('מסנכרן...');
   try{
@@ -1978,10 +1981,8 @@ async function manualSyncNow(){
 }
 
 function updateSyncStatusUI(){
-  const toggle = document.getElementById('drive-sync-toggle');
   const status = document.getElementById('drive-sync-status');
-  if(!toggle || !status) return;
-  toggle.checked = driveSyncEnabled;
+  if(!status) return;
   if(!driveSyncEnabled){
     status.textContent = 'סנכרון כבוי - הנתונים נשמרים רק במכשיר זה';
   }else if(driveLastSyncedAt){
@@ -1992,8 +1993,90 @@ function updateSyncStatusUI(){
   }
 }
 
+/* ================= account (sign in with Google) ================= */
+async function fetchGoogleUserInfo(token){
+  const res = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+    headers:{ Authorization:`Bearer ${token}` }
+  });
+  if(!res.ok) throw new Error('userinfo failed: '+res.status);
+  return await res.json();
+}
+
+async function signInWithGoogle(){
+  try{
+    showToast('מתחבר עם Google...');
+    const token = await ensureDriveToken();
+    const profile = await fetchGoogleUserInfo(token);
+    googleUserProfile = profile;
+    await storeSet('google-user-profile', profile);
+    await pullFromDrive(token);
+    driveSyncEnabled = true;
+    await storeSet('drive-sync-enabled', true);
+    await pushToDriveSafe();
+    showToast(`מחובר בתור ${profile.email}`);
+  }catch(e){
+    console.error('sign in failed', e);
+    showToast('ההתחברות נכשלה - נסה שוב');
+  }
+  renderAccountStatusRow();
+  updateAccountModalUI();
+  updateSyncStatusUI();
+}
+
+function signOutOfGoogle(){
+  try{
+    if(driveAccessToken && typeof google !== 'undefined' && google.accounts && google.accounts.oauth2){
+      google.accounts.oauth2.revoke(driveAccessToken, ()=>{});
+    }
+  }catch(e){ console.error(e); }
+  driveAccessToken = null;
+  googleUserProfile = null;
+  driveSyncEnabled = false;
+  storeSet('google-user-profile', null);
+  storeSet('drive-sync-enabled', false);
+  showToast('התנתקת מהחשבון - הנתונים נשארים במכשיר');
+  renderAccountStatusRow();
+  updateAccountModalUI();
+}
+
+function renderAccountStatusRow(){
+  const el = document.getElementById('account-status-row');
+  if(!el) return;
+  if(googleUserProfile){
+    el.innerHTML = `
+      <div class="who signed-in">
+        ${googleUserProfile.picture?`<img src="${esc(googleUserProfile.picture)}" alt="">`:''}
+        <span>🟢 מחובר כ־${esc(googleUserProfile.email||googleUserProfile.name||'')}</span>
+      </div>
+      <button class="link-btn-like" style="background:none;border:none;color:var(--text-muted);font-size:12px;text-decoration:underline;cursor:pointer;" onclick="openGoogleSettingsModal()">חשבון</button>`;
+  }else{
+    el.innerHTML = `
+      <div class="who signed-out"><span>🔓 הנתונים נשמרים במכשיר זה בלבד</span></div>
+      <button style="background:none;border:none;color:var(--accent);font-size:12px;font-weight:700;text-decoration:underline;cursor:pointer;" onclick="openGoogleSettingsModal()">התחבר לחשבון</button>`;
+  }
+}
+
+function updateAccountModalUI(){
+  const outSection = document.getElementById('account-signed-out-section');
+  const inSection = document.getElementById('account-signed-in-section');
+  if(!outSection || !inSection) return;
+  if(googleUserProfile){
+    outSection.style.display = 'none';
+    inSection.style.display = 'block';
+    document.getElementById('account-name').textContent = googleUserProfile.name || '';
+    document.getElementById('account-email').textContent = googleUserProfile.email || '';
+    const avatar = document.getElementById('account-avatar');
+    if(googleUserProfile.picture){ avatar.src = googleUserProfile.picture; avatar.style.display = 'block'; }
+    else{ avatar.style.display = 'none'; }
+  }else{
+    outSection.style.display = 'block';
+    inSection.style.display = 'none';
+  }
+}
+
 function openGoogleSettingsModal(){
   document.getElementById('google-api-key-input').value = googleApiKey || '';
+  updateAccountModalUI();
   updateSyncStatusUI();
   openModalEl('google-settings-overlay');
 }
@@ -2038,7 +2121,7 @@ function ensureDriveToken(){
       if(!driveTokenClient){
         driveTokenClient = google.accounts.oauth2.initTokenClient({
           client_id: GOOGLE_CLIENT_ID,
-          scope: 'https://www.googleapis.com/auth/drive.file',
+          scope: 'https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile',
           callback: ()=>{}
         });
       }
