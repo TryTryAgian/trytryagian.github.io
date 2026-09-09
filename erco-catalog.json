@@ -1,0 +1,1915 @@
+{
+ "supplierName": "ERCO",
+ "supplierWebsite": "https://www.erco.co.il",
+ "updatedAt": "2026-07-13",
+ "products": [
+  {
+   "name": "מתאם חכם 16A WIFI לשקע מזגן",
+   "sku": "47500032",
+   "category": "material",
+   "unit": "יח'",
+   "price": 186.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/47500032_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/mtam-hkm-16a-wifi-lwqe-mzgn.html"
+  },
+  {
+   "name": "שקע כח תה\"ט + מטען USB כפול VEGA",
+   "sku": "1516344ER",
+   "category": "material",
+   "unit": "יח'",
+   "price": 58.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1516344.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sales/sales-new-in-erco/1516344er.html"
+  },
+  {
+   "name": "מפסק חכם לתאורה 2 הדלקות קופ' 55",
+   "sku": "475000280",
+   "category": "material",
+   "unit": "יח'",
+   "price": 179.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/475000280_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/mpsq-hkm-ltavrh-2-hdlqvt-qvp-55.html"
+  },
+  {
+   "name": "שקע 5 מגע שוקו עה\"ט 5X16",
+   "sku": "1313420",
+   "category": "material",
+   "unit": "יח'",
+   "price": 40.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/3/1313420_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1313420.html"
+  },
+  {
+   "name": "מפסק לדוד 16A WIFI לקופ' גוויס 3 מקום לבן",
+   "sku": "47500020",
+   "category": "material",
+   "unit": "יח'",
+   "price": 146.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/47500020_1.png",
+   "productUrl": "https://www.erco.co.il/b2c/mpsq-ldvd-16a-wifi-lqvp-gvvis-3-mqvm.html"
+  },
+  {
+   "name": "תקע שוקו ישר 5 פין תלת פאזי 3P",
+   "sku": "1313419",
+   "category": "material",
+   "unit": "יח'",
+   "price": 42.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/3/1313419_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1313419.html"
+  },
+  {
+   "name": "תקע צד בולדוג שחור VEGA",
+   "sku": "1524015",
+   "category": "material",
+   "unit": "יח'",
+   "price": 4.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1524015_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1524015.html"
+  },
+  {
+   "name": "תקע צד בולדוג לבן VEGA",
+   "sku": "1524014",
+   "category": "material",
+   "unit": "יח'",
+   "price": 106.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1524014_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1524014.html"
+  },
+  {
+   "name": "קופלונג כפול שחור",
+   "sku": "15240101",
+   "category": "material",
+   "unit": "יח'",
+   "price": 22.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/15240101_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/15240101.html"
+  },
+  {
+   "name": "תקע צד תלת פיני שחור",
+   "sku": "1524009",
+   "category": "material",
+   "unit": "יח'",
+   "price": 5.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1524009_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1524009.html"
+  },
+  {
+   "name": "תקע צד תלת-פיני לבן",
+   "sku": "1524004",
+   "category": "material",
+   "unit": "יח'",
+   "price": 3.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1524004_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1524004.html"
+  },
+  {
+   "name": "תקע צד עם מפסק",
+   "sku": "1524003",
+   "category": "material",
+   "unit": "יח'",
+   "price": 14.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1524003_2.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/tqe-cd-em-mpsq.html"
+  },
+  {
+   "name": "בסיס D-20 ל-12 מקום עה\"ט",
+   "sku": "99761259",
+   "category": "material",
+   "unit": "יח'",
+   "price": 59.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761259_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761259.html"
+  },
+  {
+   "name": "בסיס D-20 ל-12 מקום תה\"ט",
+   "sku": "99761254",
+   "category": "material",
+   "unit": "יח'",
+   "price": 56.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761254_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761254.html"
+  },
+  {
+   "name": "בסיס D-18 ל-8 מקום תה\"ט",
+   "sku": "99761253",
+   "category": "material",
+   "unit": "יח'",
+   "price": 22.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761253_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761253.html"
+  },
+  {
+   "name": "בסיס D-17 ל-6 מקום תה\"ט",
+   "sku": "99761252",
+   "category": "material",
+   "unit": "יח'",
+   "price": 19.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761252.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761252.html"
+  },
+  {
+   "name": "בסיס D-11 ל-2 מקום תה\"ט",
+   "sku": "99761250",
+   "category": "material",
+   "unit": "יח'",
+   "price": 15.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761250.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761250.html"
+  },
+  {
+   "name": "שקע מחשב RJ45 לקופסא ..-D",
+   "sku": "99761234",
+   "category": "material",
+   "unit": "יח'",
+   "price": 10.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761234_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761234.html"
+  },
+  {
+   "name": "זוג שקעי כח כחול לקופסא ..-D",
+   "sku": "997612332",
+   "category": "material",
+   "unit": "יח'",
+   "price": 20.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997612332.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/997612332.html"
+  },
+  {
+   "name": "זוג שקעי כח אדום לקופסא ..-D",
+   "sku": "99761233",
+   "category": "material",
+   "unit": "יח'",
+   "price": 20.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761233.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761233.html"
+  },
+  {
+   "name": "זוג שקעי כח לבן לקופסא ..-D",
+   "sku": "99761232",
+   "category": "material",
+   "unit": "יח'",
+   "price": 20.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761232.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761232.html"
+  },
+  {
+   "name": "שקע בזק לקופסא ..-D",
+   "sku": "99761231",
+   "category": "material",
+   "unit": "יח'",
+   "price": 6.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761231_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761231.html"
+  },
+  {
+   "name": "מסתם ל-4 מקום לרב בתי שקע",
+   "sku": "99761230",
+   "category": "material",
+   "unit": "יח'",
+   "price": 10.3,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761230.html"
+  },
+  {
+   "name": "מתאם לגרנד לתקשורת",
+   "sku": "997612261",
+   "category": "material",
+   "unit": "יח'",
+   "price": 1.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997612261_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/997612261.html"
+  },
+  {
+   "name": "מתאם לקיסטון מחשב RJ-45 דגם G-1",
+   "sku": "997612251",
+   "category": "material",
+   "unit": "יח'",
+   "price": 5.2,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/997612251.html"
+  },
+  {
+   "name": "מתאם קיסטון לתקשורת 1 מודול תואם גוויס",
+   "sku": "99761225",
+   "category": "material",
+   "unit": "יח'",
+   "price": 0.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761225_1.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761225.html"
+  },
+  {
+   "name": "מתאם גוויס לתקשורת",
+   "sku": "99761224",
+   "category": "material",
+   "unit": "יח'",
+   "price": 1.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761224_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761224.html"
+  },
+  {
+   "name": "קופסא 12 D-20 מקום עה\"ט ריקה",
+   "sku": "99761223",
+   "category": "material",
+   "unit": "יח'",
+   "price": 113.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761223_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761223.html"
+  },
+  {
+   "name": "קופסא 12 D-20 מקום תה\"ט ריקה",
+   "sku": "99761222",
+   "category": "material",
+   "unit": "יח'",
+   "price": 113.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761222_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761222.html"
+  },
+  {
+   "name": "קופסא 8 D-18 מקום תה\"ט ריקה",
+   "sku": "99761218",
+   "category": "material",
+   "unit": "יח'",
+   "price": 44.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761218_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761218.html"
+  },
+  {
+   "name": "קופסא 8 D-18 מקום עה\"ט ריקה",
+   "sku": "99761217",
+   "category": "material",
+   "unit": "יח'",
+   "price": 44.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761217_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761217.html"
+  },
+  {
+   "name": "קופסא 6 D-17 מקום תה\"ט ריקה",
+   "sku": "99761216",
+   "category": "material",
+   "unit": "יח'",
+   "price": 39.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761216.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761216.html"
+  },
+  {
+   "name": "קופסא 6 D-17 מקום עה\"ט ריקה",
+   "sku": "99761215",
+   "category": "material",
+   "unit": "יח'",
+   "price": 39.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761215_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761215.html"
+  },
+  {
+   "name": "קופסא 4 D-14 מקום עה\"ט",
+   "sku": "997612141",
+   "category": "material",
+   "unit": "יח'",
+   "price": 37.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997612141_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/997612141.html"
+  },
+  {
+   "name": "קופסא 4 D-14 מקום תה\"ט",
+   "sku": "99761214",
+   "category": "material",
+   "unit": "יח'",
+   "price": 37.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761214.png",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761214.html"
+  },
+  {
+   "name": "קופסא 2 D-11 מקום עה\"ט",
+   "sku": "997612101",
+   "category": "material",
+   "unit": "יח'",
+   "price": 31.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997612101_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/997612101.html"
+  },
+  {
+   "name": "קופסא 2 D-11 מקום תה\"ט",
+   "sku": "99761210",
+   "category": "material",
+   "unit": "יח'",
+   "price": 31.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761210_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761210.html"
+  },
+  {
+   "name": "דמי 2 מקום לקופסא ...D",
+   "sku": "99761204",
+   "category": "material",
+   "unit": "יח'",
+   "price": 5.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761204_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761204.html"
+  },
+  {
+   "name": "דמי 1 מקום לקופסא ...D",
+   "sku": "99761202",
+   "category": "material",
+   "unit": "יח'",
+   "price": 2.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761202_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761202.html"
+  },
+  {
+   "name": "מחיצה לרב בתי שקע תה\"ט",
+   "sku": "99761269",
+   "category": "material",
+   "unit": "יח'",
+   "price": 9.9,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching/99761269.html"
+  },
+  {
+   "name": "ממסר פחת 2X40A 30MA 10K דגם VEGA A",
+   "sku": "161066",
+   "category": "material",
+   "unit": "יח'",
+   "price": 80.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/161066_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/161066.html"
+  },
+  {
+   "name": "חצי אוטומט VEGA 3P 10KA - לבחירה",
+   "sku": "1610519_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 49.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/1610519_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1610519-main.html"
+  },
+  {
+   "name": "חצי אוטומט VEGA 1P 10KA - לבחירה",
+   "sku": "1610512_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 14.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/1610512_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1610512-main.html"
+  },
+  {
+   "name": "חצי אוטומט 6KA אופיין VEGA C -זרם וקוטביות לבחירה",
+   "sku": "161001_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 7.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/161001_MAIN.png",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/161001-main.html"
+  },
+  {
+   "name": "חצי אוטומט VEGA 3PX100C 10KA",
+   "sku": "161053",
+   "category": "material",
+   "unit": "יח'",
+   "price": 192.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/161046_2_3.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/161053.html"
+  },
+  {
+   "name": "חצי אוטומט 1 מודול VEGA 1X10C+0 6KA",
+   "sku": "1610045",
+   "category": "material",
+   "unit": "יח'",
+   "price": 22.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/1610045_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1610045.html"
+  },
+  {
+   "name": "חצי אוטומט 1 מודול VEGA 1X16C+0 6KA",
+   "sku": "1610055",
+   "category": "material",
+   "unit": "יח'",
+   "price": 22.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/1610055_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/1610055.html"
+  },
+  {
+   "name": "חצי אוטומט VEGA 3PX125C 10KA",
+   "sku": "161056",
+   "category": "material",
+   "unit": "יח'",
+   "price": 222.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/161046_2_4.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/161056.html"
+  },
+  {
+   "name": "אוטומט חדר מדרגות VEGA TB438(E8)",
+   "sku": "161095",
+   "category": "material",
+   "unit": "יח'",
+   "price": 70.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/6/161095_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/161095.html"
+  },
+  {
+   "name": "חצי אוטומט 1 מודול 10KA + ניתוק 0 מוגן10A 2P-אופיין C",
+   "sku": "3990446",
+   "category": "material",
+   "unit": "יח'",
+   "price": 62.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3990446_1.jpeg",
+   "productUrl": "https://www.erco.co.il/b2c/3990446.html"
+  },
+  {
+   "name": "חצי אוטומט 6KA C GEWISS - לבחירה",
+   "sku": "3992025_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 46.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3992025_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3992025-main.html"
+  },
+  {
+   "name": "חצי אוטומט 3X80A 16kA C GEWISS",
+   "sku": "3993337",
+   "category": "material",
+   "unit": "יח'",
+   "price": 1010.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3993337.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3993337.html"
+  },
+  {
+   "name": "חצי אוטומט C GEWISS - לבחירה",
+   "sku": "3992005_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 15.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3992005_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/3992005-main.html"
+  },
+  {
+   "name": "חצי אוטומט דגם 6kA C GEWISS RB60 -זרם וקוטביות לבחירה",
+   "sku": "3991506_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 12.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3991506_MAIN.png",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/3991506-main.html"
+  },
+  {
+   "name": "חצי אוטומט 3P 6kA C GEWISS - זרם לבחירה",
+   "sku": "3992066_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 75.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3992066_MAIN_1.png",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/3992066-main.html"
+  },
+  {
+   "name": "חצי אוטומט 3P 10kA C GEWISS - זרם לבחירה",
+   "sku": "3992667_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 118.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3992666_MAIN_1.png",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/3992667-main.html"
+  },
+  {
+   "name": "חצי אוטומט 1P+N 6KA C GEWISS RB - זרם לבחירה",
+   "sku": "3991525_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 34.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3991525_MAIN_1.png",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/3991525-main.html"
+  },
+  {
+   "name": "חצי אוטומט 1P 10kA C GEWISS - זרם לבחירה",
+   "sku": "3992606_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 22.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3992606_MAIN_1.png",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/3992606-main.html"
+  },
+  {
+   "name": "אוטומט חדר מדרגות GEWISS 6A (חדש)",
+   "sku": "3996809",
+   "category": "material",
+   "unit": "יח'",
+   "price": 151.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3996809_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3996809.html"
+  },
+  {
+   "name": "חצי אוטומט 2P 10KA אופיין S202M C זרם לבחירה",
+   "sku": "62101122702_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 114.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101122702_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101122702-main.html"
+  },
+  {
+   "name": "חצי אוטומט 10KA 1P אופיין S201M K-זרם לבחירה",
+   "sku": "62101011006_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 97.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101011006_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101011006-main.html"
+  },
+  {
+   "name": "חצי אוטומט 1P 6KA אופיין SH201 C זרם לבחירה",
+   "sku": "62101011106_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 20.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101011106_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101011106-main.html"
+  },
+  {
+   "name": "חצי אוטומט 2P 6KA אופיין SH202 C -זרם לבחירה",
+   "sku": "62101021306_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 98.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101021306_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101021306-main.html"
+  },
+  {
+   "name": "חצי אוטומט 1P 10KA אופיין S201M C -זרם לבחירה",
+   "sku": "62101112490_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 29.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101112490_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101112490-main.html"
+  },
+  {
+   "name": "חצי אוטומט 0+ 1P 10KA אופיין S201M C -זרם לבחירה",
+   "sku": "62101113092_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 101.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101113092_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101113092-main.html"
+  },
+  {
+   "name": "חצי אוטומט ABB 3P 10KA אופיין S203M C - זרם להחירה",
+   "sku": "62101132802_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 141.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101132802_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101132802-main.html"
+  },
+  {
+   "name": "חצי אוטומט 4P 10KA אופיין S204M C -זרם לבחירה",
+   "sku": "62101132910_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 198.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101132910_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101132910-main.html"
+  },
+  {
+   "name": "חצי אוטומט 10KA תלת פאזי+0 אופיין S203M C-זרם לבחירה",
+   "sku": "62101133216_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 234.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101133216_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101133216-main.html"
+  },
+  {
+   "name": "חצי אוטומט 1 מודול ABB SN201 M C+NA 10KA-זרם לבחירה",
+   "sku": "62101141004_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 84.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101141004_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101141004-main.html"
+  },
+  {
+   "name": "חצי אוטומט 1 מודול 6KA אופיין C זרם לבחירה",
+   "sku": "62101151006_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 71.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101151006_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101151006-main.html"
+  },
+  {
+   "name": "חצי אוטומט 10KA תלת פאזי אופיין S203M K - זרם לבחירה",
+   "sku": "62101044016_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 352.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101044016_MAIN_1_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101044016-main.html"
+  },
+  {
+   "name": "חצי אוטומט 6KA 3P אופיין SH203 C -זרם לבחירה",
+   "sku": "62101032310_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 105.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101032310_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101032310-main.html"
+  },
+  {
+   "name": "חצי אוטומט 1 מודול SN201 M C2+NA 10KA",
+   "sku": "62101141002",
+   "category": "material",
+   "unit": "יח'",
+   "price": 116.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101141002_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/62101141002.html"
+  },
+  {
+   "name": "חצי אוטומט 10KA תלת פאזי 40A אופיין S203M B",
+   "sku": "62101131340",
+   "category": "material",
+   "unit": "יח'",
+   "price": 162.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101131316_1_5.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101131340.html"
+  },
+  {
+   "name": "אביזר נעילה למא\"ז SA 1 S200/SH200",
+   "sku": "62101080003",
+   "category": "material",
+   "unit": "יח'",
+   "price": 20.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101080003_3.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/62101080003.html"
+  },
+  {
+   "name": "סליל הפסקה S2C A2 110-415 VAC/ 110-250 VDC",
+   "sku": "62101081140",
+   "category": "material",
+   "unit": "יח'",
+   "price": 251.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101081140_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101081140.html"
+  },
+  {
+   "name": "חצי אוטומט 4x80A 6KA אופיין S204 C",
+   "sku": "62101032580",
+   "category": "material",
+   "unit": "יח'",
+   "price": 649.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101032580_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/62101032580.html"
+  },
+  {
+   "name": "חצי אוטומט 10kA תלת פאזי 100A אופיין S803B C",
+   "sku": "62101341390",
+   "category": "material",
+   "unit": "יח'",
+   "price": 716.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101341380_1_2.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/hci-avtvmt-10ka-tlt-pazi-100a-avpiin-s803b-c.html"
+  },
+  {
+   "name": "חצי אוטומט HAGER 6KA 3P C - זרם לבחירה",
+   "sku": "6700252_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 118.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/7/6700252_MAIN_1_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/6700252-main.html"
+  },
+  {
+   "name": "חצי אוטומט HAGER 6KA C - זרם לבחירה",
+   "sku": "6700056_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 23.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/7/6700056_MAIN_1_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/6700056-main.html"
+  },
+  {
+   "name": "חוט 2.5 חום NYAF גמיש",
+   "sku": "5955190",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955190_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/hvt-2-5-hvm-nyaf-gmiw.html"
+  },
+  {
+   "name": "חוט 1.5 כחול NYAF גמיש",
+   "sku": "5955161",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955161_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-khvl-nyaf-gmiw.html"
+  },
+  {
+   "name": "חוט 1.5 צ/י NYAF גמיש",
+   "sku": "5955160",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955160_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/5955160.html"
+  },
+  {
+   "name": "חוט 1.5 חום/שחור NYAF גמיש",
+   "sku": "5955158",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955158_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-hvm-whvr-nyaf-gmiw.html"
+  },
+  {
+   "name": "חוט 1.5 חום NYAF גמיש",
+   "sku": "5955150",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955150_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-hvm-nyaf-gmiw.html"
+  },
+  {
+   "name": "חוט 1.0 צ/י NYAF גמיש",
+   "sku": "5955120",
+   "category": "material",
+   "unit": "מ'",
+   "price": 0.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955120_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/5955120.html"
+  },
+  {
+   "name": "חוט 0.75 צ/י NYAF גמיש",
+   "sku": "5955080",
+   "category": "material",
+   "unit": "מ'",
+   "price": 0.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955080_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/5955080.html"
+  },
+  {
+   "name": "חוט NYAF 240 גמיש - צבע לבחירה",
+   "sku": "5956430_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 159.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956430_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956430-main.html"
+  },
+  {
+   "name": "חוט NYAF 150 גמיש - צבע לבחירה",
+   "sku": "5956341_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 98.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956341_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956341-main.html"
+  },
+  {
+   "name": "חוט NYAF 16 גמיש - צבע לבחירה",
+   "sku": "5956060_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 10.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956060_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956060-main.html"
+  },
+  {
+   "name": "חוט NYAF 10 גמיש -צבע לבחירה",
+   "sku": "5956020_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 6.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956020_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956020-main.html"
+  },
+  {
+   "name": "חוט NYAF 70 גמיש - צבע לבחירה",
+   "sku": "5956230_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 46.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956230_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956230-main.html"
+  },
+  {
+   "name": "חוט NYAF 50 גמיש - צבע לבחירה",
+   "sku": "5956170_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 32.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956170_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956170-main.html"
+  },
+  {
+   "name": "חוט NYAF 185 גמיש - צבע לבחירה",
+   "sku": "5956350_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 120.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956350_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956350-main.html"
+  },
+  {
+   "name": "חוט NYAF 120 גמיש - צבע לבחירה",
+   "sku": "5956300_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 80.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956300_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956300-main.html"
+  },
+  {
+   "name": "חוט NYAF 35 גמיש - צבע לבחירה",
+   "sku": "5956130_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 22.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956130_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956130-main.html"
+  },
+  {
+   "name": "חוט NYAF 25 גמיש - צבע לבחירה",
+   "sku": "5956090_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 16.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956090_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956090-main.html"
+  },
+  {
+   "name": "חוט NYAF 6.0 גמיש - צבע לבחירה",
+   "sku": "5955260_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 3.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955260_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5955260-main.html"
+  },
+  {
+   "name": "חוט NYAF 4.0 גמיש - צבע לבחירה",
+   "sku": "5955220_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 2.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955220_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5955220-main.html"
+  },
+  {
+   "name": "חוט NYAF 2.5 גמיש - צבע לבחירה",
+   "sku": "5955194_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955194_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5955194-main.html"
+  },
+  {
+   "name": "חוט NYAF 95 גמיש -צבע לבחירה",
+   "sku": "5956260_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 62.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956260_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/5956260-main.html"
+  },
+  {
+   "name": "חוט PVC 1.5 קשיח בצבע לבחירה",
+   "sku": "55021_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55021_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/55021-main.html"
+  },
+  {
+   "name": "חוט PVC 2.5 קשיח בצבע לבחירה",
+   "sku": "55031_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 1.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55031_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/55031-main.html"
+  },
+  {
+   "name": "חוט PVC 4.0 קשיח בצבע לבחירה",
+   "sku": "55042_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 2.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55042_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/55042-main.html"
+  },
+  {
+   "name": "חוט PVC 6.0 קשיח בצבע לבחירה",
+   "sku": "55052_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 3.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55052_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/55052-main.html"
+  },
+  {
+   "name": "חוט PVC 10 קשיח בצבע לבחירה",
+   "sku": "56011_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 6.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/6/56011_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/56011-main.html"
+  },
+  {
+   "name": "חוט PVC קשיח 10 (בחבילה)- בצבע לבחירה",
+   "sku": "560131_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 6.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/6/560131__MAIN_1_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/560131-main.html"
+  },
+  {
+   "name": "חוט PVC 25 קשיח- בצבע לבחירה",
+   "sku": "56031_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 16.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/6/56031_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/56031-main.html"
+  },
+  {
+   "name": "חוט 16 צהוב/ירוק PVC קשיח - חבילה",
+   "sku": "560231",
+   "category": "material",
+   "unit": "מ'",
+   "price": 10.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55020_1_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/560231.html"
+  },
+  {
+   "name": "חוט PVC 16 קשיח- בצבע לבחירה",
+   "sku": "56022_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 10.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/6/56022_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/56022-main.html"
+  },
+  {
+   "name": "חוט 25 צהוב/ירוק PVC קשיח - חבילה",
+   "sku": "560331",
+   "category": "material",
+   "unit": "מ'",
+   "price": 16.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55020_1_2.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/560331.html"
+  },
+  {
+   "name": "חוט 35 צהוב/ירוק PVC קשיח - חבילה",
+   "sku": "560431",
+   "category": "material",
+   "unit": "מ'",
+   "price": 22.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55020_1_3.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/560431.html"
+  },
+  {
+   "name": "חוט 35 צהוב/ירוק PVC קשיח",
+   "sku": "56043",
+   "category": "material",
+   "unit": "מ'",
+   "price": 22.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/6/56043_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/56043.html"
+  },
+  {
+   "name": "חוט 50 צהוב/ירוק PVC קשיח - חבילה",
+   "sku": "570131",
+   "category": "material",
+   "unit": "מ'",
+   "price": 30.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/570131_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/570131.html"
+  },
+  {
+   "name": "חוט 50 חום PVC קשיח- בצבע לבחירה",
+   "sku": "57012_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 30.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/57012_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/57012-main.html"
+  },
+  {
+   "name": "חוט 70 צהוב/ירוק PVC קשיח",
+   "sku": "57023",
+   "category": "material",
+   "unit": "מ'",
+   "price": 44.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/57023_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/57023.html"
+  },
+  {
+   "name": "חוט PVC 95 קשיח- בצבע לבחירה",
+   "sku": "57032_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 61.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/57032_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/57032-main.html"
+  },
+  {
+   "name": "חוט 120 צהוב/ירוק PVC קשיח",
+   "sku": "57043",
+   "category": "material",
+   "unit": "מ'",
+   "price": 76.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/57043_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/57043.html"
+  },
+  {
+   "name": "חוט PVC 150 קשיח- בצבע לבחירה",
+   "sku": "57053_MAIN",
+   "category": "material",
+   "unit": "מ'",
+   "price": 95.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/57053_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/57053-main.html"
+  },
+  {
+   "name": "חוט 185 צהוב/ירוק PVC קשיח",
+   "sku": "57063",
+   "category": "material",
+   "unit": "מ'",
+   "price": 119.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/57063_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/57063.html"
+  },
+  {
+   "name": "פלס מגנטי 80 ס\"מ VEGA",
+   "sku": "9956504341",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 29.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956504341_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/pls-mgnti-80-s-m-vega.html"
+  },
+  {
+   "name": "פלס מגנטי 60 ס\"מ VEGA",
+   "sku": "995650434",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 29.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995650434_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/pls-mgnti-60-s-m-vega.html"
+  },
+  {
+   "name": "פלס מגנטי 40 ס\"מ VEGA",
+   "sku": "995650432",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 162.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995650432_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/pls-mgnti-40-s-m-vega.html"
+  },
+  {
+   "name": "מטר עם תפס מגנטי מקצועי VEGA - לבחירה",
+   "sku": "99565123_MAIN",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 40.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565123_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99565123-main.html"
+  },
+  {
+   "name": "בודק שקע מקצועי צג דיגטלי RCD TEST",
+   "sku": "4750015",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 89.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/4750015_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/work-tools/test-and-measurement-tools/4750015.html"
+  },
+  {
+   "name": "רולטקה פיברגלס 50 מטר VEGA",
+   "sku": "995651243",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 126.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995651243_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sales/sales-new-in-erco/995651243.html"
+  },
+  {
+   "name": "רולטקה פיברגלס 100 מטר VEGA",
+   "sku": "995651244",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 180.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995651244_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/sales/sales-new-in-erco/995651244.html"
+  },
+  {
+   "name": "מטר 3 מטר עם תפס מקצועי VOLA",
+   "sku": "99565122",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 9.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565122_2.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/work-tools/hand-tools/99565122.html"
+  },
+  {
+   "name": "רב מודד דיגיטלי SCOPE התנגדות מד תדר ממשק תוכנת מחשב",
+   "sku": "248UT81C",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 1710.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT81C.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/work-tools/test-and-measurement-tools/248ut81c.html"
+  },
+  {
+   "name": "רב מודד דיגיטלי AC/DC RMS CAT1000V",
+   "sku": "248UT61B+",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 357.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT61B_.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/work-tools/test-and-measurement-tools/248ut61b.html"
+  },
+  {
+   "name": "מד התנגדות בידוד UT502A 0.01MOHM 500/1000/2500V",
+   "sku": "248UT502A",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 658.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT502A.png",
+   "productUrl": "https://www.erco.co.il/b2c/248ut502a.html"
+  },
+  {
+   "name": "מד טווח טלסקופי זום עד 1300 מטר LM1500",
+   "sku": "248UTLM1500",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 699.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UTLM1500.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/work-tools/hand-tools/248utlm1500.html"
+  },
+  {
+   "name": "מד טווח טלסקופי זום עד 1200 מטר LM1200",
+   "sku": "248UTLM1200",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 1057.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UTLM1200.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/work-tools/hand-tools/248utlm1200.html"
+  },
+  {
+   "name": "מד קבלים 20 אלף מיקרופרד UT601",
+   "sku": "248UT601",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 193.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT601_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut601.html"
+  },
+  {
+   "name": "בודק התנגדות בידוד מתח גבוה 6 טווחים UT516B 500V-12000V",
+   "sku": "248UT516B",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 2000.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT516B.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut516b.html"
+  },
+  {
+   "name": "מד התנגדות בידוד דיגיטלי עד 1000V+מד מתח UT511",
+   "sku": "248UT511",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 299.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT511_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/md-htngdvt-bidvd-digitli-ed-1000v-md-mth.html"
+  },
+  {
+   "name": "מד אור דיגיטלי 20000 מודד פיז אור UT381",
+   "sku": "248UT381",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 364.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT381_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut381.html"
+  },
+  {
+   "name": "צבת זרם 1000A AC/DC + רב מודד UT208A",
+   "sku": "248UT208A",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 455.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT208A_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut208a.html"
+  },
+  {
+   "name": "רב מודד צבת מיני TRMS 200A +קבלים+טמפ' UT210C",
+   "sku": "248UT210C",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 259.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT210C_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut210c.html"
+  },
+  {
+   "name": "צבת מיני TRUE RMS UT210B",
+   "sku": "248UT210B",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 175.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT210B_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut210b.html"
+  },
+  {
+   "name": "צבת זרם 400A AC קבלים TRMS טמפ' UT213B NCV",
+   "sku": "248UT213B",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 301.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT213B_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut213b.html"
+  },
+  {
+   "name": "צבת זרם 600AC/DC +קבלים+טמפ'+סדר UT219DS IP54",
+   "sku": "248UT219DS",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 1344.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT219DS.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut219ds.html"
+  },
+  {
+   "name": "צבת זרם True RMS מידות חד פאזי/תלת פאזי UT243",
+   "sku": "248UT243",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 599.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT243.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut243.html"
+  },
+  {
+   "name": "צבת זרם פתוח UT256A RMS 200A AC/DC",
+   "sku": "248UT256A",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 325.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT256A.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248ut256a.html"
+  },
+  {
+   "name": "צבת זרם דיגיטלית CAT3 600V",
+   "sku": "44IMT23114",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 411.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/4/44IMT23114_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/44imt23114.html"
+  },
+  {
+   "name": "סט מהדקי קרוקודיל AC175 FLUKE 1000V",
+   "sku": "99451200",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 343.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99451200_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99451200.html"
+  },
+  {
+   "name": "פרובים FLUKE TL-175",
+   "sku": "99451109",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 343.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99451109_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99451109.html"
+  },
+  {
+   "name": "פרובים למכשיר FLUKE TL-224",
+   "sku": "99451108",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 367.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99451108_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99451108.html"
+  },
+  {
+   "name": "תיק FLUKE C550",
+   "sku": "99451060",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 1242.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99451060_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99451060.html"
+  },
+  {
+   "name": "פרובים FLUKE 75-1",
+   "sku": "99451028",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 280.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99451028_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99451028.html"
+  },
+  {
+   "name": "נרתיק FLUKE C25",
+   "sku": "99451009",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 501.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99451009_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99451009.html"
+  },
+  {
+   "name": "נרתיק FLUKE C23",
+   "sku": "99451008",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 354.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99451008_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99451008.html"
+  },
+  {
+   "name": "פרוב גדול לרבי מודדים אדום/שחור UTL21",
+   "sku": "248UTL21",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 29.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UTL21_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248utl21.html"
+  },
+  {
+   "name": "רב מודד תצוגה כפולה+קבלים + תדר + UT71A USB",
+   "sku": "248UT71A",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 841.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT71A_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/work-tools/test-and-measurement-tools/248ut71a.html"
+  },
+  {
+   "name": "מד מרחק לייזר 50 מטר",
+   "sku": "248LM50A",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 175.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248LM50A_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248lm50a.html"
+  },
+  {
+   "name": "מד מרחק לייזר 70 מטר",
+   "sku": "248LM70A",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 215.8,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248LM70A_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248lm70a.html"
+  },
+  {
+   "name": "מפלס לייזר ירוק צלב",
+   "sku": "248LM570LD-II",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 448.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248LM570LD-II_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248lm570ld-ii.html"
+  },
+  {
+   "name": "מד מרחק לייזר עד 40 מטר",
+   "sku": "248LM40Mi",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 219.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248LM40Mi_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248lm40mi.html"
+  },
+  {
+   "name": "מד זווית דיגיטלי",
+   "sku": "248LM320E",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 292.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248LM320E_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248lm320e.html"
+  },
+  {
+   "name": "מד מרחק לייזר 100 מטר",
+   "sku": "248LM100A",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 292.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248LM100A_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/248lm100a.html"
+  },
+  {
+   "name": "אקדח למתיחת אזיקונים VEGA",
+   "sku": "995653691",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 87.7,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/995653691.html"
+  },
+  {
+   "name": "מארז (100) חבק נירוסטה 7.9X550",
+   "sku": "901315",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 219.5,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/901315.html"
+  },
+  {
+   "name": "מארז (100 יח') בסיס לחבק + חור HC-1",
+   "sku": "901155",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 21.8,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/901155.html"
+  },
+  {
+   "name": "מארז (100 יח') בסיס לחבק 27.0X27.0 HC-102",
+   "sku": "901152",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 60.5,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/901152.html"
+  },
+  {
+   "name": "מארז (100 יח') בסיס לחבק 19.0X19.0 HC-101",
+   "sku": "901151",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 43.5,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/901151.html"
+  },
+  {
+   "name": "מארז (100 יח') חבק דגלון SAPISELCO 200",
+   "sku": "90052",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 20.9,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/90052.html"
+  },
+  {
+   "name": "מארז (100 יח') חבק דגלון SAPISELCO 100",
+   "sku": "90051",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 9.4,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/90051.html"
+  },
+  {
+   "name": "חבק שחור שן ברזל SAPISELCO - לבחירה",
+   "sku": "901204_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 41.4,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/901204-main.html"
+  },
+  {
+   "name": "שלה אזיקון 40-63 מ\"מ (100 יחידות) ELEMATIC",
+   "sku": "1630014",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 89.0,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/1630014.html"
+  },
+  {
+   "name": "מארז (100 יח') חבק לבן SAPISELCO - לבחירה",
+   "sku": "90003_MAIN",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 3.0,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/90003-main.html"
+  },
+  {
+   "name": "מארז (100 יח') חבק שחור SAPISELCO - לבחירה",
+   "sku": "90038_MAIN",
+   "category": "material",
+   "unit": "אריזה",
+   "price": 3.0,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/90038-main.html"
+  },
+  {
+   "name": "לוח GEWISS תה\"ט 2x12 שקוף (ללא פס 3940402)",
+   "sku": "3940606",
+   "category": "material",
+   "unit": "יח'",
+   "price": 127.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940606_2_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940606.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-24 ח\"א GW",
+   "sku": "3940030",
+   "category": "material",
+   "unit": "יח'",
+   "price": 104.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940030_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940030.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-4 ח\"א GW",
+   "sku": "3940023",
+   "category": "material",
+   "unit": "יח'",
+   "price": 19.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940023_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940023.html"
+  },
+  {
+   "name": "לוח חשמל זמני GEWISS IP44 40A GW68005 כולל ציוד 10KA VEGA",
+   "sku": "39690002N",
+   "category": "material",
+   "unit": "יח'",
+   "price": 1159.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/_/v/_vega_3.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/39690002n.html"
+  },
+  {
+   "name": "לוח חשמל זמני GEWISS IP44 25A GW68005 כולל ציוד 10KA VEGA",
+   "sku": "39690001N",
+   "category": "material",
+   "unit": "יח'",
+   "price": 746.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/_/v/_vega_2.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/39690001n.html"
+  },
+  {
+   "name": "לוח חשמל זמני GEWISS IP44 40A GW68005 כולל ציוד 10KA GW",
+   "sku": "39690000N",
+   "category": "material",
+   "unit": "יח'",
+   "price": 1265.7,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/_/g/_gewiss_2.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/39690000n.html"
+  },
+  {
+   "name": "לוח חשמל זמני GEWISS IP44 25A GW68005 כולל ציוד 10KA GW",
+   "sku": "39689999N",
+   "category": "material",
+   "unit": "יח'",
+   "price": 1079.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/_/g/_gewiss.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/39689999n.html"
+  },
+  {
+   "name": "לוח חשמל זמני 25A עם 2 פחתים 10KA GEWISS IP67 40A",
+   "sku": "39689199N",
+   "category": "material",
+   "unit": "יח'",
+   "price": 1644.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/39689199.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/39689199n.html"
+  },
+  {
+   "name": "לוח חשמל זמני IP67 63A כולל ציוד גוויס 10KA GW",
+   "sku": "39689992N",
+   "category": "material",
+   "unit": "יח'",
+   "price": 2370.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/39689992.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/39689992n.html"
+  },
+  {
+   "name": "לוח עה\"ט שקוף GW - לבחירה",
+   "sku": "3940001_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 62.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940001_MAIN_1_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940001-main.html"
+  },
+  {
+   "name": "לוח תקשורת GEWISS קומפלט תה\"ט אטום - לבחירה",
+   "sku": "3940885T_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 97.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940885T_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940885t-main.html"
+  },
+  {
+   "name": "תיבת התקנה בלבד ללוח תה\"ט - לבחירה",
+   "sku": "3940687_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 21.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940687_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940687-main.html"
+  },
+  {
+   "name": "גוויס פס אפס/הארקה - לבחירה",
+   "sku": "3940412B_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 11.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940412B_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940412b-main.html"
+  },
+  {
+   "name": "לוח חשמל GEWISS קומפלט עה\"ט דלת אטומה - לבחירה",
+   "sku": "3940065C_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 93.3,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940065C_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940065c-main.html"
+  },
+  {
+   "name": "לוח חשמל GEWISS קומפלט תה\"ט דלת אטומה - לבחירה",
+   "sku": "3940888C_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 92.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940888C_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940888c-main.html"
+  },
+  {
+   "name": "לוח תקשורת GEWISS עה\"ט דלת אטומה - לבחירה",
+   "sku": "3940065T_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 92.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940065T_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940065t-main.html"
+  },
+  {
+   "name": "תיבת התקנה ירוקה לקיר גבס ללוח תה\"ט - לבחירה",
+   "sku": "3940687PM_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 40.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940687PM_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940687pm-main.html"
+  },
+  {
+   "name": "לוח עה\"ט IP-65 - לבחירה",
+   "sku": "3940101_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 84.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940101_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3940101-main.html"
+  },
+  {
+   "name": "מסגרת נתפסת GW - לבחירה",
+   "sku": "3926409_MAIN",
+   "category": "material",
+   "unit": "יח'",
+   "price": 6.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3926409_MAIN_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/3926409-main.html"
+  },
+  {
+   "name": "כיסוי עליון+דלת אטומה+פסי אפס ללוח 24 תה\"ט",
+   "sku": "3941886BD",
+   "category": "material",
+   "unit": "יח'",
+   "price": 125.4,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3941886BD_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/cabinets-boards-boxes/distribution-board/3941886bd.html"
+  },
+  {
+   "name": "לוח תקשורת תה\"ט ל-54 ח\"א+דלת לבן + מגנט",
+   "sku": "997615590",
+   "category": "material",
+   "unit": "יח'",
+   "price": 445.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997615590_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/lvh-tqwvrt-th-t-l-54-h-a-dlt-lbn-mgnt.html"
+  },
+  {
+   "name": "לוח תקשורת תה\"ט ל-36 ללא בסיס + מגנט",
+   "sku": "997615570",
+   "category": "material",
+   "unit": "יח'",
+   "price": 134.5,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997615570_2.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/lvh-tqwvrt-th-t-l-36-lla-bsis-mgnt.html"
+  },
+  {
+   "name": "לוח תקשורת תה\"ט ל-36 ללא בסיס",
+   "sku": "99761557",
+   "category": "material",
+   "unit": "יח'",
+   "price": 98.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761557_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/lvh-tqwvrt-th-t-l-36-lla-bsis.html"
+  },
+  {
+   "name": "לוח תקשורת תה\"ט ללא בסיס A-T-12",
+   "sku": "99761556",
+   "category": "material",
+   "unit": "יח'",
+   "price": 47.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761556.png",
+   "productUrl": "https://www.erco.co.il/b2c/lvh-tqwvrt-th-t-lla-bsis-a-t-12.html"
+  },
+  {
+   "name": "לוח תקשורת תה\"ט ללא בסיס A-T-24",
+   "sku": "99761555",
+   "category": "material",
+   "unit": "יח'",
+   "price": 64.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761555.png",
+   "productUrl": "https://www.erco.co.il/b2c/lvh-tqwvrt-th-t-lla-bsis-a-t-24.html"
+  },
+  {
+   "name": "לוח תה\"ט ללא בסיס ל-12",
+   "sku": "99761554",
+   "category": "material",
+   "unit": "יח'",
+   "price": 47.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761554_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761554.html"
+  },
+  {
+   "name": "לוח תקשורת עה\"ט AT-36",
+   "sku": "99761540",
+   "category": "material",
+   "unit": "יח'",
+   "price": 196.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761540.png",
+   "productUrl": "https://www.erco.co.il/b2c/99761540.html"
+  },
+  {
+   "name": "לוח תה\"ט ללא בסיס ל-72",
+   "sku": "997615533",
+   "category": "material",
+   "unit": "יח'",
+   "price": 303.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997615533_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/997615533.html"
+  },
+  {
+   "name": "לוח תקשורת עה\"ט AT-24",
+   "sku": "99761536",
+   "category": "material",
+   "unit": "יח'",
+   "price": 128.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761536.png",
+   "productUrl": "https://www.erco.co.il/b2c/99761536.html"
+  },
+  {
+   "name": "לוח תה\"ט ללא בסיס ל-48 + מגנט",
+   "sku": "9976155310",
+   "category": "material",
+   "unit": "יח'",
+   "price": 191.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9976155310_1.png",
+   "productUrl": "https://www.erco.co.il/b2c/9976155310.html"
+  },
+  {
+   "name": "לוח תה\"ט ללא בסיס ל-48",
+   "sku": "997615531",
+   "category": "material",
+   "unit": "יח'",
+   "price": 157.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/997615531_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/997615531.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-48 ח\"א+דלת לבן",
+   "sku": "99761529",
+   "category": "material",
+   "unit": "יח'",
+   "price": 314.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761529_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761529.html"
+  },
+  {
+   "name": "לוח תה\"ט ללא בסיס ל-24",
+   "sku": "99761553",
+   "category": "material",
+   "unit": "יח'",
+   "price": 64.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761553_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761553.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-12 ח\"א ללא דלת",
+   "sku": "99761526",
+   "category": "material",
+   "unit": "יח'",
+   "price": 77.6,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761526_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761526.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-12 ח\"א+דלת לבן",
+   "sku": "99761524",
+   "category": "material",
+   "unit": "יח'",
+   "price": 94.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761524_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761524.html"
+  },
+  {
+   "name": "לוח ללא בסיס ל-36 תה\"ט",
+   "sku": "99761552",
+   "category": "material",
+   "unit": "יח'",
+   "price": 98.1,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761552_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761552.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-54 ח\"א+דלת לבן",
+   "sku": "99761521",
+   "category": "material",
+   "unit": "יח'",
+   "price": 376.9,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761521_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761521.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-36 ח\"א ללא דלת",
+   "sku": "99761520",
+   "category": "material",
+   "unit": "יח'",
+   "price": 178.0,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761520_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761520.html"
+  },
+  {
+   "name": "לוח עה\"ט ל-36 ח\"א+דלת לבן",
+   "sku": "99761518",
+   "category": "material",
+   "unit": "יח'",
+   "price": 196.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761518_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/99761518.html"
+  },
+  {
+   "name": "לוח תקשורת תה\"ט AT-36",
+   "sku": "99761538",
+   "category": "material",
+   "unit": "יח'",
+   "price": 196.2,
+   "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99761538_1.jpg",
+   "productUrl": "https://www.erco.co.il/b2c/lvh-tqwvrt-th-t-at-36.html"
+  },
+  {
+   "name": "גוף משחזת זווית 5\" דיוולט 18V 408",
+   "sku": "245dcg408n",
+   "category": "tool",
+   "unit": "יח'",
+   "price": 696.6,
+   "imageUrl": "",
+   "productUrl": "https://www.erco.co.il/b2c/245dcg408n.html"
+  }
+ ]
+}
