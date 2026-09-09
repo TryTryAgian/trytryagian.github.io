@@ -33,6 +33,7 @@ prices look wrong, that's expected-possible on a first try; paste the
 Action's log output back for a quick fix.
 """
 import json
+import os
 import re
 import sys
 import time
@@ -329,7 +330,50 @@ HANDLERS = {
 
 # ---------------- main ----------------
 
+def run_test_mode(url):
+    print(f"=== TEST MODE: {url} ===")
+    print("(this does not touch or commit catalog-data.json - it's just a diagnostic report)\n")
+    session = requests.Session()
+    try:
+        html = fetch(url, session)
+    except Exception as e:
+        print(f"!! failed to fetch: {e}", file=sys.stderr)
+        return
+
+    print("--- trying generic handler (looks for built-in JSON-LD product data) ---")
+    generic_products = scrape_generic(html, url)
+    print(f"generic handler found: {len(generic_products)} products")
+    if generic_products:
+        for p in generic_products[:5]:
+            print(f"  - {p['name']}  |  sku={p['sku']}  |  price={p['price']}  |  image={'yes' if p['imageUrl'] else 'no'}")
+        print("\n[RESULT] This site has usable structured data - it can likely be added with")
+        print("         handler: \"generic\" and NO custom code. Add its category URLs to")
+        print("         SUPPLIERS above with that handler and it should just work.")
+        return
+
+    print("\n--- trying magento handler (in case it happens to be Magento-based, like ERCO) ---")
+    magento_products = scrape_magento(html, url)
+    print(f"magento handler found: {len(magento_products)} products")
+    if magento_products:
+        for p in magento_products[:5]:
+            print(f"  - {p['name']}  |  sku={p['sku']}  |  price={p['price']}  |  image={'yes' if p['imageUrl'] else 'no'}")
+        print("\n[RESULT] This looks like a Magento-based site - it can likely be added with")
+        print("         handler: \"magento\" and NO custom code.")
+        return
+
+    print("\n[RESULT] Neither the generic (JSON-LD) nor the magento pattern matched this page.")
+    print("         This site most likely needs its own dedicated handler written for it,")
+    print("         the same way \"brand_asp\" was built for ברנד. Report this URL back")
+    print("         (and ideally one or two real product-listing category URLs on the same")
+    print("         site) to get a handler built for it.")
+
+
 def main():
+    test_url = os.environ.get("TEST_URL", "").strip()
+    if test_url:
+        run_test_mode(test_url)
+        return
+
     session = requests.Session()
     output_suppliers = []
 
