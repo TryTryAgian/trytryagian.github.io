@@ -589,7 +589,7 @@
       <button class="btn btn-sm" onclick="updateCatalogLinksFromSupplierSite()">🔗 עדכן קישורים מהאתר</button>
       <button class="btn btn-icon btn-ghost" onclick="openGoogleSettingsModal()" title="הגדרות Google Drive">⚙️</button>
     </div>
-    <p style="font-size:11px;color:var(--text-dim);margin:0 0 14px;">🌐 עדכן קטלוג מהאתר טוען את erco-catalog.json מהאתר עצמו (אם קיים שם) - כך כל מכשיר מתעדכן בלי צורך בייבוא ידני. CSV / Google Sheets: עמודות שם, מק"ט, סוג, יחידה, מחיר. PDF: זיהוי אוטומטי לפי מק"טים - דורש סקירה. קישורים למוצרים נוצרים אוטומטית מאתר הספק (הגדר אתר במסך "ספקים").</p>
+    <p style="font-size:11px;color:var(--text-dim);margin:0 0 14px;">🌐 עדכן קטלוג מהאתר טוען את catalog-data.json מהאתר עצמו (אם קיים שם) - קובץ אחד יכול להכיל כמה ספקים, כך כל מכשיר מתעדכן בלי צורך בייבוא ידני. CSV / Google Sheets: עמודות שם, מק"ט, סוג, יחידה, מחיר. PDF: זיהוי אוטומטי לפי מק"טים - דורש סקירה. קישורים למוצרים נוצרים אוטומטית מאתר הספק (הגדר אתר במסך "ספקים").</p>
 
     <div class="picker-list" id="catalog-manage-list" style="max-height:200px;margin-bottom:14px;"></div>
 
@@ -812,7 +812,7 @@ const ERCO_CATALOG_SAMPLE = [
 
 /* ================= storage helpers ================= */
 /* ================= app version (bump this on every delivered update, so you can confirm which build is live) ================= */
-const APP_VERSION = '2026-07-13.22';
+const APP_VERSION = '2026-07-13.23';
 
 async function storeGet(key, fallback){
   try{
@@ -883,10 +883,10 @@ async function init(){
   if(catalog === null){
     catalog = [];
     let siteResult = null;
-    try{ siteResult = await loadCatalogFromSiteFiles(['./erco-catalog.json','erco-catalog.json']); }
+    try{ siteResult = await loadCatalogFromSiteFiles(['./catalog-data.json','catalog-data.json','./erco-catalog.json','erco-catalog.json']); }
     catch(e){ console.error('site catalog load failed', e); }
-    if(!siteResult || siteResult.total===0){
-      // fall back to the small built-in sample (works even before erco-catalog.json is uploaded to the site)
+    if(!siteResult || siteResult.totalCount===0){
+      // fall back to the small built-in sample (works even before catalog-data.json is uploaded to the site)
       let erco = suppliers.find(s=>s.name==='ERCO');
       if(!erco){
         erco = {id:uid(), name:'ERCO', phone:'', email:'', website:'https://www.erco.co.il', linkTemplate:''};
@@ -1709,34 +1709,50 @@ async function loadCatalogJsonFile(url){
   return await res.json();
 }
 
-async function mergeSupplierCatalogData(data){
-  // data shape: {supplierName, supplierWebsite, updatedAt, products:[{name,sku,category,unit,price,imageUrl,productUrl}]}
-  let sup = suppliers.find(s=>s.name===data.supplierName);
+async function mergeOneSupplierBlock(block){
+  // block shape: {supplierName, supplierWebsite, products:[{name,sku,category,unit,price,imageUrl,productUrl}]}
+  if(!block || !block.supplierName) return null;
+  let sup = suppliers.find(s=>s.name===block.supplierName);
   if(!sup){
-    sup = {id:uid(), name:data.supplierName, phone:'', email:'', website:data.supplierWebsite||'', linkTemplate:''};
+    sup = {id:uid(), name:block.supplierName, phone:'', email:'', website:block.supplierWebsite||'', linkTemplate:''};
     suppliers.push(sup);
     await storeSet('suppliers', suppliers);
-  }else if(!sup.website && data.supplierWebsite){
-    sup.website = data.supplierWebsite;
+  }else if(!sup.website && block.supplierWebsite){
+    sup.website = block.supplierWebsite;
     await storeSet('suppliers', suppliers);
   }
   let added=0, updated=0;
-  (data.products||[]).forEach(p=>{
+  (block.products||[]).forEach(p=>{
     const result = upsertCatalogProduct(sup.id, {
       name:p.name, sku:p.sku||'', category:p.category||'material', unit:p.unit||"יח'",
       price:(p.price!=null?p.price:null), imageUrl:p.imageUrl||'', productUrl:p.productUrl||''
     });
     if(result==='added') added++; else updated++;
   });
+  return {supplier:sup, added, updated, total:(block.products||[]).length};
+}
+
+async function mergeCatalogSiteData(data){
+  // supports both the multi-supplier shape ({suppliers:[...]})
+  // and the older single-supplier shape ({supplierName, products:[...]})
+  const blocks = Array.isArray(data.suppliers) ? data.suppliers : [data];
+  const results = [];
+  for(const block of blocks){
+    const r = await mergeOneSupplierBlock(block);
+    if(r) results.push(r);
+  }
   await storeSet('catalog', catalog);
-  return {supplier:sup, added, updated, total:(data.products||[]).length};
+  const totalAdded = results.reduce((s,r)=>s+r.added,0);
+  const totalUpdated = results.reduce((s,r)=>s+r.updated,0);
+  const totalCount = results.reduce((s,r)=>s+r.total,0);
+  return {results, totalAdded, totalUpdated, totalCount};
 }
 
 async function loadCatalogFromSiteFiles(urls){
   for(const url of urls){
     try{
       const data = await loadCatalogJsonFile(url);
-      return await mergeSupplierCatalogData(data);
+      return await mergeCatalogSiteData(data);
     }catch(e){ /* try next candidate path */ }
   }
   return null;
@@ -1757,15 +1773,21 @@ function clearSupplierCatalog(){
 
 async function updateCatalogFromSiteFile(){
   showToast('טוען קטלוג מהאתר...');
-  const result = await loadCatalogFromSiteFiles(['./erco-catalog.json','erco-catalog.json']);
-  if(!result){
-    showToast('לא נמצא קובץ קטלוג באתר - ודא שהעלית את erco-catalog.json לאותה תיקייה כמו index.html');
+  const result = await loadCatalogFromSiteFiles(['./catalog-data.json','catalog-data.json','./erco-catalog.json','erco-catalog.json']);
+  if(!result || result.results.length===0){
+    showToast('לא נמצא קובץ קטלוג באתר - ודא שהעלית את catalog-data.json לאותה תיקייה כמו index.html');
     return;
   }
   fillSupplierSelects();
-  document.getElementById('catalog-supplier-select').value = result.supplier.id;
+  document.getElementById('catalog-supplier-select').value = result.results[0].supplier.id;
   renderCatalogManageList();
-  showToast(`עודכן מהאתר: ${result.added} חדשים, ${result.updated} עודכנו (${result.supplier.name})`);
+  if(result.results.length===1){
+    const r = result.results[0];
+    showToast(`עודכן מהאתר: ${r.added} חדשים, ${r.updated} עודכנו (${r.supplier.name})`);
+  }else{
+    const names = result.results.map(r=>`${r.supplier.name} (${r.added+r.updated})`).join(', ');
+    showToast(`עודכנו ${result.results.length} ספקים מהאתר: ${names}`);
+  }
 }
 
 function upsertCatalogProduct(supplierId, data){
