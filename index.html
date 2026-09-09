@@ -812,7 +812,7 @@ const ERCO_CATALOG_SAMPLE = [
 
 /* ================= storage helpers ================= */
 /* ================= app version (bump this on every delivered update, so you can confirm which build is live) ================= */
-const APP_VERSION = '2026-07-13.20';
+const APP_VERSION = '2026-07-13.22';
 
 async function storeGet(key, fallback){
   try{
@@ -1351,8 +1351,9 @@ function fillSupplierSelects(){
 
   const orderSel = document.getElementById('order-supplier');
   const cur2 = orderSel.value;
-  orderSel.innerHTML = suppliers.map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join('') || '<option value="">אין ספקים</option>';
-  orderSel.value = cur2;
+  const allCatalogsOpt = '<option value="__all__">🔍 חיפוש בכל הקטלוגים יחד</option>';
+  orderSel.innerHTML = allCatalogsOpt + suppliers.map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join('');
+  orderSel.value = cur2 || '__all__';
 
   const catSel = document.getElementById('catalog-supplier-select');
   const cur3 = catSel.value;
@@ -2030,6 +2031,7 @@ function signOutOfGoogle(){
     }
   }catch(e){ console.error(e); }
   driveAccessToken = null;
+  driveTokenExpiresAt = 0;
   googleUserProfile = null;
   driveSyncEnabled = false;
   storeSet('google-user-profile', null);
@@ -2115,7 +2117,13 @@ function ensureGapiPickerLoaded(){
   });
 }
 
+let driveTokenExpiresAt = 0;
+
 function ensureDriveToken(){
+  // reuse the cached token whenever it's still valid - never bother Google again until it's actually close to expiring
+  if(driveAccessToken && Date.now() < driveTokenExpiresAt - 60000){
+    return Promise.resolve(driveAccessToken);
+  }
   return new Promise((resolve, reject)=>{
     waitForGlobal(()=> typeof google !== 'undefined' && google.accounts && google.accounts.oauth2).then(()=>{
       if(!driveTokenClient){
@@ -2128,6 +2136,7 @@ function ensureDriveToken(){
       driveTokenClient.callback = (resp)=>{
         if(resp.error){ reject(resp); return; }
         driveAccessToken = resp.access_token;
+        driveTokenExpiresAt = Date.now() + ((Number(resp.expires_in)||3600) * 1000);
         resolve(driveAccessToken);
       };
       driveTokenClient.requestAccessToken({ prompt: driveAccessToken ? '' : 'consent' });
@@ -2391,22 +2400,32 @@ function openOrderModal(editId){
 
 function renderOrderCatalog(){
   const supplierId = document.getElementById('order-supplier').value;
+  const searchAll = supplierId === '__all__';
   const q = (document.getElementById('order-catalog-search').value||'').trim().toLowerCase();
   const el = document.getElementById('order-catalog-list');
-  let list = catalog.filter(c=>c.supplierId===supplierId);
+  let list = searchAll ? catalog.slice() : catalog.filter(c=>c.supplierId===supplierId);
   if(q) list = list.filter(c=> c.name.toLowerCase().includes(q) || (c.sku||'').toLowerCase().includes(q));
   list.sort((a,b)=>a.name.localeCompare(b.name,'he'));
+
+  let cappedNote = '';
+  if(searchAll && !q && list.length>60){
+    list = list.slice(0,60);
+    cappedNote = `<div class="catalog-empty" style="grid-column:1/-1;padding:8px 4px;">מוצגים 60 הראשונים מתוך ${catalog.length} - הקלד כדי לצמצם את החיפוש</div>`;
+  }
 
   if(list.length===0){
     const supName = suppliers.find(s=>s.id===supplierId)?.name || '';
     el.innerHTML = `<div class="catalog-empty">
-      ${catalog.some(c=>c.supplierId===supplierId) ? 'לא נמצאו מוצרים תואמים לחיפוש.' : `אין עדיין קטלוג ל${esc(supName)}.`}
-      <div style="margin-top:8px;"><button class="btn btn-sm" onclick="closeModal('order-overlay');openCatalogModal('${supplierId}')">🗂 הוסף מוצרים לקטלוג</button></div>
+      ${searchAll
+        ? (catalog.length===0 ? 'אין עדיין מוצרים באף קטלוג.' : 'לא נמצאו מוצרים תואמים לחיפוש בכל הקטלוגים.')
+        : (catalog.some(c=>c.supplierId===supplierId) ? 'לא נמצאו מוצרים תואמים לחיפוש.' : `אין עדיין קטלוג ל${esc(supName)}.`)}
+      ${searchAll?'':`<div style="margin-top:8px;"><button class="btn btn-sm" onclick="closeModal('order-overlay');openCatalogModal('${supplierId}')">🗂 הוסף מוצרים לקטלוג</button></div>`}
     </div>`;
     return;
   }
-  el.innerHTML = list.map(c=>{
+  el.innerHTML = cappedNote + list.map(c=>{
     const already = orderDraftItems.some(d=> c.linkedItemId ? d.itemId===c.linkedItemId : d.catalogId===c.id);
+    const supName = searchAll ? (suppliers.find(s=>s.id===c.supplierId)?.name || '') : '';
     return `
     <div class="store-card">
       <div class="simg-wrap">
@@ -2415,6 +2434,7 @@ function renderOrderCatalog(){
       </div>
       <div class="sinfo">
         <div class="sname" title="${esc(c.name)}">${esc(c.name)}</div>
+        ${supName?`<div class="smeta" style="color:var(--accent);font-weight:600;">📦 ${esc(supName)}</div>`:''}
         ${c.price ? `<div class="sprice">₪${Number(c.price).toLocaleString('he-IL')}</div>` : `<div class="sprice none">ללא מחיר</div>`}
         <div class="smeta">${c.sku?`מק"ט ${esc(c.sku)}`:''}${c.unit?` · ${esc(c.unit)}`:''}</div>
         <div class="sfoot">
@@ -2465,7 +2485,8 @@ function addExistingOrderItem(itemId){
   if(orderDraftItems.some(d=>d.itemId===itemId)){ showToast('כבר נוסף להזמנה'); return; }
   const total = itemTotalQty(it);
   const suggestedQty = it.minQty>0 ? Math.max(it.minQty*2 - total, 1) : 1;
-  const fallbackSupplierId = document.getElementById('order-supplier').value || null;
+  const browseVal = document.getElementById('order-supplier').value;
+  const fallbackSupplierId = (browseVal && browseVal!=='__all__') ? browseVal : null;
   orderDraftItems.push({itemId:it.id, name:it.name, qty:suggestedQty, unit:it.unit||'', isNew:false, supplierId:it.supplierId||fallbackSupplierId, productUrl:it.productUrl||''});
   renderOrderDraft();
 }
@@ -2473,7 +2494,8 @@ function addNewOrderItem(){
   const name = document.getElementById('order-new-name').value.trim();
   const qty = Number(document.getElementById('order-new-qty').value)||1;
   if(!name){ showToast('נא להזין שם פריט'); return; }
-  const supplierId = document.getElementById('order-supplier').value || null;
+  const browseVal = document.getElementById('order-supplier').value;
+  const supplierId = (browseVal && browseVal!=='__all__') ? browseVal : null;
   orderDraftItems.push({itemId:null, name, qty, unit:'', isNew:true, supplierId});
   document.getElementById('order-new-name').value='';
   document.getElementById('order-new-qty').value=1;
