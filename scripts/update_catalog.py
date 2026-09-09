@@ -11,15 +11,19 @@ catalog-data.json in the multi-supplier format the inventory app expects:
     ]
   }
 
-Each supplier in SUPPLIERS below is scraped with the "handler" named for it:
-  - "magento"   : erco.co.il (standard Magento 2 category pages)
-  - "brand_asp" : brandtools.co.il (custom ASP platform, ProdId-based)
-  - "generic"   : best-effort fallback for any other site - tries to read
-                  embedded JSON-LD Product schema (many modern e-commerce
-                  platforms include this for Google/SEO purposes). Use this
-                  handler as a starting point for a brand-new supplier; if a
-                  site has no JSON-LD, a dedicated handler needs to be added
-                  (same as brand_asp was added here).
+Each supplier in SUPPLIERS below is scraped with the "handler" named for it.
+Handlers are per PLATFORM, not per supplier - "logate" works for any store
+built on Logate's "virtual store" product, not just ברנד specifically, the
+same way "magento" works for any Magento store, not just ERCO specifically:
+  - "magento" : Magento 2 standard category pages (e.g. erco.co.il)
+  - "logate"  : Logate Technologies' ASP-based "virtual store" platform,
+                ProdId-driven (e.g. brandtools.co.il)
+  - "generic" : best-effort fallback for any other site - tries to read
+                embedded JSON-LD Product schema (many modern e-commerce
+                platforms include this for Google/SEO purposes). Use this
+                handler as a starting point for a brand-new supplier; if a
+                site has no JSON-LD, a dedicated platform handler needs to
+                be added (same as "logate" was added here).
 
 Run manually:  python scripts/update_catalog.py
 Run automatically by: .github/workflows/update-catalog.yml
@@ -74,7 +78,7 @@ SUPPLIERS = [
     {
         "name": "ברנד אספקה טכנית",
         "website": "https://www.brandtools.co.il",
-        "handler": "brand_asp",
+        "handler": "logate",
         "categories": [
             "https://www.brandtools.co.il/productslist.asp?catid=1298",  # אביזרי חשמל וטלפון
             "https://www.brandtools.co.il/productslist.asp?catid=643",   # כלים לחשמלאים
@@ -211,9 +215,9 @@ def scrape_magento(html, url):
     return products
 
 
-# ---------------- handler: brand_asp (ברנד אספקה טכנית) ----------------
+# ---------------- handler: logate (Logate Technologies' "virtual store" platform) ----------------
 
-def scrape_brand_asp(html, url):
+def scrape_logate(html, url):
     soup = BeautifulSoup(html, "html.parser")
     groups = {}  # ProdId -> accumulated fields
 
@@ -317,18 +321,39 @@ def scrape_generic(html, url):
                 products.append(_ldjson_to_product(entry))
     if not products:
         print(f"  (generic handler found no JSON-LD product data at {url} - "
-              f"this site needs a dedicated handler, like brand_asp was added)", file=sys.stderr)
+              f"this site likely needs a dedicated platform handler, the way \"logate\" was added)", file=sys.stderr)
     return products
 
 
 HANDLERS = {
     "magento": scrape_magento,
-    "brand_asp": scrape_brand_asp,
+    "logate": scrape_logate,
     "generic": scrape_generic,
 }
 
 
 # ---------------- main ----------------
+
+# ---------------- platform fingerprinting (for test mode) ----------------
+# Telltale signatures that reveal which underlying platform a site runs on,
+# even when neither the generic nor a specific handler matched. A platform
+# match here doesn't guarantee a handler will work with zero changes, but
+# it's a strong hint - most stores on the same platform share very similar
+# markup, the way "magento" already generalizes beyond ERCO.
+PLATFORM_FINGERPRINTS = {
+    "konimbo": ["konimbo.co.il", "konimbo"],
+    "logate": ["logate.co.il", "לוגייט טכנולוגיות"],
+    "magento": ["Magento", "mage/cookies", "/static/version"],
+}
+
+
+def fingerprint_platform(html):
+    found = []
+    for platform, needles in PLATFORM_FINGERPRINTS.items():
+        if any(n in html for n in needles):
+            found.append(platform)
+    return found
+
 
 def run_test_mode(url):
     print(f"=== TEST MODE: {url} ===")
@@ -362,10 +387,32 @@ def run_test_mode(url):
         return
 
     print("\n[RESULT] Neither the generic (JSON-LD) nor the magento pattern matched this page.")
-    print("         This site most likely needs its own dedicated handler written for it,")
-    print("         the same way \"brand_asp\" was built for ברנד. Report this URL back")
-    print("         (and ideally one or two real product-listing category URLs on the same")
-    print("         site) to get a handler built for it.")
+    fp = fingerprint_platform(html)
+    known_handlers = set(HANDLERS.keys())
+    fp_with_handler = [p for p in fp if p in known_handlers]
+    fp_without_handler = [p for p in fp if p not in known_handlers]
+    if fp_with_handler:
+        print(f"         BUT this site looks like it's running on: {', '.join(fp_with_handler)}")
+        print(f"         A handler for that platform already exists (built from a different")
+        print(f"         supplier) - it will likely work here too with little or no change.")
+        for p in fp_with_handler:
+            handler_fn = HANDLERS[p]
+            try:
+                test_products = handler_fn(html, url)
+                print(f"         Trying \"{p}\" handler directly: found {len(test_products)} products")
+                for prod in test_products[:5]:
+                    print(f"           - {prod['name']}  |  sku={prod['sku']}  |  price={prod['price']}")
+            except Exception as e:
+                print(f"         Trying \"{p}\" handler directly failed: {e}")
+    elif fp_without_handler:
+        print(f"         This site looks like it's running on: {', '.join(fp_without_handler)}")
+        print(f"         No handler exists for that platform yet - it needs one built,")
+        print(f"         same as \"logate\" was built for Logate's platform.")
+    else:
+        print("         This site most likely needs its own dedicated handler written for it,")
+        print("         the same way \"logate\" was built for Brand's platform. Report this URL")
+        print("         back (and ideally one or two real product-listing category URLs on the")
+        print("         same site) to get a handler built for it.")
 
 
 def main():
