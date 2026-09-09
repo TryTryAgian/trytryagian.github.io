@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "catalog-bot"
           git config user.email "actions@github.com"
-          git add erco-catalog.json
-          git diff --staged --quiet || git commit -m "Auto-update ERCO catalog"
+          git add catalog-data.json
+          git diff --staged --quiet || git commit -m "Auto-update supplier catalogs"
           git push
