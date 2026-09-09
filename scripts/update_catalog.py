@@ -114,6 +114,13 @@ def parse_price_text(text):
 def fetch(url, session):
     resp = session.get(url, headers=HEADERS, timeout=25)
     resp.raise_for_status()
+    # Some sites (especially older/legacy platforms) don't declare their character
+    # encoding correctly in the response headers, causing requests to guess wrong
+    # and mangle Hebrew text. Sniff the real encoding from the content bytes instead
+    # of trusting a missing/unreliable header - this fixes it for any such site,
+    # not just a specific one.
+    if not resp.encoding or resp.encoding.lower() in ("iso-8859-1", "ascii"):
+        resp.encoding = resp.apparent_encoding
     return resp.text
 
 
