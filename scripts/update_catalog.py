@@ -76,10 +76,10 @@ SUPPLIERS = [
         "handler": "brand_asp",
         "categories": [
             "https://www.brandtools.co.il/productslist.asp?catid=1298",  # אביזרי חשמל וטלפון
-            "https://www.brandtools.co.il/productslist.asp?catid=4",     # כלים חשמליים
+            "https://www.brandtools.co.il/productslist.asp?catid=643",   # כלים לחשמלאים
+            "https://www.brandtools.co.il/productslist.asp?catid=1633",  # כלי עבודה חשמליים
             "https://www.brandtools.co.il/productslist.asp?catid=2",     # כלים ידניים
             "https://www.brandtools.co.il/productslist.asp?catid=139",   # כלי מדידה וסימון
-            "https://www.brandtools.co.il/productslist.asp?catid=1363",  # ציוד לתעשייה
         ],
     },
     # To add another supplier: copy a block above with its own category URLs.
