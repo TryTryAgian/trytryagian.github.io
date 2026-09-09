@@ -11,19 +11,23 @@ catalog-data.json in the multi-supplier format the inventory app expects:
     ]
   }
 
-Each supplier in SUPPLIERS below is scraped with the "handler" named for it.
 Handlers are per PLATFORM, not per supplier - "logate" works for any store
 built on Logate's "virtual store" product, not just ברנד specifically, the
 same way "magento" works for any Magento store, not just ERCO specifically:
   - "magento" : Magento 2 standard category pages (e.g. erco.co.il)
   - "logate"  : Logate Technologies' ASP-based "virtual store" platform,
                 ProdId-driven (e.g. brandtools.co.il)
+  - "konimbo" : Konimbo platform, /items/{id}-slug URLs (e.g. dror-tools.co.il)
+  - "shopify" : Shopify stores - uses the public /products.json storefront
+                feed (no HTML parsing needed, most reliable handler here).
+                Point category URLs at "<collection-url>/products.json"
+                instead of the normal page URL.
   - "generic" : best-effort fallback for any other site - tries to read
                 embedded JSON-LD Product schema (many modern e-commerce
                 platforms include this for Google/SEO purposes). Use this
                 handler as a starting point for a brand-new supplier; if a
                 site has no JSON-LD, a dedicated platform handler needs to
-                be added (same as "logate" was added here).
+                be added (same as "logate" and "konimbo" were added here).
 
 Run manually:  python scripts/update_catalog.py
 Run automatically by: .github/workflows/update-catalog.yml
@@ -85,6 +89,27 @@ SUPPLIERS = [
             "https://www.brandtools.co.il/productslist.asp?catid=1633",  # כלי עבודה חשמליים
             "https://www.brandtools.co.il/productslist.asp?catid=2",     # כלים ידניים
             "https://www.brandtools.co.il/productslist.asp?catid=139",   # כלי מדידה וסימון
+        ],
+    },
+    {
+        "name": "דרור כלי עבודה",
+        "website": "https://www.dror-tools.co.il",
+        "handler": "konimbo",
+        "categories": [
+            "https://www.dror-tools.co.il/183379-%D7%97%D7%A9%D7%9E%D7%9C-%D7%95%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99%D7%9D",  # חשמל ואביזרים
+            "https://www.dror-tools.co.il/183352-%D7%9E%D7%A7%D7%93%D7%97%D7%95%D7%AA",  # מקדחות
+            "https://www.dror-tools.co.il/183354-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%A0%D7%99%D7%9D",  # פטישונים
+            "https://www.dror-tools.co.il/183314-%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99-%D7%91%D7%98%D7%99%D7%97%D7%95%D7%AA-%D7%9E%D7%A1%D7%9B%D7%95%D7%AA-%D7%95%D7%A0%D7%A9%D7%9E%D7%99%D7%95%D7%AA",  # אביזרי בטיחות
+            "https://www.dror-tools.co.il/191826-%D7%9C%D7%99%D7%99%D7%96%D7%A8%D7%99%D7%9D-%D7%95%D7%9B%D7%9C%D7%99-%D7%9E%D7%93%D7%99%D7%93%D7%94",  # לייזרים וכלי מדידה
+        ],
+    },
+    {
+        "name": "חשמל ישיר",
+        "website": "https://yashir-group.biz",
+        "handler": "shopify",
+        "categories": [
+            "https://yashir-group.biz/collections/%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94/products.json?limit=200",       # כלי עבודה
+            "https://yashir-group.biz/collections/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D-%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D/products.json?limit=200",  # מוצרים נוספים
         ],
     },
     # To add another supplier: copy a block above with its own category URLs.
@@ -273,6 +298,113 @@ def scrape_logate(html, url):
     return products
 
 
+# ---------------- handler: konimbo (Konimbo platform) ----------------
+
+def scrape_konimbo(html, url):
+    soup = BeautifulSoup(html, "html.parser")
+    groups = {}  # product id (from /items/{id}-slug) -> accumulated fields
+    base_match = re.match(r"(https?://[^/]+)", url)
+    base = base_match.group(1) if base_match else ""
+
+    for a in soup.select('a[href*="/items/"]'):
+        href = a.get("href", "")
+        m = re.search(r"/items/(\d+)-", href)
+        if not m:
+            continue
+        pid = m.group(1)
+        full_href = href if href.startswith("http") else (base + href)
+        g = groups.setdefault(pid, {"name": None, "image": None, "price": None, "sku": None, "productUrl": full_href})
+
+        img = a.find("img")
+        if img and not g["image"]:
+            src = img.get("src") or img.get("data-src") or ""
+            if src:
+                g["image"] = src if src.startswith("http") else (base + src)
+
+        text = a.get_text(strip=True)
+        if text and len(text) > 2 and not g["name"]:
+            g["name"] = text
+
+        if g["price"] is None or g["sku"] is None:
+            parent = a.find_parent(["div", "li", "article"]) or a.parent
+            block_text = parent.get_text(" ", strip=True) if parent else ""
+            if g["price"] is None:
+                pm = re.search(r"מחיר\s*([\d,]+)\s*₪", block_text)
+                if pm:
+                    try:
+                        g["price"] = float(pm.group(1).replace(",", ""))
+                    except ValueError:
+                        pass
+            if g["sku"] is None:
+                # Konimbo tends to render a SKU-like code right before an "out_of_stock" flag
+                sm = re.search(r"\b([A-Za-z0-9._\-]{3,24})\s+out_of_stock\b", block_text)
+                if sm:
+                    g["sku"] = sm.group(1)
+
+    products = []
+    for pid, g in groups.items():
+        if not g["name"]:
+            continue
+        products.append({
+            "name": g["name"],
+            "sku": g["sku"] or pid,
+            "category": guess_category(g["name"]),
+            "unit": "יח'",
+            "price": g["price"],
+            "imageUrl": g["image"] or "",
+            "productUrl": g["productUrl"],
+        })
+    return products
+
+
+# ---------------- handler: shopify (public /products.json feed) ----------------
+# Point category URLs at "<collection-url>/products.json" instead of the normal
+# page URL - Shopify exposes this storefront JSON feed publicly on most stores,
+# with no parsing needed at all. This is the most reliable handler here.
+
+def scrape_shopify(raw_text, url):
+    try:
+        data = json.loads(raw_text)
+    except Exception as e:
+        print(f"  !! not valid JSON (is this really a /products.json URL?): {e}", file=sys.stderr)
+        return []
+    base_match = re.match(r"(https?://[^/]+)", url)
+    base = base_match.group(1) if base_match else ""
+
+    products = []
+    for p in data.get("products", []):
+        name = p.get("title", "")
+        if not name:
+            continue
+        variants = p.get("variants") or [{}]
+        first = variants[0] if variants else {}
+        price = None
+        if first.get("price") is not None:
+            try:
+                price = float(first["price"])
+            except (TypeError, ValueError):
+                price = None
+        sku = first.get("sku") or ""
+        images = p.get("images") or []
+        image = ""
+        if images and images[0].get("src"):
+            image = images[0]["src"]
+        elif p.get("image") and p["image"].get("src"):
+            image = p["image"]["src"]
+        handle = p.get("handle", "")
+        product_url = f"{base}/products/{handle}" if base and handle else ""
+        products.append({
+            "name": name,
+            "sku": sku or str(p.get("id", "")),
+            "category": guess_category(name),
+            "unit": "יח'",
+            "price": price,
+            "imageUrl": image,
+            "productUrl": product_url,
+        })
+    return products
+
+
 # ---------------- handler: generic (JSON-LD fallback, for future suppliers) ----------------
 
 def _ldjson_to_product(p):
@@ -328,6 +460,8 @@ def scrape_generic(html, url):
 HANDLERS = {
     "magento": scrape_magento,
     "logate": scrape_logate,
+    "konimbo": scrape_konimbo,
+    "shopify": scrape_shopify,
     "generic": scrape_generic,
 }
 
@@ -344,6 +478,7 @@ PLATFORM_FINGERPRINTS = {
     "konimbo": ["konimbo.co.il", "konimbo"],
     "logate": ["logate.co.il", "לוגייט טכנולוגיות"],
     "magento": ["Magento", "mage/cookies", "/static/version"],
+    "shopify": ["cdn.shopify.com", "Shopify.theme", "myshopify.com"],
 }
 
 
@@ -396,6 +531,18 @@ def run_test_mode(url):
         print(f"         A handler for that platform already exists (built from a different")
         print(f"         supplier) - it will likely work here too with little or no change.")
         for p in fp_with_handler:
+            if p == "shopify":
+                json_url = url.rstrip("/") + "/products.json?limit=5"
+                print(f"         Shopify needs the .json feed, not this page - trying: {json_url}")
+                try:
+                    json_text = fetch(json_url, requests.Session())
+                    test_products = scrape_shopify(json_text, url)
+                    print(f"         Trying \"shopify\" handler on the .json feed: found {len(test_products)} products")
+                    for prod in test_products[:5]:
+                        print(f"           - {prod['name']}  |  sku={prod['sku']}  |  price={prod['price']}")
+                except Exception as e:
+                    print(f"         Fetching the .json feed failed: {e}")
+                continue
             handler_fn = HANDLERS[p]
             try:
                 test_products = handler_fn(html, url)
