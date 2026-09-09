@@ -66,6 +66,24 @@ def parse_price_text(text):
         return None
 
 
+def extract_image(item):
+    # Prefer Magento's standard product-photo class, which is the real product image
+    img_el = item.select_one("img.product-image-photo") or item.select_one(".product-image-photo img")
+    if not img_el:
+        # fall back to any <img> that doesn't look like a promo badge/banner/ribbon
+        bad_words = ["badge", "label", "ribbon", "sale", "discount", "promo", "popup", "banner"]
+        for candidate in item.select("img"):
+            cls = " ".join(candidate.get("class", [])).lower()
+            alt = (candidate.get("alt") or "").lower()
+            if any(w in cls or w in alt for w in bad_words):
+                continue
+            img_el = candidate
+            break
+    if not img_el:
+        return ""
+    return img_el.get("src") or img_el.get("data-src") or img_el.get("data-original") or ""
+
+
 def extract_sku(item, href, block_text):
     m = re.search(r'מק"?ט[:\s]*([A-Za-z0-9\-\._+]+)', block_text)
     if m:
@@ -111,10 +129,7 @@ def scrape_category(url, session):
             if not name or not href:
                 continue
 
-            img_el = item.select_one("img")
-            image = ""
-            if img_el:
-                image = img_el.get("src") or img_el.get("data-src") or ""
+            image = extract_image(item)
 
             price = None
             price_el = item.select_one("[data-price-amount]")
