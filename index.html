@@ -812,7 +812,7 @@ const ERCO_CATALOG_SAMPLE = [
 
 /* ================= storage helpers ================= */
 /* ================= app version (bump this on every delivered update, so you can confirm which build is live) ================= */
-const APP_VERSION = '2026-07-13.23';
+const APP_VERSION = '2026-07-13.24';
 
 async function storeGet(key, fallback){
   try{
@@ -1933,7 +1933,7 @@ async function driveUploadJson(token, fileId, content){
 }
 
 async function pullFromDriveIfPossible(){
-  const token = await ensureDriveToken();
+  const token = await ensureDriveToken({interactive:false});
   await pullFromDrive(token);
 }
 
@@ -1974,7 +1974,7 @@ async function pushToDriveSafe(){
   if(!driveSyncEnabled || driveSyncing) return;
   driveSyncing = true;
   try{
-    const token = await ensureDriveToken();
+    const token = await ensureDriveToken({interactive:false});
     const content = { items, suppliers, orders, locations, catalog, updatedAt: new Date().toISOString() };
     const result = await driveUploadJson(token, driveSyncFileId, content);
     driveSyncFileId = result.id;
@@ -1992,7 +1992,9 @@ async function pushToDriveSafe(){
 async function manualSyncNow(){
   showToast('מסנכרן...');
   try{
-    const token = await ensureDriveToken();
+    let token;
+    try{ token = await ensureDriveToken({interactive:false}); }
+    catch(e){ token = await ensureDriveToken({interactive:true}); }
     await pullFromDrive(token);
     await pushToDriveSafe();
     showToast('הסנכרון הושלם');
@@ -2028,7 +2030,7 @@ async function fetchGoogleUserInfo(token){
 async function signInWithGoogle(){
   try{
     showToast('מתחבר עם Google...');
-    const token = await ensureDriveToken();
+    const token = await ensureDriveToken({interactive:true});
     const profile = await fetchGoogleUserInfo(token);
     googleUserProfile = profile;
     await storeSet('google-user-profile', profile);
@@ -2141,7 +2143,8 @@ function ensureGapiPickerLoaded(){
 
 let driveTokenExpiresAt = 0;
 
-function ensureDriveToken(){
+function ensureDriveToken(opts){
+  const interactive = !!(opts && opts.interactive);
   // reuse the cached token whenever it's still valid - never bother Google again until it's actually close to expiring
   if(driveAccessToken && Date.now() < driveTokenExpiresAt - 60000){
     return Promise.resolve(driveAccessToken);
@@ -2161,7 +2164,10 @@ function ensureDriveToken(){
         driveTokenExpiresAt = Date.now() + ((Number(resp.expires_in)||3600) * 1000);
         resolve(driveAccessToken);
       };
-      driveTokenClient.requestAccessToken({ prompt: driveAccessToken ? '' : 'consent' });
+      // silent reconnect (no popup) unless this is a deliberate user-initiated action -
+      // a fresh tab/reload should reuse the existing Google session quietly, not ambush
+      // the user with a consent screen every time
+      driveTokenClient.requestAccessToken({ prompt: interactive ? 'consent' : '' });
     }).catch(reject);
   });
 }
@@ -2172,7 +2178,9 @@ async function openDrivePickerForCatalog(){
   if(!googleApiKey){ openGoogleSettingsModal(); return; }
   try{
     await ensureGapiPickerLoaded();
-    const token = await ensureDriveToken();
+    let token;
+    try{ token = await ensureDriveToken({interactive:false}); }
+    catch(e){ token = await ensureDriveToken({interactive:true}); }
     const view = new google.picker.DocsView(google.picker.ViewId.DOCS)
       .setIncludeFolders(true)
       .setMimeTypes('text/csv,text/plain,application/vnd.google-apps.spreadsheet,application/pdf');
