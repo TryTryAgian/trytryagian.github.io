@@ -468,9 +468,6 @@ function parseListLines(text) {
     .map((l) => l.replace(/^\d+\.\s?/, "").trim())
     .filter((l) => l.length > 0);
 }
-function truncateText(s, n) {
-  return s.length > n ? s.slice(0, n - 1).trim() + "…" : s;
-}
 function normalizeForCompare(s) {
   return (s || "").toLowerCase().replace(/["׳'.,\-–—]/g, "").replace(/\s+/g, " ").trim();
 }
@@ -485,68 +482,55 @@ function alreadyCovered(text, existingItems) {
 
 const TOPIC_RULES = [
   { key: "safety", test: /בטיחות|מסוכן|סכנה|פגום|חשוף|קרע|ישן מאוד/,
-    taskTpl: (l) => `לטפל בממצא הבטיחות: "${l}"`,
-    stageTpl: (l) => `טיפול בממצא בטיחות שזוהה בסיור: "${l}"` },
+    taskText: "לטפל בממצא הבטיחות שזוהה בסיור",
+    stageText: "טיפול בממצא בטיחות שזוהה בסיור הראשוני" },
   { key: "panel", test: /לוח חשמל|לוח ראשי|ארון חשמל|מפסק ראשי|פחת/,
-    taskTpl: (l) => `לבדוק ולתעד את מצב הלוח בהתאם למצוין: "${l}"`,
-    stageTpl: (l) => `בדיקת הלוח הקיים והחלטה על שדרוג או החלפה — "${l}"` },
+    taskText: "לבדוק ולתעד את מצב הלוח הקיים",
+    stageText: "בדיקת מצב הלוח הקיים והחלטה על שדרוג או החלפה" },
   { key: "power", test: /הספק|עומס|אמפר|קילוואט|\bkw\b|תלת פאזי|חד פאזי/i,
-    taskTpl: (l) => `לבדוק את גודל החיבור וההספק הזמין בהתאם למצוין: "${l}"` },
+    taskText: "לבדוק את גודל החיבור הקיים ואת ההספק הזמין" },
   { key: "connection", test: /חיבור קיים לחברת חשמל|חברת חשמל|מונה חשמל/,
-    taskTpl: (l) => `לבדוק את סטטוס החיבור לחברת החשמל בהתאם למצוין: "${l}"` },
+    taskText: "לבדוק את סטטוס החיבור הקיים לחברת החשמל" },
   { key: "sockets", test: /שקע/,
-    taskTpl: (l) => `למפות את מיקומי השקעים הנדרשים בהתאם למצוין: "${l}"` },
+    taskText: "למפות את מיקומי השקעים הנדרשים" },
   { key: "lighting", test: /תאורה|גוף תאורה|נורה|ספוט|מנורה/,
-    taskTpl: (l) => `למפות ולהזמין גופי תאורה בהתאם למצוין: "${l}"` },
+    taskText: "למפות ולהזמין גופי תאורה בהתאם לצורך" },
   { key: "ac", test: /מזגן|מזגנים|מיזוג/,
-    taskTpl: (l) => `לבדוק דרישות חשמל למיזוג בהתאם למצוין: "${l}"` },
+    taskText: "לבדוק דרישות חשמל למיזוג אוויר" },
   { key: "water_heater", test: /דוד|בוילר|חימום מים/,
-    taskTpl: (l) => `לבדוק דרישות חשמל לדוד או למערכת חימום בהתאם למצוין: "${l}"` },
+    taskText: "לבדוק דרישות חשמל לדוד או למערכת חימום" },
   { key: "generator", test: /גנרטור|\bups\b|גיבוי חשמל/i,
-    taskTpl: (l) => `לבדוק אפשרות לגיבוי חשמל או גנרטור בהתאם למצוין: "${l}"` },
+    taskText: "לבדוק אפשרות לגיבוי חשמל או גנרטור" },
   { key: "smart_home", test: /בית חכם|אוטומציה|שליטה מרחוק/,
-    taskTpl: (l) => `לבדוק דרישות תשתית לבית חכם או אוטומציה בהתאם למצוין: "${l}"` },
+    taskText: "לבדוק דרישות תשתית לבית חכם או אוטומציה" },
   { key: "outdoor", test: /גינה|חצר|בריכה|(?:^|\s)חוץ(?:\s|$)/,
-    taskTpl: (l) => `לבדוק דרישות חשמל חיצוני (עמידות למים, תאורת חוץ) בהתאם למצוין: "${l}"` },
+    taskText: "לבדוק דרישות חשמל חיצוני (עמידות למים, תאורת חוץ)" },
   { key: "kitchen", test: /מטבח/,
-    taskTpl: (l) => `למפות דרישות חשמל למטבח (סעפות ייעודיות) בהתאם למצוין: "${l}"` },
+    taskText: "למפות דרישות חשמל למטבח (סעפות ייעודיות)" },
   { key: "access", test: /גישה|מפתח|חניה|מעלית/,
-    taskTpl: (l) => `לתאם עם הלקוח גישה ופרטים לוגיסטיים בהתאם למצוין: "${l}"` },
+    taskText: "לתאם עם הלקוח גישה ופרטים לוגיסטיים לאתר" },
   { key: "renovation", test: /שיפוץ|שיפוצים|הריסה|קיר|טיח|שלד/,
-    stageTpl: (l) => `תיאום עבודה מול קבלנים אחרים באתר בהתאם למצוין: "${l}"` },
+    stageText: "תיאום עבודה מול קבלנים אחרים באתר" },
   { key: "budget", test: /תקציב|הצעת מחיר|עלות/,
-    taskTpl: (l) => `להכין הצעת מחיר מפורטת בהתאם למצוין: "${l}"` },
+    taskText: "להכין הצעת מחיר מפורטת ללקוח" },
 ];
 
 function localHeuristicSuggestions(site) {
   const allLines = [...parseListLines(site.requirements), ...parseListLines(site.firstImpressions)];
+  const fullText = allLines.join(" ");
   const existingTasks = site.tasks || [];
   const existingStages = site.stages || [];
-
-  const matchedByTopic = {};
-  allLines.forEach((line) => {
-    TOPIC_RULES.forEach((rule) => {
-      if (rule.test.test(line)) {
-        if (!matchedByTopic[rule.key]) matchedByTopic[rule.key] = [];
-        matchedByTopic[rule.key].push(line);
-      }
-    });
-  });
 
   const stages = [];
   const tasks = [];
 
   TOPIC_RULES.forEach((rule) => {
-    const matches = matchedByTopic[rule.key];
-    if (!matches || matches.length === 0) return;
-    const excerpt = truncateText(matches[0], 60);
-    if (rule.taskTpl && tasks.length < 10) {
-      const t = truncateText(rule.taskTpl(excerpt), 140);
-      if (!alreadyCovered(t, existingTasks) && !tasks.includes(t)) tasks.push(t);
+    if (!rule.test.test(fullText)) return;
+    if (rule.taskText && tasks.length < 10 && !alreadyCovered(rule.taskText, existingTasks) && !tasks.includes(rule.taskText)) {
+      tasks.push(rule.taskText);
     }
-    if (rule.stageTpl && stages.length < 8) {
-      const s = truncateText(rule.stageTpl(excerpt), 140);
-      if (!alreadyCovered(s, existingStages) && !stages.includes(s)) stages.push(s);
+    if (rule.stageText && stages.length < 8 && !alreadyCovered(rule.stageText, existingStages) && !stages.includes(rule.stageText)) {
+      stages.push(rule.stageText);
     }
   });
 
@@ -555,16 +539,6 @@ function localHeuristicSuggestions(site) {
   ["סקירת דרישות הלקוח ואישור היקף העבודה", "הזמנת חומרים וציוד נדרש",
    "בדיקות חשמל ואישור חשמלאי בודק", "מסירה ללקוח וסיכום עבודה"].forEach((s) => {
     if (stages.length < 8 && !alreadyCovered(s, existingStages) && !stages.includes(s)) stages.push(s);
-  });
-
-  // Any line that didn't match a specific topic still becomes a task quoting
-  // it directly, so nothing you wrote gets silently ignored.
-  allLines.forEach((line) => {
-    if (tasks.length >= 10) return;
-    const matchedAny = TOPIC_RULES.some((rule) => rule.test.test(line));
-    if (matchedAny) return;
-    const t = truncateText(`לטפל בנושא: "${line}"`, 140);
-    if (!alreadyCovered(t, existingTasks) && !tasks.includes(t)) tasks.push(t);
   });
 
   return { stages: stages.slice(0, 8), tasks: tasks.slice(0, 10) };
