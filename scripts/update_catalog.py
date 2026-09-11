@@ -46,6 +46,12 @@ import re
 import sys
 import time
 
+# Force stdout to flush every line (like stderr already does by default). Without this,
+# progress lines can get buffered and appear "late" relative to error lines in the GitHub
+# Actions log, making the log look chronologically scrambled even though nothing is actually
+# wrong with execution order.
+sys.stdout.reconfigure(line_buffering=True)
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -56,11 +62,6 @@ HEADERS = {
     "Accept-Language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7",
     "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-User": "?1",
 }
 
 TOOL_KEYWORDS = ["כלי", "מברג", "פלייר", "מקדח", "משחזת", "רב מודד", "צבת",
@@ -91,6 +92,7 @@ SUPPLIERS = [
         "name": "ברנד אספקה טכנית",
         "website": "https://www.brandtools.co.il",
         "handler": "logate",
+        "warmup": True,  # this supplier started 403-blocking direct category requests
         "categories": [
             "https://www.brandtools.co.il/productslist.asp?catid=1298",  # אביזרי חשמל וטלפון
             "https://www.brandtools.co.il/productslist.asp?catid=643",   # כלים לחשמלאים
@@ -610,13 +612,14 @@ def main():
         all_products = {}
 
         # visit the homepage first to pick up any session cookie some sites require
-        # before allowing access to inner pages (skipping straight to a category page
-        # can look bot-like and get blocked even when a normal browser visit wouldn't)
-        try:
-            fetch(sup["website"], session)
-            time.sleep(1)
-        except Exception as e:
-            print(f"  (homepage warm-up failed, continuing anyway: {e})", file=sys.stderr)
+        # before allowing access to inner pages - only for suppliers that need it
+        # (opt-in per supplier, since it's unnecessary risk for ones that already work fine)
+        if sup.get("warmup"):
+            try:
+                fetch(sup["website"], session)
+                time.sleep(1)
+            except Exception as e:
+                print(f"  (homepage warm-up failed, continuing anyway: {e})", file=sys.stderr)
 
         for url in sup["categories"]:
             print(f"Scraping {url} ...")
