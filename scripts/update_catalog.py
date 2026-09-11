@@ -306,6 +306,11 @@ def scrape_konimbo(html, url):
     base_match = re.match(r"(https?://[^/]+)", url)
     base = base_match.group(1) if base_match else ""
 
+    # this hidden data blob (sku + stock flag + price + another flag, no separators when
+    # concatenated) sometimes ends up inside the same anchor as the product name - strip it
+    # out wherever it appears rather than trusting anchor text as-is
+    JUNK_RE = re.compile(r"[A-Za-z0-9._\-]{2,24}\s*out_of_stock\s*(?:true|false)?\s*[\d.]*\s*(?:true|false)?", re.I)
+
     for a in soup.select('a[href*="/items/"]'):
         href = a.get("href", "")
         m = re.search(r"/items/(\d+)-", href)
@@ -316,14 +321,23 @@ def scrape_konimbo(html, url):
         g = groups.setdefault(pid, {"name": None, "image": None, "price": None, "sku": None, "productUrl": full_href})
 
         img = a.find("img")
-        if img and not g["image"]:
-            src = img.get("src") or img.get("data-src") or ""
-            if src:
-                g["image"] = src if src.startswith("http") else (base + src)
+        if img:
+            if not g["image"]:
+                src = img.get("src") or img.get("data-src") or ""
+                if src:
+                    g["image"] = src if src.startswith("http") else (base + src)
+            # the image's alt text is the most reliable source for the real product name -
+            # it doesn't carry the hidden data-blob text that anchor.get_text() picks up
+            alt = (img.get("alt") or "").strip()
+            if alt and not g["name"]:
+                g["name"] = alt
 
-        text = a.get_text(strip=True)
-        if text and len(text) > 2 and not g["name"]:
-            g["name"] = text
+        if not g["name"]:
+            raw_text = a.get_text(" ", strip=True)
+            cleaned = JUNK_RE.sub(" ", raw_text)
+            cleaned = re.sub(r"\s+", " ", cleaned).strip(" -")
+            if cleaned and len(cleaned) > 2:
+                g["name"] = cleaned
 
         if g["price"] is None or g["sku"] is None:
             parent = a.find_parent(["div", "li", "article"]) or a.parent
@@ -343,7 +357,13 @@ def scrape_konimbo(html, url):
 
     products = []
     for pid, g in groups.items():
-        if not g["name"]:
+        name = g["name"]
+        if not name:
+            continue
+        # final safety net in case any junk still slipped through into the chosen name
+        name = JUNK_RE.sub(" ", name)
+        name = re.sub(r"\s+", " ", name).strip(" -")
+        if not name or len(name) < 2:
             continue
         products.append({
             "name": g["name"],
