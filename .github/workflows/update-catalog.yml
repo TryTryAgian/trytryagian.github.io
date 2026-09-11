@@ -29,6 +29,21 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
+      - name: Validate suppliers-config.json
+        run: |
+          python -c "
+          import json, sys
+          try:
+              with open('suppliers-config.json', encoding='utf-8') as f:
+                  data = json.load(f)
+              names = [s['name'] for s in data['suppliers']]
+              print(f'Config OK - {len(names)} suppliers: {names}')
+          except Exception as e:
+              print(f'::error::suppliers-config.json is broken: {e}')
+              print('Check for a missing comma, quote, or bracket from a recent manual edit.')
+              sys.exit(1)
+          "
+
       - name: Run scraper
         env:
           TEST_URL: ${{ github.event.inputs.test_url }}
