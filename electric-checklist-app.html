@@ -377,6 +377,7 @@ const ICON_PATHS = {
   chevronUp: '<path d="M6 15l6-6 6 6"/>',
   chevronDown: '<path d="M6 9l6 6 6-6"/>',
   grip: '<circle cx="9" cy="6" r="1.3" fill="currentColor" stroke="none"/><circle cx="15" cy="6" r="1.3" fill="currentColor" stroke="none"/><circle cx="9" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="9" cy="18" r="1.3" fill="currentColor" stroke="none"/><circle cx="15" cy="18" r="1.3" fill="currentColor" stroke="none"/>',
+  camera: '<path d="M4 8h3l1.5-2h7L17 8h3v11H4V8z"/><circle cx="12" cy="13.5" r="3.3"/>',
 };
 function icon(name, opts) {
   opts = opts || {};
@@ -461,48 +462,122 @@ function freshSuggestions() {
   return { loading: false, stages: [], tasks: [], stagesChecked: new Set(), tasksChecked: new Set() };
 }
 
+function parseListLines(text) {
+  return (text || "")
+    .split("\n")
+    .map((l) => l.replace(/^\d+\.\s?/, "").trim())
+    .filter((l) => l.length > 0);
+}
+function truncateText(s, n) {
+  return s.length > n ? s.slice(0, n - 1).trim() + "…" : s;
+}
+function normalizeForCompare(s) {
+  return (s || "").toLowerCase().replace(/["׳'.,\-–—]/g, "").replace(/\s+/g, " ").trim();
+}
+function alreadyCovered(text, existingItems) {
+  const norm = normalizeForCompare(text);
+  if (!norm) return false;
+  return existingItems.some((it) => {
+    const en = normalizeForCompare(it.text);
+    return en && (en === norm || en.includes(norm) || norm.includes(en));
+  });
+}
+
+const TOPIC_RULES = [
+  { key: "safety", test: /בטיחות|מסוכן|סכנה|פגום|חשוף|קרע|ישן מאוד/,
+    taskTpl: (l) => `לטפל בממצא הבטיחות: "${l}"`,
+    stageTpl: (l) => `טיפול בממצא בטיחות שזוהה בסיור: "${l}"` },
+  { key: "panel", test: /לוח חשמל|לוח ראשי|ארון חשמל|מפסק ראשי|פחת/,
+    taskTpl: (l) => `לבדוק ולתעד את מצב הלוח בהתאם למצוין: "${l}"`,
+    stageTpl: (l) => `בדיקת הלוח הקיים והחלטה על שדרוג או החלפה — "${l}"` },
+  { key: "power", test: /הספק|עומס|אמפר|קילוואט|\bkw\b|תלת פאזי|חד פאזי/i,
+    taskTpl: (l) => `לבדוק את גודל החיבור וההספק הזמין בהתאם למצוין: "${l}"` },
+  { key: "connection", test: /חיבור קיים לחברת חשמל|חברת חשמל|מונה חשמל/,
+    taskTpl: (l) => `לבדוק את סטטוס החיבור לחברת החשמל בהתאם למצוין: "${l}"` },
+  { key: "sockets", test: /שקע/,
+    taskTpl: (l) => `למפות את מיקומי השקעים הנדרשים בהתאם למצוין: "${l}"` },
+  { key: "lighting", test: /תאורה|גוף תאורה|נורה|ספוט|מנורה/,
+    taskTpl: (l) => `למפות ולהזמין גופי תאורה בהתאם למצוין: "${l}"` },
+  { key: "ac", test: /מזגן|מזגנים|מיזוג/,
+    taskTpl: (l) => `לבדוק דרישות חשמל למיזוג בהתאם למצוין: "${l}"` },
+  { key: "water_heater", test: /דוד|בוילר|חימום מים/,
+    taskTpl: (l) => `לבדוק דרישות חשמל לדוד או למערכת חימום בהתאם למצוין: "${l}"` },
+  { key: "generator", test: /גנרטור|\bups\b|גיבוי חשמל/i,
+    taskTpl: (l) => `לבדוק אפשרות לגיבוי חשמל או גנרטור בהתאם למצוין: "${l}"` },
+  { key: "smart_home", test: /בית חכם|אוטומציה|שליטה מרחוק/,
+    taskTpl: (l) => `לבדוק דרישות תשתית לבית חכם או אוטומציה בהתאם למצוין: "${l}"` },
+  { key: "outdoor", test: /גינה|חצר|בריכה|(?:^|\s)חוץ(?:\s|$)/,
+    taskTpl: (l) => `לבדוק דרישות חשמל חיצוני (עמידות למים, תאורת חוץ) בהתאם למצוין: "${l}"` },
+  { key: "kitchen", test: /מטבח/,
+    taskTpl: (l) => `למפות דרישות חשמל למטבח (סעפות ייעודיות) בהתאם למצוין: "${l}"` },
+  { key: "access", test: /גישה|מפתח|חניה|מעלית/,
+    taskTpl: (l) => `לתאם עם הלקוח גישה ופרטים לוגיסטיים בהתאם למצוין: "${l}"` },
+  { key: "renovation", test: /שיפוץ|שיפוצים|הריסה|קיר|טיח|שלד/,
+    stageTpl: (l) => `תיאום עבודה מול קבלנים אחרים באתר בהתאם למצוין: "${l}"` },
+  { key: "budget", test: /תקציב|הצעת מחיר|עלות/,
+    taskTpl: (l) => `להכין הצעת מחיר מפורטת בהתאם למצוין: "${l}"` },
+];
+
 function localHeuristicSuggestions(site) {
-  const text = ((site.requirements || "") + "\n" + (site.firstImpressions || "")).toLowerCase();
-  const has = (kw) => text.includes(kw);
+  const allLines = [...parseListLines(site.requirements), ...parseListLines(site.firstImpressions)];
+  const existingTasks = site.tasks || [];
+  const existingStages = site.stages || [];
 
-  const stages = ["סקירת דרישות הלקוח ואישור היקף העבודה"];
-  if (has("לוח")) stages.push("בדיקת מצב הלוח הקיים והחלטה על שדרוג או החלפה");
-  stages.push("הזמנת חומרים וציוד נדרש");
-  if (has("צנרת") || has("כבל") || has("שרשור")) stages.push("התקנת צנרת ומשיכת כבלים");
-  stages.push("התקנת נקודות קצה (שקעים, מפסקים, תאורה)");
-  if (has("בטיחות")) stages.push("טיפול בממצאי בטיחות שזוהו בסיור הראשוני");
-  if (has("שיפוץ") || has("שדרוג")) stages.push("תיאום עבודה מול קבלנים אחרים באתר (אם רלוונטי)");
-  stages.push("בדיקות חשמל ואישור חשמלאי בודק");
-  stages.push("מסירה ללקוח וסיכום עבודה");
+  const matchedByTopic = {};
+  allLines.forEach((line) => {
+    TOPIC_RULES.forEach((rule) => {
+      if (rule.test.test(line)) {
+        if (!matchedByTopic[rule.key]) matchedByTopic[rule.key] = [];
+        matchedByTopic[rule.key].push(line);
+      }
+    });
+  });
 
+  const stages = [];
   const tasks = [];
-  if (has("לוח")) tasks.push("לצלם ולתעד את מצב הלוח הקיים");
-  if (has("גישה")) tasks.push("לתאם עם הלקוח גישה או מפתחות לאתר");
-  if (has("תלת פאזי") || has("חד פאזי") || has("הספק") || has("עומס") || has("אמפר")) tasks.push("לבדוק את גודל החיבור הקיים לחברת החשמל ואת ההספק הזמין");
-  if (has("תאורה")) tasks.push("למפות את מיקומי גופי התאורה הנדרשים ולהזמין ציוד");
-  if (has("שקע")) tasks.push("למפות את מיקומי השקעים הנדרשים");
-  if (has("מזגן") || has("מיזוג")) tasks.push("לבדוק דרישות חשמל ייעודי למזגן או למיזוג אוויר");
-  if (has("חימום") || has("דוד")) tasks.push("לבדוק דרישות חשמל לדוד או למערכת חימום");
-  if (has("גנרטור")) tasks.push("לבדוק אפשרות לחיבור גנרטור או גיבוי חשמל");
-  if (has("מטבח")) tasks.push("למפות דרישות חשמל למטבח (סעפות ייעודיות למכשירים)");
-  if (has("חכם") || has("בית חכם") || has("אוטומציה")) tasks.push("לבדוק דרישות תשתית לבית חכם / אוטומציה");
-  if (has("גינה") || has("חוץ") || has("חצר")) tasks.push("לבדוק דרישות חשמל חיצוני (עמידות למים, תאורת חוץ)");
-  tasks.push("להכין הצעת מחיר מפורטת ללקוח");
-  tasks.push("לתאם מועד תחילת עבודה עם הלקוח");
 
-  return {
-    stages: [...new Set(stages)].slice(0, 8),
-    tasks: [...new Set(tasks)].slice(0, 10),
-  };
+  TOPIC_RULES.forEach((rule) => {
+    const matches = matchedByTopic[rule.key];
+    if (!matches || matches.length === 0) return;
+    const excerpt = truncateText(matches[0], 60);
+    if (rule.taskTpl && tasks.length < 10) {
+      const t = truncateText(rule.taskTpl(excerpt), 140);
+      if (!alreadyCovered(t, existingTasks) && !tasks.includes(t)) tasks.push(t);
+    }
+    if (rule.stageTpl && stages.length < 8) {
+      const s = truncateText(rule.stageTpl(excerpt), 140);
+      if (!alreadyCovered(s, existingStages) && !stages.includes(s)) stages.push(s);
+    }
+  });
+
+  // Baseline process stages that make sense for most electrical projects —
+  // added only if there's room and they're not already covered.
+  ["סקירת דרישות הלקוח ואישור היקף העבודה", "הזמנת חומרים וציוד נדרש",
+   "בדיקות חשמל ואישור חשמלאי בודק", "מסירה ללקוח וסיכום עבודה"].forEach((s) => {
+    if (stages.length < 8 && !alreadyCovered(s, existingStages) && !stages.includes(s)) stages.push(s);
+  });
+
+  // Any line that didn't match a specific topic still becomes a task quoting
+  // it directly, so nothing you wrote gets silently ignored.
+  allLines.forEach((line) => {
+    if (tasks.length >= 10) return;
+    const matchedAny = TOPIC_RULES.some((rule) => rule.test.test(line));
+    if (matchedAny) return;
+    const t = truncateText(`לטפל בנושא: "${line}"`, 140);
+    if (!alreadyCovered(t, existingTasks) && !tasks.includes(t)) tasks.push(t);
+  });
+
+  return { stages: stages.slice(0, 8), tasks: tasks.slice(0, 10) };
 }
 
 const state = {
   loading: true, sites: [], view: "home", activeSite: null, errorMsg: "", saving: false, search: "",
   wizard: { step: 0, form: emptyForm() },
-  detail: { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null },
+  detail: { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null, closingTaskId: null, closingDraft: { note: "", date: "", time: "" } },
   siteCache: {},
   backup: { open: false },
   cloudMode: false,
+  lightboxImage: null,
 };
 
 /* ---------------- small ui builders ---------------- */
@@ -703,6 +778,7 @@ function render() {
   else if (state.view === "auth") root.appendChild(renderAuthScreen());
   else if (state.view === "detail" && state.activeSite) root.appendChild(renderDetail());
   if (state.errorMsg) root.appendChild(renderErrorBanner());
+  if (state.lightboxImage) root.appendChild(imageLightbox());
 }
 function renderLoading() {
   return h("div", { class: "loading-wrap" }, h("div", { class: "spinner" }));
@@ -803,7 +879,7 @@ async function openSite(id) {
   if (state.siteCache[id]) {
     state.activeSite = state.siteCache[id];
     state.view = "detail";
-    state.detail = { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null };
+    state.detail = { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null, closingTaskId: null, closingDraft: { note: "", date: "", time: "" } };
     render();
     return;
   }
@@ -819,7 +895,7 @@ async function openSite(id) {
   state.siteCache[id] = data;
   state.activeSite = data;
   state.view = "detail";
-  state.detail = { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null };
+  state.detail = { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null, closingTaskId: null, closingDraft: { note: "", date: "", time: "" } };
   render();
 }
 
@@ -965,7 +1041,7 @@ async function createSiteFromWizard(form) {
   state.siteCache[site.id] = site;
   state.activeSite = site;
   state.view = "detail";
-  state.detail = { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null };
+  state.detail = { tab: "overview", editing: false, editForm: null, confirmDelete: false, suggestions: freshSuggestions(), addingEquipmentFor: null, closingTaskId: null, closingDraft: { note: "", date: "", time: "" } };
   state.saving = false;
 
   if (!res.ok || !idxRes.ok) {
@@ -1018,7 +1094,7 @@ function renderDetail() {
   if (d.tab === "plans") body.appendChild(plansSection(site));
   if (d.tab === "tasks") body.appendChild(checklistSection({
     title: "רשימת משימות", iconName: "checkSquare", items: site.tasks, key: "tasks",
-    reorderable: true, withEquipmentLink: true, withStageLink: true,
+    reorderable: true, withEquipmentLink: true, withStageLink: true, withCloseRequirements: true, withPhotoCapture: true,
     onAfterToggle: (item) => syncStageFromTasks(state.activeSite, item.stageId),
     onAfterDelete: (item) => syncStageFromTasks(state.activeSite, item.stageId),
   }));
@@ -1028,6 +1104,7 @@ function renderDetail() {
 
   if (d.editing) screen.appendChild(editSheet(site, d));
   if (d.confirmDelete) screen.appendChild(deleteConfirm(site));
+  if (d.closingTaskId) screen.appendChild(taskCloseModal(site));
 
   return screen;
 }
@@ -1051,8 +1128,60 @@ function overviewTab(site) {
   return wrap;
 }
 
+/* ---------------- photo capture -> auto-filed into plans ---------------- */
+function compressImageToDataUrl(file, maxDim, quality) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = () => reject(new Error("קריאת הקובץ נכשלה"));
+    reader.onload = () => {
+      const img = new Image();
+      img.onerror = () => reject(new Error("טעינת התמונה נכשלה"));
+      img.onload = () => {
+        let width = img.width, height = img.height;
+        if (width > height && width > maxDim) { height = Math.round(height * (maxDim / width)); width = maxDim; }
+        else if (height > maxDim) { width = Math.round(width * (maxDim / height)); height = maxDim; }
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, width, height);
+        resolve(canvas.toDataURL("image/jpeg", quality));
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+async function handlePhotoCapture(file, item) {
+  try {
+    const dataUrl = await compressImageToDataUrl(file, 1000, 0.6);
+    const plan = {
+      id: uid(),
+      title: item.text,
+      note: "צולם מתוך המשימה \u200f\u201c" + item.text + "\u201d בתאריך " + new Date().toLocaleDateString("he-IL"),
+      imageDataUrl: dataUrl,
+    };
+    state.activeSite.plans = [...state.activeSite.plans, plan];
+    await persistUpdatedSite(state.activeSite);
+  } catch (e) {
+    state.errorMsg = "צילום התמונה נכשל (" + ((e && e.message) || e) + ").";
+    render();
+  }
+}
+
+function openImageLightbox(src) { state.lightboxImage = src; render(); }
+function imageLightbox() {
+  const overlay = h("div", {
+    style: "position:fixed;inset:0;z-index:60;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.85);",
+    onclick: () => { state.lightboxImage = null; render(); },
+  });
+  overlay.appendChild(h("img", { src: state.lightboxImage, style: "max-width:100%;max-height:100%;border-radius:10px;" }));
+  return overlay;
+}
+
 function checklistSection(cfg) {
-  const { title, iconName, items, key, withQty, reorderable, withEquipmentLink, equipmentMode, autoStatusFn, withStageLink, onAfterToggle, onAfterDelete } = cfg;
+  const { title, iconName, items, key, withQty, reorderable, withEquipmentLink, equipmentMode, autoStatusFn, withStageLink, onAfterToggle, onAfterDelete, withCloseRequirements, withPhotoCapture } = cfg;
   const wrap = h("div", {});
   const done = equipmentMode ? items.filter(isEquipmentReady).length : items.filter((i) => i.done).length;
   wrap.appendChild(h("div", { class: "section-title", style: "justify-content:space-between;" },
@@ -1081,6 +1210,12 @@ function checklistSection(cfg) {
       row.appendChild(breaker(auto.allDone));
     } else {
       const toggleBtn = h("button", { class: "icon-btn", style: "padding:0;", onclick: () => {
+        if (withCloseRequirements && !item.done) {
+          state.detail.closingTaskId = item.id;
+          state.detail.closingDraft = { note: item.closeNote || "", date: item.closeDate || "", time: item.closeTime || "" };
+          render();
+          return;
+        }
         item.done = !item.done;
         if (onAfterToggle) onAfterToggle(item);
         persistUpdatedSite(state.activeSite);
@@ -1107,6 +1242,20 @@ function checklistSection(cfg) {
     textCol.appendChild(textLine);
     if (item.qty) textCol.appendChild(h("p", { class: "checklist-qty" }, "כמות: " + item.qty));
     if (auto) textCol.appendChild(h("p", { class: "checklist-qty" }, `${auto.doneCount}/${auto.total} משימות הושלמו`));
+
+    if (withCloseRequirements) {
+      if (item.done && (item.closeDate || item.closeNote)) {
+        const parts = [];
+        if (item.closeDate) parts.push(`נסגר: ${item.closeDate}${item.closeTime ? " בשעה " + item.closeTime : ""}`);
+        if (item.closeNote) parts.push(`הערה: ${item.closeNote}`);
+        textCol.appendChild(h("p", { class: "checklist-qty", style: "color:var(--green);" }, parts.join(" · ")));
+      }
+      const reqChip = h("button", {
+        style: `margin-top:6px; font-size:11px; padding:3px 9px; border-radius:999px; cursor:pointer; border:1px solid ${item.requiresDateTime ? "rgba(245,165,36,.4)" : "var(--border2)"}; background:${item.requiresDateTime ? "rgba(245,165,36,.1)" : "none"}; color:${item.requiresDateTime ? "var(--amber)" : "var(--muted)"};`,
+        onclick: (e) => { e.stopPropagation(); item.requiresDateTime = !item.requiresDateTime; persistUpdatedSite(state.activeSite); },
+      }, (item.requiresDateTime ? "✓ " : "") + "דורש תאריך ושעה בסגירה");
+      textCol.appendChild(reqChip);
+    }
 
     if (withStageLink) {
       const stageRow = h("div", { style: "margin-top:6px;display:flex;align-items:center;gap:6px;" });
@@ -1138,6 +1287,23 @@ function checklistSection(cfg) {
 
     row.appendChild(textCol);
 
+    if (withPhotoCapture) {
+      const camBtn = h("button", { class: "icon-btn", title: "צלם ותייק בתוכניות" }, icon("camera", { size: 16 }));
+      const fileInput = document.createElement("input");
+      fileInput.type = "file";
+      fileInput.accept = "image/*";
+      fileInput.capture = "environment";
+      fileInput.style.display = "none";
+      fileInput.addEventListener("change", () => {
+        const file = fileInput.files && fileInput.files[0];
+        if (file) handlePhotoCapture(file, item);
+        fileInput.value = "";
+      });
+      camBtn.appendChild(fileInput);
+      camBtn.addEventListener("click", (e) => { e.stopPropagation(); fileInput.click(); });
+      row.appendChild(camBtn);
+    }
+
     row.appendChild(h("button", { class: "del-btn", onclick: () => {
       state.activeSite[key] = state.activeSite[key].filter((i) => i.id !== item.id);
       if (onAfterDelete) onAfterDelete(item);
@@ -1162,6 +1328,7 @@ function checklistSection(cfg) {
     if (withQty && qtyField.value.trim()) newItem.qty = qtyField.value.trim();
     if (withEquipmentLink) newItem.requiredEquipment = [];
     if (withStageLink) newItem.stageId = null;
+    if (withCloseRequirements) { newItem.requiresDateTime = false; newItem.closeDate = ""; newItem.closeTime = ""; newItem.closeNote = ""; }
     if (equipmentMode) newItem.status = "missing";
     state.activeSite[key] = [...state.activeSite[key], newItem];
     persistUpdatedSite(state.activeSite);
@@ -1313,7 +1480,11 @@ function plansSection(site) {
   const list = h("div", {});
   if (site.plans.length === 0) list.appendChild(h("p", { class: "empty-hint" }, "לא הוזנו תוכניות. אפשר להוסיף כותרת והערה (למשל מיקום קובץ, תיאור לוח, הפניה לתרשים)."));
   site.plans.forEach((p) => {
-    const row = h("div", { class: "plan-row" }, h("div", { class: "plan-dot" }),
+    const leading = p.imageDataUrl
+      ? h("img", { src: p.imageDataUrl, style: "width:52px;height:52px;object-fit:cover;border-radius:8px;flex-shrink:0;cursor:pointer;" })
+      : h("div", { class: "plan-dot" });
+    if (p.imageDataUrl) leading.addEventListener("click", () => openImageLightbox(p.imageDataUrl));
+    const row = h("div", { class: "plan-row" }, leading,
       h("div", { style: "flex:1;min-width:0;" }, h("p", { class: "plan-title" }, p.title), p.note ? h("p", { class: "plan-note" }, p.note) : null),
       h("button", { class: "del-btn", onclick: () => {
         state.activeSite.plans = state.activeSite.plans.filter((x) => x.id !== p.id);
@@ -1504,6 +1675,62 @@ function deleteConfirm(site) {
   const container = document.createDocumentFragment();
   container.appendChild(overlay);
   container.appendChild(modal);
+  return container;
+}
+
+function taskCloseModal(site) {
+  const item = (site.tasks || []).find((t) => t.id === state.detail.closingTaskId);
+  if (!item) return document.createDocumentFragment();
+  const draft = state.detail.closingDraft;
+
+  const overlay = h("div", { class: "overlay", onclick: () => { state.detail.closingTaskId = null; render(); } });
+  const sheet = h("div", { class: "sheet" });
+  sheet.appendChild(h("div", { class: "sheet-head" }, h("h2", {}, "סגירת משימה"),
+    h("button", { class: "icon-btn", onclick: () => { state.detail.closingTaskId = null; render(); } }, icon("x", { size: 20 }))));
+  sheet.appendChild(h("p", { class: "muted", style: "font-size:13px;margin:0 0 16px;line-height:1.5;" }, item.text));
+
+  if (item.requiresDateTime) {
+    const row = h("div", { class: "row2" });
+    const dateInput = h("input", { type: "date", class: "input", value: draft.date });
+    dateInput.addEventListener("input", (e) => { draft.date = e.target.value; });
+    const timeInput = h("input", { type: "time", class: "input", value: draft.time });
+    timeInput.addEventListener("input", (e) => { draft.time = e.target.value; });
+    row.appendChild(fieldWrap("תאריך", dateInput));
+    row.appendChild(fieldWrap("שעה", timeInput));
+    sheet.appendChild(row);
+  }
+
+  const noteArea = document.createElement("textarea");
+  noteArea.className = "input textarea";
+  noteArea.rows = 3;
+  noteArea.placeholder = "הערה לסגירה (אופציונלי)...";
+  noteArea.setAttribute("dir", "auto");
+  noteArea.value = draft.note;
+  noteArea.addEventListener("input", (e) => { draft.note = e.target.value; });
+  sheet.appendChild(fieldWrap("הערה", noteArea));
+
+  const errMsg = h("p", { style: "font-size:12px;color:var(--red-soft);margin:0 0 10px;min-height:1px;" });
+  sheet.appendChild(errMsg);
+
+  const confirmBtn = h("button", { class: "btn-primary", style: "width:100%;" }, "סמן כהושלם");
+  confirmBtn.addEventListener("click", () => {
+    if (item.requiresDateTime && (!draft.date || !draft.time)) {
+      errMsg.textContent = "יש להזין תאריך ושעה לפני סגירת המשימה.";
+      return;
+    }
+    item.done = true;
+    item.closeDate = draft.date || "";
+    item.closeTime = draft.time || "";
+    item.closeNote = draft.note.trim();
+    syncStageFromTasks(state.activeSite, item.stageId);
+    state.detail.closingTaskId = null;
+    persistUpdatedSite(state.activeSite);
+  });
+  sheet.appendChild(confirmBtn);
+
+  const container = document.createDocumentFragment();
+  container.appendChild(overlay);
+  container.appendChild(sheet);
   return container;
 }
 
