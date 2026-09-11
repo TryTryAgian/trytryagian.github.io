@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-09",
+ "updatedAt": "2026-09-11",
  "suppliers": [
   {
    "supplierName": "ERCO",
@@ -1738,7 +1738,7 @@
      "sku": "995653180V_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 7.8,
+     "price": 7.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995653180V_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/995653180v-main.html"
     },
@@ -2917,1761 +2917,14 @@
   {
    "supplierName": "ברנד אספקה טכנית",
    "supplierWebsite": "https://www.brandtools.co.il",
-   "products": [
-    {
-     "name": "תוף מאריך ביתי 25 מטר 4 שקעים ‎16A וויז אלקטריק",
-     "sku": "31342",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C16596187900656R.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31342"
-    },
-    {
-     "name": "תוף כבל מאריך ‎25‎ מטר ‎4‎ שקעים  וויז אלקטריק",
-     "sku": "31339",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q18184627368628S.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31339"
-    },
-    {
-     "name": "תוף מאריך 25 מטר עם פחת נייד 16A וויז אלקטריק",
-     "sku": "31338",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I44225277743658E.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31338"
-    },
-    {
-     "name": "תוף כבל מאריך משולב עם פחת ‎25‎ מטר וויז אלקטריק",
-     "sku": "31335",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/X26073421413214T.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31335"
-    },
-    {
-     "name": "תוף כבל מאריך בידוד כפול עם פחת נייד ‎25‎ מטר",
-     "sku": "31333",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/E8338131585898I.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31333"
-    },
-    {
-     "name": "תוף כבל מאריך עם 4 שקעים 40מ",
-     "sku": "31337",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/G48088802190253D.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31337"
-    },
-    {
-     "name": "תוף כבל מאריך מקצועי משולב עם פחת ‎40‎ מטר וויז אלקטריק",
-     "sku": "31334",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U38393367699866X.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31334"
-    },
-    {
-     "name": "תוף מאריך 40 מטר עם פחת נייד 16A  וויז אלקטריק",
-     "sku": "31336",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O98918880165350R.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31336"
-    },
-    {
-     "name": "תוף כבל מאריך 40 מטר בידוד כפול 16A  וויז אלקטריק",
-     "sku": "31330",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/X73290218496710Z.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31330"
-    },
-    {
-     "name": "תוף מאריך מקצועי 4 שקעים ‎16A וויז אלקטריק",
-     "sku": "31340",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/M25333370607291Q.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31340"
-    },
-    {
-     "name": "תוף מאריך 3 שקעים ישראליים עם פחת נייד וויז אלקטריק",
-     "sku": "31332",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F35933651586157V.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31332"
-    },
-    {
-     "name": "תוף כבל מאריך משולב עם פחת ‎50‎ מטר וויז אלקטריק",
-     "sku": "31331",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/W73503841677801W.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31331"
-    },
-    {
-     "name": "תוף כח בידוד כפול עם פחת נייד 50 מ'  וויז אלקטריק",
-     "sku": "31329",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Y14853633609183P.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31329"
-    },
-    {
-     "name": "מגן ברקים ונחשולי מתח ROHER",
-     "sku": "22864",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K759942.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=22864"
-    },
-    {
-     "name": "כבל מאריך 3X1.5 על תוף גלילה  ROHER",
-     "sku": "22867",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Y231759.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=22867"
-    },
-    {
-     "name": "מפצל חשמל 3 מקומות SEMICOM",
-     "sku": "17171",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U350442.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17171"
-    },
-    {
-     "name": "כבל AUX באורך 1.2 מטר שחור MIRACASE",
-     "sku": "27775",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F60646785.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=27775"
-    },
-    {
-     "name": "שקע כוח+תקע+מפסק מואר 16A לבן SEMICOM",
-     "sku": "17125",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D102303.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17125"
-    },
-    {
-     "name": "כבל מאריך 3X1.5 עד 1 מטר SEMICOM",
-     "sku": "17144",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/X899819.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17144"
-    },
-    {
-     "name": "מפצל תקע ישראלי ל 3 שקעים אופקיים 16A WISE ELECTRIC",
-     "sku": "34431",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U74904598479529Y.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=34431"
-    },
-    {
-     "name": "מפצל שקעים קומפקטי לתקע ישראלי 16A WISE ELECTRIC",
-     "sku": "34433",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F52617611429388H.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=34433"
-    },
-    {
-     "name": "כבל 1.2 מטר בעל קיבולת 27W יציאות Type C – Type C MIRACASE",
-     "sku": "27770",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P88704647.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=27770"
-    },
-    {
-     "name": "מפצל חשמל ל-4 מאונך SEMICOM",
-     "sku": "17196",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/L354211.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17196"
-    },
-    {
-     "name": "מגן ברקים תקע שקע  GPT",
-     "sku": "28626",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I92447628.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=28626"
-    },
-    {
-     "name": "מפצל חשמל 1 ל-4 פרפר SEMICOM",
-     "sku": "17172",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I333535.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17172"
-    },
-    {
-     "name": "כבל 1.2 מטר בעל קיבולת 27W יציאות Type C - LIGHTNING MIRACASE",
-     "sku": "27771",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D82500423.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=27771"
-    },
-    {
-     "name": "רב שקע 5 שקעים 1 מטר SEMICOM",
-     "sku": "17127",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P334191.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17127"
-    },
-    {
-     "name": "רב שקע 3 שקעים 1 מטר + מפסק SEMICOM",
-     "sku": "17129",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C342858.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17129"
-    },
-    {
-     "name": "רב שקע 5 שקעים 1 מטר SEMICOM",
-     "sku": "17131",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/T788872.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17131"
-    },
-    {
-     "name": "כבל מאריך באורך 1 מטר עם 2 שקעים SEMICOM",
-     "sku": "17153",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N15237.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17153"
-    },
-    {
-     "name": "מגן נחשולי מתח + כבל 50 ס\"מ  GPT",
-     "sku": "28623",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q40688289.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=28623"
-    },
-    {
-     "name": "רב שקע 6 שקעים 1 מטר SEMICOM",
-     "sku": "17132",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F243889.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17132"
-    },
-    {
-     "name": "כבל מאריך 2 3X1.5 מטר SEMICOM",
-     "sku": "17145",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/L330773.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17145"
-    },
-    {
-     "name": "מגן ברק+השהיה מקרר ומקפיא  GPT",
-     "sku": "28620",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J76175655.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=28620"
-    },
-    {
-     "name": "רב שקע 10 שקעים 1 מטר SEMICOM",
-     "sku": "17128",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U202447.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17128"
-    },
-    {
-     "name": "רב שקע 5 שקעים 3 מטר  SEMICOM",
-     "sku": "17135",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J693581.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17135"
-    },
-    {
-     "name": "רב שקע 4 שקעים 3 מטר + מפסק SEMICOM",
-     "sku": "17138",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K675927.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17138"
-    },
-    {
-     "name": "רב שקע 3 שקעים 3 מטר SEMICOM",
-     "sku": "17133",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U598046.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17133"
-    },
-    {
-     "name": "רב שקע 6 שקעים 3 מטר + מפסק SEMICOM",
-     "sku": "17140",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K371392.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17140"
-    },
-    {
-     "name": "כבל מאריך 3 3X1.5 מטר SEMICOM",
-     "sku": "17146",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/B688805.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17146"
-    },
-    {
-     "name": "100 יח' שלה פלסטיק 16 מ\"מ בודדת לצנרת חשמל SPIT",
-     "sku": "9632",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/B413171.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=9632"
-    },
-    {
-     "name": "100 יח' שלה פלסטיק שחור מיועדת לתוספת אזיקון SPIT",
-     "sku": "9634",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F350548.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=9634"
-    },
-    {
-     "name": "100 יח' שלה מתכת 32 מ\"מ לצנרת חשמל SPIT",
-     "sku": "9636",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F745751.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=9636"
-    },
-    {
-     "name": "200 יח' שלה מתכת 16 מ\"מ לצנרת חשמל SPIT",
-     "sku": "9637",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F745751.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=9637"
-    },
-    {
-     "name": "200 יח' שלה מתכת 20 מ\"מ לצנרת חשמל SPIT",
-     "sku": "9638",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F745751.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=9638"
-    },
-    {
-     "name": "קופסת הסתעפות ניידת ‎5x16A‎ זכר ל־‎4‎ שקעים",
-     "sku": "31341",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/M61884273292014H.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31341"
-    },
-    {
-     "name": "טסטר מקצועי - בודק מתח חשמל  LASERLINER",
-     "sku": "21848",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/T26818.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21848"
-    },
-    {
-     "name": "צבת למדידת זרם  LASERLINER",
-     "sku": "21850",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/T497399.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21850"
-    },
-    {
-     "name": "חגורת חשמלאיים עמידה עם מגוון תאים להוצאה  MILWAUKEE",
-     "sku": "15788",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C190194.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=15788"
-    },
-    {
-     "name": "סט בוקסות מבודדות דרייב \"3/8 - 7-22 מ\"מ 12 חלקים- VDE  ROHER",
-     "sku": "6892",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K155221.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=6892"
-    },
-    {
-     "name": "מנורת ביקורת מקצועית  CALAMAN",
-     "sku": "3431",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H955987.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3431"
-    },
-    {
-     "name": "סט מפתחות אלן מבודד 1000V ROHER",
-     "sku": "11376",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/W459084.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11376"
-    },
-    {
-     "name": "סט בוקסות מבודדות דרייב 1/2\" 10-24 מ\"מ -11 חלקים VDE ROHER",
-     "sku": "6866",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H90600.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=6866"
-    },
-    {
-     "name": "סט 7 מפתחות טורקס VDE ידית T מידות T10-T40 ROHER",
-     "sku": "12375",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J396569.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12375"
-    },
-    {
-     "name": "סט מפתחות מבודדים V1,000 - VDE - ידית T - אלן ROHER",
-     "sku": "20263",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V995705.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20263"
-    },
-    {
-     "name": "מברג טסטר BLOSTA",
-     "sku": "21905",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D65880.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21905"
-    },
-    {
-     "name": "מברג מבודד 1,000 וולט VDE  ROHER",
-     "sku": "20827",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K901284.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20827"
-    },
-    {
-     "name": "מברג מבודד VDE שטוח 4-100 SIGNET",
-     "sku": "16782",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O155709.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16782"
-    },
-    {
-     "name": "מברגים מבודדים 1,000 וולט VDE מחוזקים CALAMAN",
-     "sku": "20821",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H363305.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20821"
-    },
-    {
-     "name": "מברג מבודד VDE שטוח 3-100 SIGNET",
-     "sku": "16780",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O155709.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16780"
-    },
-    {
-     "name": "מברג מבודד VDE שטוח 2.5-75 SIGNET",
-     "sku": "16781",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O155709.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16781"
-    },
-    {
-     "name": "פלייר ללחיצת נעלי כבל ROHER",
-     "sku": "20853",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F527047.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20853"
-    },
-    {
-     "name": "מברג מבודד VDE שטוח 6.5-150 SIGNET",
-     "sku": "16783",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O155709.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16783"
-    },
-    {
-     "name": "פלייר מיני ללחיצות סופיות \"5 לאלקטרוניקה   ROHER",
-     "sku": "3546",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P918481.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3546"
-    },
-    {
-     "name": "חותך כבלי חשמל - קטר חשמלאים  ROHER",
-     "sku": "20837",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/L843957.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20837"
-    },
-    {
-     "name": "מברג טסטר  BLOSTA",
-     "sku": "21902",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R785699.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21902"
-    },
-    {
-     "name": "קטר חישוף חוטים מבודד \"6 מקלף בידוד ROHER",
-     "sku": "3564",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D668145.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3564"
-    },
-    {
-     "name": "מקלף בידוד לכבלי חשמל בקוטר 4-16 מ\"מ ROHER",
-     "sku": "6898",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/T533745.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=6898"
-    },
-    {
-     "name": "שפיץ פלייר מבודד VDE 1000V ROHER",
-     "sku": "3562",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C147912.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3562"
-    },
-    {
-     "name": "רב מודד (מולטימטר) דיגיטלי OMEGA",
-     "sku": "17407",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/E454354.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17407"
-    },
-    {
-     "name": "סט 11 מברגי טלקום מבודדים 1,000 וולט VDE ROHER",
-     "sku": "3628",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/L703408.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3628"
-    },
-    {
-     "name": "מקלף בידוד אוטומטי  CALAMAN",
-     "sku": "3558",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/G12917.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3558"
-    },
-    {
-     "name": "קטר דיאגונלי \"6 מבודד VDE 1000V ROHER",
-     "sku": "3566",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/T283608.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3566"
-    },
-    {
-     "name": "קטר חישוף חוטים מבודד \"6 -מקלף בידוד VDE ROHER",
-     "sku": "6897",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/M121972.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=6897"
-    },
-    {
-     "name": "אוזניות מגן 32DB מתכווננות SIGNET",
-     "sku": "12391",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V815484.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12391"
-    },
-    {
-     "name": "רב מודד ידני UNI-T",
-     "sku": "17241",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H190209.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17241"
-    },
-    {
-     "name": "פלייר מבודד 1000V VDE  ROHER",
-     "sku": "20839",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I138192.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20839"
-    },
-    {
-     "name": "פלייר ללחיצת סופיות ROHER",
-     "sku": "20850",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U640725.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20850"
-    },
-    {
-     "name": "חותך כבלי חשמל - קטר חשמלאים \"6 מבודד VDE ROHER",
-     "sku": "3565",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/S514580.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3565"
-    },
-    {
-     "name": "קטר \"7 מבודד VDE - DUTY HEAVY ROHER",
-     "sku": "3567",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H560311.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3567"
-    },
-    {
-     "name": "כוס קידוח יהלום מידה 77 (3 צול) - כניסה 1/2 - מוצר להשכרה רוטנברגר",
-     "sku": "25487",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N9307064.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25487"
-    },
-    {
-     "name": "כוס קידוח יהלום מידה 67 (2.5 צול) - כניסה 1/2 - מוצר להשכרה רוטנברגר",
-     "sku": "25488",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N9307064.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25488"
-    },
-    {
-     "name": "כוס קידוח יהלום מידה 112 (4 צול) - כניסה 1 1/4 - מוצר להשכרה רוטנברגר",
-     "sku": "25489",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N9307064.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25489"
-    },
-    {
-     "name": "כוס קידוח יהלום מידה 152 (6 צול) - כניסה 1 1/4 - מוצר להשכרה רוטנברגר",
-     "sku": "25490",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N9307064.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25490"
-    },
-    {
-     "name": "מברגת אימפקט 20V + סוללה 2.0AH מטען + סט ביטים 33 חלקים - מוצר להשכרה WORX",
-     "sku": "25496",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O692254.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25496"
-    },
-    {
-     "name": "מקדחה רוטטת 650W - מוצר להשכרה! MAKITA",
-     "sku": "25497",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/W282983.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25497"
-    },
-    {
-     "name": "משחזת זווית \"9 2200W - מוצר להשכרה! BOSCH",
-     "sku": "25552",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J198373.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25552"
-    },
-    {
-     "name": "משחזת זווית \"7 חשמלית 2000W - מוצר להשכרה! BOSCH",
-     "sku": "25553",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/S944543.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25553"
-    },
-    {
-     "name": "מברגת אימפקט 18V + שתי סוללות 3.0AH +סט 33 ביטים - מוצר להשכרה! MAKITA",
-     "sku": "25493",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V495110.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25493"
-    },
-    {
-     "name": "מברגה / מקדחה אימפקט 18V + שתי סוללות 3AH - מוצר להשכרה  MAKITA",
-     "sku": "25495",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K218804.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25495"
-    },
-    {
-     "name": "משחזת זוית 18V + שתי סוללות 5.0AH - מוצר להשכרה! MAKITA",
-     "sku": "25555",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C441125.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25555"
-    },
-    {
-     "name": "משחזת זוית \"9 18VX2 + שתי סוללות 5AH - מוצר להשכרה! MAKITA",
-     "sku": "25556",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/L936761.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25556"
-    },
-    {
-     "name": "מפתח אימפקט ''1/2 18V + שתי סוללות 5.0AH - מוצר להשכרה! MAKITA",
-     "sku": "25557",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/M704201.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25557"
-    },
-    {
-     "name": "מפתח אימפקט נטען \"3/4 18V + שתי סוללות 5.0AH - מוצר להשכרה MAKITA",
-     "sku": "25558",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F219659.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25558"
-    },
-    {
-     "name": "פטישון חשמלי 28 מ\"מ 850W - מוצר להשכרה! BOSCH",
-     "sku": "25466",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/X178704.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25466"
-    },
-    {
-     "name": "מקדחת כוס יהלום \"6 ידנית - מוצר להשכרה! KRAUSS",
-     "sku": "25485",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V460351.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25485"
-    },
-    {
-     "name": "פטיש חציבה 1150W - מוצר להשכרה! BOSCH",
-     "sku": "25467",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C395989.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25467"
-    },
-    {
-     "name": "מקדחת כוס יהלום \"8 על סטנד - מוצר להשכרה! KRAUSS",
-     "sku": "25483",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I386269.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25483"
-    },
-    {
-     "name": "מלטשת אקצנטרית מקצועית \"5 - מוצר להשכרה! DEWALT",
-     "sku": "25572",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F769189.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25572"
-    },
-    {
-     "name": "מסור אנכי 720W - מוצר להשכרה! MAKITA",
-     "sku": "144",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q656945.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=144"
-    },
-    {
-     "name": "משור אנכי 18V + שתי סוללות 5.0AH - מוצר להשכרה! MAKITA",
-     "sku": "25559",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D616280.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25559"
-    },
-    {
-     "name": "מלטשת אקצנטרית \"5 + שתי סוללות 5.0AH - מוצר להשכרה! MAKITA",
-     "sku": "25590",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Z140938.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25590"
-    },
-    {
-     "name": "פטיש חציבה 1250W HITACHI",
-     "sku": "25763",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U51988948.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25763"
-    },
-    {
-     "name": "פטיש חציבה חשמלי 1100W - מוצר להשכרה! CAT",
-     "sku": "25470",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/E427974.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25470"
-    },
-    {
-     "name": "מקדחת כוס יהלום \"10 על סטנד - מוצר להשכרה! KRAUSS",
-     "sku": "25475",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U756966.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25475"
-    },
-    {
-     "name": "מסור עגול ''7.25 (190 מ\"מ) - מוצר להשכרה! BOSCH",
-     "sku": "25584",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/L561669.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25584"
-    },
-    {
-     "name": "מלטשת גובה לקירות גבס ג׳ירפה - מוצר להשכרה! BOSCH",
-     "sku": "23195",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N695336.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=23195"
-    },
-    {
-     "name": "משור עגול 18V + שתי סוללות 5.0AH - מוצר להשכרה! MAKITA",
-     "sku": "25585",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K930581.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25585"
-    },
-    {
-     "name": "מקדחת כוס יהלום \"12 על סטנד - מוצר להשכרה! KRAUSS",
-     "sku": "25482",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Z510247.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25482"
-    },
-    {
-     "name": "משור גרונג \"8 - מוצר להשכרה! KRAUSS",
-     "sku": "25587",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I445183.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25587"
-    },
-    {
-     "name": "מד טווח לייזר עד 50 מטר - מוצר להשכרה! BOSCH",
-     "sku": "25592",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/E473595.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25592"
-    },
-    {
-     "name": "מלטשת סרט \"4 - מוצר להשכרה! MAKITA",
-     "sku": "25574",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Z660378.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25574"
-    },
-    {
-     "name": "מסור גרונג פנדל \"8.5 - מוצר להשכרה! METABO",
-     "sku": "25622",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J434258.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25622"
-    },
-    {
-     "name": "מסור גרונג + פנדל \"10 - מוצר להשכרה! METABO",
-     "sku": "25619",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R53414.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25619"
-    },
-    {
-     "name": "מסור גרונג  פנדל \"12 - מוצר להשכרה! METABO",
-     "sku": "25617",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R364999.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25617"
-    },
-    {
-     "name": "מסור שולחן \"10 + סטנד - מוצר להשכרה! DEWALT",
-     "sku": "25586",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J76195.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25586"
-    },
-    {
-     "name": "פטיש חציבה לבטון 11 ק\"ג - מוצר להשכרה! BOSCH",
-     "sku": "25468",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H908318.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25468"
-    },
-    {
-     "name": "מלטשת סרט שולחנית כולל מלטשת צד - מוצר להשכרה! ROHER",
-     "sku": "25573",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U908364.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25573"
-    },
-    {
-     "name": "מסור חרב 1100W - מוצר להשכרה! BOSCH",
-     "sku": "25570",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V991509.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25570"
-    },
-    {
-     "name": "מסור חרב 18V + שתי סוללות 5.0AH - מוצר להשכרה! MAKITA",
-     "sku": "25588",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Y156060.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25588"
-    },
-    {
-     "name": "פנס ראש 10W על סוללות",
-     "sku": "16208",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/X915261.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16208"
-    },
-    {
-     "name": "קליבה מקצועית ידית מתכת PIHER",
-     "sku": "7160",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V706765.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=7160"
-    },
-    {
-     "name": "פנס ראש לד אלומה משתנה  ROHER",
-     "sku": "3118",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D922875.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=3118"
-    },
-    {
-     "name": "25 דיסקיות חיתוך לברזל \"4.5 KLINGSPOR",
-     "sku": "17951",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/S712456.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17951"
-    },
-    {
-     "name": "מארז 3 יח' ביטים פיליפס PH1 מגנטי באורכים שונים  WHIRLPOWER",
-     "sku": "11701",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R752282.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11701"
-    },
-    {
-     "name": "אולר רב שימושי 16 ב-1 DEWALT X MCLAREN",
-     "sku": "31274",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V156368550101H.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31274"
-    },
-    {
-     "name": "סט בוקסות וביטים 24 חלקים 1/4\" + עם מפתח רצ'ט מיני DEWALT X MCLAREN",
-     "sku": "31275",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F7691875844104K.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31275"
-    },
-    {
-     "name": "סט בוקסות שחורות 24 יח' \"1/2 BRAND",
-     "sku": "31471",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/M68155635.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31471"
-    },
-    {
-     "name": "מארז 3 יח' ביטים פיליפס PH2 מגנטי באורכים שונים  WHIRLPOWER",
-     "sku": "11724",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I379540.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11724"
-    },
-    {
-     "name": "מארז 3 יח' ביטים פיליפס PH3 מגנטי באורכים שונים  WHIRLPOWER",
-     "sku": "11690",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F781701.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11690"
-    },
-    {
-     "name": "מארז 3 יח' ביטים פוזידרייב PZ1 מגנטי באורכים שונים  WHIRLPOWER",
-     "sku": "11702",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R505944.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11702"
-    },
-    {
-     "name": "מארז 3 יח' ביטים פיליפס PZ2 מגנטי באורכים שונים  WHIRLPOWER",
-     "sku": "11692",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J519143.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11692"
-    },
-    {
-     "name": "מארז 3 יח' ביטים פוזידרייב PZ3 מגנטי באורכים שונים  WHIRLPOWER",
-     "sku": "11721",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/V635659.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11721"
-    },
-    {
-     "name": "מארז 3 יח' ביטים TORX באורך 25 מ\"מ במידות שונות WHIRLPOWER",
-     "sku": "11731",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O870888.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11731"
-    },
-    {
-     "name": "מארז 3 יח' ביטים TORX באורך 50 מ\"מ במידות שונות WHIRLPOWER",
-     "sku": "11727",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C991524.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11727"
-    },
-    {
-     "name": "מארז 3 יח' ביטים TORX באורך 90 מ\"מ במידות שונות WHIRLPOWER",
-     "sku": "11708",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/W125329.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11708"
-    },
-    {
-     "name": "מארז 3 יח' ביטים אלן באורך 25 מ\"מ במידות שונות WHIRLPOWER",
-     "sku": "11733",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I868889.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11733"
-    },
-    {
-     "name": "סט בוקסות מקצועי דרייב 1/4\" 25 חלקים SIGNET",
-     "sku": "10865",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/G201531.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=10865"
-    },
-    {
-     "name": "סט בוקסות 1/4 מ\"מ 25 יח' SIGNET",
-     "sku": "98",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R110268.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=98"
-    },
-    {
-     "name": "סט בוקסות 150 יחידות \"1/4+\"3/8+\"1/2  P.L.E TOOLS",
-     "sku": "10972",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N421761.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=10972"
-    },
-    {
-     "name": "סט בוקסות 1/2+3/8+1/4 SIGNET",
-     "sku": "7633",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I339394.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=7633"
-    },
-    {
-     "name": "מארז 3 יח' ביטים אלן באורך 90 מ\"מ במידות שונות WHIRLPOWER",
-     "sku": "11728",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/C678277.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11728"
-    },
-    {
-     "name": "סט מקדחי פרפר לקידוח עץ (8 יח') למברגת אימפקט CAT",
-     "sku": "29971",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Y23595394112555T.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=29971"
-    },
-    {
-     "name": "להב טונגסטן קרבייד רב תכליתי 7-1/4\" Evolution",
-     "sku": "19086",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H993203.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=19086"
-    },
-    {
-     "name": "מארז 3 יח' ביטים שטוחים מגנטים באורכים שונים  WHIRLPOWER",
-     "sku": "11691",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Y943215.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11691"
-    },
-    {
-     "name": "אקדח דבק חם נטען 18V 100W + סוללה 2.0AH ומטען  HUNTER",
-     "sku": "25748",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q44948543.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25748"
-    },
-    {
-     "name": "מפתחות רינג פתוח ROHER",
-     "sku": "17423",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R446084.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17423"
-    },
-    {
-     "name": "בוקסה דרייב ''1/4 - 6 צלעות ROHER",
-     "sku": "19692",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q899560.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=19692"
-    },
-    {
-     "name": "בוקסה דרייב ''3/8 - 6 צלעות  KING TOOLS",
-     "sku": "19706",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q568337.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=19706"
-    },
-    {
-     "name": "בוקסה דרייב ''1/2 - 6 צלעות KING TOOLS",
-     "sku": "19795",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K290703.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=19795"
-    },
-    {
-     "name": "מפתח צינורות פלדה - זוויתי ROHER",
-     "sku": "19671",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U864892.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=19671"
-    },
-    {
-     "name": "מפתח רינג רצ'ט ROHER",
-     "sku": "17906",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/M343682.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17906"
-    },
-    {
-     "name": "פלייר משאבות - קוקוריקו  ROHER",
-     "sku": "20264",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/B431145.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=20264"
-    },
-    {
-     "name": "מפתח T בוקסה, ידית ארגונומית ROHER",
-     "sku": "18269",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D295037.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=18269"
-    },
-    {
-     "name": "מדפסת מדבקות מקצועית ניידת BROTHER",
-     "sku": "31390",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P286048549146Y.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=31390"
-    },
-    {
-     "name": "פלס לייזר ירוק 3 קרניים 12V + סוללה 2.0AH ואביזרים DEWALT",
-     "sku": "25591",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/J23432125695578I.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=25591"
-    },
-    {
-     "name": "גוף לייזר 3D קווים ירוקים FUTECH",
-     "sku": "21176",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P737786.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21176"
-    },
-    {
-     "name": "פלס אלקטרני דיגיטלי 25 ס\"מ LASERLINER",
-     "sku": "17563",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/D529732.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17563"
-    },
-    {
-     "name": "פלס אלקטרוני דיגיטלי 60 ס\"מ LASERLINER",
-     "sku": "16645",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I676079.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16645"
-    },
-    {
-     "name": "פלס אלקטרוני דיגיטלי 40 ס\"מ LASERLINER",
-     "sku": "17564",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N313042.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17564"
-    },
-    {
-     "name": "מד טווח לייזר - אדום עד 80 מטר  \tANL AQ110",
-     "sku": "21808",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O530007.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21808"
-    },
-    {
-     "name": "מד טווח לייזר - ירוק עד 60 מטר  FRONIUS",
-     "sku": "21803",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O62432.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21803"
-    },
-    {
-     "name": "לייזר ירוק קומפקטי 2 קווים \tANL AQ110",
-     "sku": "21811",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/M13650.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21811"
-    },
-    {
-     "name": "סט מאזנת אופטית 26X + חצובה 1.6 מטר LASERLINER",
-     "sku": "17575",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H190606.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17575"
-    },
-    {
-     "name": "לייזר ירוק 3D קומפקט + חצובה 1.5 מטר FUTECH",
-     "sku": "21812",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/G758660.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21812"
-    },
-    {
-     "name": "לייזר מסתובב מקצועי - קרן ירוקה  FUTECH",
-     "sku": "21810",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P332925.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=21810"
-    },
-    {
-     "name": "לייזר אוטומטי מסתובב קרן אדומה  LASERLINER",
-     "sku": "17573",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/W231118.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17573"
-    },
-    {
-     "name": "מד טווח לייזר 9 מטר DEWALT",
-     "sku": "9780",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N540139.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=9780"
-    },
-    {
-     "name": "מד טווח לייזר 30 מטר DEWALT",
-     "sku": "5764",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/B475487.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=5764"
-    },
-    {
-     "name": "מד טווח לייזר אדום 30 מטר DEWALT",
-     "sku": "17760",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/W32052.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17760"
-    },
-    {
-     "name": "מד טווח לייזר עד 50 מטר DEWALT",
-     "sku": "10086",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/G156396.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=10086"
-    },
-    {
-     "name": "פלס לייזר לריצוף קרן אדומה DEWALT",
-     "sku": "18127",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/O962502.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=18127"
-    },
-    {
-     "name": "מד טווח לייזר 50 מטר DEWALT",
-     "sku": "12965",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P230462.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12965"
-    },
-    {
-     "name": "מוט טלסקופי לפלס לייזר DEWALT",
-     "sku": "12972",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/E893029.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12972"
-    },
-    {
-     "name": "גלאי לייזר ירוק עד 50 מטר DEWALT",
-     "sku": "9835",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/P384789.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=9835"
-    },
-    {
-     "name": "מד טווח לייזר 100 מטר DEWALT",
-     "sku": "5777",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K332513.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=5777"
-    },
-    {
-     "name": "פלס לייזר ירוק 2 קווים 20V ( גוף בלבד) DEWALT",
-     "sku": "18015",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/R965127.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=18015"
-    },
-    {
-     "name": "חצובה לפלסי לייזר קנה \" 5/8 DEWALT",
-     "sku": "12975",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I547646.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12975"
-    },
-    {
-     "name": "פלס לייזר ירוק 2 קווים 12V + סוללה 2.0AH DEWALT",
-     "sku": "12976",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N181679.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12976"
-    },
-    {
-     "name": "פלס לייזר ירוק 2 מעגלים 12V + סוללה 2.0AH DEWALT",
-     "sku": "12978",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/F7607.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12978"
-    },
-    {
-     "name": "פלס לייזר ירוק 3 קווים DEWALT",
-     "sku": "17658",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U810967.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17658"
-    },
-    {
-     "name": "פלס לייזר 3 מעגלים 360 מעלות 12V (גוף בלבד) DEWALT",
-     "sku": "16772",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q691231.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16772"
-    },
-    {
-     "name": "פלס לייזר 3 קווים 360 מעלות ירוק 12/18V ׁ(גוף בלבד) DEWALT",
-     "sku": "11592",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/I50037349334921C.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11592"
-    },
-    {
-     "name": "פלס לייזר 3 מעגלים 360 מעלות 12V + סוללה 2A ומטען DEWALT",
-     "sku": "16771",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U663293.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=16771"
-    },
-    {
-     "name": "מד מרחק לייזר עד 200 מטר DEWALT",
-     "sku": "12966",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/N174630.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12966"
-    },
-    {
-     "name": "פלס לייזר 3 קווים 360 מעלות ירוק 12/18V + סוללה 2.0AH DEWALT",
-     "sku": "11590",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K3937496655417I.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=11590"
-    },
-    {
-     "name": "פלס לייזר ירוק מסתובב 18V + סוללה 2.0AH ואביזרים DEWALT",
-     "sku": "12980",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q956811.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12980"
-    },
-    {
-     "name": "מד טווח לייזר עד 25 מטר BOSCH",
-     "sku": "17332",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K802621.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=17332"
-    },
-    {
-     "name": "תושבת לפלס לייזר אוניברסלית BOSCH",
-     "sku": "1025",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/H467904.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=1025"
-    },
-    {
-     "name": "מד טווח לייזר 25 מטר BOSCH",
-     "sku": "32707",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K273995.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=32707"
-    },
-    {
-     "name": "מד טווח לייזר עד 20 מטר כולל אביזרים  BOSCH",
-     "sku": "14207",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/Q705483.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=14207"
-    },
-    {
-     "name": "מד טווח לייזר עד 50 מטר BOSCH",
-     "sku": "10441",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/U291924.jpg",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=10441"
-    },
-    {
-     "name": "חצובה עד 250 ס\"מ BOSCH",
-     "sku": "12490",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/W965539.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=12490"
-    },
-    {
-     "name": "מוט טלסקופי לפלס לייזר 140-350 ס\"מ BOSCH",
-     "sku": "1023",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://www.brandtools.co.il/ProductsImages/s250/K213341.png",
-     "productUrl": "https://www.brandtools.co.il/ProductInfo.asp?ProdId=1023"
-    }
-   ]
+   "products": []
   },
   {
    "supplierName": "דרור כלי עבודה",
    "supplierWebsite": "https://www.dror-tools.co.il",
    "products": [
     {
-     "name": "out_of_stockfalse799.0false",
+     "name": "גלגלת חשמל 15 מטר כבל 3X2.5 מ\"מ K-GE15M",
      "sku": "7467652",
      "category": "material",
      "unit": "יח'",
@@ -4680,7 +2933,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7467652-%D7%92%D7%9C%D7%92%D7%9C%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C-15-%D7%9E%D7%98%D7%A8-%D7%9B%D7%91%D7%9C-3X2-5-%D7%9E-%D7%9E-K-GE15M-Kasco\n"
     },
     {
-     "name": "out_of_stockfalse269.0false",
+     "name": "כבל מאריך 50 מ",
      "sku": "3233721",
      "category": "material",
      "unit": "יח'",
@@ -4689,7 +2942,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233721-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-50-%D7%9E-%D7%A2%D7%9C-%D7%AA%D7%95%D7%A3-3x1-5-%D7%A2%D7%9D-4-%D7%A9%D7%A7%D7%A2%D7%99%D7%9D-601300-003-ARROW\n"
     },
     {
-     "name": "Pro50mout_of_stockfalse689.0false",
+     "name": "כבל מאריך 50 מ",
      "sku": "Pro50m",
      "category": "material",
      "unit": "יח'",
@@ -4698,7 +2951,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4935184-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-50-%D7%9E-%D7%A2%D7%9C-%D7%AA%D7%95%D7%A3-3x2-5-%D7%A2%D7%9D-2-%D7%A9%D7%A7%D7%A2%D7%99%D7%9D-%D7%A9%D7%A7%D7%A2-%D7%A4%D7%97%D7%AA-Prom\n"
     },
     {
-     "name": "out_of_stockfalse431.0false",
+     "name": "EFMC410M\tכבל מאריך לפאנלים סולאריים חיבורים MC4 ל-XT60 מבית EcoFlow - אורך 10 מטר",
      "sku": "9432092",
      "category": "material",
      "unit": "יח'",
@@ -4707,7 +2960,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/9432092-EFMC410M-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9C%D7%A4%D7%90%D7%A0%D7%9C%D7%99%D7%9D-%D7%A1%D7%95%D7%9C%D7%90%D7%A8%D7%99%D7%99%D7%9D-%D7%97%D7%99%D7%91%D7%95%D7%A8%D7%99%D7%9D-MC4-%D7%9C-XT60-%D7%9E%D7%91%D7%99%D7%AA-EcoFlow-%D7%90%D7%95%D7%A8%D7%9A-10-%D7%9E%D7%98%D7%A8-%D7%90%D7%A7%D7%95%D7%A4%D7%9C%D7%95%D7%90%D7%95-ECOFLOW-\n"
     },
     {
-     "name": "out_of_stockfalse275.0false",
+     "name": "כבל מאריך לפאנלים סולאריים חיבורים MC4 ל-XT60 מבית EcoFlow - אורך 5 מטר",
      "sku": "9432097",
      "category": "material",
      "unit": "יח'",
@@ -4716,7 +2969,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/9432097-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9C%D7%A4%D7%90%D7%A0%D7%9C%D7%99%D7%9D-%D7%A1%D7%95%D7%9C%D7%90%D7%A8%D7%99%D7%99%D7%9D-%D7%97%D7%99%D7%91%D7%95%D7%A8%D7%99%D7%9D-MC4-%D7%9C-XT60-%D7%9E%D7%91%D7%99%D7%AA-EcoFlow-%D7%90%D7%95%D7%A8%D7%9A-5-%D7%9E%D7%98%D7%A8-%D7%90%D7%A7%D7%95%D7%A4%D7%9C%D7%95%D7%90%D7%95-ECOFLOW-\n"
     },
     {
-     "name": "HYK202out_of_stockfalse19.0false",
+     "name": "שקע כוח יונדאי 3P 16A לבן HYUNDAI HYK202",
      "sku": "HYK202",
      "category": "material",
      "unit": "יח'",
@@ -4725,7 +2978,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3636260-%D7%A9%D7%A7%D7%A2-%D7%9B%D7%95%D7%97-%D7%99%D7%95%D7%A0%D7%93%D7%90%D7%99-3P-16A-%D7%9C%D7%91%D7%9F-HYUNDAI-HYK202\n"
     },
     {
-     "name": "out_of_stockfalse134.0false",
+     "name": "כבל מאריך לפאנלים סולאריים חיבורים MC4 ל-XT60 מבית EcoFlow - אורך 3 מטר",
      "sku": "9432112",
      "category": "material",
      "unit": "יח'",
@@ -4734,7 +2987,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/9432112-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9C%D7%A4%D7%90%D7%A0%D7%9C%D7%99%D7%9D-%D7%A1%D7%95%D7%9C%D7%90%D7%A8%D7%99%D7%99%D7%9D-%D7%97%D7%99%D7%91%D7%95%D7%A8%D7%99%D7%9D-MC4-%D7%9C-XT60-%D7%9E%D7%91%D7%99%D7%AA-EcoFlow-%D7%90%D7%95%D7%A8%D7%9A-3-%D7%9E%D7%98%D7%A8-%D7%90%D7%A7%D7%95%D7%A4%D7%9C%D7%95%D7%90%D7%95-ECOFLOW-\n"
     },
     {
-     "name": "out_of_stockfalse175.0false",
+     "name": "תוף מתח 25 מטר 4 שקעים 601300-002",
      "sku": "7672635",
      "category": "material",
      "unit": "יח'",
@@ -4743,7 +2996,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7672635-%D7%AA%D7%95%D7%A3-%D7%9E%D7%AA%D7%97-25-%D7%9E%D7%98%D7%A8-4-%D7%A9%D7%A7%D7%A2%D7%99%D7%9D-601300-002-ARROW\n"
     },
     {
-     "name": "ET-32Cout_of_stockfalse459.0false",
+     "name": "מפצל שקעים לשולחן כולל 2 שקעי חשמל שקע USB ושקע TYPE C",
      "sku": "ET-32C",
      "category": "material",
      "unit": "יח'",
@@ -4752,7 +3005,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/8323648-%D7%9E%D7%A4%D7%A6%D7%9C-%D7%A9%D7%A7%D7%A2%D7%99%D7%9D-%D7%9C%D7%A9%D7%95%D7%9C%D7%97%D7%9F-%D7%9B%D7%95%D7%9C%D7%9C-2-%D7%A9%D7%A7%D7%A2%D7%99-%D7%97%D7%A9%D7%9E%D7%9C-%D7%A9%D7%A7%D7%A2-USB-%D7%95%D7%A9%D7%A7%D7%A2-TYPE-C-eufficio\n"
     },
     {
-     "name": "6015065out_of_stockfalse49.0false",
+     "name": "כבל מאריך 10 מטר  3x1.5",
      "sku": "6015065",
      "category": "material",
      "unit": "יח'",
@@ -4761,16 +3014,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5255027-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-10-%D7%9E%D7%98%D7%A8-3x1-5-HYUNDAI\n"
     },
     {
-     "name": "TK-10out_of_stockfalse101.0false",
+     "name": "תוף פלסטיק 10 מטר+ 4 שקעים",
      "sku": "TK-10",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 101.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5589787/show/2c855e14b348b250527f18e57c7fcb1c.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3233719-%D7%AA%D7%95%D7%A3-%D7%A4%D7%9C%D7%A1%D7%98%D7%99%D7%A7-10-%D7%9E%D7%98%D7%A8-4-%D7%A9%D7%A7%D7%A2%D7%99%D7%9D-\n"
     },
     {
-     "name": "out_of_stock5.0",
+     "name": "תקע צד לבן",
      "sku": "3233722",
      "category": "material",
      "unit": "יח'",
@@ -4779,7 +3032,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233722-%D7%AA%D7%A7%D7%A2-%D7%A6%D7%93-%D7%9C%D7%91%D7%9F\n"
     },
     {
-     "name": "out_of_stock5.0",
+     "name": "שקע קופלונג כח",
      "sku": "3233723",
      "category": "material",
      "unit": "יח'",
@@ -4788,7 +3041,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233723-%D7%A9%D7%A7%D7%A2-%D7%A7%D7%95%D7%A4%D7%9C%D7%95%D7%A0%D7%92-%D7%9B%D7%97\n"
     },
     {
-     "name": "out_of_stock40.0",
+     "name": "כבל מאריך מוכן 5 מטר",
      "sku": "3233724",
      "category": "material",
      "unit": "יח'",
@@ -4797,7 +3050,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233724-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9E%D7%95%D7%9B%D7%9F-5-%D7%9E%D7%98%D7%A8-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "out_of_stock71.0",
+     "name": "כבל מאריך מוכן 10 מטר",
      "sku": "3233725",
      "category": "material",
      "unit": "יח'",
@@ -4806,7 +3059,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233725-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9E%D7%95%D7%9B%D7%9F-10-%D7%9E%D7%98%D7%A8-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "out_of_stock100.0",
+     "name": "כבל מאריך מוכן 15 מטר",
      "sku": "3233726",
      "category": "material",
      "unit": "יח'",
@@ -4815,7 +3068,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233726-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9E%D7%95%D7%9B%D7%9F-15-%D7%9E%D7%98%D7%A8-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "out_of_stock121.0",
+     "name": "כבל מאריך מוכן 20 מטר",
      "sku": "3233727",
      "category": "material",
      "unit": "יח'",
@@ -4824,7 +3077,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233727-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9E%D7%95%D7%9B%D7%9F-20-%D7%9E%D7%98%D7%A8-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse45.0false",
+     "name": "כבל מאריך לפאנלים סולאריים חיבורים MC4 ל-XT60 מבית EcoFlow - אורך 1 מטר",
      "sku": "9432047",
      "category": "material",
      "unit": "יח'",
@@ -4833,7 +3086,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/9432047-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-%D7%9C%D7%A4%D7%90%D7%A0%D7%9C%D7%99%D7%9D-%D7%A1%D7%95%D7%9C%D7%90%D7%A8%D7%99%D7%99%D7%9D-%D7%97%D7%99%D7%91%D7%95%D7%A8%D7%99%D7%9D-MC4-%D7%9C-XT60-%D7%9E%D7%91%D7%99%D7%AA-EcoFlow-%D7%90%D7%95%D7%A8%D7%9A-1-%D7%9E%D7%98%D7%A8-%D7%90%D7%A7%D7%95%D7%A4%D7%9C%D7%95%D7%90%D7%95-ECOFLOW-\n"
     },
     {
-     "name": "Pro25mout_of_stockfalse0.0false",
+     "name": "כבל מאריך 25 מ",
      "sku": "Pro25m",
      "category": "material",
      "unit": "יח'",
@@ -4842,7 +3095,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4361720-%D7%9B%D7%91%D7%9C-%D7%9E%D7%90%D7%A8%D7%99%D7%9A-25-%D7%9E-%D7%A2%D7%9C-%D7%AA%D7%95%D7%A3-3x2-5-%D7%A2%D7%9D-4-%D7%A9%D7%A7%D7%A2%D7%99%D7%9D-Prom\n"
     },
     {
-     "name": "out_of_stockfalse0.0false",
+     "name": "תוף+כבל 3x1.5 באורך 50 מ",
      "sku": "7451956",
      "category": "material",
      "unit": "יח'",
@@ -4851,7 +3104,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7451956-%D7%AA%D7%95%D7%A3-%D7%9B%D7%91%D7%9C-3x1-5-%D7%91%D7%90%D7%95%D7%A8%D7%9A-50-%D7%9E-\n"
     },
     {
-     "name": "out_of_stockfalse0.0false",
+     "name": "מטען מצברים CLASS 12 מתוצרת Deca",
      "sku": "5185724",
      "category": "material",
      "unit": "יח'",
@@ -4860,7 +3113,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5185724-%D7%9E%D7%98%D7%A2%D7%9F-%D7%9E%D7%A6%D7%91%D7%A8%D7%99%D7%9D-CLASS-12-%D7%9E%D7%AA%D7%95%D7%A6%D7%A8%D7%AA-Deca\n"
     },
     {
-     "name": "out_of_stockfalse0.0false",
+     "name": "מטען מצברים CLASS 13 מתוצרת Deca",
      "sku": "5185741",
      "category": "material",
      "unit": "יח'",
@@ -4869,7 +3122,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5185741-%D7%9E%D7%98%D7%A2%D7%9F-%D7%9E%D7%A6%D7%91%D7%A8%D7%99%D7%9D-CLASS-13-%D7%9E%D7%AA%D7%95%D7%A6%D7%A8%D7%AA-Deca\n"
     },
     {
-     "name": "T3out_of_stockfalse29.0false",
+     "name": "מפצל חשמל ל-3",
      "sku": "3233728",
      "category": "material",
      "unit": "יח'",
@@ -4887,25 +3140,25 @@
      "productUrl": "https://www.dror-tools.co.il/items/3677911-%D7%92%D7%99%D7%A4%D7%98-%D7%A7%D7%90%D7%A8%D7%93-Gift-Card"
     },
     {
-     "name": "EasyImpact 570out_of_stockfalse240.0false",
+     "name": "מקדחה רוטטת חשמלית 570W + מזוודת נשיאה Bosch EasyImpact 570",
      "sku": "570",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 240.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15523525/show/d776fc0d1f0181008ddc9e4d1d307e33.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/7446209-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-570W-%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%AA-%D7%A0%D7%A9%D7%99%D7%90%D7%94-Bosch-EasyImpact-570-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse135.0false",
+     "name": "מקדחה 13 מ\"\"מ רוטטת אלקטרונית דו כיוונית + סט מקדחים HD-1004-NEW",
      "sku": "9563678",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 135.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/30589880/show/184f0417a637073b0eb8f16a493134da.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/9563678-%D7%9E%D7%A7%D7%93%D7%97%D7%94-13-%D7%9E-%D7%9E-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99%D7%AA-%D7%93%D7%95-%D7%9B%D7%99%D7%95%D7%95%D7%A0%D7%99%D7%AA-%D7%A1%D7%98-%D7%9E%D7%A7%D7%93%D7%97%D7%99%D7%9D-HD-1004-NEW-%D7%A7%D7%95%D7%A0%D7%99%D7%A9%D7%99\n"
     },
     {
-     "name": "SBE 650out_of_stockfalse299.0תוספות ושדרוגיםהצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מקדחה רוטטת אלקטרונית חשמלית METABO SBE 650W פוטר ידני",
      "sku": "650",
      "category": "tool",
      "unit": "יח'",
@@ -4914,7 +3167,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3942522-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-METABO-SBE-650W-%D7%A4%D7%95%D7%98%D7%A8-%D7%99%D7%93%D7%A0%D7%99-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "HP1641Kout_of_stockfalse454.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מקדחה חשמלית 13 מ\"מ MAKITA HP1641K 650W",
      "sku": "HP1641K",
      "category": "tool",
      "unit": "יח'",
@@ -4923,7 +3176,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233222-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-13-%D7%9E-%D7%9E-MAKITA-HP1641K-650W-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "DV16VSSout_of_stockfalse559.0תוספות ושדרוגיםהצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מקדחה חשמלית 16 מ\"מ DV16VSS 590W",
      "sku": "DV16VSS",
      "category": "tool",
      "unit": "יח'",
@@ -4932,52 +3185,52 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233238-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-16-%D7%9E-%D7%9E-DV16VSS-590W-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse4272.0false",
+     "name": "מקדחה/מברגה קומפלט A18 T-MAX- מאפל MAFELL",
      "sku": "8011085",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 4272.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16780348/show/e1fe2207a413d8a2e0f7e6146d3c1d54.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8011085-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9E%D7%91%D7%A8%D7%92%D7%94-%D7%A7%D7%95%D7%9E%D7%A4%D7%9C%D7%98-A18-T-MAX-%D7%9E%D7%90%D7%A4%D7%9C-MAFELL\n"
     },
     {
-     "name": "out_of_stockfalse2995.0false",
+     "name": "גוף מקדחה/מברגה A18 T-MAX - מאפל MAFELL",
      "sku": "8011004",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 2995.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16780153/show/ddb2d3220badcda793b810cb4fc155b4.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8011004-%D7%92%D7%95%D7%A3-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9E%D7%91%D7%A8%D7%92%D7%94-A18-T-MAX-%D7%9E%D7%90%D7%A4%D7%9C-MAFELL\n"
     },
     {
-     "name": "3406out_of_stockfalse320.0false",
+     "name": "סטנד למקדחה wolfcraft 3406",
      "sku": "3406",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 320.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6306906/show/1091bbe5082b27edf5590559f345e44b.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3587635-%D7%A1%D7%98%D7%A0%D7%93-%D7%9C%D7%9E%D7%A7%D7%93%D7%97%D7%94-wolfcraft-3406\n"
     },
     {
-     "name": "out_of_stockfalse1920.0false",
+     "name": "גוף מקדחת זוית לעץ לעומס גבוה  Milwaukee M18CRAD2-0 18V FUEL",
      "sku": "8357888",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1920.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17654386/show/67fe6703fbe56e5423d121bb124d5519.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8357888-%D7%92%D7%95%D7%A3-%D7%9E%D7%A7%D7%93%D7%97%D7%AA-%D7%96%D7%95%D7%99%D7%AA-%D7%9C%D7%A2%D7%A5-%D7%9C%D7%A2%D7%95%D7%9E%D7%A1-%D7%92%D7%91%D7%95%D7%94-Milwaukee-M18CRAD2-0-18V-FUEL-%D7%9E%D7%99%D7%9C%D7%95%D7%95%D7%A7%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse3734.0false",
+     "name": "מקדחת זוית לעץ לעומס גבוה  Milwaukee M18CRAD2 5A 18V FUEL",
      "sku": "8357889",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 3734.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17654388/show/5d4de1be93ef74111f90f3925c5f2f40.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8357889-%D7%9E%D7%A7%D7%93%D7%97%D7%AA-%D7%96%D7%95%D7%99%D7%AA-%D7%9C%D7%A2%D7%A5-%D7%9C%D7%A2%D7%95%D7%9E%D7%A1-%D7%92%D7%91%D7%95%D7%94-Milwaukee-M18CRAD2-5A-18V-FUEL-%D7%9E%D7%99%D7%9C%D7%95%D7%95%D7%A7%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse0.0תוספות ושדרוגיםהצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מקדחה רוטטת 1000W דגם 100200-004 Hunter",
      "sku": "5482246",
      "category": "tool",
      "unit": "יח'",
@@ -4986,16 +3239,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5482246-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-1000W-%D7%93%D7%92%D7%9D-100200-004-Hunter-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94-Hunter-%D7%94%D7%90%D7%A0%D7%98%D7%A8\n"
     },
     {
-     "name": "out_of_stockfalse332.0false",
+     "name": "מקדחה רוטטת פוטר אוטומטי sbe650",
      "sku": "6209547",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 332.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13011481/show/9f0aecb4d999ddbcfa68583d6458ea0d.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6209547-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%A4%D7%95%D7%98%D7%A8-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%98%D7%99-sbe650-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "SBEV 1300-2Sout_of_stockfalse1409.0תוספות ושדרוגיםהצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מקדחה רוטטת אלקטרונית METABO SBEV 1300-2S 1,300W",
      "sku": "1300-2S",
      "category": "tool",
      "unit": "יח'",
@@ -5004,43 +3257,43 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4743955-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99%D7%AA-METABO-SBEV-1300-2S-1-300W-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "out_of_stockfalse150.0false",
+     "name": "מקדחה רוטטת 550W פוטר אוטומטי 13 מ\"מ ED600 T13610",
      "sku": "6132504",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 150.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12835928/show/7feabe4c8887e9c91ccd0428722df721.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6132504--%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-550W-%D7%A4%D7%95%D7%98%D7%A8-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%98%D7%99-13-%D7%9E-%D7%9E-ED600-T13610-%D7%98%D7%A8%D7%92%D7%98-TARGET\n"
     },
     {
-     "name": "out_of_stockfalse320.0false",
+     "name": "מקדחה רוטטת מקצועית 13 מ\"מ GSB 600",
      "sku": "8246809",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 320.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17245586/show/f91bd9c2dcb69081345223b8027ce877.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8246809-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%AA-13-%D7%9E-%D7%9E-GSB-600-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse1490.0false",
+     "name": "מקדחה לקידוח בעומס גבוה אלקטרונית - BE 75-16",
      "sku": "7665179",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1490.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16019001/show/919a52d53e18d39889d9511fd98587c6.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/7665179-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9C%D7%A7%D7%99%D7%93%D7%95%D7%97-%D7%91%D7%A2%D7%95%D7%9E%D7%A1-%D7%92%D7%91%D7%95%D7%94-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99%D7%AA-BE-75-16-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "out_of_stockfalse369.0false",
+     "name": "מקדחה עם תפסנית מהירה GBM 6RE",
      "sku": "8246839",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 369.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17245646/show/3a0efbecff8b1bb962d0fb5ffb850869.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8246839-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A2%D7%9D-%D7%AA%D7%A4%D7%A1%D7%A0%D7%99%D7%AA-%D7%9E%D7%94%D7%99%D7%A8%D7%94-GBM-6RE-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse499.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי מטען מקיטה בהנחהמטען לרכב 18V הספק 3A 549 ₪מטען מהיר 18V הספק 9A 279 ₪הוסיפו לי סוללת מקיטה בהנחהסוללת ליתיום 1.5 אמפר-18V 199 ₪סוללת ליתיום 4 אמפר - 18V 295 ₪סוללת ליתיום 5 אמפר - 18V 370 ₪סוללת ליתיום 6 אמפר-18V 425 ₪false",
+     "name": "מקדחה מברגה 13 מ\"מ BL 18V גוף בלבד DDF487 בראשלס",
      "sku": "7708728",
      "category": "tool",
      "unit": "יח'",
@@ -5049,7 +3302,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7708728-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9E%D7%91%D7%A8%D7%92%D7%94-13-%D7%9E-%D7%9E-BL-18V-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-DDF487-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse803.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מברגה לברגי גבס FS4000",
      "sku": "5195074",
      "category": "tool",
      "unit": "יח'",
@@ -5058,25 +3311,25 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5195074-%D7%9E%D7%91%D7%A8%D7%92%D7%94-%D7%9C%D7%91%D7%A8%D7%92%D7%99-%D7%92%D7%91%D7%A1-FS4000-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stock6726.0",
+     "name": "מקדחה קונית EHB32/4.2",
      "sku": "6016337",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 6726.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12568826/show/9c5356001aef467a697a7fc463e687be.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6016337-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A7%D7%95%D7%A0%D7%99%D7%AA-EHB32-4-2-%D7%90%D7%99%D7%91%D7%A0%D7%A9%D7%98%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stockfalse675.0false",
+     "name": "מקדחה רוטטת מקצועית GSB 1600 RE",
      "sku": "6273886",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 675.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13141606/show/6be9500ac03a9bd94dfffdb285faf324.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6273886-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%AA-GSB-1600-RE-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse1399.0תוספות ושדרוגיםהצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪הוסיפו לי סוללת דיוולט בהנחהסוללת ליתיום 2 אמפר - 18V 319 ₪סוללת ליתיום 4 אמפר - 18V 339 ₪סוללת ליתיום 5 אמפר - 18V 339 ₪הוסיפו לי מטען דיוולט בהנחהמטען כפול - 10.8V/12V/18V 599 ₪מטען - DCB115 18V 199 ₪מטען מהיר דיוולט DCB118 389 389 ₪false",
+     "name": "מקדחה רוטטת נטענת DeWALT DCD100 18V כולל 2 סוללות 5AH + מטען מהיר + מזוודה קשיחה DeWalt דיוולט",
      "sku": "7996514",
      "category": "tool",
      "unit": "יח'",
@@ -5085,7 +3338,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7996514-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-DeWALT-DCD100-18V-%D7%9B%D7%95%D7%9C%D7%9C-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-5AH-%D7%9E%D7%98%D7%A2%D7%9F-%D7%9E%D7%94%D7%99%D7%A8-%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%94-%D7%A7%D7%A9%D7%99%D7%97%D7%94-DeWalt-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98\n"
     },
     {
-     "name": "6824out_of_stockfalse428.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי סט אביזריםסט 101 חלקים MAKITA 129 ₪false",
+     "name": "מברגה חשמלית לגבס MAKITA 6824",
      "sku": "6824",
      "category": "tool",
      "unit": "יח'",
@@ -5094,7 +3347,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233124-%D7%9E%D7%91%D7%A8%D7%92%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-%D7%9C%D7%92%D7%91%D7%A1-MAKITA-6824-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse803.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מברגה לברגי גבס FS6300",
      "sku": "5195113",
      "category": "tool",
      "unit": "יח'",
@@ -5103,7 +3356,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5195113-%D7%9E%D7%91%D7%A8%D7%92%D7%94-%D7%9C%D7%91%D7%A8%D7%92%D7%99-%D7%92%D7%91%D7%A1-FS6300-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "DP2010out_of_stockfalse557.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪false",
+     "name": "מקדחה מהירה חשמלית Makita DP2010 370W",
      "sku": "DP2010",
      "category": "tool",
      "unit": "יח'",
@@ -5112,34 +3365,34 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4367721-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9E%D7%94%D7%99%D7%A8%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-Makita-DP2010-370W-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse295.0false",
+     "name": "מקדחה רוטטת 13 מ\"מ 1010W TC-ID 1000",
      "sku": "8556143",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 295.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18721723/show/cc81d2b484972190fbacf44cbd10e5e1.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8556143-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-13-%D7%9E-%D7%9E-1010W-TC-ID-1000-%D7%90%D7%99%D7%99%D7%A0%D7%94%D7%9C-Einhell\n"
     },
     {
-     "name": "out_of_stockfalse852.0false",
+     "name": "מקדחה רוטטת 20 מ\"מ SB 850-2 מטאבו Metabo",
      "sku": "6209648",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 852.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13011711/show/9dd2a0e44a13a5a4ed4355e87f4f194e.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6209648-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-20-%D7%9E-%D7%9E-SB-850-2-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "out_of_stockfalse12353.0false",
+     "name": "מקדחת /כרסומת עמוד 45 מ\"מ 1500W כולל שולחן XY לקידוח וכרסום 1072836",
      "sku": "8517238",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 12353.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18418766/show/79050bfc60e9c94a825ec3815219939c.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8517238-%D7%9E%D7%A7%D7%93%D7%97%D7%AA-%D7%9B%D7%A8%D7%A1%D7%95%D7%9E%D7%AA-%D7%A2%D7%9E%D7%95%D7%93-45-%D7%9E-%D7%9E-1500W-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A9%D7%95%D7%9C%D7%97%D7%9F-XY-%D7%9C%D7%A7%D7%99%D7%93%D7%95%D7%97-%D7%95%D7%9B%D7%A8%D7%A1%D7%95%D7%9D-1072836-ROHER-TOOLS\n"
     },
     {
-     "name": "DCD460T2out_of_stockfalse2892.0תוספות ושדרוגיםהצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪הוסיפו לי סוללת דיוולט בהנחהסוללת ליתיום 2 אמפר - 18V 319 ₪סוללת ליתיום 4 אמפר - 18V 339 ₪סוללת ליתיום 5 אמפר - 18V 339 ₪סוללת ליתיום 6 אמפר - 54V 889 ₪סוללת ליתיום 9 אמפר - 54V 1,199 ₪הוסיפו לי מטען דיוולט בהנחהמטען כפול - 10.8V/12V/18V 599 ₪מטען לרכב מהיר - 18V/54V 629 ₪מטען - DCB115 18V 199 ₪מטען מהיר 18V - 54V סידרת XR FLEXVOLT 629 ₪מטען מהיר דיוולט DCB118 389 389 ₪false",
+     "name": "מקדחה לעץ נטענת בראשלס + 2 סוללות DeWALT DCD460T2 BL 54V 6Ah",
      "sku": "DCD460T2",
      "category": "tool",
      "unit": "יח'",
@@ -5148,34 +3401,34 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3626875-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9C%D7%A2%D7%A5-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-DeWALT-DCD460T2-BL-54V-6Ah-DeWalt-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98\n"
     },
     {
-     "name": "out_of_stockfalse169.0false",
+     "name": "מקדחה 13 מ\"\"מ רוטטת אלקטרונית דו כיוונית HD-1004",
      "sku": "8198012",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 169.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17157078/show/894ae28f8e7b982ea006baf177d670c0.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8198012-%D7%9E%D7%A7%D7%93%D7%97%D7%94-13-%D7%9E-%D7%9E-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99%D7%AA-%D7%93%D7%95-%D7%9B%D7%99%D7%95%D7%95%D7%A0%D7%99%D7%AA-HD-1004-%D7%A7%D7%95%D7%A0%D7%99%D7%A9%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse576.0false",
+     "name": "מקדחה רוטטת אלקטרונית METABO SBE 800-2 800W",
      "sku": "8760189",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 576.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19798034/show/8b181de4da31a3a2a260f2bd202497c9.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8760189-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99%D7%AA-METABO-SBE-800-2-800W-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "out_of_stockfalse690.0false",
+     "name": "מקדחה בוש BOSCH GBM 1600 RE",
      "sku": "6273919",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 690.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13141686/show/3e7de842408d8823c85073ce8feedf04.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6273919-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%91%D7%95%D7%A9-BOSCH-GBM-1600-RE\n"
     },
     {
-     "name": "DCD460Nout_of_stockfalse2101.0תוספות ושדרוגיםהצעה חד פעמית לרוכש מקדחהסט 5 מקדחים אוניברסלי ALPEN99 ₪הוסיפו לי סוללת דיוולט בהנחהסוללת ליתיום 2 אמפר - 18V 319 ₪סוללת ליתיום 4 אמפר - 18V 339 ₪סוללת ליתיום 5 אמפר - 18V 339 ₪סוללת ליתיום 6 אמפר - 54V 889 ₪סוללת ליתיום 9 אמפר - 54V 1,199 ₪הוסיפו לי מטען דיוולט בהנחהמטען כפול - 10.8V/12V/18V 599 ₪מטען לרכב מהיר - 18V/54V 629 ₪מטען - DCB115 18V 199 ₪מטען מהיר 18V - 54V סידרת XR FLEXVOLT 629 ₪מטען מהיר דיוולט DCB118 389 389 ₪false",
+     "name": "גוף מקדחה לעץ נטענת בראשלס DeWALT DCD460N 54V",
      "sku": "DCD460N",
      "category": "tool",
      "unit": "יח'",
@@ -5184,79 +3437,79 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3626880-%D7%92%D7%95%D7%A3-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9C%D7%A2%D7%A5-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-DeWALT-DCD460N-54V-DeWalt-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98\n"
     },
     {
-     "name": "out_of_stockfalse1373.0false",
+     "name": "מקדחה רוטטת אלקטרונית METABO SBEV 1100-2 S 1100W",
      "sku": "8760201",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1373.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19798047/show/eb87fd4717bd8c463462e1038649641f.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8760201-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99%D7%AA-METABO-SBEV-1100-2-S-1100W-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "out_of_stockfalse1460.0false",
+     "name": "מקדחה רוטטת חשמלית 22 מ\"מ DV22V",
      "sku": "5812364",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1460.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936327/show/a8d914f8d5fb23630dabcb511b29d44c.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5812364-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-22-%D7%9E-%D7%9E-DV22V-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse1284.0false",
+     "name": "מקדחה רוטטת חשמלית 20מ\"מ DV20VD",
      "sku": "5812365",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1284.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936328/show/2e8b48546262135cde10b94c4fa28d80.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5812365-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-20%D7%9E-%D7%9E-DV20VD-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse826.0false",
+     "name": "מקדחה רוטטת חשמלית 13 מ״מ VTP18",
      "sku": "5812366",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 826.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936329/show/cb21d081dcaa25160370bf71ee44c5a4.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5812366-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-13-%D7%9E-%D7%9E-VTP18-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse1505.0false",
+     "name": "מקדחה חשמלית 13 מ״מ D13VG",
      "sku": "5812368",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1505.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936332/show/4de62f404bfacf54a8ed2816f2c12da1.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5812368-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-13-%D7%9E-%D7%9E-D13VG-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse1488.0false",
+     "name": "מקדחה זוויתית חשמלית  10 מ״מ  D10YB",
      "sku": "5812369",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1488.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936333/show/c658ac539fafebbbcf24a6e481c6a15e.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5812369-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%96%D7%95%D7%95%D7%99%D7%AA%D7%99%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-10-%D7%9E-%D7%9E-D10YB-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse3990.0false",
+     "name": "סט מקדחה מגנטית - דגם ALFRA 18400 RB35B PICOLLO",
      "sku": "8813458",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 3990.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20089214/show/b6b1a6a0bc8f0aeaf5139be0d6b49d0f.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8813458-%D7%A1%D7%98-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9E%D7%92%D7%A0%D7%98%D7%99%D7%AA-%D7%93%D7%92%D7%9D-ALFRA-18400-RB35B-PICOLLO-ALFRA-%D7%90%D7%9C%D7%A4%D7%A8%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse1670.0תוספות ושדרוגיםהוסיפו לי מטען בוש בהנחהמטען רגיל GAL-18V-40 18V ₪  319 ₪מטען מהיר GAL-1880CV 18V ₪ 369 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 4 אמפר - 18V 449 ₪סוללת ליתיום 5 אמפר - 18V 519 ₪סוללת ליתיום 4 אמפר 18V - PROCORE 499 ₪false",
+     "name": "פטישון נטען GBH 18V-28DC גוף בלבד",
      "sku": "9168650",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1670.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/22785016/show/19005b67b7ca951c8247be08c99bdea8.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/9168650-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-GBH-18V-28DC-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "GBH 2-28Fout_of_stockfalse1059.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חשמלי 28 מ\"מ BOSCH GBH 2-28F 880W",
      "sku": "2-28F",
      "category": "tool",
      "unit": "יח'",
@@ -5265,25 +3518,25 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233296-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-28-%D7%9E-%D7%9E-BOSCH-GBH-2-28F-880W-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse734.0תוספות ושדרוגיםהוסיפו לי מטען בוש בהנחהמטען רגיל GAL-18V-40 18V ₪  319 ₪מטען מהיר GAL-1880CV 18V ₪ 369 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 4 אמפר - 18V 449 ₪סוללת ליתיום 5 אמפר - 18V 519 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE 649 ₪סוללת ליתיום 4 אמפר 18V - PROCORE 499 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE\t 649 ₪false",
+     "name": "גוף פטישון נטען בוש GBH 18v-22 BOSCH",
      "sku": "6545176",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 734.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20496200/show/2da96084efb86e2f40cae0b691c59c31.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6545176-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-GBH-18v-22-BOSCH\n"
     },
     {
-     "name": "out_of_stockfalse769.0false",
+     "name": "גוף פטישון נטען BOSCH GBH 18V-18 X Professional",
      "sku": "8892194",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 769.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20496254/show/e0ee757c39e7067b55579f7b89745812.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8892194-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-18-X-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "HR2470out_of_stockfalse666.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חשמלי שלושה מצבים MAKITA HR2470 780W",
      "sku": "HR2470",
      "category": "tool",
      "unit": "יח'",
@@ -5292,25 +3545,25 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3936332-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-MAKITA-HR2470-780W-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse1150.0תוספות ושדרוגיםהוסיפו לי מטען בוש בהנחהמטען רגיל GAL-18V-40 18V ₪  319 ₪מטען מהיר GAL-1880CV 18V ₪ 369 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 4 אמפר - 18V 449 ₪סוללת ליתיום 5 אמפר - 18V 519 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE 649 ₪סוללת ליתיום 2.5 אמפר - 18V 359 ₪false",
+     "name": "גוף פטישון נטען 18V GBH 187-LI ONE CHUCK מתאים גם לחיבור רגיל וגם לחיבור Bosch SDS",
      "sku": "6103698",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1150.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13756822/show/beb17250440f7f59bb75d29e54251e3e.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/6103698-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-18V-GBH-187-LI-ONE-CHUCK-%D7%9E%D7%AA%D7%90%D7%99%D7%9D-%D7%92%D7%9D-%D7%9C%D7%97%D7%99%D7%91%D7%95%D7%A8-%D7%A8%D7%92%D7%99%D7%9C-%D7%95%D7%92%D7%9D-%D7%9C%D7%97%D7%99%D7%91%D7%95%D7%A8-Bosch-SDS-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse1149.0תוספות ושדרוגיםשדרגו לי את הסוללה ל5 אמפר ב129 ש\"ח בלבדכן - סוללה 5 אמפר ב129 ש\"ח בלבד129 ₪הוסיפו לי מטען בוש בהנחהמטען רגיל GAL-18V-40 18V ₪  319 ₪מטען מהיר GAL-1880CV 18V ₪ 369 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 4 אמפר - 18V 449 ₪סוללת ליתיום 5 אמפר - 18V 519 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE 649 ₪סוללת ליתיום 4 אמפר 18V - PROCORE 499 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE\t 649 ₪false",
+     "name": "פטישון נטען בוש GBH 18v-22 / GBH 185  BOSCH + סוללה 4Ah + מטען",
      "sku": "6857924",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1149.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/30008839/show/4771a2c248441e04cd508beec4d00be3.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6857924-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-GBH-18v-22-GBH-185-BOSCH-%D7%A1%D7%95%D7%9C%D7%9C%D7%94-4Ah-%D7%9E%D7%98%D7%A2%D7%9F\n"
     },
     {
-     "name": "GBH 2-26 DREout_of_stockfalse698.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חשמלי 26 מ\"מ BOSCH GBH 2-26 DRE 800W",
      "sku": "DRE",
      "category": "tool",
      "unit": "יח'",
@@ -5319,16 +3572,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233265-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-26-%D7%9E-%D7%9E-BOSCH-GBH-2-26-DRE-800W-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse1749.0תוספות ושדרוגיםהוסיפו לי מטען בוש בהנחהמטען רגיל GAL-18V-40 18V ₪  319 ₪מטען מהיר GAL-1880CV 18V ₪ 369 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 4 אמפר - 18V 449 ₪סוללת ליתיום 5 אמפר - 18V 519 ₪סוללת ליתיום 4 אמפר 18V - PROCORE 499 ₪false",
+     "name": "גוף פטישון נטען בוש BOSCH GBH 18V-28D",
      "sku": "6174198",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1749.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12925356/show/194ca6cf817e3a5dbda276e8fc5922f5.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6174198-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-BOSCH-GBH-18V-28D\n"
     },
     {
-     "name": "out_of_stockfalse879.0תוספות ושדרוגיםרוצה כלי נוסף שמתאים לסוללות האנטר במחיר מיוחד ?גוף מלטשת אקסצנטרית 5\" 149 ש\"ח149 ₪גוף מסור ג'יקסו 100610-019 169 ש\"ח169 ₪גוף מברגה רוטטת וקודחת 100312-015 199 ש\"ח199 ₪false",
+     "name": "פטישון נטען 18 מ\"מ 18V - סוללה 2X2.5Ah | מטען 3A |  תיק בד ייעודי 100112-007",
      "sku": "7448592",
      "category": "tool",
      "unit": "יח'",
@@ -5337,43 +3590,43 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7448592-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-18-%D7%9E-%D7%9E-18V-%D7%A1%D7%95%D7%9C%D7%9C%D7%94-2X2-5Ah-%D7%9E%D7%98%D7%A2%D7%9F-3A-%D7%AA%D7%99%D7%A7-%D7%91%D7%93-%D7%99%D7%99%D7%A2%D7%95%D7%93%D7%99-100112-007-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94-Hunter-%D7%94%D7%90%D7%A0%D7%98%D7%A8\n"
     },
     {
-     "name": "out_of_stockfalse1890.0false",
+     "name": "גוף פטישון נטען 36V Multi-Volt מבית HiKOKI DH3628DA ביצועים מקצועיים בבטון",
      "sku": "8665660",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1890.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19285476/show/6f40493bae4fd49985ffe957df94a66b.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8665660-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-36V-Multi-Volt-%D7%9E%D7%91%D7%99%D7%AA-HiKOKI-DH3628DA-%D7%91%D7%99%D7%A6%D7%95%D7%A2%D7%99%D7%9D-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%99%D7%9D-%D7%91%D7%91%D7%98%D7%95%D7%9F-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse1479.0false",
+     "name": "פטישון נטען BOSCH GBH 18V-22 X Professional + סוללה 4A + מטען ONE CHUCK",
      "sku": "8263997",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1479.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17318119/show/c40e459f66f7a5b78bd2f7e9698f96ac.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8263997-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-22-X-Professional-%D7%A1%D7%95%D7%9C%D7%9C%D7%94-4A-%D7%9E%D7%98%D7%A2%D7%9F-ONE-CHUCK-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse949.0false",
+     "name": "גוף פטישון נטען BOSCH GBH 18V-22 X Professional",
      "sku": "8263802",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 949.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17317404/show/4f7736d3b86761ebabf3f250fc7b31a4.png",
      "productUrl": "https://www.dror-tools.co.il  /items/8263802-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-22-X-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse3190.0false",
+     "name": "סט פטישון נטען 36V Multi-Volt מבית HiKOKI DH3628DA + 3 סוללות 5A + מטען | ביצועים מקצועיים בבטון",
      "sku": "8635029",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 3190.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19182398/show/45b13ad709b59e5477d6790de40a757f.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8635029-%D7%A1%D7%98-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-36V-Multi-Volt-%D7%9E%D7%91%D7%99%D7%AA-HiKOKI-DH3628DA-3-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-5A-%D7%9E%D7%98%D7%A2%D7%9F-%D7%91%D7%99%D7%A6%D7%95%D7%A2%D7%99%D7%9D-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%99%D7%9D-%D7%91%D7%91%D7%98%D7%95%D7%9F-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "DHR242Zout_of_stockfalse839.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי מטען מקיטה בהנחהמטען לרכב 18V הספק 3A 549 ₪מטען מהיר 18V הספק 9A 279 ₪הוסיפו לי סוללת מקיטה בהנחהסוללת ליתיום 1.5 אמפר-18V 199 ₪סוללת ליתיום 4 אמפר - 18V 295 ₪סוללת ליתיום 5 אמפר - 18V 370 ₪סוללת ליתיום 6 אמפר-18V 425 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון נטען בראשלס MAKITA DHR242Z BL 18V - גוף בלבד מפירוק סט",
      "sku": "DHR242Z",
      "category": "tool",
      "unit": "יח'",
@@ -5382,16 +3635,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/8604832-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-MAKITA-DHR242Z-BL-18V-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-%D7%9E%D7%A4%D7%99%D7%A8%D7%95%D7%A7-%D7%A1%D7%98-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse569.0false",
+     "name": "פטישון בוש BOSCH GBH 240 790W",
      "sku": "6357668",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 569.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16679111/show/ac04cbdf22478fa398147f205d16964b.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/6357668-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%91%D7%95%D7%A9-BOSCH-GBH-240-790W\n"
     },
     {
-     "name": "HR007GZout_of_stockfalse3490.0תוספות ושדרוגיםתוסיפו לי 2 סוללות 40V מקיטה + מטען כפול :בחר2 סוללות 40V 5Ah + מטען מהיר כפול במחיר של 2390 ש\"ח 2,390 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪false",
+     "name": "פטישון 3 מצבים נטען 28 מ\"מ + 2 סוללות-5ah 40V ומטען, 3.0J 40V מקיטה HR007GZ",
      "sku": "HR007GZ",
      "category": "tool",
      "unit": "יח'",
@@ -5400,7 +3653,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7537665-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-3-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-%D7%A0%D7%98%D7%A2%D7%9F-28-%D7%9E-%D7%9E-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-5ah-40V-%D7%95%D7%9E%D7%98%D7%A2%D7%9F-3-0J-40V-%D7%9E%D7%A7%D7%99%D7%98%D7%94-HR007GZ-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "GBH 180-LIout_of_stockfalse0.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי מטען בוש בהנחהמטען רגיל GAL-18V-40 18V ₪  319 ₪מטען מהיר GAL-1880CV 18V ₪ 369 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 1.5 אמפר - 18V 249 ₪סוללת ליתיום 2 אמפר - 18V 259 ₪סוללת ליתיום 4 אמפר - 18V 449 ₪סוללת ליתיום 5 אמפר - 18V 519 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE 649 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון נטען בראשלס + מטען +סוללת GBH 180-LI EC  4Ah + מזוודה Bosch",
      "sku": "180-LI",
      "category": "tool",
      "unit": "יח'",
@@ -5409,7 +3662,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5612376-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-%D7%9E%D7%98%D7%A2%D7%9F-%D7%A1%D7%95%D7%9C%D7%9C%D7%AA-GBH-180-LI-EC-4Ah-%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%94-Bosch-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "HR2630X7out_of_stockfalse707.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חשמלי 26 מ\"מ HR2630X7 800W כולל פוטר אוטמטי מקיטה Makita",
      "sku": "HR2630X7",
      "category": "tool",
      "unit": "יח'",
@@ -5418,7 +3671,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4172455-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-26-%D7%9E-%D7%9E-HR2630X7-800W-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A4%D7%95%D7%98%D7%A8-%D7%90%D7%95%D7%98%D7%9E%D7%98%D7%99-%D7%9E%D7%A7%D7%99%D7%98%D7%94-Makita-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "DHR202Zout_of_stockfalse599.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי מטען מקיטה בהנחהמטען לרכב 18V הספק 3A 549 ₪מטען מהיר 18V הספק 9A 279 ₪הוסיפו לי סוללת מקיטה בהנחהסוללת ליתיום 1.5 אמפר-18V 199 ₪סוללת ליתיום 4 אמפר - 18V 295 ₪סוללת ליתיום 5 אמפר - 18V 370 ₪סוללת ליתיום 6 אמפר-18V 425 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "גוף פטישון נטען DHR202Z 18V Makita מקיטה - גוף בלבד מפירוק סט",
      "sku": "DHR202Z",
      "category": "tool",
      "unit": "יח'",
@@ -5427,16 +3680,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/8604899-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-DHR202Z-18V-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-%D7%9E%D7%A4%D7%99%D7%A8%D7%95%D7%A7-%D7%A1%D7%98-\n"
     },
     {
-     "name": "out_of_stockfalse175.0false",
+     "name": "פטישון אלקטרוני 24 מ\"מ HD-4003-NEW",
      "sku": "9563626",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 175.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/30588597/show/8120ddc2cd9d630e0fa13c255a4bcd11.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/9563626-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%90%D7%9C%D7%A7%D7%98%D7%A8%D7%95%D7%A0%D7%99-24-%D7%9E-%D7%9E-HD-4003-NEW-%D7%A7%D7%95%D7%A0%D7%99%D7%A9%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse515.0תוספות ושדרוגיםהוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪false",
+     "name": "פטישון חשמלי 26 מ\"מ דגם M8701B MAKITA מקיטה סדרת MT",
      "sku": "8880000",
      "category": "tool",
      "unit": "יח'",
@@ -5445,7 +3698,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/8880000-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-26-%D7%9E-%D7%9E-%D7%93%D7%92%D7%9D-M8701B-MAKITA-%D7%9E%D7%A7%D7%99%D7%98%D7%94-%D7%A1%D7%93%D7%A8%D7%AA-MT\n"
     },
     {
-     "name": "HR003GZout_of_stockfalse1575.0תוספות ושדרוגיםתוסיפו לי מטען 40V מקיטה:בחרתוסיפו לי מטען מהיר 40V במחיר 469 ש\"ח 469 ₪הוסיפו לי מטען מהיר כפול 40V במחיר מיוחד של 769 ש\"ח 769 ₪תוסיפו לי סוללה 40V במחיר מיוחד:בחרתוסיפו לי סוללה 40V, 2.5 אמפר במחיר מיוחד של 669 ש\"ח 669 ₪תוסיפו לי סוללה 40V, 4 אמפר במחיר מיוחד של 829 ש\"ח 829 ₪תוסיפו לי סוללה 40V, 5 אמפר במחיר מיוחד של 949 ש\"ח 949 ₪תוסיפו לי סוללה חזקה 40V, 8 אמפר במחיר מיוחד של 1199 ש\"ח 1,199 ₪סט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי מטען מקיטה בהנחהמטען מהיר 40V הספק 4A 585 ₪הוסיפו לי סוללת מקיטה בהנחהסוללת ליתיום 2.5 אמפר - 40V 889 ₪סוללת ליתיום 4 אמפר - 40V 1,039 ₪false",
+     "name": "גוף פטישון נטען בראשלס מקיטה Makita HR003GZ BL 40V",
      "sku": "HR003GZ",
      "category": "tool",
      "unit": "יח'",
@@ -5454,25 +3707,25 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4594416-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-%D7%9E%D7%A7%D7%99%D7%98%D7%94-Makita-HR003GZ-BL-40V-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse765.0false",
+     "name": "KHE 2645 פטישון 3 מצבים 22 מ\"מ + 2 איזמלים 800W",
      "sku": "6329642",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 765.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13250487/show/b9ac4f927c81da503681472ee53d3135.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6329642-KHE-2645-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-3-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-22-%D7%9E-%D7%9E-2-%D7%90%D7%99%D7%96%D7%9E%D7%9C%D7%99%D7%9D-800W-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "out_of_stockfalse802.0false",
+     "name": "פטישון 24מ\"מ  Hikoki DH24PH העוצמתי בקטגוריה 3.2 דג",
      "sku": "5812377",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 802.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16051688/show/57c86b8066e307d586a1f8dd5fa413d3.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/5812377-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-24%D7%9E-%D7%9E-Hikoki-DH24PH-%D7%94%D7%A2%D7%95%D7%A6%D7%9E%D7%AA%D7%99-%D7%91%D7%A7%D7%98%D7%92%D7%95%D7%A8%D7%99%D7%94-3-2-%D7%93%D7%92-%D7%90%D7%95%D7%9C-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "DHR202RFout_of_stockfalse1372.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי מטען מקיטה בהנחהמטען לרכב 18V הספק 3A 549 ₪מטען מהיר 18V הספק 9A 279 ₪הוסיפו לי סוללת מקיטה בהנחהסוללת ליתיום 1.5 אמפר-18V 199 ₪סוללת ליתיום 4 אמפר - 18V 295 ₪סוללת ליתיום 5 אמפר - 18V 370 ₪סוללת ליתיום 6 אמפר-18V 425 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון נטען + סוללה MAKITA DHR202RM 18V 4Ah",
      "sku": "DHR202RF",
      "category": "tool",
      "unit": "יח'",
@@ -5481,7 +3734,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3876676-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%A1%D7%95%D7%9C%D7%9C%D7%94-MAKITA-DHR202RM-18V-4Ah-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "HEROCCOout_of_stockfalse1402.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי סוללה ומטען איינהייל במחיר מיוחדסוללה 2.5A + מטען מקורי245 ₪סוללה 4A + מטען מקורי289 ₪false",
+     "name": "פטישון נטען בראשלס + 2 סוללות HEROCCO Brushless 18V 4Ah איינהל Einhell",
      "sku": "HEROCCO",
      "category": "tool",
      "unit": "יח'",
@@ -5490,7 +3743,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4079609-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-HEROCCO-Brushless-18V-4Ah-%D7%90%D7%99%D7%99%D7%A0%D7%94%D7%9C-Einhell-\n"
     },
     {
-     "name": "DCH263P1out_of_stockfalse1887.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי סוללת דיוולט בהנחהסוללת ליתיום 2 אמפר - 18V 319 ₪סוללת ליתיום 4 אמפר - 18V 339 ₪סוללת ליתיום 5 אמפר - 18V 339 ₪הוסיפו לי מטען דיוולט בהנחהמטען כפול - 10.8V/12V/18V 599 ₪מטען - DCB115 18V 199 ₪מטען מהיר דיוולט DCB118 389 389 ₪false",
+     "name": "פטישון נטען בראשלס + סוללה DeWALT DCH263P1 BL 18V 5Ah",
      "sku": "DCH263P1",
      "category": "tool",
      "unit": "יח'",
@@ -5499,7 +3752,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3637326-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-%D7%A1%D7%95%D7%9C%D7%9C%D7%94-DeWALT-DCH263P1-BL-18V-5Ah-DeWalt-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98\n"
     },
     {
-     "name": "GSH 3 Eout_of_stockfalse1799.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חציבה חשמלי BOSCH GSH 3E 650W",
      "sku": "3233280",
      "category": "tool",
      "unit": "יח'",
@@ -5508,7 +3761,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233280-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A6%D7%99%D7%91%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-BOSCH-GSH-3E-650W-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "100111-001-Bout_of_stockfalse299.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪false",
+     "name": "פטישון מקצועי 800 וואט 26 מ\"מ 100111-001 Hunter",
      "sku": "100111-001-B",
      "category": "tool",
      "unit": "יח'",
@@ -5517,7 +3770,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4829443-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-800-%D7%95%D7%95%D7%90%D7%98-26-%D7%9E-%D7%9E-100111-001-Hunter-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94-Hunter-%D7%94%D7%90%D7%A0%D7%98%D7%A8\n"
     },
     {
-     "name": "GBH 2-24 DFout_of_stockfalse908.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חשמלי 24 מ\"מ BOSCH GBH 2-24 DF 790W",
      "sku": "3233284",
      "category": "tool",
      "unit": "יח'",
@@ -5526,7 +3779,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233284-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-24-%D7%9E-%D7%9E-BOSCH-GBH-2-24-DF-790W-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "DX01out_of_stockfalse705.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט מקדחי SDS לבטון Alpen129 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "שואב אבק DX01 מתחברת לפטישון DHR232/DHR242",
      "sku": "DX01",
      "category": "tool",
      "unit": "יח'",
@@ -5535,7 +3788,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233540-%D7%A9%D7%95%D7%90%D7%91-%D7%90%D7%91%D7%A7-DX01-%D7%9E%D7%AA%D7%97%D7%91%D7%A8%D7%AA-%D7%9C%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-DHR232-DHR242-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "GBH 36V LI COMPACTout_of_stockfalse3368.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון נטען קומפקטי  + 2 סוללות BOSCH GBH 36V LI COMPACT 2Ah",
      "sku": "COMPACT",
      "category": "tool",
      "unit": "יח'",
@@ -5544,16 +3797,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233285-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%A7%D7%95%D7%9E%D7%A4%D7%A7%D7%98%D7%99-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-BOSCH-GBH-36V-LI-COMPACT-2Ah-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse1814.0false",
+     "name": "פטישון נטען 12v DH12DD + שתי סוללות 12V 4Ah + מטען מהיר",
      "sku": "5812486",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1814.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936514/show/e7482d13edbf968e7ec7d9f5c242e72b.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5812486-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-12v-DH12DD-%D7%A9%D7%AA%D7%99-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-12V-4Ah-%D7%9E%D7%98%D7%A2%D7%9F-%D7%9E%D7%94%D7%99%D7%A8-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "DHR242RFEout_of_stockfalse2494.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי מטען מקיטה בהנחהמטען לרכב 18V הספק 3A 549 ₪מטען מהיר 18V הספק 9A 279 ₪הוסיפו לי סוללת מקיטה בהנחהסוללת ליתיום 1.5 אמפר-18V 199 ₪סוללת ליתיום 4 אמפר - 18V 295 ₪סוללת ליתיום 5 אמפר - 18V 370 ₪סוללת ליתיום 6 אמפר-18V 425 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון נטען בראשלס + 2 סוללות MAKITA DHR242RFE BL 18V 4Ah",
      "sku": "DHR242RFE",
      "category": "tool",
      "unit": "יח'",
@@ -5562,16 +3815,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233287-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-MAKITA-DHR242RFE-BL-18V-4Ah-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse1763.0תוספות ושדרוגיםהוסיפו לי מטען בוש בהנחהמטען רגיל GAL-18V-40 18V ₪  319 ₪מטען מהיר GAL-1880CV 18V ₪ 369 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 4 אמפר - 18V 449 ₪סוללת ליתיום 5 אמפר - 18V 519 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE 649 ₪סוללת ליתיום 4 אמפר 18V - PROCORE 499 ₪סוללת ליתיום 5.5 אמפר 18V - PROCORE\t 649 ₪false",
+     "name": "פטישון נטען בוש GBH 18v-22 BOSCH + שתי סוללות 5Ah + מטען",
      "sku": "6867975",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1763.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/14402293/show/52b29005c9f4da54f62fd3cac2a4e75c.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/6867975-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-GBH-18v-22-BOSCH-%D7%A9%D7%AA%D7%99-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-5Ah-%D7%9E%D7%98%D7%A2%D7%9F\n"
     },
     {
-     "name": "HR2611FT12out_of_stockfalse1248.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חשמלי שלושה מצבים + פוטר מתחלף MAKITA HR2611FT12 800W",
      "sku": "HR2611FT12",
      "category": "tool",
      "unit": "יח'",
@@ -5580,7 +3833,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233290-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-%D7%A4%D7%95%D7%98%D7%A8-%D7%9E%D7%AA%D7%97%D7%9C%D7%A3-MAKITA-HR2611FT12-800W-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "HR2630TX12out_of_stockfalse1069.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו במחיר מיוחדגוף פנס לד נטען Makita DML802 18V69 ₪תיק גדול טרולי \"27 מקיטה רק ב99 ש\"ח99 ₪תיק רגיל \"20 מקיטה רק ב119 ש\"ח119 ₪גוף מברגת אימפקט DTD152 18V מקיטה275 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון חשמלי MAKITA HR2630TX12 800W + סט אביזרים יוקרתי",
      "sku": "HR2630TX12",
      "category": "tool",
      "unit": "יח'",
@@ -5589,16 +3842,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233292-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-MAKITA-HR2630TX12-800W-%D7%A1%D7%98-%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99%D7%9D-%D7%99%D7%95%D7%A7%D7%A8%D7%AA%D7%99-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse3200.0false",
+     "name": "פטישון קומפלט 28 מ\"מ ללא פחמים METABO KH 18V",
      "sku": "8803085",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 3200.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20028234/show/ec2ecad587bea8e23776a4f79ddd77f0.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8803085--%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A7%D7%95%D7%9E%D7%A4%D7%9C%D7%98-28-%D7%9E-%D7%9E-%D7%9C%D7%9C%D7%90-%D7%A4%D7%97%D7%9E%D7%99%D7%9D-METABO-KH-18V-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
     },
     {
-     "name": "GBH 36-VFout_of_stockfalse4213.0תוספות ושדרוגיםסט מקדחים במחיר מיוחד לרוכשי פטישוןסט 5 מקדחים לפטישון בוש SDS59 ₪הוסיפו לי פוטר לפטישונים בהנחהפוטר רגיל לפטישון 13 ממ 59 ₪פוטר אוטומטי לפטישון 13 ממ\t 99 ₪false",
+     "name": "פטישון נטען + 2 סוללות BOSCH GBH 36-VF 4Ah",
      "sku": "36-VF",
      "category": "tool",
      "unit": "יח'",
@@ -5607,7 +3860,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233294-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-BOSCH-GBH-36-VF-4Ah-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "Gift Cardout_of_stockfalse100.0תוספות ושדרוגיםשווי כרטיס המתנה:בחר100 ש\"ח 0 ₪200 ש\"ח 100 ₪300 ש\"ח 200 ₪400 ש\"ח 300 ₪500 ש\"ח 400 ₪600 ש\"ח 500 ₪700 ש\"ח 600 ₪800 ש\"ח 700 ₪900 ש\"ח 800 ₪1000 ש\"ח 900 ₪1500 ש\"ח 1,400 ₪2000 ש\"ח 1,900 ₪2500 ש\"ח 2,400 ₪3000 ש\"ח 2,900 ₪3500 ש\"ח 3,400 ₪4000 ש\"ח 3,900 ₪4500 ש\"ח 4,400 ₪5000 ש\"ח 4,900 ₪הקדשה אישיתהקדשה אישיתשם ומספר טלפון של מקבל/ת הכרטיסמספר טלפון של מקבל/ת הכרטיסשם המזמיןשם המזמיןמספר טלפון של מזמין/ה הכרטיסמספר טלפון של מזמין/ה הכרטיסfalse",
+     "name": "גיפט קארד | Gift Card",
      "sku": "Card",
      "category": "material",
      "unit": "יח'",
@@ -5616,7 +3869,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3677911-%D7%92%D7%99%D7%A4%D7%98-%D7%A7%D7%90%D7%A8%D7%93-Gift-Card\n"
     },
     {
-     "name": "out_of_stockfalse185.0false",
+     "name": "מסיכה לריסוס כפול 755/6 Climax כולל פילטרים",
      "sku": "8724486",
      "category": "material",
      "unit": "יח'",
@@ -5625,7 +3878,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/8724486-%D7%9E%D7%A1%D7%99%D7%9B%D7%94-%D7%9C%D7%A8%D7%99%D7%A1%D7%95%D7%A1-%D7%9B%D7%A4%D7%95%D7%9C-755-6-Climax-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A4%D7%99%D7%9C%D7%98%D7%A8%D7%99%D7%9D-\n"
     },
     {
-     "name": "out_of_stockfalse383.0false",
+     "name": "חליפת ריתוך מידה S (מכנס+חולצה) -1095012 ROHER TOOLS",
      "sku": "7081224",
      "category": "material",
      "unit": "יח'",
@@ -5634,7 +3887,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7081224-%D7%97%D7%9C%D7%99%D7%A4%D7%AA-%D7%A8%D7%99%D7%AA%D7%95%D7%9A-%D7%9E%D7%99%D7%93%D7%94-S-%D7%9E%D7%9B%D7%A0%D7%A1-%D7%97%D7%95%D7%9C%D7%A6%D7%94-1095012-ROHER-TOOLS-\n"
     },
     {
-     "name": "out_of_stockfalse383.0false",
+     "name": "חליפת ריתוך מידה L (מכנס+חולצה) -1095014 - ROHER TOOLS - PREMIUM",
      "sku": "7081226",
      "category": "material",
      "unit": "יח'",
@@ -5643,7 +3896,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7081226-%D7%97%D7%9C%D7%99%D7%A4%D7%AA-%D7%A8%D7%99%D7%AA%D7%95%D7%9A-%D7%9E%D7%99%D7%93%D7%94-L-%D7%9E%D7%9B%D7%A0%D7%A1-%D7%97%D7%95%D7%9C%D7%A6%D7%94-1095014-ROHER-TOOLS-PREMIUM-\n"
     },
     {
-     "name": "out_of_stockfalse383.0false",
+     "name": "חליפת ריתוך מידה M (מכנס+חולצה) -1095013 ROHER TOOLS PREMIUM",
      "sku": "7081227",
      "category": "material",
      "unit": "יח'",
@@ -5652,7 +3905,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7081227-%D7%97%D7%9C%D7%99%D7%A4%D7%AA-%D7%A8%D7%99%D7%AA%D7%95%D7%9A-%D7%9E%D7%99%D7%93%D7%94-M-%D7%9E%D7%9B%D7%A0%D7%A1-%D7%97%D7%95%D7%9C%D7%A6%D7%94-1095013-ROHER-TOOLS-PREMIUM-\n"
     },
     {
-     "name": "out_of_stockfalse383.0false",
+     "name": "חליפת ריתוך מידה XL (מכנס+חולצה) -1095015- ROHER TOOLS PREMIUM",
      "sku": "7081228",
      "category": "material",
      "unit": "יח'",
@@ -5661,16 +3914,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7081228-%D7%97%D7%9C%D7%99%D7%A4%D7%AA-%D7%A8%D7%99%D7%AA%D7%95%D7%9A-%D7%9E%D7%99%D7%93%D7%94-XL-%D7%9E%D7%9B%D7%A0%D7%A1-%D7%97%D7%95%D7%9C%D7%A6%D7%94-1095015-ROHER-TOOLS-PREMIUM-\n"
     },
     {
-     "name": "out_of_stockfalse3894.0false",
+     "name": "סטנד מגנטי למקדח חלול 55 ממ  קוני 20 ממ KARNAF BMD-55B",
      "sku": "8706075",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 3894.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19588871/show/8d027495d12e54ebed2f3081684ccb43.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8706075-%D7%A1%D7%98%D7%A0%D7%93-%D7%9E%D7%92%D7%A0%D7%98%D7%99-%D7%9C%D7%9E%D7%A7%D7%93%D7%97-%D7%97%D7%9C%D7%95%D7%9C-55-%D7%9E%D7%9E-%D7%A7%D7%95%D7%A0%D7%99-20-%D7%9E%D7%9E-KARNAF-BMD-55B-%D7%A7%D7%A8%D7%A0%D7%A3\n"
     },
     {
-     "name": "4251out_of_stockfalse199.0false",
+     "name": "מסיכה רב שימושית, חצי פנים – 3M 4251",
      "sku": "4251",
      "category": "material",
      "unit": "יח'",
@@ -5679,7 +3932,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4624669-%D7%9E%D7%A1%D7%99%D7%9B%D7%94-%D7%A8%D7%91-%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99%D7%AA-%D7%97%D7%A6%D7%99-%D7%A4%D7%A0%D7%99%D7%9D-3M-4251\n"
     },
     {
-     "name": "out_of_stockfalse284.0false",
+     "name": "מתקן אלכוג",
      "sku": "7578661",
      "category": "material",
      "unit": "יח'",
@@ -5688,7 +3941,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7578661-%D7%9E%D7%AA%D7%A7%D7%9F-%D7%90%D7%9C%D7%9B%D7%95%D7%92-%D7%9C-%D7%A1%D7%91%D7%95%D7%9F-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%98%D7%99-SmartAir\n"
     },
     {
-     "name": "out_of_stockfalse129.0false",
+     "name": "אוזניות מגן 3M OPTIME 2 H520",
      "sku": "3232038",
      "category": "material",
      "unit": "יח'",
@@ -5697,7 +3950,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232038-%D7%90%D7%95%D7%96%D7%A0%D7%99%D7%95%D7%AA-%D7%9E%D7%92%D7%9F-3M-OPTIME-2-H520\n"
     },
     {
-     "name": "out_of_stockfalse2512.0false",
+     "name": "רתמת תמיכה למלטשת קיר גבס - 496911",
      "sku": "7494694",
      "category": "material",
      "unit": "יח'",
@@ -5706,7 +3959,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7494694--%D7%A8%D7%AA%D7%9E%D7%AA-%D7%AA%D7%9E%D7%99%D7%9B%D7%94-%D7%9C%D7%9E%D7%9C%D7%98%D7%A9%D7%AA-%D7%A7%D7%99%D7%A8-%D7%92%D7%91%D7%A1-496911-%D7%A4%D7%A1%D7%98%D7%95%D7%9C-Festool\n"
     },
     {
-     "name": "1110out_of_stock6.0",
+     "name": "אטמי אוזניים 3M",
      "sku": "1110",
      "category": "material",
      "unit": "יח'",
@@ -5715,7 +3968,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232039-%D7%90%D7%98%D7%9E%D7%99-%D7%90%D7%95%D7%96%D7%A0%D7%99%D7%99%D7%9D-3M\n"
     },
     {
-     "name": "1000out_of_stockfalse49.0false",
+     "name": "10 זוגות אטמי אוזניים 3M",
      "sku": "1000",
      "category": "material",
      "unit": "יח'",
@@ -5724,7 +3977,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232040-10-%D7%96%D7%95%D7%92%D7%95%D7%AA-%D7%90%D7%98%D7%9E%D7%99-%D7%90%D7%95%D7%96%D7%A0%D7%99%D7%99%D7%9D-3M\n"
     },
     {
-     "name": "out_of_stock25.0",
+     "name": "משקפי מגן בהירות",
      "sku": "3232041",
      "category": "material",
      "unit": "יח'",
@@ -5733,7 +3986,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232041-%D7%9E%D7%A9%D7%A7%D7%A4%D7%99-%D7%9E%D7%92%D7%9F-%D7%91%D7%94%D7%99%D7%A8%D7%95%D7%AA-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse35.0false",
+     "name": "מארז כפפות ניטריל ללא אבקה",
      "sku": "4447017",
      "category": "material",
      "unit": "יח'",
@@ -5742,7 +3995,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4447017-%D7%9E%D7%90%D7%A8%D7%96-%D7%9B%D7%A4%D7%A4%D7%95%D7%AA-%D7%A0%D7%99%D7%98%D7%A8%D7%99%D7%9C-%D7%9C%D7%9C%D7%90-%D7%90%D7%91%D7%A7%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse19.0false",
+     "name": "משקפי אבק גומי",
      "sku": "3232042",
      "category": "material",
      "unit": "יח'",
@@ -5751,7 +4004,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232042-%D7%9E%D7%A9%D7%A7%D7%A4%D7%99-%D7%90%D7%91%D7%A7-%D7%92%D7%95%D7%9E%D7%99-\n"
     },
     {
-     "name": "out_of_stock76.0",
+     "name": "מסיכת פנים שקופה",
      "sku": "3232043",
      "category": "material",
      "unit": "יח'",
@@ -5760,7 +4013,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232043-%D7%9E%D7%A1%D7%99%D7%9B%D7%AA-%D7%A4%D7%A0%D7%99%D7%9D-%D7%A9%D7%A7%D7%95%D7%A4%D7%94-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "FERENHEIT 71360out_of_stockfalse99.0false",
+     "name": "משקפת מגן 3M FERENHEIT 71360",
      "sku": "71360",
      "category": "material",
      "unit": "יח'",
@@ -5769,7 +4022,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232048-%D7%9E%D7%A9%D7%A7%D7%A4%D7%AA-%D7%9E%D7%92%D7%9F-3M-FERENHEIT-71360-\n"
     },
     {
-     "name": "G500out_of_stock410.0",
+     "name": "מסיכה משולבת אוזניים פנים",
      "sku": "G500",
      "category": "material",
      "unit": "יח'",
@@ -5778,7 +4031,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232049-%D7%9E%D7%A1%D7%99%D7%9B%D7%94-%D7%9E%D7%A9%D7%95%D7%9C%D7%91%D7%AA-%D7%90%D7%95%D7%96%D7%A0%D7%99%D7%99%D7%9D-%D7%A4%D7%A0%D7%99%D7%9D-3M\n"
     },
     {
-     "name": "CLIMAXout_of_stockfalse139.0false",
+     "name": "פילטר כפול - דגם Climax 756 קליימקס - תוצרת ספרד קליימאקס",
      "sku": "CLIMAX",
      "category": "material",
      "unit": "יח'",
@@ -5787,7 +4040,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232051-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%9B%D7%A4%D7%95%D7%9C-%D7%93%D7%92%D7%9D-Climax-756-%D7%A7%D7%9C%D7%99%D7%99%D7%9E%D7%A7%D7%A1-%D7%AA%D7%95%D7%A6%D7%A8%D7%AA-%D7%A1%D7%A4%D7%A8%D7%93-%D7%A7%D7%9C%D7%99%D7%99%D7%9E%D7%90%D7%A7%D7%A1\n"
     },
     {
-     "name": "3Mout_of_stockfalse198.0תוספות ושדרוגיםהוסיפו לי עוד זוג פילטרים רזרביים במחיר מיוחד:בחרהוסיפו לי זוג פילטרים 6001 רק ב 95 ש\"ח 95 ₪false",
+     "name": "מסיכה 6200 עם פילטר כפול לאבק 6001",
      "sku": "3232052",
      "category": "material",
      "unit": "יח'",
@@ -5796,7 +4049,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232052-%D7%9E%D7%A1%D7%99%D7%9B%D7%94-6200-%D7%A2%D7%9D-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%9B%D7%A4%D7%95%D7%9C-%D7%9C%D7%90%D7%91%D7%A7-6001-3M\n"
     },
     {
-     "name": "8022out_of_stock453.0",
+     "name": "מסיכת פנים פנורמית",
      "sku": "8022",
      "category": "material",
      "unit": "יח'",
@@ -5805,7 +4058,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232053-%D7%9E%D7%A1%D7%99%D7%9B%D7%AA-%D7%A4%D7%A0%D7%99%D7%9D-%D7%A4%D7%A0%D7%95%D7%A8%D7%9E%D7%99%D7%AA-Climax\n"
     },
     {
-     "name": "6001out_of_stockfalse95.0false",
+     "name": "זוג פילטרים 6001",
      "sku": "6001",
      "category": "material",
      "unit": "יח'",
@@ -5814,7 +4067,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232054-%D7%96%D7%95%D7%92-%D7%A4%D7%99%D7%9C%D7%98%D7%A8%D7%99%D7%9D-6001-3M\n"
     },
     {
-     "name": "6006out_of_stockfalse139.0false",
+     "name": "מסנן אדים וגזים 3M דגם 6006 – זוג מסננים למסכות נשימה",
      "sku": "6006",
      "category": "material",
      "unit": "יח'",
@@ -5823,7 +4076,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232055-%D7%9E%D7%A1%D7%A0%D7%9F-%D7%90%D7%93%D7%99%D7%9D-%D7%95%D7%92%D7%96%D7%99%D7%9D-3M-%D7%93%D7%92%D7%9D-6006-%D7%96%D7%95%D7%92-%D7%9E%D7%A1%D7%A0%D7%A0%D7%99%D7%9D-%D7%9C%D7%9E%D7%A1%D7%9B%D7%95%D7%AA-%D7%A0%D7%A9%D7%99%D7%9E%D7%94-\n"
     },
     {
-     "name": "out_of_stockfalse383.0false",
+     "name": "חליפת ריתוך Nידה XXL (מכנס+חולצה) -1095016- ROHER TOOLS PREMIUM",
      "sku": "6787639",
      "category": "material",
      "unit": "יח'",
@@ -5832,7 +4085,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6787639-%D7%97%D7%9C%D7%99%D7%A4%D7%AA-%D7%A8%D7%99%D7%AA%D7%95%D7%9A-N%D7%99%D7%93%D7%94-XXL-%D7%9E%D7%9B%D7%A0%D7%A1-%D7%97%D7%95%D7%9C%D7%A6%D7%94-1095016-ROHER-TOOLS-PREMIUM-\n"
     },
     {
-     "name": "60926out_of_stockfalse179.0false",
+     "name": "זוג פילטרים לחלקיקי כימיקלים 60926",
      "sku": "60926",
      "category": "material",
      "unit": "יח'",
@@ -5841,7 +4094,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232056-%D7%96%D7%95%D7%92-%D7%A4%D7%99%D7%9C%D7%98%D7%A8%D7%99%D7%9D-%D7%9C%D7%97%D7%9C%D7%A7%D7%99%D7%A7%D7%99-%D7%9B%D7%99%D7%9E%D7%99%D7%A7%D7%9C%D7%99%D7%9D-60926-3M\n"
     },
     {
-     "name": "FFP2out_of_stockfalse90.0false",
+     "name": "נשמית מגן מתקפלת 10 יח",
      "sku": "FFP2",
      "category": "material",
      "unit": "יח'",
@@ -5850,7 +4103,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232057-%D7%A0%D7%A9%D7%9E%D7%99%D7%AA-%D7%9E%D7%92%D7%9F-%D7%9E%D7%AA%D7%A7%D7%A4%D7%9C%D7%AA-10-%D7%99%D7%97-BLUE-LINE-\n"
     },
     {
-     "name": "out_of_stockfalse95.0false",
+     "name": "משחה לניקוי ידיים Fast Orange original 3.78L דגם MAR97428",
      "sku": "8967737",
      "category": "material",
      "unit": "יח'",
@@ -5859,7 +4112,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/8967737-%D7%9E%D7%A9%D7%97%D7%94-%D7%9C%D7%A0%D7%99%D7%A7%D7%95%D7%99-%D7%99%D7%93%D7%99%D7%99%D7%9D-Fast-Orange-original-3-78L-%D7%93%D7%92%D7%9D-MAR97428-\n"
     },
     {
-     "name": "3Mout_of_stockfalse279.0תוספות ושדרוגיםהוסיפו לי עוד זוג פילטרים רזרביים במחיר מיוחד:בחרהוסיפו לי זוג פילטרים 60926 רק ב 169 ש\"ח 169 ₪false",
+     "name": "מסיכה 6200 עם פילטר כפול לגזים חלקיקים (פילטר ורוד) 60926",
      "sku": "3232058",
      "category": "material",
      "unit": "יח'",
@@ -5868,7 +4121,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232058-%D7%9E%D7%A1%D7%99%D7%9B%D7%94-6200-%D7%A2%D7%9D-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%9B%D7%A4%D7%95%D7%9C-%D7%9C%D7%92%D7%96%D7%99%D7%9D-%D7%97%D7%9C%D7%A7%D7%99%D7%A7%D7%99%D7%9D-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%95%D7%A8%D7%95%D7%93-60926-3M\n"
     },
     {
-     "name": "3Mout_of_stockfalse225.0תוספות ושדרוגיםהוסיפו לי עוד זוג פילטרים רזרביים במחיר מיוחד:בחרהוסיפו לי זוג פילטרים 6006 רק ב 129 ש\"ח 129 ₪false",
+     "name": "מסיכה עם פילטר דגם 6200 כפול לגזים 3M + פילטרים 6006",
      "sku": "3232059",
      "category": "material",
      "unit": "יח'",
@@ -5877,7 +4130,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232059-%D7%9E%D7%A1%D7%99%D7%9B%D7%94-%D7%A2%D7%9D-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%93%D7%92%D7%9D-6200-%D7%9B%D7%A4%D7%95%D7%9C-%D7%9C%D7%92%D7%96%D7%99%D7%9D-3M-%D7%A4%D7%99%D7%9C%D7%98%D7%A8%D7%99%D7%9D-6006\n"
     },
     {
-     "name": "9914out_of_stock45.0",
+     "name": "נשמית נגד אבק, חלקיקים וריחות אורגנים כולל שסתום",
      "sku": "9914",
      "category": "material",
      "unit": "יח'",
@@ -5886,7 +4139,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232061-%D7%A0%D7%A9%D7%9E%D7%99%D7%AA-%D7%A0%D7%92%D7%93-%D7%90%D7%91%D7%A7-%D7%97%D7%9C%D7%A7%D7%99%D7%A7%D7%99%D7%9D-%D7%95%D7%A8%D7%99%D7%97%D7%95%D7%AA-%D7%90%D7%95%D7%A8%D7%92%D7%A0%D7%99%D7%9D-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A9%D7%A1%D7%AA%D7%95%D7%9D-3M\n"
     },
     {
-     "name": "מג'יקout_of_stock76.0",
+     "name": "מטליות לחות לקטילת 99.9 % חיידקים 400יח",
      "sku": "3232062",
      "category": "material",
      "unit": "יח'",
@@ -5895,7 +4148,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232062-%D7%9E%D7%98%D7%9C%D7%99%D7%95%D7%AA-%D7%9C%D7%97%D7%95%D7%AA-%D7%9C%D7%A7%D7%98%D7%99%D7%9C%D7%AA-99-9-%D7%97%D7%99%D7%99%D7%93%D7%A7%D7%99%D7%9D-400%D7%99%D7%97-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse383.0false",
+     "name": "מעיל עור לריתוך PREMIUM מידה  ROHER TOOLS  1095037 - XL",
      "sku": "6787647",
      "category": "material",
      "unit": "יח'",
@@ -5904,7 +4157,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6787647-%D7%9E%D7%A2%D7%99%D7%9C-%D7%A2%D7%95%D7%A8-%D7%9C%D7%A8%D7%99%D7%AA%D7%95%D7%9A-PREMIUM-%D7%9E%D7%99%D7%93%D7%94-ROHER-TOOLS-1095037-XL-\n"
     },
     {
-     "name": "israelout_of_stock48.0",
+     "name": "ספריי אלכוהול IPA מ\"ל500",
      "sku": "israel",
      "category": "material",
      "unit": "יח'",
@@ -5913,7 +4166,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232065-%D7%A1%D7%A4%D7%A8%D7%99%D7%99-%D7%90%D7%9C%D7%9B%D7%95%D7%94%D7%95%D7%9C-IPA-%D7%9E-%D7%9C500-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "SY9800out_of_stockfalse10.0false",
+     "name": "נשמית  עם פילטר מבד כותנה",
      "sku": "SY9800",
      "category": "material",
      "unit": "יח'",
@@ -5922,7 +4175,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232069-%D7%A0%D7%A9%D7%9E%D7%99%D7%AA-%D7%A2%D7%9D-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%9E%D7%91%D7%93-%D7%9B%D7%95%D7%AA%D7%A0%D7%94-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "drorkeepitcleanout_of_stockfalse22.0false",
+     "name": "סט 50 נשמיות כירוגיות",
      "sku": "drorkeepitclean",
      "category": "material",
      "unit": "יח'",
@@ -5931,16 +4184,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232067-%D7%A1%D7%98-50-%D7%A0%D7%A9%D7%9E%D7%99%D7%95%D7%AA-%D7%9B%D7%99%D7%A8%D7%95%D7%92%D7%99%D7%95%D7%AA-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "T-168out_of_stock393.0",
+     "name": "מד חום ללא מגע (אינפרא אדום)",
      "sku": "T-168",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 393.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586908/show/8ea9b25f50de7659b3aa33b78dea0842.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3232068-%D7%9E%D7%93-%D7%97%D7%95%D7%9D-%D7%9C%D7%9C%D7%90-%D7%9E%D7%92%D7%A2-%D7%90%D7%99%D7%A0%D7%A4%D7%A8%D7%90-%D7%90%D7%93%D7%95%D7%9D-Bo-hui\n"
     },
     {
-     "name": "893955210out_of_stockfalse70.0false",
+     "name": "משחה לניקוי ידיים 1קילו  1890305",
      "sku": "893955210",
      "category": "material",
      "unit": "יח'",
@@ -5949,7 +4202,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232070-%D7%9E%D7%A9%D7%97%D7%94-%D7%9C%D7%A0%D7%99%D7%A7%D7%95%D7%99-%D7%99%D7%93%D7%99%D7%99%D7%9D-1%D7%A7%D7%99%D7%9C%D7%95-1890305-Wurth\n"
     },
     {
-     "name": "out_of_stockfalse1770.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "מצלמת ציר Laserliner VideoFlex G4. מק\"ט: Laserliner 082.242A",
      "sku": "6546451",
      "category": "material",
      "unit": "יח'",
@@ -5958,7 +4211,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6546451-%D7%9E%D7%A6%D7%9C%D7%9E%D7%AA-%D7%A6%D7%99%D7%A8-Laserliner-VideoFlex-G4-%D7%9E%D7%A7-%D7%98-Laserliner-082-242A\n"
     },
     {
-     "name": "out_of_stockfalse8280.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "Quadrum G 410S - לייזר מסתובב קרן ירוק. Laserliner 053.00.02A",
      "sku": "6543134",
      "category": "material",
      "unit": "יח'",
@@ -5967,7 +4220,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6543134-Quadrum-G-410S-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%9E%D7%A1%D7%AA%D7%95%D7%91%D7%91-%D7%A7%D7%A8%D7%9F-%D7%99%D7%A8%D7%95%D7%A7-Laserliner-053-00-02A-\n"
     },
     {
-     "name": "out_of_stockfalse598.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "MoistureFinder Compact - סורק משטחים. מק\"ט: Laserliner 082.332A",
      "sku": "6323490",
      "category": "material",
      "unit": "יח'",
@@ -5976,16 +4229,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6323490-MoistureFinder-Compact-%D7%A1%D7%95%D7%A8%D7%A7-%D7%9E%D7%A9%D7%98%D7%97%D7%99%D7%9D-%D7%9E%D7%A7-%D7%98-Laserliner-082-332A\n"
     },
     {
-     "name": "out_of_stockfalse669.0false",
+     "name": "מד טווח לייזר אדום בוש BOSCH GLM 50-27C (כולל Bluetooth)",
      "sku": "5470278",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 669.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15407368/show/33d3955ccbdc3a83cb9ec0b87ac7b1aa.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/5470278-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%90%D7%93%D7%95%D7%9D-%D7%91%D7%95%D7%A9-BOSCH-GLM-50-27C-%D7%9B%D7%95%D7%9C%D7%9C-Bluetooth-\n"
     },
     {
-     "name": "out_of_stockfalse395.0false",
+     "name": "גלאי חוטי חשמל ומתכות GMS120-27",
      "sku": "7611979",
      "category": "material",
      "unit": "יח'",
@@ -5994,34 +4247,34 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7611979-%D7%92%D7%9C%D7%90%D7%99-%D7%97%D7%95%D7%98%D7%99-%D7%97%D7%A9%D7%9E%D7%9C-%D7%95%D7%9E%D7%AA%D7%9B%D7%95%D7%AA-GMS120-27-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse3490.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "פלס לייזר LAX600G 12V",
      "sku": "6066563",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 3490.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12683102/show/5ce7468caeacbc76068d2d8ce905e379.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6066563-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-LAX600G-12V-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse1294.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחדחצובה בוש BT150239 ₪false",
+     "name": "פלס לייזר צלב ירוק בוש BOSCH GCL 2-50G",
      "sku": "6174352",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1294.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12925776/show/525885b8dbf24c86a3891895531e3974.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6174352-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-%D7%99%D7%A8%D7%95%D7%A7-%D7%91%D7%95%D7%A9-BOSCH-GCL-2-50G\n"
     },
     {
-     "name": "out_of_stockfalse1530.0false",
+     "name": "מד טווח לייזר בוש BOSCH GLM 150-27C - כולל חיבור לאפליקציה",
      "sku": "5391784",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1530.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10672129/show/7a5e26af76d914c04c1550adb3774609.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5391784-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%91%D7%95%D7%A9-BOSCH-GLM-150-27C-%D7%9B%D7%95%D7%9C%D7%9C-%D7%97%D7%99%D7%91%D7%95%D7%A8-%D7%9C%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94\n"
     },
     {
-     "name": "B1083.101out_of_stockfalse5100.0תוספות ושדרוגיםהוסיפו לי מטען בוש בהנחהמטען 10.8/12V 219 ₪מטען מהיר 10.8/12V GAL 12V-40 239 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 1.5 אמפר - 10.8/12V 189 ₪סוללת ליתיום 2 אמפר - 10.8/12V 195 ₪סוללת ליתיום 4 אמפר - 10.8/12V\t 329 ₪false",
+     "name": "מצלמה תרמית נטענת + סוללה BOSCH GTC 400C 1.5Ah",
      "sku": "B1083.101",
      "category": "material",
      "unit": "יח'",
@@ -6030,7 +4283,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4080354-%D7%9E%D7%A6%D7%9C%D7%9E%D7%94-%D7%AA%D7%A8%D7%9E%D7%99%D7%AA-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-%D7%A1%D7%95%D7%9C%D7%9C%D7%94-BOSCH-GTC-400C-1-5Ah-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "D-TECH 120out_of_stockfalse1197.0תוספות ושדרוגיםאיזו סוללה תרצה ?שמיניית סוללות אלקליין AA20 ₪סוללת בוש מקורית 2Ah175 ₪הוסיפו לי מטען בוש בהנחהמטען 10.8/12V 219 ₪מטען מהיר 10.8/12V GAL 12V-40 239 ₪הוסיפו לי סוללת בוש בהנחהסוללת ליתיום 1.5 אמפר - 10.8/12V 189 ₪סוללת ליתיום 2 אמפר - 10.8/12V 195 ₪false",
+     "name": "גוף סורק קירות נטען BOSCH D-tect 120",
      "sku": "120",
      "category": "material",
      "unit": "יח'",
@@ -6039,7 +4292,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3587580-%D7%92%D7%95%D7%A3-%D7%A1%D7%95%D7%A8%D7%A7-%D7%A7%D7%99%D7%A8%D7%95%D7%AA-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-D-tect-120-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "GVD 1000-17out_of_stockfalse294.0false",
+     "name": "גלאי מתח טסטר ללא מגע Bosch GVD 1000-17 Professional",
      "sku": "1000-17",
      "category": "material",
      "unit": "יח'",
@@ -6048,25 +4301,25 @@
      "productUrl": "https://www.dror-tools.co.il  /items/8580377-%D7%92%D7%9C%D7%90%D7%99-%D7%9E%D7%AA%D7%97-%D7%98%D7%A1%D7%98%D7%A8-%D7%9C%D7%9C%D7%90-%D7%9E%D7%92%D7%A2-Bosch-GVD-1000-17-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "prolaser 875GSout_of_stockfalse995.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "פלס לייזר ירוק צלב 5 קרניים 30 מטר פילוס עצמי KAPRO 875G prolaser",
      "sku": "875GS",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 995.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16095618/show/f38c96b9be85e53a0389072d57b955da.png",
      "productUrl": "https://www.dror-tools.co.il  /items/3760685-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%A6%D7%9C%D7%91-5-%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D-30-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-KAPRO-875G-prolaser-%D7%A7%D7%A4%D7%A8%D7%95\n"
     },
     {
-     "name": "GLM 40out_of_stockfalse0.0תוספות ושדרוגיםהוסיפו לי אביזרים נילוויםחצובה מיני BOSCH bs150 219 ₪false",
+     "name": "מד טווח לייזר 40 מטר BOSCH GLM 40 IP54",
      "sku": "3233078",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": null,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5588606/show/e65811899a9f51162a93eb7b9a34b743.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3233078-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-40-%D7%9E%D7%98%D7%A8-BOSCH-GLM-40-IP54-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse299.0false",
+     "name": "ערכת פילוס, מדידה והתקנה + מזוודת נשיאה KAPRO Pro All In One קפרו אול אין",
      "sku": "7288157",
      "category": "material",
      "unit": "יח'",
@@ -6075,79 +4328,79 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7288157-%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%9E%D7%93%D7%99%D7%93%D7%94-%D7%95%D7%94%D7%AA%D7%A7%D7%A0%D7%94-%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%AA-%D7%A0%D7%A9%D7%99%D7%90%D7%94-KAPRO-Pro-All-In-One-%D7%A7%D7%A4%D7%A8%D7%95-%D7%90%D7%95%D7%9C-%D7%90%D7%99%D7%9F\n"
     },
     {
-     "name": "out_of_stockfalse2980.0false",
+     "name": "רב מודד דיגיטלי - Fluke 179 + נרתיק c35 + מחזיק מגנטי TPACK במתנה",
      "sku": "5822302",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 2980.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11957658/show/55d42d1e4dde825edae0b9e2827315c4.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5822302-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Fluke-179-%D7%A0%D7%A8%D7%AA%D7%99%D7%A7-c35-%D7%9E%D7%97%D7%96%D7%99%D7%A7-%D7%9E%D7%92%D7%A0%D7%98%D7%99-TPACK-%D7%91%D7%9E%D7%AA%D7%A0%D7%94-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "103200-004out_of_stockfalse639.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "פלס לייזר שלושה מעגלים ירוק מיני 3D | כולל מעמד ושלט 30 מטר 103200-004 Hunter",
      "sku": "103200-004",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 639.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10957605/show/3787eecdbff41b189cae2702c26864d1.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/4913051-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A2%D7%92%D7%9C%D7%99%D7%9D-%D7%99%D7%A8%D7%95%D7%A7-%D7%9E%D7%99%D7%A0%D7%99-3D-%D7%9B%D7%95%D7%9C%D7%9C-%D7%9E%D7%A2%D7%9E%D7%93-%D7%95%D7%A9%D7%9C%D7%98-30-%D7%9E%D7%98%D7%A8-103200-004-Hunter-\n"
     },
     {
-     "name": "out_of_stockfalse1950.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחדחצובה בוש BT150239 ₪false",
+     "name": "פלס לייזר צלב ירוק בוש GLL 80-33G – 3 קרניים (360°) 1065.500  Bosch",
      "sku": "8518057",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1950.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18420741/show/634c3157ac669e1e7b43f47173af820d.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8518057-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-%D7%99%D7%A8%D7%95%D7%A7-%D7%91%D7%95%D7%A9-GLL-80-33G-3-%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D-360-1065-500-Bosch\n"
     },
     {
-     "name": "out_of_stockfalse1490.0false",
+     "name": "Fluke 115 – רב מודד דיגיטלי True RMS",
      "sku": "5822404",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1490.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11958124/show/ee08b38f66c0c9e66b8412ddcb0cf23e.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5822404-Fluke-115-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-True-RMS-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stockfalse2690.0תוספות ושדרוגיםתצטרך גםמגנט לאחיזת מודד פלוק450 ₪נרתיק רך להגנה על המכשיר460 ₪נרתיק רך + מגנט אחיזה890 ₪false",
+     "name": "רב מודד דיגיטלי - Fluke 179 כולל זוג פרובים מקוריים",
      "sku": "7453718",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 2690.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15544082/show/0cec3adc068b36107444fbb723ae3631.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/7453718-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Fluke-179-%D7%9B%D7%95%D7%9C%D7%9C-%D7%96%D7%95%D7%92-%D7%A4%D7%A8%D7%95%D7%91%D7%99%D7%9D-%D7%9E%D7%A7%D7%95%D7%A8%D7%99%D7%99%D7%9D-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "K-30out_of_stockfalse245.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "מד טווח לייזר 30 מטר עם כיסוי שקוף 363 KAPRO K-30",
      "sku": "K-30",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 245.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13758732/show/06f09ddd1d0216af47d7aa55e9f47b0e.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/6547556-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-30-%D7%9E%D7%98%D7%A8-%D7%A2%D7%9D-%D7%9B%D7%99%D7%A1%D7%95%D7%99-%D7%A9%D7%A7%D7%95%D7%A3-363-KAPRO-K-30-%D7%A7%D7%A4%D7%A8%D7%95\n"
     },
     {
-     "name": "out_of_stockfalse479.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "מד טמפרטורה מקצועי אינפרא אדום / לייזר 300.09 - FUTECH",
      "sku": "6323831",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 479.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13233304/show/459899ab99f6e3a0fafc74963fc5f70d.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6323831-%D7%9E%D7%93-%D7%98%D7%9E%D7%A4%D7%A8%D7%98%D7%95%D7%A8%D7%94-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-%D7%90%D7%99%D7%A0%D7%A4%D7%A8%D7%90-%D7%90%D7%93%D7%95%D7%9D-%D7%9C%D7%99%D7%99%D7%96%D7%A8-300-09-FUTECH\n"
     },
     {
-     "name": "872out_of_stockfalse579.0תוספות ושדרוגיםהוסיפו לי אביזרים נילוויםחצובה מיני BOSCH bs150 219 ₪false",
+     "name": "פלס לייזר ירוק צלב 50 מטר פילוס עצמי kapro 872G prolaser כולל חצובה ! Kapro",
      "sku": "872",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 579.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10910998/show/424c5098e308ce95e410483b8377e32d.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/3760795-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%A6%D7%9C%D7%91-50-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-kapro-872G-prolaser-%D7%9B%D7%95%D7%9C%D7%9C-%D7%97%D7%A6%D7%95%D7%91%D7%94-Kapro-%D7%A7%D7%A4%D7%A8%D7%95\n"
     },
     {
-     "name": "out_of_stockfalse485.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "סורק/גלאי מקצועי לאיתור עץ, מתכת וחוטי חשמל - Multi Finder Pro 080.966A",
      "sku": "7482023",
      "category": "material",
      "unit": "יח'",
@@ -6156,52 +4409,52 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7482023-%D7%A1%D7%95%D7%A8%D7%A7-%D7%92%D7%9C%D7%90%D7%99-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-%D7%9C%D7%90%D7%99%D7%AA%D7%95%D7%A8-%D7%A2%D7%A5-%D7%9E%D7%AA%D7%9B%D7%AA-%D7%95%D7%97%D7%95%D7%98%D7%99-%D7%97%D7%A9%D7%9E%D7%9C-Multi-Finder-Pro-080-966A-Laserliner-\n"
     },
     {
-     "name": "out_of_stockfalse299.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחדחצובה בוש BT150239 ₪false",
+     "name": "פלס לייזר + מטר BOSCH ATINO",
      "sku": "7446245",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 299.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15523592/show/2bfe91d1e05e7b359765f9b1bb450eb1.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/7446245-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%9E%D7%98%D7%A8-BOSCH-ATINO-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "out_of_stockfalse204.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "מד טמפרטורה קומפקטי דיגיטלי 500 מעלות צלזיוס פרקסיסו PREXISO",
      "sku": "7525872",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 204.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15706348/show/8ee14a2fa621fe76c0ad74b6660b3ceb.png",
      "productUrl": "https://www.dror-tools.co.il  /items/7525872-%D7%9E%D7%93-%D7%98%D7%9E%D7%A4%D7%A8%D7%98%D7%95%D7%A8%D7%94-%D7%A7%D7%95%D7%9E%D7%A4%D7%A7%D7%98%D7%99-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-500-%D7%9E%D7%A2%D7%9C%D7%95%D7%AA-%D7%A6%D7%9C%D7%96%D7%99%D7%95%D7%A1-%D7%A4%D7%A8%D7%A7%D7%A1%D7%99%D7%A1%D7%95-PREXISO\n"
     },
     {
-     "name": "out_of_stockfalse1664.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "מד טווח לייזר מקצועי 80 מטר עם מצלמה וזום דיגיטלי. Laserliner 080.980A",
      "sku": "6323460",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1664.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13232538/show/d3d616ec30ca523ef696386caf3f5b0c.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6323460-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-80-%D7%9E%D7%98%D7%A8-%D7%A2%D7%9D-%D7%9E%D7%A6%D7%9C%D7%9E%D7%94-%D7%95%D7%96%D7%95%D7%9D-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Laserliner-080-980A\n"
     },
     {
-     "name": "out_of_stockfalse989.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "פלס דיגיטלי TECH 196 DL אורך 23 ס\"מ (9 אינצ",
      "sku": "6385676",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 989.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13398504/show/29e8e6d4aa1f3026a4dd8b430e63832c.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6385676-%D7%A4%D7%9C%D7%A1-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-TECH-196-DL-%D7%90%D7%95%D7%A8%D7%9A-23-%D7%A1-%D7%9E-9-%D7%90%D7%99%D7%A0%D7%A6-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
     },
     {
-     "name": "LAX 50 Gout_of_stockfalse1169.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪הוסיפו לי אביזרים נילוויםחצובה מיני BOSCH bs150 219 ₪false",
+     "name": "פלס לייזר צלב 30 מטר פילוס עצמי Stabila לייזר ירוק LAX 50 G",
      "sku": "3233092",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1169.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11821746/show/aeb7ea283a8f3d2e55d06daf8a442e8c.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3233092-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-30-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-Stabila-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-LAX-50-G-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
     },
     {
-     "name": "out_of_stockfalse1290.0false",
+     "name": "Fluke T150 - טסטר דו קוטבי",
      "sku": "5826910",
      "category": "material",
      "unit": "יח'",
@@ -6210,16 +4463,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5826910-Fluke-T150-%D7%98%D7%A1%D7%98%D7%A8-%D7%93%D7%95-%D7%A7%D7%95%D7%98%D7%91%D7%99-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stockfalse1889.0false",
+     "name": "Fluke 325 – צבת זרם עם טמפרטורה 400A AC/DC True Rms",
      "sku": "5825137",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1889.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11959171/show/aabceffca31a7b025e0f8dbfa56b9206.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5825137-Fluke-325-%D7%A6%D7%91%D7%AA-%D7%96%D7%A8%D7%9D-%D7%A2%D7%9D-%D7%98%D7%9E%D7%A4%D7%A8%D7%98%D7%95%D7%A8%D7%94-400A-AC-DC-True-Rms-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stockfalse1433.0false",
+     "name": "Fluke T6-600V - טסטר מתח, רציפות וזרם",
      "sku": "5826697",
      "category": "material",
      "unit": "יח'",
@@ -6228,34 +4481,34 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5826697-Fluke-T6-600V-%D7%98%D7%A1%D7%98%D7%A8-%D7%9E%D7%AA%D7%97-%D7%A8%D7%A6%D7%99%D7%A4%D7%95%D7%AA-%D7%95%D7%96%D7%A8%D7%9D-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stockfalse1790.0false",
+     "name": "Fluke 117 – רב מודד לחשמלאים",
      "sku": "5822356",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 1790.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11957795/show/2a2fbc7947329d204f352a8a481fa3cf.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5822356-Fluke-117-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%9C%D7%97%D7%A9%D7%9E%D7%9C%D7%90%D7%99%D7%9D-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stockfalse277.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "מד מרחק לייזר טווח 60 מ",
      "sku": "6227067",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 277.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13050418/show/4f025cdb4421116b90107dbb330229bb.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6227067-%D7%9E%D7%93-%D7%9E%D7%A8%D7%97%D7%A7-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%98%D7%95%D7%95%D7%97-60-%D7%9E-%D7%9B%D7%95%D7%9C%D7%9C-%D7%9E%D7%93-%D7%9E%D7%A2%D7%9C%D7%95%D7%AA-%D7%A4%D7%9C%D7%A1-SYROX-G-1960\n"
     },
     {
-     "name": "out_of_stockfalse3378.0false",
+     "name": "בודק עמדת טעינה מקצועי",
      "sku": "6338526",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 3378.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13296345/show/6c0baec96584ea14c57ee2242d484288.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6338526-%D7%91%D7%95%D7%93%D7%A7-%D7%A2%D7%9E%D7%93%D7%AA-%D7%98%D7%A2%D7%99%D7%A0%D7%94-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stock2071.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪",
+     "name": "מאזנת לייזר רב קווי פילוס אוטומטי לעבודות פנים וחוץ דגם: Lp618",
      "sku": "6016256",
      "category": "material",
      "unit": "יח'",
@@ -6264,7 +4517,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6016256-%D7%9E%D7%90%D7%96%D7%A0%D7%AA-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A8%D7%91-%D7%A7%D7%95%D7%95%D7%99-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%98%D7%99-%D7%9C%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA-%D7%A4%D7%A0%D7%99%D7%9D-%D7%95%D7%97%D7%95%D7%A5-%D7%93%D7%92%D7%9D-Lp618-%D7%A0%D7%99%D7%98%D7%95\n"
     },
     {
-     "name": "out_of_stockfalse1175.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "חצובה מקצועית ללייזר 300 ס\"מ חיבור FUTECH 5/8",
      "sku": "6792452",
      "category": "material",
      "unit": "יח'",
@@ -6273,7 +4526,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6792452-%D7%97%D7%A6%D7%95%D7%91%D7%94-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%AA-%D7%9C%D7%9C%D7%99%D7%99%D7%96%D7%A8-300-%D7%A1-%D7%9E-%D7%97%D7%99%D7%91%D7%95%D7%A8-FUTECH-5-8\n"
     },
     {
-     "name": "DE0892Gout_of_stockfalse609.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪הוסיפו לי סוללת דיוולט בהנחהסוללת ליתיום 2 אמפר - 18V 319 ₪סוללת ליתיום 4 אמפר - 18V 339 ₪סוללת ליתיום 5 אמפר - 18V 339 ₪הוסיפו לי מטען דיוולט בהנחהמטען כפול - 10.8V/12V/18V 599 ₪מטען - DCB115 18V 199 ₪מטען מהיר דיוולט DCB118 389 389 ₪false",
+     "name": "קולט קרן לייזר ירוקה DEWALT DE0892G",
      "sku": "DE0892G",
      "category": "material",
      "unit": "יח'",
@@ -6282,7 +4535,7 @@
      "productUrl": "https://www.dror-tools.co.il  /items/4257796-%D7%A7%D7%95%D7%9C%D7%98-%D7%A7%D7%A8%D7%9F-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7%D7%94-DEWALT-DE0892G-DeWalt-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98\n"
     },
     {
-     "name": "out_of_stockfalse380.0false",
+     "name": "קיט אביזרי תליה TPAK למכשירי FLUKE",
      "sku": "7884293",
      "category": "material",
      "unit": "יח'",
@@ -6291,16 +4544,16 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7884293-%D7%A7%D7%99%D7%98-%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99-%D7%AA%D7%9C%D7%99%D7%94-TPAK-%D7%9C%D7%9E%D7%9B%D7%A9%D7%99%D7%A8%D7%99-FLUKE-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "out_of_stockfalse375.0false",
+     "name": "מד טווח לייזר דיגיטלי 30 מטר V12 LDM 30",
      "sku": "9217286",
-     "category": "material",
+     "category": "tool",
      "unit": "יח'",
      "price": 375.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/23321411/show/5ab05aebc0d8cb2df7b2aefa3164e2fb.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/9217286-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-30-%D7%9E%D7%98%D7%A8-V12-LDM-30-%D7%9E%D7%99%D7%9C%D7%95%D7%95%D7%A7%D7%99\n"
     },
     {
-     "name": "out_of_stockfalse6331.0תוספות ושדרוגיםכדאי להוסיף חצובה במחיר מיוחד :בחרחצובה 1.5 מטר דגם 103201-002 hunter 175 ₪false",
+     "name": "Cubus G 110S - לייזר מסתובב קרן ירוקה Laserliner 052.300A",
      "sku": "6543110",
      "category": "material",
      "unit": "יח'",
