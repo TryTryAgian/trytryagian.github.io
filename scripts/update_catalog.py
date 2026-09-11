@@ -521,11 +521,24 @@ def run_discover_mode(url):
             urls = re.findall(r"<loc>([^<]+)</loc>", raw)
             if not urls:
                 continue
-            category_like = [u for u in urls if re.search(
+
+            generic_match = [u for u in urls if re.search(
                 r"(category|categories|collections|productslist|catid|/items/\d|catalog)", u, re.I)]
+
+            konimbo_match = []
+            if "konimbo" in fp:
+                # Konimbo categories are bare "/{numeric-id}-{slug}" at the root path, with no
+                # keyword to key off - product detail pages use "/items/{id}-slug" instead, so
+                # exclude those specifically to avoid listing individual products as "categories"
+                konimbo_match = [u for u in urls
+                                  if re.search(r"^" + re.escape(base) + r"/\d+-[^/]+/?$", u)
+                                  and "/items/" not in u]
+
+            category_like = sorted(set(generic_match) | set(konimbo_match))
             if category_like:
                 found_any = True
-                print(f"\n--- Candidate URLs from {sitemap_url} "
+                label = " (Konimbo-style numeric-id URLs)" if konimbo_match and not generic_match else ""
+                print(f"\n--- Candidate URLs from {sitemap_url}{label} "
                       f"({len(category_like)} of {len(urls)} total URLs look category-like) ---")
                 for u in category_like[:40]:
                     print(f"  {u}")
