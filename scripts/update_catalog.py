@@ -32,11 +32,19 @@ same way "magento" works for any Magento store, not just ERCO specifically:
 Run manually:  python scripts/update_catalog.py
 Run automatically by: .github/workflows/update-catalog.yml
 
-NOTE: neither the ERCO Magento logic nor the new Brand handler was verified
-against a live network connection while writing this (no internet access
-was available in the coding environment). ERCO's handler was already
-corrected once after a real run (see git history). The Brand handler is
-its first real run - if a category comes back with 0 products, or names/
+WHICH SUPPLIERS ARE SCRAPED IS NOT HARDCODED HERE - see suppliers-config.json
+(repo root). Adding a new supplier whose platform matches one of the handlers
+above is a config-only change - edit that JSON file (e.g. directly on GitHub's
+web editor), no code changes needed. Adding a supplier on a genuinely new
+platform (none of the existing handlers match, confirmed via the test_url
+workflow input) DOES need a new handler function written below - that part
+still needs someone who can code.
+
+NOTE: neither the ERCO Magento logic nor the Brand/Konimbo/Shopify handlers
+were verified against a live network connection while writing them (no
+internet access was available in the coding environment). Each has already
+needed at least one correction after its first real run (see git history) -
+if a newly-added supplier or handler comes back with 0 products, or names/
 prices look wrong, that's expected-possible on a first try; paste the
 Action's log output back for a quick fix.
 """
@@ -65,65 +73,16 @@ TOOL_KEYWORDS = ["כלי", "מברג", "פלייר", "מקדח", "משחזת", "
                   "מד ", "בודק", "רולטקה", "פלס", "מפוח", "מסור", "פטיש",
                   "מברגה", "פטישון", "רתכת", "מדחס", "מכונת"]
 
-SUPPLIERS = [
-    {
-        "name": "ERCO",
-        "website": "https://www.erco.co.il",
-        "handler": "magento",
-        "categories": [
-            "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching.html",
-            "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/miniature-circuit-breaker.html",
-            "https://www.erco.co.il/b2c/cables-wires/wires.html",
-            "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables.html",
-            "https://www.erco.co.il/b2c/work-tools/test-and-measurement-tools.html",
-            "https://www.erco.co.il/b2c/work-tools/technical-supply/cable-ties.html",
-            "https://www.erco.co.il/b2c/work-tools/technical-supply/screws-anchors.html",
-            "https://www.erco.co.il/b2c/work-tools/technical-supply/hooks.html",
-            "https://www.erco.co.il/b2c/cabinets-boards-boxes/distribution-board.html",
-            "https://www.erco.co.il/b2c/work-tools/power-tools/drills-drivers.html",
-            "https://www.erco.co.il/b2c/work-tools/power-tools/grinders.html",
-            "https://www.erco.co.il/b2c/work-tools/hand-tools.html",
-        ],
-    },
-    {
-        "name": "ברנד אספקה טכנית",
-        "website": "https://www.brandtools.co.il",
-        "handler": "logate",
-        "warmup": True,  # this supplier started 403-blocking direct category requests
-        "categories": [
-            "https://www.brandtools.co.il/productslist.asp?catid=1298",  # אביזרי חשמל וטלפון
-            "https://www.brandtools.co.il/productslist.asp?catid=643",   # כלים לחשמלאים
-            "https://www.brandtools.co.il/productslist.asp?catid=1633",  # כלי עבודה חשמליים
-            "https://www.brandtools.co.il/productslist.asp?catid=2",     # כלים ידניים
-            "https://www.brandtools.co.il/productslist.asp?catid=139",   # כלי מדידה וסימון
-        ],
-    },
-    {
-        "name": "דרור כלי עבודה",
-        "website": "https://www.dror-tools.co.il",
-        "handler": "konimbo",
-        "categories": [
-            "https://www.dror-tools.co.il/183379-%D7%97%D7%A9%D7%9E%D7%9C-%D7%95%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99%D7%9D",  # חשמל ואביזרים
-            "https://www.dror-tools.co.il/183352-%D7%9E%D7%A7%D7%93%D7%97%D7%95%D7%AA",  # מקדחות
-            "https://www.dror-tools.co.il/183354-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%A0%D7%99%D7%9D",  # פטישונים
-            "https://www.dror-tools.co.il/183314-%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99-%D7%91%D7%98%D7%99%D7%97%D7%95%D7%AA-%D7%9E%D7%A1%D7%9B%D7%95%D7%AA-%D7%95%D7%A0%D7%A9%D7%9E%D7%99%D7%95%D7%AA",  # אביזרי בטיחות
-            "https://www.dror-tools.co.il/191826-%D7%9C%D7%99%D7%99%D7%96%D7%A8%D7%99%D7%9D-%D7%95%D7%9B%D7%9C%D7%99-%D7%9E%D7%93%D7%99%D7%93%D7%94",  # לייזרים וכלי מדידה
-        ],
-    },
-    {
-        "name": "חשמל ישיר",
-        "website": "https://yashir-group.biz",
-        "handler": "shopify",
-        "categories": [
-            "https://yashir-group.biz/collections/%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94/products.json?limit=200",       # כלי עבודה
-            "https://yashir-group.biz/collections/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D-%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D/products.json?limit=200",  # מוצרים נוספים
-        ],
-    },
-    # To add another supplier: copy a block above with its own category URLs.
-    # If you don't know the right "handler" yet, use "generic" first - it
-    # tries JSON-LD structured data, which many sites have even without a
-    # dedicated handler being written for them.
-]
+SUPPLIERS_CONFIG_FILE = "suppliers-config.json"
+
+
+def load_suppliers():
+    """Suppliers live in suppliers-config.json (repo root), not hardcoded here, so
+    adding one whose platform is already supported doesn't require touching this
+    script at all - see that file's _readme for how."""
+    with open(SUPPLIERS_CONFIG_FILE, encoding="utf-8") as f:
+        data = json.load(f)
+    return data["suppliers"]
 
 
 # ---------------- shared helpers ----------------
@@ -534,8 +493,9 @@ def run_test_mode(url):
         for p in generic_products[:5]:
             print(f"  - {p['name']}  |  sku={p['sku']}  |  price={p['price']}  |  image={'yes' if p['imageUrl'] else 'no'}")
         print("\n[RESULT] This site has usable structured data - it can likely be added with")
-        print("         handler: \"generic\" and NO custom code. Add its category URLs to")
-        print("         SUPPLIERS above with that handler and it should just work.")
+        print("         handler: \"generic\" and NO custom code. Add it to suppliers-config.json")
+        print("         (copy an existing supplier's entry, set handler to \"generic\") and it")
+        print("         should just work - no script changes needed.")
         return
 
     print("\n--- trying magento handler (in case it happens to be Magento-based, like ERCO) ---")
@@ -545,7 +505,7 @@ def run_test_mode(url):
         for p in magento_products[:5]:
             print(f"  - {p['name']}  |  sku={p['sku']}  |  price={p['price']}  |  image={'yes' if p['imageUrl'] else 'no'}")
         print("\n[RESULT] This looks like a Magento-based site - it can likely be added with")
-        print("         handler: \"magento\" and NO custom code.")
+        print("         handler: \"magento\" and NO custom code. Add it to suppliers-config.json.")
         return
 
     print("\n[RESULT] Neither the generic (JSON-LD) nor the magento pattern matched this page.")
@@ -595,10 +555,17 @@ def main():
         run_test_mode(test_url)
         return
 
+    try:
+        suppliers_list = load_suppliers()
+    except Exception as e:
+        print(f"!! could not load {SUPPLIERS_CONFIG_FILE}: {e}", file=sys.stderr)
+        print(f"   Check that the file exists at the repo root and is valid JSON.", file=sys.stderr)
+        sys.exit(1)
+
     session = requests.Session()
     output_suppliers = []
 
-    for sup in SUPPLIERS:
+    for sup in suppliers_list:
         print(f"\n=== {sup['name']} ({sup['handler']}) ===")
         handler_fn = HANDLERS.get(sup["handler"], scrape_generic)
         all_products = {}
