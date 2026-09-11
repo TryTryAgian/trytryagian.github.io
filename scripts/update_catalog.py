@@ -51,8 +51,16 @@ from bs4 import BeautifulSoup
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-    "Accept-Language": "he-IL,he;q=0.9,en;q=0.8",
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
 }
 
 TOOL_KEYWORDS = ["כלי", "מברג", "פלייר", "מקדח", "משחזת", "רב מודד", "צבת",
@@ -142,7 +150,12 @@ def parse_price_text(text):
 
 
 def fetch(url, session):
-    resp = session.get(url, headers=HEADERS, timeout=25)
+    base_match = re.match(r"(https?://[^/]+)", url)
+    referer = (base_match.group(1) + "/") if base_match else None
+    headers = dict(HEADERS)
+    if referer:
+        headers["Referer"] = referer
+    resp = session.get(url, headers=headers, timeout=25)
     resp.raise_for_status()
     # Some sites (especially older/legacy platforms) don't declare their character
     # encoding correctly in the response headers, causing requests to guess wrong
@@ -595,6 +608,15 @@ def main():
         print(f"\n=== {sup['name']} ({sup['handler']}) ===")
         handler_fn = HANDLERS.get(sup["handler"], scrape_generic)
         all_products = {}
+
+        # visit the homepage first to pick up any session cookie some sites require
+        # before allowing access to inner pages (skipping straight to a category page
+        # can look bot-like and get blocked even when a normal browser visit wouldn't)
+        try:
+            fetch(sup["website"], session)
+            time.sleep(1)
+        except Exception as e:
+            print(f"  (homepage warm-up failed, continuing anyway: {e})", file=sys.stderr)
 
         for url in sup["categories"]:
             print(f"Scraping {url} ...")
