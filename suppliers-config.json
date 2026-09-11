@@ -1,0 +1,76 @@
+{
+  "_readme": [
+    "This file lists every supplier the scraper pulls from. To add a new supplier",
+    "YOURSELF (no coding needed), copy one of the objects in \"suppliers\" below,",
+    "edit name/website/categories, and set \"handler\" to one of the values listed",
+    "in _available_handlers - but ONLY if you already confirmed that handler works",
+    "for this site using the workflow test_url input (Actions tab -> Run workflow).",
+    "If none of the existing handlers match (test mode says so), this file alone",
+    "is not enough - a new handler needs to be written in scripts/update_catalog.py,",
+    "which needs someone who can code (ask Claude, or write it yourself).",
+    "Edit this file directly on GitHub: click it, click the pencil/edit icon,",
+    "make your change, commit. No local tools needed."
+  ],
+  "_available_handlers": {
+    "magento": "Magento 2 standard stores (e.g. erco.co.il)",
+    "logate": "Logate Technologies ASP-based \"virtual store\" platform (e.g. brandtools.co.il)",
+    "konimbo": "Konimbo platform, /items/{id}-slug URLs (e.g. dror-tools.co.il)",
+    "shopify": "Shopify stores - point category URLs at \"<collection-url>/products.json\"",
+    "generic": "Fallback: reads embedded JSON-LD product data if the site has any - try this first for any brand-new, untested site"
+  },
+  "suppliers": [
+    {
+      "name": "ERCO",
+      "website": "https://www.erco.co.il",
+      "handler": "magento",
+      "categories": [
+        "https://www.erco.co.il/b2c/sockets-plugs/home-office-switching.html",
+        "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/miniature-circuit-breaker.html",
+        "https://www.erco.co.il/b2c/cables-wires/wires.html",
+        "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables.html",
+        "https://www.erco.co.il/b2c/work-tools/test-and-measurement-tools.html",
+        "https://www.erco.co.il/b2c/work-tools/technical-supply/cable-ties.html",
+        "https://www.erco.co.il/b2c/work-tools/technical-supply/screws-anchors.html",
+        "https://www.erco.co.il/b2c/work-tools/technical-supply/hooks.html",
+        "https://www.erco.co.il/b2c/cabinets-boards-boxes/distribution-board.html",
+        "https://www.erco.co.il/b2c/work-tools/power-tools/drills-drivers.html",
+        "https://www.erco.co.il/b2c/work-tools/power-tools/grinders.html",
+        "https://www.erco.co.il/b2c/work-tools/hand-tools.html"
+      ]
+    },
+    {
+      "name": "ברנד אספקה טכנית",
+      "website": "https://www.brandtools.co.il",
+      "handler": "logate",
+      "warmup": true,
+      "categories": [
+        "https://www.brandtools.co.il/productslist.asp?catid=1298",
+        "https://www.brandtools.co.il/productslist.asp?catid=643",
+        "https://www.brandtools.co.il/productslist.asp?catid=1633",
+        "https://www.brandtools.co.il/productslist.asp?catid=2",
+        "https://www.brandtools.co.il/productslist.asp?catid=139"
+      ]
+    },
+    {
+      "name": "דרור כלי עבודה",
+      "website": "https://www.dror-tools.co.il",
+      "handler": "konimbo",
+      "categories": [
+        "https://www.dror-tools.co.il/183379-%D7%97%D7%A9%D7%9E%D7%9C-%D7%95%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99%D7%9D",
+        "https://www.dror-tools.co.il/183352-%D7%9E%D7%A7%D7%93%D7%97%D7%95%D7%AA",
+        "https://www.dror-tools.co.il/183354-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%A0%D7%99%D7%9D",
+        "https://www.dror-tools.co.il/183314-%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99-%D7%91%D7%98%D7%99%D7%97%D7%95%D7%AA-%D7%9E%D7%A1%D7%9B%D7%95%D7%AA-%D7%95%D7%A0%D7%A9%D7%9E%D7%99%D7%95%D7%AA",
+        "https://www.dror-tools.co.il/191826-%D7%9C%D7%99%D7%99%D7%96%D7%A8%D7%99%D7%9D-%D7%95%D7%9B%D7%9C%D7%99-%D7%9E%D7%93%D7%99%D7%93%D7%94"
+      ]
+    },
+    {
+      "name": "חשמל ישיר",
+      "website": "https://yashir-group.biz",
+      "handler": "shopify",
+      "categories": [
+        "https://yashir-group.biz/collections/%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94/products.json?limit=200",
+        "https://yashir-group.biz/collections/%D7%9E%D7%95%D7%A6%D7%A8%D7%99%D7%9D-%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D/products.json?limit=200"
+      ]
+    }
+  ]
+}
