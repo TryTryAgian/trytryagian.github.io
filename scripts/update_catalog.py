@@ -476,6 +476,76 @@ def fingerprint_platform(html):
     return found
 
 
+def run_discover_mode(url):
+    print(f"=== DISCOVER MODE: {url} ===")
+    print("(purely informational - lists candidate category URLs for you to review and add")
+    print(" to suppliers-config.json yourself; doesn't write or commit anything)\n")
+    session = requests.Session()
+    base_match = re.match(r"(https?://[^/]+)", url)
+    base = base_match.group(1) if base_match else url.rstrip("/")
+
+    try:
+        html = fetch(url, session)
+    except Exception as e:
+        print(f"!! failed to fetch {url}: {e}", file=sys.stderr)
+        return
+
+    fp = fingerprint_platform(html)
+    print(f"Detected platform signals: {fp or 'none'}\n")
+    found_any = False
+
+    if "shopify" in fp:
+        collections_url = base + "/collections.json?limit=250"
+        print(f"--- Trying Shopify collections feed: {collections_url} ---")
+        try:
+            raw = fetch(collections_url, session)
+            data = json.loads(raw)
+            cols = data.get("collections", [])
+            if cols:
+                found_any = True
+                print(f"Found {len(cols)} collections:\n")
+                for c in cols:
+                    handle = c.get("handle", "")
+                    title = c.get("title", "")
+                    print(f"  {title}")
+                    print(f"    -> {base}/collections/{handle}/products.json?limit=200")
+            else:
+                print("  (feed responded but listed no collections)")
+        except Exception as e:
+            print(f"  (collections.json attempt failed: {e})", file=sys.stderr)
+
+    for sitemap_path in ["/sitemap.xml", "/sitemap_index.xml"]:
+        sitemap_url = base + sitemap_path
+        try:
+            raw = fetch(sitemap_url, session)
+            urls = re.findall(r"<loc>([^<]+)</loc>", raw)
+            if not urls:
+                continue
+            category_like = [u for u in urls if re.search(
+                r"(category|categories|collections|productslist|catid|/items/\d|catalog)", u, re.I)]
+            if category_like:
+                found_any = True
+                print(f"\n--- Candidate URLs from {sitemap_url} "
+                      f"({len(category_like)} of {len(urls)} total URLs look category-like) ---")
+                for u in category_like[:40]:
+                    print(f"  {u}")
+                if len(category_like) > 40:
+                    print(f"  ... and {len(category_like)-40} more (showing first 40)")
+            break  # stop after the first sitemap that actually responds
+        except Exception:
+            continue
+
+    if not found_any:
+        print("No automatic discovery method worked for this site (no Shopify collections feed,")
+        print("no usable sitemap.xml with recognizable category URLs). You'll need to browse the")
+        print("site yourself - open a few product category pages and copy their URLs by hand -")
+        print("or ask Claude to investigate the site directly.")
+    else:
+        print("\nReview the candidates above, pick the ones relevant to your actual work, and")
+        print("add them to suppliers-config.json yourself. Always confirm with test mode")
+        print("(test_url input) before adding any of them for real.")
+
+
 def run_test_mode(url):
     print(f"=== TEST MODE: {url} ===")
     print("(this does not touch or commit catalog-data.json - it's just a diagnostic report)\n")
@@ -553,6 +623,11 @@ def main():
     test_url = os.environ.get("TEST_URL", "").strip()
     if test_url:
         run_test_mode(test_url)
+        return
+
+    discover_url = os.environ.get("DISCOVER_URL", "").strip()
+    if discover_url:
+        run_discover_mode(discover_url)
         return
 
     try:
