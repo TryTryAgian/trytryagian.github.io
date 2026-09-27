@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-20",
+ "updatedAt": "2026-09-27",
  "suppliers": [
   {
    "supplierName": "ERCO",
@@ -38,7 +38,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 146.32,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/47500020_1.png",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/47500020_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/mpsq-ldvd-16a-wifi-lqvp-gvvis-3-mqvm.html"
     },
     {
@@ -343,7 +343,7 @@
      "sku": "1532005",
      "category": "material",
      "unit": "יח'",
-     "price": 29.3,
+     "price": 29.26,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1532005_2_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/1532005.html"
     },
@@ -789,15 +789,6 @@
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-sgvl-nyaf-gmiw.html"
     },
     {
-     "name": "חוט 1.5 חום/כחול  NYAF גמיש",
-     "sku": "5955164",
-     "category": "material",
-     "unit": "מ'",
-     "price": 1.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955164_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-hvm-khvl-nyaf-gmiw.html"
-    },
-    {
      "name": "חוט 1.5 אפור  NYAF גמיש",
      "sku": "5955163",
      "category": "material",
@@ -1086,6 +1077,15 @@
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/56043.html"
     },
     {
+     "name": "חוט 50 צהוב/ירוק PVC קשיח - חבילה",
+     "sku": "570131",
+     "category": "material",
+     "unit": "יח'",
+     "price": 30.4,
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/7/570131_1.jpg",
+     "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/570131.html"
+    },
+    {
      "name": "מטר כבל (בחבילה) 5X16 N2XY ממ\"ר",
      "sku": "59520701",
      "category": "material",
@@ -1099,7 +1099,7 @@
      "sku": "5969025_MAIN",
      "category": "material",
      "unit": "מ'",
-     "price": 14.3,
+     "price": 7.5,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5969025_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/5969025-main.html"
     },
@@ -1307,7 +1307,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 41.3,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/placeholder/default/placeholder-small.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/24636140000_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/24636140000.html"
     },
     {
@@ -2071,7 +2071,7 @@
      "sku": "3940001_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 62.2,
+     "price": 62.19,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940001_MAIN_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/3940001-main.html"
     },
@@ -2594,7 +2594,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 417.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DVTOOL22_1.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DVTOOL22_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/246dvtool22.html"
     },
     {
@@ -2603,7 +2603,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 385.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DVSOFT16_1.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DVSOFT16_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/246dvsoft16.html"
     },
     {
@@ -2612,7 +2612,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 477.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DVBAG16_1.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DVBAG16_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/246dvbag16.html"
     },
     {
@@ -2621,7 +2621,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 45.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565037.png",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565037_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/mspri-qvmbi-nirvsth.html"
     },
     {
@@ -2630,7 +2630,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 47.2,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/1/1113554_1.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/1/1113554_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/1113554.html"
     },
     {
@@ -2702,7 +2702,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 166.2,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956536820.png",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956536820_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/lvhc-rc-t-rg-6-rg-59-lhibvr-vega-yes.html"
     },
     {
@@ -2756,7 +2756,7 @@
      "category": "material",
      "unit": "מ'",
      "price": 56.3,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565361.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565361_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/lvhc-neli-kbl-mbvdd-glvi-1-5-6mm-r-mqlp-0-75-6mm-r-qtr-vega.html"
     },
     {
@@ -3302,6 +3302,24 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5195074-%D7%9E%D7%91%D7%A8%D7%92%D7%94-%D7%9C%D7%91%D7%A8%D7%92%D7%99-%D7%92%D7%91%D7%A1-FS4000-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
+     "name": "מקדחה 16V נטענת 3 מצבים 60NM  גוף בלבד RD11H-BARE",
+     "sku": "9605444",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 354.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/31495065/show/42db2e499b32aa0b5a6c291481cd2f91.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/9605444-%D7%9E%D7%A7%D7%93%D7%97%D7%94-16V-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-3-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-60NM-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-RD11H-BARE-rotake\n"
+    },
+    {
+     "name": "מקדחה 16V נטענת 3 מצבים 60NM קיט 2AH RD11H-KIT 2AH",
+     "sku": "9605446",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 679.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/31495207/show/43e43796d9844713053bf1e2589bd24f.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/9605446-%D7%9E%D7%A7%D7%93%D7%97%D7%94-16V-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-3-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-60NM-%D7%A7%D7%99%D7%98-2AH-RD11H-KIT-2AH-rotake\n"
+    },
+    {
      "name": "מקדחה קונית EHB32/4.2",
      "sku": "6016337",
      "category": "tool",
@@ -3473,24 +3491,6 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5812368-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-13-%D7%9E-%D7%9E-D13VG-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
-     "name": "מקדחה זוויתית חשמלית  10 מ״מ  D10YB",
-     "sku": "5812369",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 1488.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936333/show/c658ac539fafebbbcf24a6e481c6a15e.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/5812369-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%96%D7%95%D7%95%D7%99%D7%AA%D7%99%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-10-%D7%9E-%D7%9E-D10YB-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
-    },
-    {
-     "name": "סט מקדחה מגנטית - דגם ALFRA 18400 RB35B PICOLLO",
-     "sku": "8813458",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 3990.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20089214/show/b6b1a6a0bc8f0aeaf5139be0d6b49d0f.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/8813458-%D7%A1%D7%98-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%9E%D7%92%D7%A0%D7%98%D7%99%D7%AA-%D7%93%D7%92%D7%9D-ALFRA-18400-RB35B-PICOLLO-ALFRA-%D7%90%D7%9C%D7%A4%D7%A8%D7%94\n"
-    },
-    {
      "name": "פטישון נטען GBH 18V-28DC גוף בלבד",
      "sku": "9168650",
      "category": "tool",
@@ -3525,15 +3525,6 @@
      "price": 769.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20496254/show/e0ee757c39e7067b55579f7b89745812.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8892194-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-18-X-Professional-%D7%91%D7%95%D7%A9-\n"
-    },
-    {
-     "name": "פטישון חשמלי שלושה מצבים MAKITA HR2470 780W",
-     "sku": "HR2470",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 666.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7050256/show/8b896a126b3d98a223b59ca904968daf.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/3936332-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-MAKITA-HR2470-780W-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
      "name": "גוף פטישון נטען 18V GBH 187-LI ONE CHUCK מתאים גם לחיבור רגיל וגם לחיבור Bosch SDS",
@@ -3705,6 +3696,15 @@
      "price": 765.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13250487/show/b9ac4f927c81da503681472ee53d3135.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6329642-KHE-2645-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-3-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-22-%D7%9E-%D7%9E-2-%D7%90%D7%99%D7%96%D7%9E%D7%9C%D7%99%D7%9D-800W-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
+    },
+    {
+     "name": "פטישון חשמלי שלושה מצבים MAKITA HR2470 780W",
+     "sku": "HR2470",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 666.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7050256/show/8b896a126b3d98a223b59ca904968daf.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/3936332-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-MAKITA-HR2470-780W-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
      "name": "פטישון 24מ\"מ  Hikoki DH24PH העוצמתי בקטגוריה 3.2 דג",
@@ -3999,7 +3999,7 @@
      "sku": "3232043",
      "category": "material",
      "unit": "יח'",
-     "price": 76.0,
+     "price": 98.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586863/show/4a3102374e60d9a7f542c1552cbb97aa.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3232043-%D7%9E%D7%A1%D7%99%D7%9B%D7%AA-%D7%A4%D7%A0%D7%99%D7%9D-%D7%A9%D7%A7%D7%95%D7%A4%D7%94-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
