@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-09-27",
+ "updatedAt": "2026-10-04",
  "suppliers": [
   {
    "supplierName": "ERCO",
@@ -343,7 +343,7 @@
      "sku": "1532005",
      "category": "material",
      "unit": "יח'",
-     "price": 29.26,
+     "price": 29.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/5/1532005_2_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/1532005.html"
     },
@@ -1711,7 +1711,7 @@
      "sku": "99565660_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 2.1,
+     "price": 3.5,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565660_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/99565660-main.html"
     },
@@ -1738,7 +1738,7 @@
      "sku": "995653180V_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 7.8,
+     "price": 7.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995653180V_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/995653180v-main.html"
     },
@@ -2071,7 +2071,7 @@
      "sku": "3940001_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 62.19,
+     "price": 62.2,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940001_MAIN_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/3940001-main.html"
     },
@@ -2562,15 +2562,6 @@
      "productUrl": "https://www.erco.co.il/b2c/245dcg408n.html"
     },
     {
-     "name": "גוף אקדח סיליקון (400-600 מ\"מ)נטען 6 מהירויות  °20V 360",
-     "sku": "246DV6602B",
-     "category": "material",
-     "unit": "יח'",
-     "price": 669.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DV6602B_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/246dv6602b.html"
-    },
-    {
      "name": "אקדח סיליקון (300 מ\"ל) נטען 6 מהירויות מסתובב 360° מתח 20V",
      "sku": "246DV6003B",
      "category": "material",
@@ -2578,15 +2569,6 @@
      "price": 589.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DV6003B_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/246dv6003b.html"
-    },
-    {
-     "name": "גוף אקדח סיליקון (400-600 מ\"מ)נטען 6 מהירויות  °20V 360",
-     "sku": "246DV6002B",
-     "category": "material",
-     "unit": "יח'",
-     "price": 669.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DV6002B_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/246dv6002b.html"
     },
     {
      "name": "תיק צד כלי עבודה DEVON STACK PACK \"22",
@@ -2902,6 +2884,24 @@
      "price": 145.8,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956500177.png",
      "productUrl": "https://www.erco.co.il/b2c/argz-klim-22-em-svgrim-nirvsth.html"
+    },
+    {
+     "name": "ארגז כלים \"16 עם סוגרים נירוסטה",
+     "sku": "9956500153",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 82.9,
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956500153_1.png",
+     "productUrl": "https://www.erco.co.il/b2c/argz-klim-16-em-svgrim-nirvsth.html"
+    },
+    {
+     "name": "קטר צד אלקטרוניקה לחוטי נחושת VEGA",
+     "sku": "99566050",
+     "category": "material",
+     "unit": "מ'",
+     "price": 14.1,
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99566050_1.png",
+     "productUrl": "https://www.erco.co.il/b2c/99566050.html"
     }
    ]
   },
@@ -4251,7 +4251,7 @@
      "sku": "6174352",
      "category": "tool",
      "unit": "יח'",
-     "price": 1294.0,
+     "price": null,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12925776/show/525885b8dbf24c86a3891895531e3974.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6174352-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-%D7%99%D7%A8%D7%95%D7%A7-%D7%91%D7%95%D7%A9-BOSCH-GCL-2-50G\n"
     },
@@ -4332,7 +4332,7 @@
      "sku": "103200-004",
      "category": "tool",
      "unit": "יח'",
-     "price": 639.0,
+     "price": 550.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10957605/show/3787eecdbff41b189cae2702c26864d1.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/4913051-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A2%D7%92%D7%9C%D7%99%D7%9D-%D7%99%D7%A8%D7%95%D7%A7-%D7%9E%D7%99%D7%A0%D7%99-3D-%D7%9B%D7%95%D7%9C%D7%9C-%D7%9E%D7%A2%D7%9E%D7%93-%D7%95%D7%A9%D7%9C%D7%98-30-%D7%9E%D7%98%D7%A8-103200-004-Hunter-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94-Hunter-%D7%94%D7%90%D7%A0%D7%98%D7%A8\n"
     },
