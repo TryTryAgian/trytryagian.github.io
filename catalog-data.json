@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-11",
+ "updatedAt": "2026-10-18",
  "suppliers": [
   {
    "supplierName": "ERCO",
@@ -1738,7 +1738,7 @@
      "sku": "995653180V_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 7.8,
+     "price": 7.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995653180V_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/995653180v-main.html"
     },
@@ -2445,15 +2445,6 @@
      "productUrl": "https://www.erco.co.il/b2c/245dtd152z.html"
     },
     {
-     "name": "סט זוגי DeWalt XR 18V ללא פחמים 2 סוללות 5AH",
-     "sku": "245DCK266P2T",
-     "category": "material",
-     "unit": "יח'",
-     "price": 2286.25,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DCK266P2T_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/245dck266p2t.html"
-    },
-    {
      "name": "סט מקדחה ואימפקט 18V עם 2 סוללות 5Ah דיוולט",
      "sku": "245DCK266P2",
      "category": "tool",
@@ -2470,15 +2461,6 @@
      "price": 579.96,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DCF887N_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/245dcf887n.html"
-    },
-    {
-     "name": "גוף מפתח אימפקט 1000NM 1/2 מקיטה 18V",
-     "sku": "245DTW1002Z",
-     "category": "material",
-     "unit": "יח'",
-     "price": 1369.0,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DTW1002Z_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/245dtw1002z.html"
     },
     {
      "name": "מברגת אימפקט קומפקטית מקיטה 155Nm DTD156+תיק",
@@ -2499,15 +2481,6 @@
      "productUrl": "https://www.erco.co.il/b2c/245dlx2507tj.html"
     },
     {
-     "name": "גוף מברגת פוטר מקיטה 18V 484",
-     "sku": "245DHP484Z",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 438.5,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DHP484Z_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/245dhp484z.html"
-    },
-    {
      "name": "סט כלים דיוולט 133+796 שתי סוללות 5A ומטען בארגז",
      "sku": "245DCK2071P2T",
      "category": "tool",
@@ -2515,24 +2488,6 @@
      "price": 2286.25,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DCK2071P2T_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/245dck2071p2t.html"
-    },
-    {
-     "name": "גוף מברגת פוטר דיוולט 18V 996",
-     "sku": "245DCD996N",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 525.4,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DCD996N_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/245dcd996n.html"
-    },
-    {
-     "name": "סט מברגות נטענות 12V מקיטה",
-     "sku": "245Clx228aj",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 718.1,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245Clx228aj_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/245clx228aj.html"
     },
     {
      "name": "סט 3 מתאמי אימפקט מקצועיים  מבית מילווקי",
@@ -2553,20 +2508,11 @@
      "productUrl": "https://www.erco.co.il/b2c/246dv2823.html"
     },
     {
-     "name": "גוף משחזת זווית 5\" דיוולט 18V 408",
-     "sku": "245dcg408n",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 696.6,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245dcg408n_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/245dcg408n.html"
-    },
-    {
      "name": "גוף אקדח מסמרים נטען לבטון DEVON 20V",
      "sku": "246DV6602B",
      "category": "material",
      "unit": "יח'",
-     "price": 669.0,
+     "price": 1366.26,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/246DV6602B_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/246dv6602b.html"
     },
@@ -2666,7 +2612,7 @@
      "category": "material",
      "unit": "מ'",
      "price": 148.8,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99598620_2.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99598620_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/99598620.html"
     },
     {
@@ -2859,33 +2805,6 @@
      "productUrl": "https://www.erco.co.il/b2c/lvhc-svpivt-mbvddvt-vla-mbvddvt-pliir-0-5-16-mm-r-vega.html"
     },
     {
-     "name": "אירגונית פלסטיק 16 תאים נשלפים",
-     "sku": "9956503535",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 82.5,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956503535_1.png",
-     "productUrl": "https://www.erco.co.il/b2c/airgvnit-plstiq-16-taim-nwlpim.html"
-    },
-    {
-     "name": "ארגונית פלסטיק 24 תאים נשלפים",
-     "sku": "9956503530",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 88.3,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956503530_1.jpg",
-     "productUrl": "https://www.erco.co.il/b2c/argvnit-plstiq-24-taim-nwlpim.html"
-    },
-    {
-     "name": "סט אירגוניות פלסטיק 4 ארגוניות עם 16 תאים כ\"א",
-     "sku": "99565035021",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 204.9,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565035021_1.png",
-     "productUrl": "https://www.erco.co.il/b2c/st-airgvnivt-plstiq-4-argvnivt-em-16-taim-k-a.html"
-    },
-    {
      "name": "מקלף RG-6 RG59-RG58",
      "sku": "9411109",
      "category": "material",
@@ -2895,13 +2814,40 @@
      "productUrl": "https://www.erco.co.il/b2c/work-tools/hand-tools/9411109.html"
     },
     {
-     "name": "ארגז כלים \"22 עם סוגרים נירוסטה",
-     "sku": "9956500177",
-     "category": "tool",
+     "name": "קטר צד אלקטרוניקה לחוטי נחושת VEGA",
+     "sku": "99566050",
+     "category": "material",
+     "unit": "מ'",
+     "price": 14.1,
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99566050_1.png",
+     "productUrl": "https://www.erco.co.il/b2c/99566050.html"
+    },
+    {
+     "name": "חותך כבל נחושת עד 32 מ\"מ/5-250 ממ\"ר VEGA",
+     "sku": "99565369",
+     "category": "material",
+     "unit": "מ'",
+     "price": 407.3,
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/99565369_1.png",
+     "productUrl": "https://www.erco.co.il/b2c/99565369.html"
+    },
+    {
+     "name": "מקלף חוטים אוטומטי 1-3.2 ממ\"ר VEGA",
+     "sku": "1115018",
+     "category": "material",
+     "unit": "מ'",
+     "price": 130.8,
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/1/1115018_2_1.jpg",
+     "productUrl": "https://www.erco.co.il/b2c/1115018.html"
+    },
+    {
+     "name": "מוריד בידוד קטר 0.6-2.6 ממ\"ר VEGA",
+     "sku": "1113438",
+     "category": "material",
      "unit": "יח'",
-     "price": 145.8,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956500177.png",
-     "productUrl": "https://www.erco.co.il/b2c/argz-klim-22-em-svgrim-nirvsth.html"
+     "price": 80.5,
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/1/1/1113438_2_1.jpg",
+     "productUrl": "https://www.erco.co.il/b2c/1113438.html"
     }
    ]
   },
@@ -3842,6 +3788,15 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233292-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%97%D7%A9%D7%9E%D7%9C%D7%99-MAKITA-HR2630TX12-800W-%D7%A1%D7%98-%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99%D7%9D-%D7%99%D7%95%D7%A7%D7%A8%D7%AA%D7%99-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
+     "name": "פטישון GBH 18V-26F 2X5.5P.C + שואב אבק עם פוטר מתחלף במזוודה 11910.00G",
+     "sku": "7786764",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 3480.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16268638/show/5dde82547d5a70a6ff8a14a95284eec0.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/7786764-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-GBH-18V-26F-2X5-5P-C-%D7%A9%D7%95%D7%90%D7%91-%D7%90%D7%91%D7%A7-%D7%A2%D7%9D-%D7%A4%D7%95%D7%98%D7%A8-%D7%9E%D7%AA%D7%97%D7%9C%D7%A3-%D7%91%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%94-11910-00G-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
      "name": "פטישון קומפלט 28 מ\"מ ללא פחמים METABO KH 18V",
      "sku": "8803085",
      "category": "tool",
@@ -3849,15 +3804,6 @@
      "price": 3200.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20028234/show/ec2ecad587bea8e23776a4f79ddd77f0.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8803085--%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A7%D7%95%D7%9E%D7%A4%D7%9C%D7%98-28-%D7%9E-%D7%9E-%D7%9C%D7%9C%D7%90-%D7%A4%D7%97%D7%9E%D7%99%D7%9D-METABO-KH-18V-%D7%9E%D7%98%D7%90%D7%91%D7%95-Metabo\n"
-    },
-    {
-     "name": "פטישון נטען + 2 סוללות BOSCH GBH 36-VF 4Ah",
-     "sku": "36-VF",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 4213.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5588991/show/9752c5064af40da8f6d5a99340593e06.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/3233294-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-BOSCH-GBH-36-VF-4Ah-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "גיפט קארד | Gift Card",
@@ -4288,8 +4234,17 @@
      "category": "material",
      "unit": "יח'",
      "price": 1197.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6306761/show/5fdc8c9bea83ffee785412778489207c.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6306759/show/161de7812a9bec08ec27d2af7f22069b.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3587580-%D7%92%D7%95%D7%A3-%D7%A1%D7%95%D7%A8%D7%A7-%D7%A7%D7%99%D7%A8%D7%95%D7%AA-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-D-tect-120-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
+     "name": "מברגת אימפקט  נטען 18V BOSCH GDX 18V-285 עם 2 סוללות 4Ah",
+     "sku": "9661719",
+     "category": "tool",
+     "unit": "יח'",
+     "price": null,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32034013/show/5522609f3f9c33f87c1164172f0e101d.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/9661719-%D7%9E%D7%91%D7%A8%D7%92%D7%AA-%D7%90%D7%99%D7%9E%D7%A4%D7%A7%D7%98-%D7%A0%D7%98%D7%A2%D7%9F-18V-BOSCH-GDX-18V-285-%D7%A2%D7%9D-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-4Ah-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "גלאי מתח טסטר ללא מגע Bosch GVD 1000-17 Professional",
@@ -4337,13 +4292,13 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5822302-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Fluke-179-%D7%A0%D7%A8%D7%AA%D7%99%D7%A7-c35-%D7%9E%D7%97%D7%96%D7%99%D7%A7-%D7%9E%D7%92%D7%A0%D7%98%D7%99-TPACK-%D7%91%D7%9E%D7%AA%D7%A0%D7%94-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "פלס לייזר שלושה מעגלים ירוק מיני 3D | כולל מעמד ושלט 30 מטר 103200-004 Hunter",
-     "sku": "103200-004",
+     "name": "מברגה / מקדחה רוטטת נטענת בוש18V GSB 185 LI במזוודה + שתי סוללות 2AH ומטען תוצרת BOSCH",
+     "sku": "6137755",
      "category": "tool",
      "unit": "יח'",
-     "price": 550.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/31858515/show/91ce0299879e594b9f0004c9290348b4.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/4913051-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A2%D7%92%D7%9C%D7%99%D7%9D-%D7%99%D7%A8%D7%95%D7%A7-%D7%9E%D7%99%D7%A0%D7%99-3D-%D7%9B%D7%95%D7%9C%D7%9C-%D7%9E%D7%A2%D7%9E%D7%93-%D7%95%D7%A9%D7%9C%D7%98-30-%D7%9E%D7%98%D7%A8-103200-004-Hunter-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94-Hunter-%D7%94%D7%90%D7%A0%D7%98%D7%A8\n"
+     "price": 749.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13547210/show/675388ca54a9404bf3c601a22596282e.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/6137755-%D7%9E%D7%91%D7%A8%D7%92%D7%94-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-%D7%91%D7%95%D7%A918V-GSB-185-LI-%D7%91%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%94-%D7%A9%D7%AA%D7%99-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-2AH-%D7%95%D7%9E%D7%98%D7%A2%D7%9F-%D7%AA%D7%95%D7%A6%D7%A8%D7%AA-BOSCH\n"
     },
     {
      "name": "פלס לייזר צלב ירוק בוש GLL 80-33G – 3 קרניים (360°) 1065.500  Bosch",
@@ -4362,6 +4317,15 @@
      "price": 1490.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11958124/show/ee08b38f66c0c9e66b8412ddcb0cf23e.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5822404-Fluke-115-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-True-RMS-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
+    },
+    {
+     "name": "מד טווח לייזר STABILA LD320 - מד לייזר קומפקטי ומדויק לטווח של עד 60 מטר",
+     "sku": "8022035",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 499.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/31858590/show/c842254e4071584646e1be92d930a5d1.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/8022035-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-STABILA-LD320-%D7%9E%D7%93-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A7%D7%95%D7%9E%D7%A4%D7%A7%D7%98%D7%99-%D7%95%D7%9E%D7%93%D7%95%D7%99%D7%A7-%D7%9C%D7%98%D7%95%D7%95%D7%97-%D7%A9%D7%9C-%D7%A2%D7%93-60-%D7%9E%D7%98%D7%A8-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
     },
     {
      "name": "רב מודד דיגיטלי - Fluke 179 כולל זוג פרובים מקוריים",
@@ -4398,6 +4362,15 @@
      "price": 579.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10910998/show/424c5098e308ce95e410483b8377e32d.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/3760795-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%A6%D7%9C%D7%91-50-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-kapro-872G-prolaser-%D7%9B%D7%95%D7%9C%D7%9C-%D7%97%D7%A6%D7%95%D7%91%D7%94-Kapro-%D7%A7%D7%A4%D7%A8%D7%95\n"
+    },
+    {
+     "name": "פלס לייזר שלושה מעגלים ירוק מיני 3D | כולל מעמד ושלט 30 מטר 103200-004 Hunter",
+     "sku": "103200-004",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 550.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/31858515/show/91ce0299879e594b9f0004c9290348b4.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/4913051-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%9E%D7%A2%D7%92%D7%9C%D7%99%D7%9D-%D7%99%D7%A8%D7%95%D7%A7-%D7%9E%D7%99%D7%A0%D7%99-3D-%D7%9B%D7%95%D7%9C%D7%9C-%D7%9E%D7%A2%D7%9E%D7%93-%D7%95%D7%A9%D7%9C%D7%98-30-%D7%9E%D7%98%D7%A8-103200-004-Hunter-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94-Hunter-%D7%94%D7%90%D7%A0%D7%98%D7%A8\n"
     },
     {
      "name": "סורק/גלאי מקצועי לאיתור עץ, מתכת וחוטי חשמל - Multi Finder Pro 080.966A",
@@ -4452,15 +4425,6 @@
      "price": 1169.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11821746/show/aeb7ea283a8f3d2e55d06daf8a442e8c.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3233092-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-30-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-Stabila-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-LAX-50-G-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
-    },
-    {
-     "name": "מד טווח לייזר STABILA LD320 - מד לייזר קומפקטי ומדויק לטווח של עד 60 מטר",
-     "sku": "8022035",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 499.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/31858590/show/c842254e4071584646e1be92d930a5d1.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/8022035-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-STABILA-LD320-%D7%9E%D7%93-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A7%D7%95%D7%9E%D7%A4%D7%A7%D7%98%D7%99-%D7%95%D7%9E%D7%93%D7%95%D7%99%D7%A7-%D7%9C%D7%98%D7%95%D7%95%D7%97-%D7%A9%D7%9C-%D7%A2%D7%93-60-%D7%9E%D7%98%D7%A8-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
     },
     {
      "name": "Fluke T150 - טסטר דו קוטבי",
@@ -4542,24 +4506,6 @@
      "price": 609.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7851931/show/28415f9951b7694f5d17ab8d02e5a5bf.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/4257796-%D7%A7%D7%95%D7%9C%D7%98-%D7%A7%D7%A8%D7%9F-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7%D7%94-DEWALT-DE0892G-DeWalt-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98\n"
-    },
-    {
-     "name": "קיט אביזרי תליה TPAK למכשירי FLUKE",
-     "sku": "7884293",
-     "category": "material",
-     "unit": "יח'",
-     "price": 380.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16455427/show/dd2f5317d08cbf06560b039aada30b70.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/7884293-%D7%A7%D7%99%D7%98-%D7%90%D7%91%D7%99%D7%96%D7%A8%D7%99-%D7%AA%D7%9C%D7%99%D7%94-TPAK-%D7%9C%D7%9E%D7%9B%D7%A9%D7%99%D7%A8%D7%99-FLUKE-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
-    },
-    {
-     "name": "מד טווח לייזר דיגיטלי 30 מטר V12 LDM 30",
-     "sku": "9217286",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 375.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/23321411/show/5ab05aebc0d8cb2df7b2aefa3164e2fb.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/9217286-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-30-%D7%9E%D7%98%D7%A8-V12-LDM-30-%D7%9E%D7%99%D7%9C%D7%95%D7%95%D7%A7%D7%99\n"
     }
    ]
   },
@@ -6467,24 +6413,6 @@
      "productUrl": "https://yashir-group.biz/products/חמם-מהיר-לדוד"
     },
     {
-     "name": "קטלן יתושים 2X20W",
-     "sku": "snom-ik206-2x20W",
-     "category": "material",
-     "unit": "יח'",
-     "price": 164.0,
-     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/02_omega_500x500_212c5f6d-492b-44a6-80a7-3ceb6d3bd71d.png?v=1791371788",
-     "productUrl": "https://yashir-group.biz/products/קטלן-יתושים-2x20w"
-    },
-    {
-     "name": "קטלן יתושים 2X6W",
-     "sku": "snom-ik206-2x6W",
-     "category": "material",
-     "unit": "יח'",
-     "price": 0.0,
-     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/03_omega_500x500_e14cb436-4d02-4c07-bfd9-0219dd687cfd.png?v=1791371812",
-     "productUrl": "https://yashir-group.biz/products/קטלן-יתושים-2x6w"
-    },
-    {
      "name": "חבקי ניילון (100 יח' בחבילה)",
      "sku": "pls-lh100",
      "category": "material",
@@ -6872,6 +6800,15 @@
      "productUrl": "https://yashir-group.biz/products/מדפסת-להפקת-תוויות-ידנית-p-touch-h-110"
     },
     {
+     "name": "מחבט חשמלי לקטילת יתושים OMEGA",
+     "sku": "snom-iksb1-bk",
+     "category": "material",
+     "unit": "יח'",
+     "price": 25.0,
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/om-iksb1-bk.jpg?v=1730154199",
+     "productUrl": "https://yashir-group.biz/products/קטלן-יתושים-מחבט"
+    },
+    {
      "name": "מיחם עם גוף חימום נסתר",
      "sku": "yl80035",
      "category": "material",
@@ -6917,7 +6854,7 @@
      "productUrl": "https://yashir-group.biz/products/מפזר-חום-לאמבטיה-2000w"
     },
     {
-     "name": "מפזר חום לאמבטייה 2600W לבן",
+     "name": "מפזר חום לאמבטיה 2600W אלקטרו חנן",
      "sku": "el21",
      "category": "material",
      "unit": "יח'",
@@ -7457,12 +7394,12 @@
      "productUrl": "https://yashir-group.biz/products/קומקום-חשמלי-גוף-חימום-נסתר"
     },
     {
-     "name": "קטלן יתושים 2X8W",
+     "name": "קטלני יתושים חשמליים OMEGA",
      "sku": "snom-ik206-2x8W",
      "category": "material",
      "unit": "יח'",
      "price": 131.0,
-     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/05_omega_2x8w_500x500_5f637b7c-79bb-4709-8831-03ac2daa9ebe.png?v=1791371887",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/Omega_Electric_Bug_Zapper_Product_Shot_1.png?v=1791713786",
      "productUrl": "https://yashir-group.biz/products/קטלן-יתושים-2x8w"
     },
     {
@@ -7471,26 +7408,17 @@
      "category": "material",
      "unit": "יח'",
      "price": 309.0,
-     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/OMEGA_3X20W_Electric_Bug_Zapper.png?v=1791372321",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/OMEGA_Electric_Bug_Zapper_Product_Shot_2.png?v=1791715767",
      "productUrl": "https://yashir-group.biz/products/קטלן-יתושים-3x20w"
     },
     {
-     "name": "קטלן יתושים לד אולטרה סגול",
+     "name": "קטלן יתושים LED אולטרה סגול OMEGA",
      "sku": "snom-ik291-50led",
      "category": "material",
      "unit": "יח'",
      "price": 182.0,
      "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/01_omega_ultra_500x500_b087864f-e50a-4f43-a5b9-555959e4886c.png?v=1791371911",
      "productUrl": "https://yashir-group.biz/products/קטלן-יתושים-לד-אולטרה-סגול"
-    },
-    {
-     "name": "קטלן יתושים - מחבט",
-     "sku": "snom-iksb1-bk",
-     "category": "material",
-     "unit": "יח'",
-     "price": 25.0,
-     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/om-iksb1-bk.jpg?v=1730154199",
-     "productUrl": "https://yashir-group.biz/products/קטלן-יתושים-מחבט"
     },
     {
      "name": "שלט PVC קשיח הארקה לא לנתק",
@@ -7715,11 +7643,20 @@
      "productUrl": "https://www.etzhaoren.co.il  /items/9594350-%D7%91%D7%93%D7%99%D7%A7%D7%94\n"
     },
     {
+     "name": "להזמנה",
+     "sku": "7487337",
+     "category": "material",
+     "unit": "יח'",
+     "price": null,
+     "imageUrl": "",
+     "productUrl": "https://www.etzhaoren.co.il/items/7487337-MIG-MMA-TIG-200A"
+    },
+    {
      "name": "מברגת אימפקט נטענת מקיטה דגם - XDT11/DTD152",
      "sku": "5037061",
      "category": "tool",
      "unit": "יח'",
-     "price": 260.0,
+     "price": 179.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10626640/show/3915947dcd2038349b3cfaf55ffb31a5.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5037061-imp11\n"
     },
@@ -7737,7 +7674,7 @@
      "sku": "3118373",
      "category": "tool",
      "unit": "יח'",
-     "price": 380.0,
+     "price": 329.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15804571/show/3592d917508a365d2636a429c34962c0.png",
      "productUrl": "https://www.etzhaoren.co.il  /items/3118373-DCF887\n"
     },
@@ -7746,7 +7683,7 @@
      "sku": "8518957",
      "category": "tool",
      "unit": "יח'",
-     "price": 550.0,
+     "price": 320.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18422612/show/9c2a2c67cd000dad9e6201bfd6880ce5.png",
      "productUrl": "https://www.etzhaoren.co.il  /items/8518957-%D7%9E%D7%A9%D7%97%D7%96%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-900W-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98-%D7%93%D7%92%D7%9D-DWE4157\n"
     },
@@ -7764,7 +7701,7 @@
      "sku": "5142348",
      "category": "tool",
      "unit": "יח'",
-     "price": 420.0,
+     "price": 300.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10074581/show/1459aebca795a91b73610a458abd1b62.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5142348-796\n"
     },
@@ -7773,7 +7710,7 @@
      "sku": "5469541",
      "category": "material",
      "unit": "יח'",
-     "price": 500.0,
+     "price": 380.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10874668/show/899f03ef40c32b7b10bafc95e5d3321e.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5469541-MAK99\n"
     },
@@ -7782,7 +7719,7 @@
      "sku": "3119483",
      "category": "tool",
      "unit": "יח'",
-     "price": 750.0,
+     "price": 520.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5347957/show/b5b4db06a4b544d8715dfd659d2a5453.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/3119483-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98-dch133\n"
     },
@@ -7791,7 +7728,7 @@
      "sku": "6092681",
      "category": "tool",
      "unit": "יח'",
-     "price": 250.0,
+     "price": 159.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/12752333/show/ca962edc0d4cf87fc59b67ba0fc90f17.png",
      "productUrl": "https://www.etzhaoren.co.il  /items/6092681-IMPMAK\n"
     },
@@ -7800,7 +7737,7 @@
      "sku": "5680794",
      "category": "tool",
      "unit": "יח'",
-     "price": 450.0,
+     "price": 330.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510474/show/1bb9ffc29e7fc352005cb56f33153a86.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680794-%D7%9E%D7%A9%D7%97%D7%96%D7%AA-%D7%96%D7%95%D7%95%D7%99%D7%AA-%D7%9E%D7%A7%D7%99%D7%98%D7%94-18v-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-Makita-XAG01-DGA452Z\n"
     },
@@ -7809,7 +7746,7 @@
      "sku": "5680795",
      "category": "tool",
      "unit": "יח'",
-     "price": 599.0,
+     "price": 399.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510480/show/259e8efd7f28d117e82d8b9a38faa8b6.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680795-Patishon7\n"
     },
@@ -7818,7 +7755,7 @@
      "sku": "5680797",
      "category": "tool",
      "unit": "יח'",
-     "price": 850.0,
+     "price": 680.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510482/show/edd2f913101902c60f7136cc608c568a.png",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680797-Patishon8\n"
     },
