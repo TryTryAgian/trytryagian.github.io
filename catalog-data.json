@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-25",
+ "updatedAt": "2026-11-01",
  "suppliers": [
   {
    "supplierName": "ERCO",
@@ -37,7 +37,7 @@
      "sku": "47500020",
      "category": "material",
      "unit": "יח'",
-     "price": 146.32,
+     "price": 146.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/47500020_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/mpsq-ldvd-16a-wifi-lqvp-gvvis-3-mqvm.html"
     },
@@ -658,7 +658,7 @@
      "sku": "6700252_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 138.3,
+     "price": 94.5,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/7/6700252_MAIN_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/6700252-main.html"
     },
@@ -667,7 +667,7 @@
      "sku": "6700056_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 27.2,
+     "price": 18.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/7/6700056_MAIN_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/6700056-main.html"
     },
@@ -1225,7 +1225,7 @@
      "sku": "995651244",
      "category": "tool",
      "unit": "יח'",
-     "price": 180.3,
+     "price": 180.27,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995651244_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/sales/sales-new-in-erco/995651244.html"
     },
@@ -1302,7 +1302,7 @@
      "productUrl": "https://www.erco.co.il/b2c/pls-tvrpdv-mgnti-225-m-m-9-msgrt-alvminivm-workpro.html"
     },
     {
-     "name": "טסטר חד פאזי מקצועי לבדיקת מתח במערכות חשמל",
+     "name": "טסטר חד פאזי מקצועי FELO",
      "sku": "24636140000",
      "category": "material",
      "unit": "יח'",
@@ -1315,7 +1315,7 @@
      "sku": "24640623519",
      "category": "material",
      "unit": "יח'",
-     "price": 29.26,
+     "price": 29.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/24640623519_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/24640623519.html"
     },
@@ -1324,7 +1324,7 @@
      "sku": "24640623012",
      "category": "material",
      "unit": "יח'",
-     "price": 21.95,
+     "price": 22.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/24640623012_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/24640623012.html"
     },
@@ -1495,7 +1495,7 @@
      "sku": "248UT659D",
      "category": "tool",
      "unit": "יח'",
-     "price": 169.0,
+     "price": 182.9,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/248UT659D_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/248ut659d.html"
     },
@@ -2107,7 +2107,7 @@
      "sku": "3940065C_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 237.8,
+     "price": 93.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940065C_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/3940065c-main.html"
     },
@@ -2440,7 +2440,7 @@
      "sku": "245DTD152Z",
      "category": "tool",
      "unit": "יח'",
-     "price": 299.0,
+     "price": 347.5,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DTD152Z_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/245dtd152z.html"
     },
@@ -2463,7 +2463,7 @@
      "productUrl": "https://www.erco.co.il/b2c/245dcf887n.html"
     },
     {
-     "name": "מברגת אימפקט קומפקטית מקיטה 155Nm DTD156+תיק",
+     "name": "גוף מברגת אימפקט קומפקטית מקיטה 155Nm DTD156+תיק",
      "sku": "245DTD156BAG",
      "category": "tool",
      "unit": "יח'",
@@ -3158,15 +3158,6 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3587635-%D7%A1%D7%98%D7%A0%D7%93-%D7%9C%D7%9E%D7%A7%D7%93%D7%97%D7%94-wolfcraft-3406\n"
     },
     {
-     "name": "מקדחה זוויתית נטענת 18V גוף בלבד GDR 18V-127",
-     "sku": "8871790",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20358250/show/1ed99fa70d7008dbb3cc708fd4743fba.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/8871790-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%96%D7%95%D7%95%D7%99%D7%AA%D7%99%D7%AA-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-18V-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-GDR-18V-127-%D7%91%D7%95%D7%A9-\n"
-    },
-    {
      "name": "גוף מקדחת זוית לעץ לעומס גבוה  Milwaukee M18CRAD2-0 18V FUEL",
      "sku": "8357888",
      "category": "tool",
@@ -3446,6 +3437,15 @@
      "productUrl": "https://www.dror-tools.co.il  /items/5812366-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-13-%D7%9E-%D7%9E-VTP18-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
     },
     {
+     "name": "מקדחה חשמלית 13 מ״מ D13VG",
+     "sku": "5812368",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 1505.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11936332/show/4de62f404bfacf54a8ed2816f2c12da1.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/5812368-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-13-%D7%9E-%D7%9E-D13VG-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
+    },
+    {
      "name": "פטישון חשמלי 28 מ\"מ BOSCH GBH 2-28F 880W",
      "sku": "2-28F",
      "category": "tool",
@@ -3482,13 +3482,13 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7448592-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-18-%D7%9E-%D7%9E-18V-%D7%A1%D7%95%D7%9C%D7%9C%D7%94-2X2-5Ah-%D7%9E%D7%98%D7%A2%D7%9F-3A-%D7%AA%D7%99%D7%A7-%D7%91%D7%93-%D7%99%D7%99%D7%A2%D7%95%D7%93%D7%99-100112-007-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94-Hunter-%D7%94%D7%90%D7%A0%D7%98%D7%A8\n"
     },
     {
-     "name": "גוף פטישון נטען בוש GBH 18v-22 BOSCH",
+     "name": "גוף פטישון נטען בוש Bosch GBH 185-LI",
      "sku": "6545176",
      "category": "tool",
      "unit": "יח'",
      "price": 664.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294365/show/5abbb01104973e7955df40ad5caabe35.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/6545176-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-GBH-18v-22-BOSCH\n"
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20496200/show/2da96084efb86e2f40cae0b691c59c31.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/6545176-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-Bosch-GBH-185-LI\n"
     },
     {
      "name": "גוף פטישון נטען 36V Multi-Volt מבית HiKOKI DH3628DA ביצועים מקצועיים בבטון",
@@ -3498,15 +3498,6 @@
      "price": 1890.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19285476/show/6f40493bae4fd49985ffe957df94a66b.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/8665660-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-36V-Multi-Volt-%D7%9E%D7%91%D7%99%D7%AA-HiKOKI-DH3628DA-%D7%91%D7%99%D7%A6%D7%95%D7%A2%D7%99%D7%9D-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99%D7%99%D7%9D-%D7%91%D7%91%D7%98%D7%95%D7%9F-%D7%94%D7%99%D7%A7%D7%95%D7%A7%D7%99-%D7%94%D7%99%D7%98%D7%90%D7%A6-%D7%99\n"
-    },
-    {
-     "name": "גוף פטישון נטען BOSCH GBH 18V-22 X Professional",
-     "sku": "8263802",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 858.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294375/show/101439e8ee9efb6a8e2c954511575163.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/8263802-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-22-X-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "סט פטישון נטען 36V Multi-Volt מבית HiKOKI DH3628DA + 3 סוללות 5A + מטען | ביצועים מקצועיים בבטון",
@@ -3545,13 +3536,13 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7537665-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-3-%D7%9E%D7%A6%D7%91%D7%99%D7%9D-%D7%A0%D7%98%D7%A2%D7%9F-28-%D7%9E-%D7%9E-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-5ah-40V-%D7%95%D7%9E%D7%98%D7%A2%D7%9F-3-0J-40V-%D7%9E%D7%A7%D7%99%D7%98%D7%94-HR007GZ-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
     },
     {
-     "name": "פטישון נטען בראשלס + מטען + 2 סוללות  BOSCH GBH 180-LI EC  4Ah",
-     "sku": "180-LI",
+     "name": "גוף פטישון נטען BOSCH GBH 18V-22 X Professional",
+     "sku": "8263802",
      "category": "tool",
      "unit": "יח'",
-     "price": 1321.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/8423160/show/70508ba4dd5c2c76c4a303dd19ac1376.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/4483470-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-%D7%9E%D7%98%D7%A2%D7%9F-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-BOSCH-GBH-180-LI-EC-4Ah-%D7%91%D7%95%D7%A9-\n"
+     "price": 858.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294375/show/101439e8ee9efb6a8e2c954511575163.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/8263802-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-22-X-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "פטישון חשמלי 26 מ\"מ HR2630X7 800W כולל פוטר אוטמטי מקיטה Makita",
@@ -3667,7 +3658,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 3265.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16268638/show/5dde82547d5a70a6ff8a14a95284eec0.jpg",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303091/show/e2b31389958d4e8ba99dd3195f2bc0a6.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/7786764-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-GBH-18V-26F-2X5-5P-C-%D7%A9%D7%95%D7%90%D7%91-%D7%90%D7%91%D7%A7-%D7%A2%D7%9D-%D7%A4%D7%95%D7%98%D7%A8-%D7%9E%D7%AA%D7%97%D7%9C%D7%A3-%D7%91%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%94-11910-00G-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3676,7 +3667,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 1257.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20496169/show/eaa81f7fa649267827284042807198df.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32302580/show/25e9f3274f6030fc9688e8a651f232ae.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8892178-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%A2%D7%9D-%D7%9E%D7%A0%D7%95%D7%A2-%D7%9C%D7%9C%D7%90-%D7%A4%D7%97%D7%9E%D7%99%D7%9D-GBH-18V-18-%D7%A2%D7%9D-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-2AH-%D7%95%D7%9E%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3685,17 +3676,17 @@
      "category": "tool",
      "unit": "יח'",
      "price": 696.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20496254/show/e0ee757c39e7067b55579f7b89745812.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32300367/show/a2af2db177a8d18f0aa343ba0126bf7e.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8892194-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-18-X-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
-     "name": "פטישון נטען EC GBH 185- LI 2X4AH",
+     "name": "סט פטישון נטען EC GBH 185- LI 2X4AH ++ 2 סוללות 4A + מטען",
      "sku": "8246057",
      "category": "tool",
      "unit": "יח'",
      "price": 1493.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/17243629/show/48636bf80c9b927b66690c3142c32eaa.png",
-     "productUrl": "https://www.dror-tools.co.il  /items/8246057-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-EC-GBH-185-LI-2X4AH-%D7%91%D7%95%D7%A9-\n"
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32302592/show/38cfa3e30b575901c3eac5adf502a4ea.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/8246057-%D7%A1%D7%98-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-EC-GBH-185-LI-2X4AH-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-4A-%D7%9E%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "פטישון נטען GBH 187-LI  גוף בלבד",
@@ -3703,8 +3694,17 @@
      "category": "tool",
      "unit": "יח'",
      "price": 994.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18409664/show/93b053151b4d746be9bcbf5f945bdc76.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32300376/show/50b4e0d7f2be2d200313f9ba1383e79c.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8246063-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-GBH-187-LI-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
+     "name": "פטישון נטען בראשלס + מטען + 2 סוללות  BOSCH GBH 180-LI EC  4Ah",
+     "sku": "180-LI",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 1321.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32302581/show/ae623e398fc926ba46e448cd483292b2.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/4483470-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%91%D7%A8%D7%90%D7%A9%D7%9C%D7%A1-%D7%9E%D7%98%D7%A2%D7%9F-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-BOSCH-GBH-180-LI-EC-4Ah-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "פטישון נטען GBH 36VF-LI 2X6AH ב-LBOXX כולל שתי סוללות ליתיום 6Ah ומטען",
@@ -3712,7 +3712,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 3428.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16265077/show/4af5532834e804469378e5ffc0bed440.jpg",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32302611/show/3e3c130f17fa66384514111f8321c924.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/7785332-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-GBH-36VF-LI-2X6AH-%D7%91-LBOXX-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A9%D7%AA%D7%99-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-%D7%9C%D7%99%D7%AA%D7%99%D7%95%D7%9D-6Ah-%D7%95%D7%9E%D7%98%D7%A2%D7%9F-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3721,7 +3721,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 1040.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13756822/show/beb17250440f7f59bb75d29e54251e3e.jpg",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32300395/show/edf88218f45afb2c318e9540866e9401.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/6103698-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-18V-GBH-187-LI-ONE-CHUCK-%D7%9E%D7%AA%D7%90%D7%99%D7%9D-%D7%92%D7%9D-%D7%9C%D7%97%D7%99%D7%91%D7%95%D7%A8-%D7%A8%D7%92%D7%99%D7%9C-%D7%95%D7%92%D7%9D-%D7%9C%D7%97%D7%99%D7%91%D7%95%D7%A8-Bosch-SDS-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3730,7 +3730,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 623.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13141188/show/7bcb2a312de07ef1455da32381c8b818.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303123/show/294b4f185e54420cfdfceb8585fbedfa.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/6273010-%D7%90%D7%91%D7%99%D7%96%D7%A8-%D7%A9%D7%90%D7%99%D7%91%D7%AA-%D7%90%D7%91%D7%A7-%D7%9C%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-18V-16-GDE-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3739,7 +3739,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 1493.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13139127/show/342d3af2a6c267b323bc65476b97066b.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32305344/show/34e791fe2b88d2c853e801b2140d2d08.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/6272249-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-GBH-18V-26F-18V-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3748,7 +3748,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 629.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20496121/show/a0d8536c6f7182b90df1e63316a82102.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32300335/show/540420214b551b4a6ff6d3e93493ae9d.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8892157-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%A2%D7%9D-%D7%9E%D7%A0%D7%95%D7%A2-%D7%9C%D7%9C%D7%90-%D7%A4%D7%97%D7%9E%D7%99%D7%9D-Bosch-GBH-18V-18-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3786,6 +3786,15 @@
      "price": 705.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5589419/show/7e810f545dee664ac045de3b58e87a9f.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3233540-%D7%A9%D7%95%D7%90%D7%91-%D7%90%D7%91%D7%A7-DX01-%D7%9E%D7%AA%D7%97%D7%91%D7%A8%D7%AA-%D7%9C%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-DHR232-DHR242-Makita-%D7%9E%D7%A7%D7%99%D7%98%D7%94\n"
+    },
+    {
+     "name": "פטישון נטען קומפקטי  + 2 סוללות BOSCH GBH 36V LI COMPACT 2Ah",
+     "sku": "COMPACT",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 3368.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5588978/show/36d7ec606c140849211ac2f222699433.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/3233285-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%A7%D7%95%D7%9E%D7%A4%D7%A7%D7%98%D7%99-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-BOSCH-GBH-36V-LI-COMPACT-2Ah-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "גיפט קארד | Gift Card",
@@ -4157,13 +4166,13 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6066563-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-LAX600G-12V-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
     },
     {
-     "name": "מברגת אימפקט  נטען 18V BOSCH GDX 18V-285 עם 2 סוללות 4Ah",
-     "sku": "9661719",
+     "name": "מד טווח לייזר מקצועי Bosch GLM 40-31 כולל סוללות ונרתיק",
+     "sku": "8722072",
      "category": "tool",
      "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32034013/show/5522609f3f9c33f87c1164172f0e101d.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/9661719-%D7%9E%D7%91%D7%A8%D7%92%D7%AA-%D7%90%D7%99%D7%9E%D7%A4%D7%A7%D7%98-%D7%A0%D7%98%D7%A2%D7%9F-18V-BOSCH-GDX-18V-285-%D7%A2%D7%9D-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-4Ah-%D7%91%D7%95%D7%A9-\n"
+     "price": 380.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294387/show/af0c18dc3ac8a79b8d38fef990449c9b.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/8722072-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-Bosch-GLM-40-31-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-%D7%95%D7%A0%D7%A8%D7%AA%D7%99%D7%A7-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "פלס לייזר ירוק צלב 5 קרניים 30 מטר פילוס עצמי KAPRO 875G prolaser",
@@ -4191,15 +4200,6 @@
      "price": 2980.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11957658/show/55d42d1e4dde825edae0b9e2827315c4.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5822302-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Fluke-179-%D7%A0%D7%A8%D7%AA%D7%99%D7%A7-c35-%D7%9E%D7%97%D7%96%D7%99%D7%A7-%D7%9E%D7%92%D7%A0%D7%98%D7%99-TPACK-%D7%91%D7%9E%D7%AA%D7%A0%D7%94-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
-    },
-    {
-     "name": "מד טווח לייזר מקצועי Bosch GLM 40-31 כולל סוללות ונרתיק",
-     "sku": "8722072",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 380.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294387/show/af0c18dc3ac8a79b8d38fef990449c9b.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/8722072-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-Bosch-GLM-40-31-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-%D7%95%D7%A0%D7%A8%D7%AA%D7%99%D7%A7-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "מברגה / מקדחה רוטטת נטענת בוש18V GSB 185 LI במזוודה + שתי סוללות 2AH ומטען תוצרת BOSCH",
@@ -4247,6 +4247,15 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7453718-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Fluke-179-%D7%9B%D7%95%D7%9C%D7%9C-%D7%96%D7%95%D7%92-%D7%A4%D7%A8%D7%95%D7%91%D7%99%D7%9D-%D7%9E%D7%A7%D7%95%D7%A8%D7%99%D7%99%D7%9D-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
+     "name": "מברגת אימפקט  נטען 18V BOSCH GDX 18V-285 עם 2 סוללות 4Ah",
+     "sku": "9661719",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 1499.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304253/show/f276ab14abdc6facf15d2b651b6f6875.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/9661719-%D7%9E%D7%91%D7%A8%D7%92%D7%AA-%D7%90%D7%99%D7%9E%D7%A4%D7%A7%D7%98-%D7%A0%D7%98%D7%A2%D7%9F-18V-BOSCH-GDX-18V-285-%D7%A2%D7%9D-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-4Ah-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
      "name": "מד טווח לייזר 30 מטר עם כיסוי שקוף 363 KAPRO K-30",
      "sku": "K-30",
      "category": "tool",
@@ -4271,7 +4280,7 @@
      "unit": "יח'",
      "price": 579.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10910998/show/424c5098e308ce95e410483b8377e32d.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/3760795-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%A6%D7%9C%D7%91-50-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-kapro-872G-prolaser-%D7%9B%D7%95%D7%9C%D7%9C-%D7%97%D7%A6%D7%95%D7%91%D7%94-Kapro-%D7%A7%D7%A4%D7%A8%D7%95\n"
+     "productUrl": "https://www.dror-tools.co.il  /items/3760795-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%A6%D7%9C%D7%91-50-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-kapro-872G-prolaser-%D7%9B%D7%95%D7%9C%D7%9C-%D7%97%D7%A6%D7%95%D7%91%D7%94-Kapro-%D7%A7%D7%A4%D7%A8%D7%95-Kapro\n"
     },
     {
      "name": "פלס לייזר שלושה מעגלים ירוק מיני 3D | כולל מעמד ושלט 30 מטר 103200-004 Hunter",
@@ -4396,7 +4405,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 1268.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20887708/show/3def591b4b74594a40021e863333454d.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303539/show/d360f90087958f87162acde458695c19.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/9002247-%D7%A4%D7%9C%D7%A1-%D7%9E%D7%93-%D7%96%D7%95%D7%95%D7%99%D7%AA-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-GAM-270-MFL-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -4405,7 +4414,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 1800.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/7430342/show/435f6e9bf9673f84b79a0458f82c77ef.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304307/show/b1a24dabfd3c6f574739e4687a156836.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/4092169-%D7%92%D7%95%D7%A3-%D7%9E%D7%A6%D7%9C%D7%9E%D7%AA-%D7%A6%D7%99%D7%A8-%D7%92%D7%9E%D7%99%D7%A9-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-BOSCH-GIC-120C-12V-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -4414,7 +4423,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 950.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/20888915/show/072769471bac6c8961290d5115fbb3dd.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303646/show/c6f86a84823df11478029a7ee0fc278b.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/9002517-%D7%A4%D7%9C%D7%A1-LB10-%D7%AA%D7%95%D7%A9%D7%91%D7%AA-GLL-20-22G-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D-%D7%99%D7%A8%D7%95%D7%A7%D7%95%D7%AA-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -4423,17 +4432,8 @@
      "category": "material",
      "unit": "יח'",
      "price": 266.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18964419/show/a4a0c982b7fb96dd8c786e5adf06d2e3.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304994/show/924d4f92c1ca6257c67a15ccc07dc3ba.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8580377-%D7%92%D7%9C%D7%90%D7%99-%D7%9E%D7%AA%D7%97-%D7%98%D7%A1%D7%98%D7%A8-%D7%9C%D7%9C%D7%90-%D7%9E%D7%92%D7%A2-Bosch-GVD-1000-17-Professional-%D7%91%D7%95%D7%A9-\n"
-    },
-    {
-     "name": "פלס לייזר ירוק היקפי 3 מעגלים 30 מטר GLL 3-80G IP54 1063.Y00",
-     "sku": "3-80G",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6139778/show/d1798abff40935fcb85333f310ae06c1.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/3486752-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%94%D7%99%D7%A7%D7%A4%D7%99-3-%D7%9E%D7%A2%D7%92%D7%9C%D7%99%D7%9D-30-%D7%9E%D7%98%D7%A8-GLL-3-80G-IP54-1063-Y00-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "קולט קרן לייזר 50 מטר BOSCH LR2",
@@ -4441,17 +4441,8 @@
      "category": "material",
      "unit": "יח'",
      "price": 519.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586856/show/bf33d6fabe80aa18885b89652d52aa11.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303597/show/6c73cad1163d4fa531f663faf477930f.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/3232036-%D7%A7%D7%95%D7%9C%D7%98-%D7%A7%D7%A8%D7%9F-%D7%9C%D7%99%D7%99%D7%96%D7%A8-50-%D7%9E%D7%98%D7%A8-BOSCH-LR2-%D7%91%D7%95%D7%A9-\n"
-    },
-    {
-     "name": "קולט קרן לייזר 200 מטר BOSCH LR1",
-     "sku": "3232037",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586857/show/ac9c44ae76fedc6be8cd500470380add.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/3232037-%D7%A7%D7%95%D7%9C%D7%98-%D7%A7%D7%A8%D7%9F-%D7%9C%D7%99%D7%99%D7%96%D7%A8-200-%D7%9E%D7%98%D7%A8-BOSCH-LR1-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "גלאי / מולטימטר דיגיטלי Bosch GDM 600-15 Professional TRUE RMS",
@@ -4459,7 +4450,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 854.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18849092/show/1288494e537c4e320fff552e9dd7cb07.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304996/show/11879f16e45187c8a4f4b43f5ddd07e1.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8580395-%D7%92%D7%9C%D7%90%D7%99-%D7%9E%D7%95%D7%9C%D7%98%D7%99%D7%9E%D7%98%D7%A8-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Bosch-GDM-600-15-Professional-TRUE-RMS-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -4468,17 +4459,8 @@
      "category": "material",
      "unit": "יח'",
      "price": 447.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18849115/show/7a9e5a1c2cc53e8224a2a071a426117b.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32305001/show/35a205b1558a16e406f8fa60e229e7d1.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8580403-%D7%92%D7%9C%D7%90%D7%99-%D7%9E%D7%AA%D7%97-Bosch-GVT-1000-15-Professional-%D7%91%D7%95%D7%A9-\n"
-    },
-    {
-     "name": "מד טווח לייזר 40 מטר BOSCH GLM 40 IP54",
-     "sku": "3233078",
-     "category": "tool",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5588606/show/e65811899a9f51162a93eb7b9a34b743.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/3233078-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-40-%D7%9E%D7%98%D7%A8-BOSCH-GLM-40-IP54-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "גלאי זרם מזלג Bosch GFM 1000-15 Professional",
@@ -4486,8 +4468,35 @@
      "category": "material",
      "unit": "יח'",
      "price": 1025.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18849129/show/c1b84b551c908a0319a3a40075bb917c.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304999/show/efce4369f45024a6287c8d5a2557857d.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8580409-%D7%92%D7%9C%D7%90%D7%99-%D7%96%D7%A8%D7%9D-%D7%9E%D7%96%D7%9C%D7%92-Bosch-GFM-1000-15-Professional-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
+     "name": "פלס לייזר צלב ירוק בוש BOSCH GLL 2-15G",
+     "sku": "6229562",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 895.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303642/show/f38dcbe85683b62530f1aa08ac42b1f5.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/6229562-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-%D7%99%D7%A8%D7%95%D7%A7-%D7%91%D7%95%D7%A9-BOSCH-GLL-2-15G\n"
+    },
+    {
+     "name": "פלס לייזר צלב 15 מטר פילוס עצמי BOSCH GLL3X",
+     "sku": "GLL3X",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 640.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303620/show/52ea25e6a37a2faa016ba214a92d985a.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/3233087-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-15-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-BOSCH-GLL3X-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
+     "name": "מד טווח לייזר BOSCH GLM20",
+     "sku": "GLM20",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 305.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6817815/show/41128da830c9096f5bab6ec9bc337a9e.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/3843648-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-BOSCH-GLM20-%D7%91%D7%95%D7%A9-\n"
     }
    ]
   },
@@ -4825,7 +4834,7 @@
      "category": "material",
      "unit": "יח'",
      "price": 35.0,
-     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/Default_aec7e901-632f-44fd-b943-f0221b0561b4.webp?v=1792674865",
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/Gemini_Generated_Image_2ufic82ufic82ufi_1.jpg?v=1793271416",
      "productUrl": "https://yashir-group.biz/products/סט-של-עינית-ראש-קפיצי-לולאת-משיכה-לסרט-משיכה-4-4-5ממ"
     },
     {
@@ -6143,16 +6152,16 @@
      "productUrl": "https://yashir-group.biz/products/בורג-איסכורית-אטם-מקדח-1-4"
     },
     {
-     "name": "בורג גבס מקדח",
+     "name": "בורג גבס קודח שחור",
      "sku": "tmiv242079",
-     "category": "tool",
+     "category": "material",
      "unit": "יח'",
      "price": 1.0,
      "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/tmiv242079.jpg?v=1730173647",
      "productUrl": "https://yashir-group.biz/products/בורג-גבס-מקדח"
     },
     {
-     "name": "בורג גבס",
+     "name": "בורג גבס שפיץ - שחור",
      "sku": "tmiv242075",
      "category": "material",
      "unit": "יח'",
@@ -7701,7 +7710,7 @@
      "sku": "3119483",
      "category": "tool",
      "unit": "יח'",
-     "price": 599.0,
+     "price": 550.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5347957/show/b5b4db06a4b544d8715dfd659d2a5453.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/3119483-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98-dch133\n"
     },
@@ -7719,7 +7728,7 @@
      "sku": "5680794",
      "category": "tool",
      "unit": "יח'",
-     "price": 399.0,
+     "price": 279.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510474/show/1bb9ffc29e7fc352005cb56f33153a86.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680794-%D7%9E%D7%A9%D7%97%D7%96%D7%AA-%D7%96%D7%95%D7%95%D7%99%D7%AA-%D7%9E%D7%A7%D7%99%D7%98%D7%94-18v-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-Makita-XAG01-DGA452Z\n"
     },
@@ -7728,7 +7737,7 @@
      "sku": "5680795",
      "category": "tool",
      "unit": "יח'",
-     "price": 500.0,
+     "price": 399.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510480/show/259e8efd7f28d117e82d8b9a38faa8b6.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680795-Patishon7\n"
     },
