@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-01",
+ "updatedAt": "2026-11-08",
  "suppliers": [
   {
    "supplierName": "ERCO",
@@ -37,7 +37,7 @@
      "sku": "47500020",
      "category": "material",
      "unit": "יח'",
-     "price": 146.3,
+     "price": 146.32,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/4/7/47500020_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/mpsq-ldvd-16a-wifi-lqvp-gvvis-3-mqvm.html"
     },
@@ -604,7 +604,7 @@
      "sku": "62101141004_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 84.0,
+     "price": 66.5,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/6/2/62101141004_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/command-and-control/protection-and-contactors/62101141004-main.html"
     },
@@ -730,7 +730,7 @@
      "sku": "5955190",
      "category": "material",
      "unit": "מ'",
-     "price": 1.7,
+     "price": 1.8,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955190_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-2-5-hvm-nyaf-gmiw.html"
     },
@@ -739,7 +739,7 @@
      "sku": "5955180",
      "category": "material",
      "unit": "מ'",
-     "price": 1.7,
+     "price": 1.8,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955180_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-2-5-whvr-nyaf-gmiw.html"
     },
@@ -748,7 +748,7 @@
      "sku": "5955169",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955169_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-advm-nyaf-gmiw.html"
     },
@@ -757,7 +757,7 @@
      "sku": "5955168",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955168_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-ktvm-nyaf-gmiw.html"
     },
@@ -766,7 +766,7 @@
      "sku": "5955167",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955167_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-chvb-nyaf-gmiw.html"
     },
@@ -775,7 +775,7 @@
      "sku": "5955166",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955166_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-lbn-nyaf-gmiw.html"
     },
@@ -784,7 +784,7 @@
      "sku": "5955165",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955165_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-sgvl-nyaf-gmiw.html"
     },
@@ -793,7 +793,7 @@
      "sku": "5955163",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955163_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-apvr-nyaf-gmiw.html"
     },
@@ -802,7 +802,7 @@
      "sku": "5955162",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955162_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-irvq-nyaf-gmiw.html"
     },
@@ -811,7 +811,7 @@
      "sku": "5955161",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955161_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-khvl-nyaf-gmiw.html"
     },
@@ -820,7 +820,7 @@
      "sku": "5955160",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955160_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/5955160.html"
     },
@@ -829,7 +829,7 @@
      "sku": "5955158",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955158_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-hvm-whvr-nyaf-gmiw.html"
     },
@@ -838,7 +838,7 @@
      "sku": "5955150",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955150_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-hvm-nyaf-gmiw.html"
     },
@@ -847,7 +847,7 @@
      "sku": "5955140",
      "category": "material",
      "unit": "מ'",
-     "price": 1.0,
+     "price": 1.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955140_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-5-whvr-nyaf-gmiw.html"
     },
@@ -856,7 +856,7 @@
      "sku": "5955129",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955129_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-advm-nyaf-gmiw.html"
     },
@@ -865,7 +865,7 @@
      "sku": "5955128",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955128_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-ktvm-nyaf-gmiw.html"
     },
@@ -874,7 +874,7 @@
      "sku": "5955127",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955127_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-chvb-nyaf-gmiw.html"
     },
@@ -883,7 +883,7 @@
      "sku": "5955126",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955126_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-lbn-nyaf-gmiw.html"
     },
@@ -892,7 +892,7 @@
      "sku": "5955125",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955125_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-sgvl-nyaf-gmiw.html"
     },
@@ -901,7 +901,7 @@
      "sku": "5955123",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955123_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-irvq-nyaf-gmiw.html"
     },
@@ -910,7 +910,7 @@
      "sku": "5955122",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955122_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-apvr-nyaf-gmiw.html"
     },
@@ -919,7 +919,7 @@
      "sku": "5955121",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955121_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-khvl-nyaf-gmiw.html"
     },
@@ -928,7 +928,7 @@
      "sku": "5955120",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955120_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/5955120.html"
     },
@@ -937,7 +937,7 @@
      "sku": "5955110",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955110_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-hvm-nyaf-gmiw.html"
     },
@@ -946,7 +946,7 @@
      "sku": "5955100",
      "category": "material",
      "unit": "מ'",
-     "price": 0.9,
+     "price": 1.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5955100_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/hvt-1-0-whvr-nyaf-gmiw.html"
     },
@@ -1045,7 +1045,7 @@
      "sku": "5956350_MAIN",
      "category": "material",
      "unit": "מ'",
-     "price": 120.8,
+     "price": 134.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5956350_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/5956350-main.html"
     },
@@ -1054,7 +1054,7 @@
      "sku": "560231",
      "category": "material",
      "unit": "יח'",
-     "price": 10.1,
+     "price": 11.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55020_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/560231.html"
     },
@@ -1063,7 +1063,7 @@
      "sku": "560331",
      "category": "material",
      "unit": "יח'",
-     "price": 16.0,
+     "price": 17.8,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55020_1_2.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/560331.html"
     },
@@ -1072,7 +1072,7 @@
      "sku": "560431",
      "category": "material",
      "unit": "יח'",
-     "price": 22.1,
+     "price": 24.5,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/5/55020_1_3.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/560431.html"
     },
@@ -1081,7 +1081,7 @@
      "sku": "56043",
      "category": "material",
      "unit": "יח'",
-     "price": 22.4,
+     "price": 24.9,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/6/56043_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/wires/56043.html"
     },
@@ -1090,7 +1090,7 @@
      "sku": "59520701",
      "category": "material",
      "unit": "מ'",
-     "price": 52.9,
+     "price": 58.7,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5951021_1_2.jpg",
      "productUrl": "https://www.erco.co.il/b2c/mtr-kbl-bhbilh-5x16-n2xy-mm-r.html"
     },
@@ -1099,7 +1099,7 @@
      "sku": "5969025_MAIN",
      "category": "material",
      "unit": "מ'",
-     "price": 7.5,
+     "price": 8.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5969025_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/5969025-main.html"
     },
@@ -1108,7 +1108,7 @@
      "sku": "5951021_MAIN",
      "category": "material",
      "unit": "מ'",
-     "price": 3.7,
+     "price": 4.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5951021_MAIN_1_2.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/5951021-main.html"
     },
@@ -1117,7 +1117,7 @@
      "sku": "5951010_MAIN",
      "category": "material",
      "unit": "מ'",
-     "price": 3.9,
+     "price": 4.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5951010_MAIN_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/5951010-main.html"
     },
@@ -1126,7 +1126,7 @@
      "sku": "5954006_MAIN",
      "category": "material",
      "unit": "מ'",
-     "price": 10.2,
+     "price": 10.7,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5954006_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/5954006-main.html"
     },
@@ -1135,7 +1135,7 @@
      "sku": "5954310_MAIN",
      "category": "material",
      "unit": "מ'",
-     "price": 3.9,
+     "price": 4.1,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5954310_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/5954310-main.html"
     },
@@ -1144,7 +1144,7 @@
      "sku": "590201_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 5.9,
+     "price": 6.5,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/590201_MAIN_1.png",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/590201-main.html"
     },
@@ -1153,7 +1153,7 @@
      "sku": "5954501_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 4.8,
+     "price": 5.0,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/5954501_MAIN.png",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/5954501-main.html"
     },
@@ -1162,7 +1162,7 @@
      "sku": "590200_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 6.0,
+     "price": 6.7,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/5/9/590200_MAIN_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/cables-wires/low-voltage-power-cables/590200-main.html"
     },
@@ -1216,7 +1216,7 @@
      "sku": "995651243",
      "category": "tool",
      "unit": "יח'",
-     "price": 126.9,
+     "price": 126.87,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995651243_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/sales/sales-new-in-erco/995651243.html"
     },
@@ -1226,7 +1226,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 180.27,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995651244_1.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995651244_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/sales/sales-new-in-erco/995651244.html"
     },
     {
@@ -1738,7 +1738,7 @@
      "sku": "995653180V_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 7.8,
+     "price": 7.3,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/995653180V_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/995653180v-main.html"
     },
@@ -2107,7 +2107,7 @@
      "sku": "3940065C_MAIN",
      "category": "material",
      "unit": "יח'",
-     "price": 93.3,
+     "price": 237.8,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/3/9/3940065C_MAIN_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/3940065c-main.html"
     },
@@ -2440,7 +2440,7 @@
      "sku": "245DTD152Z",
      "category": "tool",
      "unit": "יח'",
-     "price": 347.5,
+     "price": 347.51,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DTD152Z_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/245dtd152z.html"
     },
@@ -2468,7 +2468,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 475.54,
-     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DTD156BAG_1.jpg",
+     "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/2/4/245DTD156BAG_2.jpg",
      "productUrl": "https://www.erco.co.il/b2c/245dtd156bag.html"
     },
     {
@@ -2647,7 +2647,7 @@
      "sku": "9956536820",
      "category": "material",
      "unit": "יח'",
-     "price": 166.2,
+     "price": 166.18,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/9/9956536820_1_1.jpg",
      "productUrl": "https://www.erco.co.il/b2c/lvhc-rc-t-rg-6-rg-59-lhibvr-vega-yes.html"
     },
@@ -2809,7 +2809,7 @@
      "sku": "9411109",
      "category": "material",
      "unit": "יח'",
-     "price": 45.7,
+     "price": 45.73,
      "imageUrl": "https://www.erco.co.il/media/catalog/product/cache/ad635d812d41de9ea3e3c5a90bfe7e58/9/4/9411109.jpg",
      "productUrl": "https://www.erco.co.il/b2c/work-tools/hand-tools/9411109.html"
     },
@@ -3541,7 +3541,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 858.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294375/show/101439e8ee9efb6a8e2c954511575163.jpg",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294375/show/787d3c1ed5df71bc5c1b28de77399b7e.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8263802-%D7%92%D7%95%D7%A3-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-GBH-18V-22-X-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -3730,7 +3730,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 623.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303123/show/294b4f185e54420cfdfceb8585fbedfa.jpg",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13141188/show/7bcb2a312de07ef1455da32381c8b818.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6273010-%D7%90%D7%91%D7%99%D7%96%D7%A8-%D7%A9%D7%90%D7%99%D7%91%D7%AA-%D7%90%D7%91%D7%A7-%D7%9C%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-BOSCH-18V-16-GDE-%D7%91%D7%95%D7%A9-\n"
     },
     {
@@ -4103,15 +4103,6 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232065-%D7%A1%D7%A4%D7%A8%D7%99%D7%99-%D7%90%D7%9C%D7%9B%D7%95%D7%94%D7%95%D7%9C-IPA-%D7%9E-%D7%9C500-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
     },
     {
-     "name": "נשמית  עם פילטר מבד כותנה",
-     "sku": "SY9800",
-     "category": "material",
-     "unit": "יח'",
-     "price": 10.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586913/show/fef065e5b3098ed462319a3b9f09b491.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/3232069-%D7%A0%D7%A9%D7%9E%D7%99%D7%AA-%D7%A2%D7%9D-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%9E%D7%91%D7%93-%D7%9B%D7%95%D7%AA%D7%A0%D7%94-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
-    },
-    {
      "name": "סט 50 נשמיות כירוגיות",
      "sku": "drorkeepitclean",
      "category": "material",
@@ -4130,6 +4121,15 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3232068-%D7%9E%D7%93-%D7%97%D7%95%D7%9D-%D7%9C%D7%9C%D7%90-%D7%9E%D7%92%D7%A2-%D7%90%D7%99%D7%A0%D7%A4%D7%A8%D7%90-%D7%90%D7%93%D7%95%D7%9D-Bo-hui\n"
     },
     {
+     "name": "נשמית  עם פילטר מבד כותנה",
+     "sku": "SY9800",
+     "category": "material",
+     "unit": "יח'",
+     "price": 10.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586913/show/fef065e5b3098ed462319a3b9f09b491.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/3232069-%D7%A0%D7%A9%D7%9E%D7%99%D7%AA-%D7%A2%D7%9D-%D7%A4%D7%99%D7%9C%D7%98%D7%A8-%D7%9E%D7%91%D7%93-%D7%9B%D7%95%D7%AA%D7%A0%D7%94-%D7%93%D7%A8%D7%95%D7%A8-%D7%9B%D7%9C%D7%99-%D7%A2%D7%91%D7%95%D7%93%D7%94\n"
+    },
+    {
      "name": "משחה לניקוי ידיים 1קילו  1890305",
      "sku": "893955210",
      "category": "material",
@@ -4137,6 +4137,15 @@
      "price": 70.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586915/show/8d7d23ec510eb850fa02052851bf8b78.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/3232070-%D7%9E%D7%A9%D7%97%D7%94-%D7%9C%D7%A0%D7%99%D7%A7%D7%95%D7%99-%D7%99%D7%93%D7%99%D7%99%D7%9D-1%D7%A7%D7%99%D7%9C%D7%95-1890305-Wurth\n"
+    },
+    {
+     "name": "משחה לניקוי ידיים 4 קילו",
+     "sku": "893900013",
+     "category": "material",
+     "unit": "יח'",
+     "price": 136.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5586916/show/38ba86e4e55e7269c224a311e586bf49.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/3232071-%D7%9E%D7%A9%D7%97%D7%94-%D7%9C%D7%A0%D7%99%D7%A7%D7%95%D7%99-%D7%99%D7%93%D7%99%D7%99%D7%9D-4-%D7%A7%D7%99%D7%9C%D7%95-Wurth\n"
     },
     {
      "name": "מצלמת ציר Laserliner VideoFlex G4. מק\"ט: Laserliner 082.242A",
@@ -4171,8 +4180,17 @@
      "category": "tool",
      "unit": "יח'",
      "price": 380.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294387/show/af0c18dc3ac8a79b8d38fef990449c9b.jpg",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294387/show/649873e0d376abb275244f7a29543b27.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/8722072-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-Bosch-GLM-40-31-%D7%9B%D7%95%D7%9C%D7%9C-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-%D7%95%D7%A0%D7%A8%D7%AA%D7%99%D7%A7-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
+     "name": "פלס לייזר ירוק GLL 18V-120-33 CG Professional",
+     "sku": "7960283",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 3350.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32603331/show/527252cc3fb714a8ec95753bcd351ad8.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/7960283-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-GLL-18V-120-33-CG-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "פלס לייזר ירוק צלב 5 קרניים 30 מטר פילוס עצמי KAPRO 875G prolaser",
@@ -4181,7 +4199,7 @@
      "unit": "יח'",
      "price": 995.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/16095618/show/f38c96b9be85e53a0389072d57b955da.png",
-     "productUrl": "https://www.dror-tools.co.il  /items/3760685-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%A6%D7%9C%D7%91-5-%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D-30-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-KAPRO-875G-prolaser-%D7%A7%D7%A4%D7%A8%D7%95\n"
+     "productUrl": "https://www.dror-tools.co.il  /items/3760685-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-%D7%A6%D7%9C%D7%91-5-%D7%A7%D7%A8%D7%A0%D7%99%D7%99%D7%9D-30-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-KAPRO-875G-prolaser-%D7%A7%D7%A4%D7%A8%D7%95-Kapro\n"
     },
     {
      "name": "ערכת פילוס, מדידה והתקנה + מזוודת נשיאה KAPRO Pro All In One קפרו אול אין",
@@ -4190,7 +4208,7 @@
      "unit": "יח'",
      "price": 299.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/19619528/show/5073af54ff0aa28a8f78c5db4b22ee4c.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/7288157-%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%9E%D7%93%D7%99%D7%93%D7%94-%D7%95%D7%94%D7%AA%D7%A7%D7%A0%D7%94-%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%AA-%D7%A0%D7%A9%D7%99%D7%90%D7%94-KAPRO-Pro-All-In-One-%D7%A7%D7%A4%D7%A8%D7%95-%D7%90%D7%95%D7%9C-%D7%90%D7%99%D7%9F\n"
+     "productUrl": "https://www.dror-tools.co.il  /items/7288157-%D7%A2%D7%A8%D7%9B%D7%AA-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%9E%D7%93%D7%99%D7%93%D7%94-%D7%95%D7%94%D7%AA%D7%A7%D7%A0%D7%94-%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%AA-%D7%A0%D7%A9%D7%99%D7%90%D7%94-KAPRO-Pro-All-In-One-%D7%A7%D7%A4%D7%A8%D7%95-%D7%90%D7%95%D7%9C-%D7%90%D7%99%D7%9F-%D7%A7%D7%A4%D7%A8%D7%95-Kapro\n"
     },
     {
      "name": "רב מודד דיגיטלי - Fluke 179 + נרתיק c35 + מחזיק מגנטי TPACK במתנה",
@@ -4207,7 +4225,7 @@
      "category": "tool",
      "unit": "יח'",
      "price": 678.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294342/show/9277fc234e80a57b483eeae2b1737491.webp",
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32603200/show/f581afdd776207c8392a617ea1b7e47b.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/6137755-%D7%9E%D7%91%D7%A8%D7%92%D7%94-%D7%9E%D7%A7%D7%93%D7%97%D7%94-%D7%A8%D7%95%D7%98%D7%98%D7%AA-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-%D7%91%D7%95%D7%A918V-GSB-185-LI-%D7%91%D7%9E%D7%96%D7%95%D7%95%D7%93%D7%94-%D7%A9%D7%AA%D7%99-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-2AH-%D7%95%D7%9E%D7%98%D7%A2%D7%9F-%D7%AA%D7%95%D7%A6%D7%A8%D7%AA-BOSCH\n"
     },
     {
@@ -4218,15 +4236,6 @@
      "price": 1490.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11958124/show/ee08b38f66c0c9e66b8412ddcb0cf23e.webp",
      "productUrl": "https://www.dror-tools.co.il  /items/5822404-Fluke-115-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-True-RMS-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
-    },
-    {
-     "name": "פלס לייזר ירוק GLL 18V-120-33 CG Professional",
-     "sku": "7960283",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 3338.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32294345/show/4c05b19e22d7feff258baa62b03ffad7.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/7960283-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-GLL-18V-120-33-CG-Professional-%D7%91%D7%95%D7%A9-\n"
     },
     {
      "name": "מד טווח לייזר STABILA LD320 - מד לייזר קומפקטי ומדויק לטווח של עד 60 מטר",
@@ -4247,22 +4256,13 @@
      "productUrl": "https://www.dror-tools.co.il  /items/7453718-%D7%A8%D7%91-%D7%9E%D7%95%D7%93%D7%93-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-Fluke-179-%D7%9B%D7%95%D7%9C%D7%9C-%D7%96%D7%95%D7%92-%D7%A4%D7%A8%D7%95%D7%91%D7%99%D7%9D-%D7%9E%D7%A7%D7%95%D7%A8%D7%99%D7%99%D7%9D-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
-     "name": "מברגת אימפקט  נטען 18V BOSCH GDX 18V-285 עם 2 סוללות 4Ah",
-     "sku": "9661719",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 1499.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304253/show/f276ab14abdc6facf15d2b651b6f6875.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/9661719-%D7%9E%D7%91%D7%A8%D7%92%D7%AA-%D7%90%D7%99%D7%9E%D7%A4%D7%A7%D7%98-%D7%A0%D7%98%D7%A2%D7%9F-18V-BOSCH-GDX-18V-285-%D7%A2%D7%9D-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-4Ah-%D7%91%D7%95%D7%A9-\n"
-    },
-    {
      "name": "מד טווח לייזר 30 מטר עם כיסוי שקוף 363 KAPRO K-30",
      "sku": "K-30",
      "category": "tool",
      "unit": "יח'",
      "price": 245.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/13758732/show/06f09ddd1d0216af47d7aa55e9f47b0e.jpg",
-     "productUrl": "https://www.dror-tools.co.il  /items/6547556-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-30-%D7%9E%D7%98%D7%A8-%D7%A2%D7%9D-%D7%9B%D7%99%D7%A1%D7%95%D7%99-%D7%A9%D7%A7%D7%95%D7%A3-363-KAPRO-K-30-%D7%A7%D7%A4%D7%A8%D7%95\n"
+     "productUrl": "https://www.dror-tools.co.il  /items/6547556-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-30-%D7%9E%D7%98%D7%A8-%D7%A2%D7%9D-%D7%9B%D7%99%D7%A1%D7%95%D7%99-%D7%A9%D7%A7%D7%95%D7%A3-363-KAPRO-K-30-%D7%A7%D7%A4%D7%A8%D7%95-Kapro\n"
     },
     {
      "name": "מד טמפרטורה מקצועי אינפרא אדום / לייזר 300.09 - FUTECH",
@@ -4346,6 +4346,15 @@
      "productUrl": "https://www.dror-tools.co.il  /items/3233092-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-30-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-Stabila-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%99%D7%A8%D7%95%D7%A7-LAX-50-G-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
     },
     {
+     "name": "פלס דיגיטלי 40 ס\"מ STABILA TECH 196 DL – עמיד במים IP67, ללא כיול (מק\"ט 19830)",
+     "sku": "9729954",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 1250.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32607202/show/cb9ad2d7bc43c995d83bc85956080b81.webp",
+     "productUrl": "https://www.dror-tools.co.il  /items/9729954-%D7%A4%D7%9C%D7%A1-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99-40-%D7%A1-%D7%9E-STABILA-TECH-196-DL-%D7%A2%D7%9E%D7%99%D7%93-%D7%91%D7%9E%D7%99%D7%9D-IP67-%D7%9C%D7%9C%D7%90-%D7%9B%D7%99%D7%95%D7%9C-%D7%9E%D7%A7-%D7%98-19830-Stabila-%D7%A1%D7%98%D7%91%D7%99%D7%9C%D7%94\n"
+    },
+    {
      "name": "Fluke T150 - טסטר דו קוטבי",
      "sku": "5826910",
      "category": "material",
@@ -4400,6 +4409,15 @@
      "productUrl": "https://www.dror-tools.co.il  /items/6338526-%D7%91%D7%95%D7%93%D7%A7-%D7%A2%D7%9E%D7%93%D7%AA-%D7%98%D7%A2%D7%99%D7%A0%D7%94-%D7%9E%D7%A7%D7%A6%D7%95%D7%A2%D7%99-Fluke-%D7%A4%D7%9C%D7%95%D7%A7\n"
     },
     {
+     "name": "מברגת אימפקט  נטען 18V BOSCH GDX 18V-285 עם 2 סוללות 4Ah",
+     "sku": "9661719",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 1099.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304253/show/5bab87def6ffece3671059a692d4d5d2.jpg",
+     "productUrl": "https://www.dror-tools.co.il  /items/9661719-%D7%9E%D7%91%D7%A8%D7%92%D7%AA-%D7%90%D7%99%D7%9E%D7%A4%D7%A7%D7%98-%D7%A0%D7%98%D7%A2%D7%9F-18V-BOSCH-GDX-18V-285-%D7%A2%D7%9D-2-%D7%A1%D7%95%D7%9C%D7%9C%D7%95%D7%AA-4Ah-%D7%91%D7%95%D7%A9-\n"
+    },
+    {
      "name": "פלס/מד זווית דיגיטלי GAM 270 MFL",
      "sku": "9002247",
      "category": "tool",
@@ -4413,7 +4431,7 @@
      "sku": "120C",
      "category": "material",
      "unit": "יח'",
-     "price": 1800.0,
+     "price": 1790.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32304307/show/b1a24dabfd3c6f574739e4687a156836.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/4092169-%D7%92%D7%95%D7%A3-%D7%9E%D7%A6%D7%9C%D7%9E%D7%AA-%D7%A6%D7%99%D7%A8-%D7%92%D7%9E%D7%99%D7%A9-%D7%A0%D7%98%D7%A2%D7%A0%D7%AA-BOSCH-GIC-120C-12V-%D7%91%D7%95%D7%A9-\n"
     },
@@ -4488,15 +4506,6 @@
      "price": 640.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/32303620/show/52ea25e6a37a2faa016ba214a92d985a.jpg",
      "productUrl": "https://www.dror-tools.co.il  /items/3233087-%D7%A4%D7%9C%D7%A1-%D7%9C%D7%99%D7%99%D7%96%D7%A8-%D7%A6%D7%9C%D7%91-15-%D7%9E%D7%98%D7%A8-%D7%A4%D7%99%D7%9C%D7%95%D7%A1-%D7%A2%D7%A6%D7%9E%D7%99-BOSCH-GLL3X-%D7%91%D7%95%D7%A9-\n"
-    },
-    {
-     "name": "מד טווח לייזר BOSCH GLM20",
-     "sku": "GLM20",
-     "category": "tool",
-     "unit": "יח'",
-     "price": 305.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/6817815/show/41128da830c9096f5bab6ec9bc337a9e.webp",
-     "productUrl": "https://www.dror-tools.co.il  /items/3843648-%D7%9E%D7%93-%D7%98%D7%95%D7%95%D7%97-%D7%9C%D7%99%D7%99%D7%96%D7%A8-BOSCH-GLM20-%D7%91%D7%95%D7%A9-\n"
     }
    ]
   },
@@ -5070,6 +5079,15 @@
      "price": 0.0,
      "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/e82dd8b7b49852686b7555ce8eae02f1_b4157666-d92c-4c0c-8bd1-e99eaa723e73.png?v=1785061881",
      "productUrl": "https://yashir-group.biz/products/עגלת-נשיאה-מתקפלת-מאלומניום-200-קג-copy"
+    },
+    {
+     "name": "בדיל הלחמה 60/40 1.2ממ 100 גרם",
+     "sku": "tashbltmlhbm121001",
+     "category": "material",
+     "unit": "יח'",
+     "price": 42.0,
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/BOLT_d79568f6-56d2-46c8-9b4f-657f611757c2.jpg?v=1781763552",
+     "productUrl": "https://yashir-group.biz/products/בדיל-הלחמה-60-40-1-2ממ-100-גרם"
     },
     {
      "name": "רב מודד FLUKE  115",
@@ -6287,15 +6305,6 @@
      "productUrl": "https://yashir-group.biz/products/אום-פלסטי-שחור"
     },
     {
-     "name": "סרט חבלה מבד רוחב 50 מ''מ, אורך 25 מטר",
-     "sku": "mz92067",
-     "category": "material",
-     "unit": "יח'",
-     "price": 23.0,
-     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/500_x_500_76_6ac84e1b-d8d4-4c3b-97ea-ec26efb2a12f.png?v=1757920861",
-     "productUrl": "https://yashir-group.biz/products/סרט-חבלה-מבד-50-ממ-25-מטר-בחבילה-לבן-copy"
-    },
-    {
      "name": "בסיס לחבק עם דבק (100 יח' באריזה)",
      "sku": "pls-lhmp20",
      "category": "material",
@@ -6314,7 +6323,7 @@
      "productUrl": "https://yashir-group.biz/products/בסיס-לחבק-עם-חור-100-יח-במארז"
     },
     {
-     "name": "חבק נירוסטה 304 (100 יח' בחבילה)",
+     "name": "חבק נירוסטה 304 עם נעילה מתכתית (100 יח' בחבילה)",
      "sku": "pls-lhss260",
      "category": "material",
      "unit": "יח'",
@@ -7601,6 +7610,15 @@
      "productUrl": "https://yashir-group.biz/products/שנאי-מבדל-במארז-מפסק-טרמי-לגינה-מתח-כניסה-230va"
     },
     {
+     "name": "שעון קיר לד דיגיטלי אדום כול טמפ' ותאריך HEB",
+     "sku": "kobgf-4825",
+     "category": "material",
+     "unit": "יח'",
+     "price": 221.0,
+     "imageUrl": "https://cdn.shopify.com/s/files/1/0723/8539/6993/files/Default_45082e8e-2012-44c9-850b-a8170314528c.jpg?v=1730175520",
+     "productUrl": "https://yashir-group.biz/products/שעון-קיר-לד-דיגיטלי-אדום-כול-טמפ-ותאריך-heb"
+    },
+    {
      "name": "תנור אמבטיה כפול רפלקטור נירוסטה",
      "sku": "el12",
      "category": "material",
@@ -7634,20 +7652,11 @@
      "productUrl": "https://www.etzhaoren.co.il  /items/9594350-%D7%91%D7%93%D7%99%D7%A7%D7%94\n"
     },
     {
-     "name": "להזמנה",
-     "sku": "7487337",
-     "category": "material",
-     "unit": "יח'",
-     "price": null,
-     "imageUrl": "",
-     "productUrl": "https://www.etzhaoren.co.il/items/7487337-MIG-MMA-TIG-200A"
-    },
-    {
      "name": "מברגת אימפקט נטענת מקיטה דגם - XDT11/DTD152",
      "sku": "5037061",
      "category": "tool",
      "unit": "יח'",
-     "price": 179.0,
+     "price": 250.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10626640/show/3915947dcd2038349b3cfaf55ffb31a5.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5037061-imp11\n"
     },
@@ -7665,7 +7674,7 @@
      "sku": "3118373",
      "category": "tool",
      "unit": "יח'",
-     "price": 329.0,
+     "price": 400.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15804571/show/3592d917508a365d2636a429c34962c0.png",
      "productUrl": "https://www.etzhaoren.co.il  /items/3118373-DCF887\n"
     },
@@ -7674,7 +7683,7 @@
      "sku": "8518957",
      "category": "tool",
      "unit": "יח'",
-     "price": 320.0,
+     "price": 550.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/18422612/show/9c2a2c67cd000dad9e6201bfd6880ce5.png",
      "productUrl": "https://www.etzhaoren.co.il  /items/8518957-%D7%9E%D7%A9%D7%97%D7%96%D7%AA-%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA-900W-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98-%D7%93%D7%92%D7%9D-DWE4157\n"
     },
@@ -7692,25 +7701,16 @@
      "sku": "5142348",
      "category": "tool",
      "unit": "יח'",
-     "price": 300.0,
+     "price": 420.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10074581/show/1459aebca795a91b73610a458abd1b62.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5142348-796\n"
-    },
-    {
-     "name": "מלטשת אקצנטרית מקיטה 18V (גוף בלבד) MAKITA DBO180Z\\XOB01Z",
-     "sku": "5469541",
-     "category": "material",
-     "unit": "יח'",
-     "price": 380.0,
-     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/10874668/show/899f03ef40c32b7b10bafc95e5d3321e.jpg",
-     "productUrl": "https://www.etzhaoren.co.il  /items/5469541-MAK99\n"
     },
     {
      "name": "פטישון נטען דיוולט דגם DCH133 גוף בלבד DeWALT",
      "sku": "3119483",
      "category": "tool",
      "unit": "יח'",
-     "price": 550.0,
+     "price": 700.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/5347957/show/b5b4db06a4b544d8715dfd659d2a5453.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/3119483-%D7%A4%D7%98%D7%99%D7%A9%D7%95%D7%9F-%D7%A0%D7%98%D7%A2%D7%9F-%D7%93%D7%99%D7%95%D7%95%D7%9C%D7%98-dch133\n"
     },
@@ -7728,7 +7728,7 @@
      "sku": "5680794",
      "category": "tool",
      "unit": "יח'",
-     "price": 279.0,
+     "price": 450.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510474/show/1bb9ffc29e7fc352005cb56f33153a86.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680794-%D7%9E%D7%A9%D7%97%D7%96%D7%AA-%D7%96%D7%95%D7%95%D7%99%D7%AA-%D7%9E%D7%A7%D7%99%D7%98%D7%94-18v-%D7%92%D7%95%D7%A3-%D7%91%D7%9C%D7%91%D7%93-Makita-XAG01-DGA452Z\n"
     },
@@ -7737,7 +7737,7 @@
      "sku": "5680795",
      "category": "tool",
      "unit": "יח'",
-     "price": 399.0,
+     "price": 500.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510480/show/259e8efd7f28d117e82d8b9a38faa8b6.jpg",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680795-Patishon7\n"
     },
@@ -7746,9 +7746,18 @@
      "sku": "5680797",
      "category": "tool",
      "unit": "יח'",
-     "price": 680.0,
+     "price": 850.0,
      "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/11510482/show/edd2f913101902c60f7136cc608c568a.png",
      "productUrl": "https://www.etzhaoren.co.il  /items/5680797-Patishon8\n"
+    },
+    {
+     "name": "מקדחת פוטר דיוולט דגם DCD996 בראשלס",
+     "sku": "7519160",
+     "category": "tool",
+     "unit": "יח'",
+     "price": 700.0,
+     "imageUrl": "https://d3m9l0v76dty0.cloudfront.net/system/photos/15690373/show/87e88b23f66ec5e2fae59a0bc54df6d9.png",
+     "productUrl": "https://www.etzhaoren.co.il  /items/7519160-DCD996-\n"
     },
     {
      "name": "4 סטים מקדחים לפטישון בוליאון דגם BL005",
